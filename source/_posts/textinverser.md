@@ -3,9 +3,9 @@ title: TextInverser 文字反转器
 date: 2016-01-28
 tags:
   - 编程
-thunbnail: /posts/textinverser/images/example.jpg
+thunbnail: /blog/posts/textinverser/images/example.jpg
 ---
-![效果图](/posts/textinverser/images/example.jpg)
+![效果图](/blog/posts/textinverser/images/example.jpg)
 
 这是我花了两个晚上用Scala做出来的一个简单的小工具，能把输入的文字反向输出，并且能实时转换。
 <!-- more -->
