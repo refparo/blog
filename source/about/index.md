@@ -6,7 +6,7 @@ title: 关于/About
 #### 历史
 | 时间 | 事件 |
 |-|-|
-| 2016年 10月 15日 | 博客移动到[problem233/blog](https://github.com/Problem233/blog)，<br />[站点根目录](/)另作他用 |
+| 2016年 10月 15日 | 博客移动到 [problem233/blog](https://github.com/Problem233/blog)，[站点根目录](/)另作他用 |
 | 2016年 7月 11日 | 博客改用Hexo生成静态页面，使用Icrus主题，发布于Github page |
 | 2016年 4月 17日 | 博客程序升级为Ghost 0.7.9 添加Disqus评论系统 小幅修改主题 |
 | 2016年 3月 19日 | 博客程序升级为Ghost 0.7.8 |
