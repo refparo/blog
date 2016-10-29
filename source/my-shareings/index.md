@@ -6,7 +6,7 @@ title: 我的分享索引页
 #### 原创
 | 作品 | 链接 |
 |-|-|
-| 我的PS作品 | [点此](/my-photoshop-works/) |
+| 我的PS作品 | [点此](/blog/my-photoshop-works/) |
 | 我的Minecraft整合包 | [点此](http://www.mcbbs.net/thread-351713-1-1.html) |
 | 光丝图谱-去广告汉化本地版（[原版](http://weavesilk.com/)） | [点此](http://yunpan.cn/c6bghc7mIanzS) 提取码: 1c80 |
 ***
