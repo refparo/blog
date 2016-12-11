@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://problem233.github.io/blog
-root: /blog/
+url: https://problem233.github.io/
+root: /
 permalink: /posts/:title/
 permalink_defaults:
 
@@ -69,9 +69,9 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Problem233/blog
-  branch: gh-pages
-  
+  repo: git@github.com:Problem233/problem233.github.io
+  branch: master
+
 # Feed
 feed:
   type: atom

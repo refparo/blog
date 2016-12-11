@@ -4,8 +4,11 @@ date: 2016-04-16
 tags: 
   - 编程
 ---
+
 这是git速查手册，专为总是忘记git命令的你准备。
+
 <!-- more -->
+
 * 创建版本库: `git init`
 * 添加文件: `git add`
 * 提交更改: `git commit -m "[message]"`
