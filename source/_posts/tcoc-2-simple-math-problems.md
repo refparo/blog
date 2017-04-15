@@ -220,7 +220,7 @@ Haskell 的惰性列表使这一切变得如此简单。
 
 ```haskell
 main :: IO ()
-main = 
+main =
   print $ sum $ filter even $ takeWhile (<= 4000000) $ fib 1 2
   where fib a b = a : fib b (a + b)
 ```
@@ -239,4 +239,4 @@ main =
 
 ## 下期预告
 
-这个坑的更新频率大概是一周一更。下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「分数线划定」](https://www.luogu.org/problem/show?pid=1068)。另外，从下期开始将会移除 Java 版本，因为我感觉做这种题目的时候 Java 和 C++ 并没有什么区别。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issue 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+这个坑的更新频率大概是一周一更。下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「分数线划定」](https://www.luogu.org/problem/show?pid=1068)。另外，从下期开始将会移除 Java 版本，因为我感觉做这种题目的时候 Java 和 C++ 并没有什么区别。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~

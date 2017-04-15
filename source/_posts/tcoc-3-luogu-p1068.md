@@ -34,7 +34,7 @@ struct Volunteer {
   int s; // 分数
 };
 
-int main(int atgc, char** argv) {
+int main() {
   int m, n; // m 选手总数；n 录取人数
   cin >> m >> n;
   int intervs = n * 1.5; // 分数线选手排名
@@ -128,4 +128,4 @@ gets = fmap read <$> fmap words getLine
 
 ## 下期预告
 
-下一期的题目是 [欧拉计划](https://projecteuler.net/) 的 [Problem 11 Largest product in a grid](https://projecteuler.net/problem=11)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issue 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+下一期的题目是 [欧拉计划](https://projecteuler.net/) 的 [Problem 11 Largest product in a grid](https://projecteuler.net/problem=11)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
