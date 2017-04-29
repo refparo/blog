@@ -82,7 +82,6 @@ object Main extends App {
 Haskell 里最蛋疼的仍然是 IO……
 
 ```haskell
-import Control.Applicative ((<$>))
 import Control.Monad (forM)
 import Data.List (sortBy)
 
