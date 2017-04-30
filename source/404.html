@@ -1,0 +1,40 @@
+layout: false
+---
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>404!</title>
+  <meta name="author" content="Problem233" />
+  <link rel="icon" href="/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script>
+    function backToMainPage(t) {
+      document.getElementById("back-time").innerHTML = t
+      setTimeout("backToMainPage(" + (t - 1) + ")", 1000)
+      if(t == 0) window.location.href = "/"
+    }
+  </script>
+  <style>
+    html {
+      min-height: 100%;
+    }
+    body {
+      text-align: center;
+      height: 100%;
+    }
+    h1 {
+      font-size: 300%;
+      margin: 14% 0;
+    }
+    p {
+      font-size: medium;
+    }
+  </style>
+</head>
+<body onload="backToMainPage(5)">
+  <h1>你可能来到了一个不存在的页面……</h1>
+  <p>将在 <a id="back-time">5</a> 秒后把你传送回主页……<a href="/">点此立即返回</a></p>
+</body>
+</html>
