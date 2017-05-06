@@ -92,15 +92,15 @@ main = let (a, b, c) = head $
 using namespace std;
 
 int main() {
-	long long f[22][22];
-	memset(f,0,sizeof f);
-	for (int i = 0; i <= 20; i++)
-		f[0][i] = f[i][0] = 1;
-	for (int i = 1; i <= 20; i++)
-		for (int j = 1; j <= 20; j++)
-			f[i][j] = f[i - 1][j] + f[i][j - 1];
-	cout << f[20][20];
-	return 0;
+  long long f[22][22];
+  memset(f,0,sizeof f);
+  for (int i = 0; i <= 20; i++)
+    f[0][i] = f[i][0] = 1;
+  for (int i = 1; i <= 20; i++)
+    for (int j = 1; j <= 20; j++)
+      f[i][j] = f[i - 1][j] + f[i][j - 1];
+  cout << f[20][20];
+  return 0;
 }
 ```
 
