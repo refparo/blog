@@ -13,7 +13,7 @@ pascalsTrangle :: Integral a => [[a]]
 pascalsTrangle = generate $ repeat 1
   where generate xs = xs : generate (generateRaw 1 $ tail xs)
         generateRaw l (u : r) = let n = l + u
-                                  in l : generateLine n r
+                                  in l : generateRaw n r
 ```
 
 于是这一题就可以这样做：
