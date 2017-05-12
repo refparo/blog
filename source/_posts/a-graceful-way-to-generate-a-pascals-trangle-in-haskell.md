@@ -9,8 +9,8 @@ tags:
 这几天又想了一下上一期 TCOC 中的第二题 [欧拉计划 Problem 15 Lattice paths](/tcoc-6-two-interesting-math-problems/#%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92-Problem-15-Lattice-paths)。突然想到，由于 Haskell 的惰性，所以我就可以用一种非常优雅的方式来生成杨辉三角：
 
 ```haskell
-pascalsTrangle :: Integral a => [[a]]
-pascalsTrangle = generate $ repeat 1
+pascalsTriangle :: Integral a => [[a]]
+pascalsTriangle = generate $ repeat 1
   where generate xs = xs : generate (generateRaw 1 $ tail xs)
         generateRaw l (u : r) = let n = l + u
                                   in l : generateRaw n r
@@ -20,7 +20,7 @@ pascalsTrangle = generate $ repeat 1
 
 ```haskell
 main :: IO ()
-main = print (pascalsTrangle !! (20 - 1) !! (20 - 1))
+main = print (pascalsTriangle !! (20 - 1) !! (20 - 1))
 ```
 
 无比简单优雅！
