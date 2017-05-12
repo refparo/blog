@@ -6,7 +6,7 @@ tags:
   - the Collision of Code
 ---
 
-这几天又想了一下上一期 TCOC 中的第二题 [欧拉计划 Problem 15 Lattice paths](/tcoc-6-two-interesting-math-problems/#%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92-Problem-15-Lattice-paths)。突然想到，由于 Haskell 的惰性，所以我就可以用一种非常优雅的方式来生成杨辉三角：
+这几天又想了一下上一期 TCOC 中的第二题 [欧拉计划 Problem 15 Lattice paths](/posts/tcoc-6-two-interesting-math-problems/#%E6%AC%A7%E6%8B%89%E8%AE%A1%E5%88%92-Problem-15-Lattice-paths)。突然想到，由于 Haskell 的惰性，所以我就可以用一种非常优雅的方式来生成杨辉三角：
 
 ```haskell
 pascalsTriangle :: Integral a => [[a]]
