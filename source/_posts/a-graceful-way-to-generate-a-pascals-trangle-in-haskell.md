@@ -20,7 +20,7 @@ pascalsTriangle = generate $ repeat 1
 
 ```haskell
 main :: IO ()
-main = print (pascalsTriangle !! (20 - 1) !! (20 - 1))
+main = print (pascalsTriangle !! 20 !! 20)
 ```
 
 无比简单优雅！
