@@ -77,7 +77,7 @@ main = let (a, b, c) = head $
 
 从一个 `2×2` 方阵的左上角出发，只允许向右或向下移动，则恰好有 6 条通往右下角的路径。
 
-![Latttice paths](https://projecteuler.net/project/images/p015.gif)
+![方格路径](https://projecteuler.net/project/images/p015.gif)
 
 对于 `20×20` 方阵来说，这样的路径有多少条？
 
