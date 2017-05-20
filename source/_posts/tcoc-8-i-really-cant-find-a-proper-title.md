@@ -153,4 +153,6 @@ removNb n = [(x, y) | x <- [min..n],
 
 ## 下期预告
 
-下期的题目是 [Vijos](https:/vijos.org/) 上的 [清帝之惑之顺治](https://vijos.org/p/1011) 和 [清帝之惑之康熙](https://vijos.org/p/1009)，，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+<s>下期的题目是 [Vijos](https:/vijos.org/) 上的 [清帝之惑之顺治](https://vijos.org/p/1011) 和 [清帝之惑之康熙](https://vijos.org/p/1009)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~</s>
+
+我又考虑了一下，就目前的状态来看，各个语言的题目解法并没有太大区别，所以这个系列也就没有意义了。因此，这个系列到这一期就结束了。不过题目我还是会继续做下去的，只不过不会以这种形式了。
