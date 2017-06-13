@@ -60,3 +60,8 @@ answer62_1 = search 0 1 [] cubes
         -- 则在搜索结果中加入这一记录，返回结果
         add c n [] res = ((c, n, 1) : res, 1, "")
 ```
+
+## 测试环境
+
+- 操作系统：Windows 10 Pro Insder Preview Build 16199
+- Haskell 编译环境：GHC 8.0.2
