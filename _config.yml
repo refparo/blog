@@ -69,7 +69,7 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Problem233/problem233.github.io
+  repo: git@github.com:problem233/problem233.github.io
   branch: master
 
 # Feed
