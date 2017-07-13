@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    ".deploy_git": true,
+    "public": true,
+    "db.json": true,
+    "package-lock.json": true
+  }
+}

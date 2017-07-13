@@ -13,11 +13,11 @@ tags:
 
 题目转载于 [pe-cn.github.io](https://pe-cn.github.io/62/)，英文原站：[projecteuler.org](https://projecteuler.net/problem=62)。
 
-## 算法
+## 思路
 
 就是暴力搜索。记录下每种重排的出现次数，最先到达 5 次的就是结果。
 
-## 代码
+## 题解
 
 Github：[ProjectEuler.hs](https://github.com/Problem233/sandbox/blob/cc661ed3045584da9f7e64549469d275a50d6c1f/src/ProjectEuler.hs#L271)
 
