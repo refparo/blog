@@ -1,4 +1,0 @@
-[submodule "themes/icarus"]
-	path = themes/icarus
-	url = git@github.com:problem233/hexo-theme-icarus.git
-	branch = problem233
