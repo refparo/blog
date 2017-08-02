@@ -1,5 +1,5 @@
 ---
-title: 关于/About
+title: 关于
 ---
 
 这里是我的的个人博客，用于发布我的各种文章。
@@ -20,15 +20,7 @@ title: 关于/About
 
 #### 与我联系
 
-你可以使用这些渠道与我联系：
-
 - QQ：[2285214727](http://wpa.qq.com/msgrd?v=3&amp;uin=2285214727&amp;site=qq&amp;menu=yes)
 - E-mail：[Problem233@outlook.com](mailto:Problem233@outlook.com)
 - MCBBS 私信：[点此进入](http://www.mcbbs.net/home.php?mod=space&amp;uid=312328)
 - 新浪微博：[@Problem233](http://www.weibo.com/qq2285214727)
-
-#### 版权信息
-
-[![知识共享许可协议](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
-
-若未另外说明，本博客上的所有原创内容采用 [知识共享署名-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-sa/4.0/) 进行许可。
