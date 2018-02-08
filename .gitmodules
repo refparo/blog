@@ -1,3 +1,3 @@
-[submodule "themes/icarus"]
-	path = themes/icarus
-	url = git@github.com:problem233/hexo-theme-icarus.git
+[submodule "themes/mono"]
+	path = themes/mono
+	url = git@github.com:problem233/hexo-theme-mono.git

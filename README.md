@@ -4,4 +4,4 @@
 
 [点此访问](https://problem233.github.io/)
 
-Theme: 自己修改过的[Icarus](https://github.com/Problem233/hexo-theme-icarus)
+主题: [Mono](https://github.com/problem233/hexo-theme-mono/)
