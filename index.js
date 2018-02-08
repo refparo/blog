@@ -15,13 +15,14 @@ const mdConfig = _.assign(
     }
   })
 
+const parser = _.reduce(
+  config.plugins,
+  (acc, pconfig, name) => {
+    return acc.use(require(name), pconfig)
+  },
+  new MarkdownIt(mdConfig))
+
 const renderer = (data, options) => {
-  const parser = _.reduce(
-    config.plugins,
-    (acc, config, name) => {
-      return acc.use(require(name), config)
-    },
-    new MarkdownIt(mdConfig))
   return parser.render(data.text)
 }
 

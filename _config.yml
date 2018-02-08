@@ -57,6 +57,7 @@ yami:
     linkify: true
   plugins:
     markdown-it-katex:
+      throwOnError: false
 
 # Theme
 theme: mono
