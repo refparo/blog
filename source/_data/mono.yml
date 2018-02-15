@@ -1,0 +1,26 @@
+# 边栏菜单
+menu:
+  主页: /
+  标签: /tags/
+  关于: /about/
+
+# 头像
+avatar: /images/avatar.jpg
+
+# 社交链接
+social_links:
+
+# 图标
+icon: /favicon.ico
+
+# 评论代码
+comment: |
+  <em>请转到
+  <a href="//github.com/problem233/blog/issues" target="_blank">issue</a>
+  页进行评论。</em>
+
+# 版权
+copyright: >
+  © 2018 Problem233,
+  <a href="//creativecommons.org/licenses/by-sa/4.0/"
+  target="_blank">CC BY-SA 4.0</a>

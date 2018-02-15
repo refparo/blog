@@ -25,7 +25,7 @@ toc: true
 
 注：[这是某 Frank 同学的解](https://frankfoot.github.io/Project-Euler/docs/9.html)。
 
-<s>我有特别的格式化技巧~</s>
+~~我有特别的格式化技巧~~~
 
 ```cpp
     #include <iostream>
