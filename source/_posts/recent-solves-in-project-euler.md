@@ -138,8 +138,8 @@ main = do
 > 在正整数集上定义如下的迭代序列：
 >
 > $$\begin{gathered}
-> n \rightarrow n \div 2 \text{（} n \text{是偶数）} \\
-> n \rightarrow 3n + 1 \text{（} n \text{是奇数）}
+>   n \rightarrow n \div 2 \text{（} n \text{是偶数）} \\\\
+>   n \rightarrow 3n + 1 \text{（} n \text{是奇数）}
 > \end{gathered}$$
 >
 > 从 13 开始应用上述规则，我们可以生成如下的序列：
@@ -182,9 +182,9 @@ main = print $ fst $ maximumBy (comparing snd) $ assocs collatzArr
 > 不是所有的数都能像这样迅速地变成回文数。例如，
 >
 > $$\begin{gathered}
-> 349 + 943 = 1292 \\
-> 1292 + 2921 = 4213 \\
-> 4213 + 3124 = 7337
+>   349 + 943 = 1292 \\\\
+>   1292 + 2921 = 4213 \\\\
+>   4213 + 3124 = 7337
 > \end{gathered}$$
 >
 > 也就是说，349 需要迭代三次才能变成回文数。

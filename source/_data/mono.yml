@@ -13,6 +13,9 @@ social_links:
 # 图标
 icon: /favicon.ico
 
+# KaTeX 版本
+katex: 0.9.0-beta1
+
 # 评论代码
 comment: |
   <em>请转到

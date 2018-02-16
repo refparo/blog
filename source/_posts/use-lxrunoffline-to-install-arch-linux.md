@@ -1,6 +1,6 @@
 ---
 title: 用 LxRunOffline 安装 Arch Linux
-date: 2018-02-14
+date: 2018-02-15
 tags:
   - 编程
 toc: true
@@ -12,14 +12,15 @@ toc: true
 
 ## 准备工作
 
-0. 你需要一个 64 位的 Windows 10 专业版或企业版的最新 Insder 预览版（为了正常使用 WSL）；
-1. 启用*适用于 Linux 的 Windows 子系统*（不开这个还想用 WSL？）；
-2. 下载 [LxRunOffline](https://github.com/DDoSolitary/LxRunOffline)，解压到任意位置（推荐开发版本）；
-3. 在 [清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/) 下载 `archlinux-bootstrap-<日期>-x86_64.tar.gz`。
+0. 本文假设你已经有一些 Arch Linux 使用经验；
+1. 你需要一个 64 位的 Windows 10 的最新 Insder 预览版；
+2. 启用*适用于 Linux 的 Windows 子系统*（不开这个还想用 WSL？）；
+3. 下载 [LxRunOffline](https://github.com/DDoSolitary/LxRunOffline)，解压到任意位置（推荐开发版本）；
+4. 在 [清华大学镜像站](https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/) 下载 `archlinux-bootstrap-<日期>-x86_64.tar.gz`。
 
 ## 安装 rootfs
 
-在 LxRunOffline 目录下打开 CMD 或 PowerShell（我用 CMD），输入
+在 LxRunOffline 目录下打开 CMD 或 PowerShell，输入
 
 ```shell
 > .\LxRunOffline.exe install -n <用于向 Windows 注册的系统名> -f <到 rootfs 文件的路径> -d <安装到的目录> -r root.x86_64
@@ -35,7 +36,13 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 
 ## 安装系统
 
-首先要用 Windows 资源管理器找到 Arch 的安装目录，编辑 `安装目录\rootfs\etc\pacman.d\mirrorlist`，选择需要的服务器，取消注释。（因为这时候 Arch 内没有安装任何编辑器。）此时建议打开任务管理器检查是否有未关闭的 WSL 进程。把 WSL 进程全部停止，然后输入 `wsl` 打开 Bash（此时应该是以 root 用户登陆的），开始安装 Arch：
+首先要用 Windows 资源管理器找到 Arch 的安装目录，编辑 `安装目录\rootfs\etc\pacman.d\mirrorlist`，选择需要的服务器，取消注释。（因为这时候 Arch 内没有安装任何编辑器。）此时建议打开任务管理器检查是否有未关闭的 WSL 进程。把 WSL 进程全部停止，然后输入 `wsl` 打开 Bash（此时应该是以 root 用户登陆的），开始安装 Arch。首先修改刚刚用外部编辑器修改过的文件的权限，防止以后出现问题：
+
+```shell
+# chmod u=rw,g=r,o=r /etc/pacman.d/mirrorlist
+```
+
+然后安装基础软件：
 
 ```shell
 # pacman-key --init
@@ -43,7 +50,15 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 # pacman -Syyu base base-devel
 ```
 
-设置用户：
+执行第三个命令时，Pacman 会询问需要安装哪些包，此时应选择不安装 `base` 组内的 `linux` 包和 `base-devel` 组内的 `fakeroot` 包。前者是因为 WSL 中 Linux 内核由 Windows 提供，所以不需要安装；后者的原因见[此](https://github.com/Microsoft/BashOnWindows/issues/2465)。
+
+然后设置语言和时间：使用 vi 或 nano 编辑 `/etc/locale.gen`，取消注释需要使用的语言（一般是 `en_US.UTF-8 UTF-8` 和 `zh_CN.UTF-8 UTF-8`），输入 `locale-gen` 生成语言文件。输入 `ln -sf /usr/share/zoneinfo/<区域>/<子区域> /etc/localtime` 来设置时区，如我的是：
+
+```shell
+# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
+接下来设置用户：
 
 ```shell
 # useradd -m -G wheel -s /bin/bash <用户名>
@@ -51,7 +66,7 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 # passwd <用户名>
 ```
 
-输入 `visudo`，按自己的喜好设置 sudo 权限。按 [这里](https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/) 的说明添加 `archlinuxcn` 软件源，安装 `fakeroot-tcp` 包。此时 Pacman 会提示 `fakeroot-tcp` 与 `fakeroot` 冲突，选择卸载 `fakeroot`。需要这个软件包的原因见 [此](https://github.com/Microsoft/BashOnWindows/issues/2465)。
+输入 `visudo`，按需要设置 sudo 权限。按 [这里](https://www.archlinuxcn.org/archlinux-cn-repo-and-mirror/) 的说明添加 `archlinuxcn` 软件源，安装 `fakeroot-tcp` 包。
 
 接下来输入 `id -u <用户名>` 查看 UID，然后退出 Bash，输入
 
@@ -63,10 +78,8 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 
 ![Enjoy~](finish.png)
 
-到这里为止，Arch Linux 就安装完成了。（撒花🎉~）此时系统内还有一些无用的软件包，强迫症可以输入以下命令卸载这些无用的包：
+到这里为止，Arch Linux 就安装完成了。（撒花🎉~）此时系统内还有一些无用的用于安装系统的软件，强迫症可以输入以下命令卸载它们：
 
 ```shell
-$ sudo pacman -R arch-install-scripts linux-firmware mkinitcpio mkinitcpio-busybox linux
+$ sudo pacman -R arch-install-scripts
 ```
-
-虽然除了 `arch-install-scripts` 以外其他的看起来都是重要的包，但是在 WSL 上这些都没有用，因为 Linux 内核由 Windows 提供。当然，你也可以在刚才安装时就不安装以上这些包（忘记讲了，这里补一下）。
