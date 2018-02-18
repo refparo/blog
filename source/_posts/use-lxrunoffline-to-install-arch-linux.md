@@ -2,8 +2,8 @@
 title: 用 LxRunOffline 安装 Arch Linux
 date: 2018-02-15
 tags:
-  - 编程
-toc: true
+  - 笔记
+  - 系统管理
 ---
 
 前段时间重装系统之后我就一直在 WSL 内开发。Ubuntu 因为我不喜欢所以直接放弃（？？？），所以就一直在用 openSUSE。然而现在越用越感觉 zypper 的下载源坑爹……于是在 Github 上一阵搜索之后，我终于找到了这个神器：[LxRunOffline](https://github.com/DDoSolitary/LxRunOffline)。于是我毅然卸载了 openSUSE，开始尝试安装 Arch Linux……

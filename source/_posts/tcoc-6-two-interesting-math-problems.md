@@ -2,7 +2,7 @@
 title: TCOC006 两个因缺斯汀的数学题
 date: 2017-05-06
 tags:
-  - 编程
+  - 开发
   - the Collision of Code
 toc: true
 ---

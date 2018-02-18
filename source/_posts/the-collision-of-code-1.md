@@ -2,7 +2,7 @@
 title: "the Collision of Code: 代码碰撞——在博客水更多文章的尝试[雾]"
 date: 2017-03-18
 tags:
-  - 编程
+  - 开发
   - the Collision of Code
 toc: true
 ---

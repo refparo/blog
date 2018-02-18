@@ -2,7 +2,7 @@
 title: TCOC007 更难的数学题
 date: 2017-05-14
 tags:
-  - 编程
+  - 开发
   - the Collision of Code
 toc: true
 ---

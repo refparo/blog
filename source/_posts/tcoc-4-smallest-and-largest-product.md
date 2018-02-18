@@ -2,7 +2,7 @@
 title: TCOC004 最小乘积与最大乘积
 date: 2017-04-15
 tags:
-  - 编程
+  - 开发
   - the Collision of Code
 toc: true
 ---

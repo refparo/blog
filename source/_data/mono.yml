@@ -1,28 +1,35 @@
-# 边栏菜单
+# Sidebar menu
 menu:
   主页: /
   标签: /tags/
   关于: /about/
 
-# 头像
+# Avatar
+# This must be exist.
 avatar: /images/avatar.jpg
 
-# 社交链接
 social_links:
+  github: //github.com/problem233
+  twitter: //twitter.com/problem_233
+  weibo: //weibo.com/228521472
+  telegram: //t.me/problem233
+  steam-square: //steamcommunity.com/profiles/76561198285568182/
 
-# 图标
 icon: /favicon.ico
 
-# KaTeX 版本
+# KaTeX version
+# Leave it blank if you don't need KaTeX
 katex: 0.9.0-beta1
 
-# 评论代码
+# HTML code of comment area
+# `MONOPAGEID` will be replaced to the ID of the D
 comment: |
   <em>请转到
   <a href="//github.com/problem233/blog/issues" target="_blank">issue</a>
   页进行评论。</em>
 
-# 版权
+# HTML code of the copyright info
+# Theme will use an auto-generated value if you leave it empty
 copyright: >
   © 2018 Problem233,
   <a href="//creativecommons.org/licenses/by-sa/4.0/"

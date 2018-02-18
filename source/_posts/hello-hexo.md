@@ -1,5 +1,7 @@
 ---
 title: Hello, Hexo
+tags:
+  - 博客
 date: 2016-07-12
 ---
 
