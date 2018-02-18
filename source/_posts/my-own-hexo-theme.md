@@ -72,7 +72,7 @@ date: 2018-02-18
 
 ## 浏览器支持
 
-Emmmmmm……其实我写这个主题的时候是特意多用新特性的，因此浏览器都需要比较新。考虑到这个主题的受众，这是可以接受的。
+Emmmmmm……其实我写这个主题的时候是故意多用新特性的，因此浏览器都需要比较新。考虑到这个主题的受众，这是可以接受的。
 
 - 支持的浏览器：Edge 16+、Firefox ESR+、Chrome 49+、Safari 10+、Opera 36+。
 - 完全不支持 IE。
@@ -136,6 +136,6 @@ layout: tags
 
 ### 没有 XXX 功能吗？
 
-可能是因为我认为不需要（如：搜索），那么如果你真的需要就请 [fork](https://github.com/problem233/hexo-theme-mono) 后自行解决；也有可能是我没想到，那么请 [提交 issue](https://github.com/problem233/hexo-theme-mono/issues)。
+可能是因为我认为不需要（如：搜索、标签、归档），那么如果你真的需要就请 [fork](https://github.com/problem233/hexo-theme-mono) 后自行解决；也有可能是我没想到，那么请 [提交 issue](https://github.com/problem233/hexo-theme-mono/issues)。
 
 ### 有待添加……
