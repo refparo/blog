@@ -1,5 +1,5 @@
 @import url("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css");
-@import url("/lib/fira-code/fira_code.css");
+@import url("//cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css");
 
 :root {
   --mono-font-family: 'Fira Code', 'PingFang SC',
