@@ -17,9 +17,8 @@ social_links:
 
 icon: /favicon.ico
 
-# KaTeX version
-# Leave it blank if you don't need KaTeX
-katex: 0.9.0-beta1
+# Use KaTeX
+katex: true
 
 # HTML code of comment area
 # `MONOPAGEID` will be replaced to the ID of the D
