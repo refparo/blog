@@ -2,7 +2,7 @@
 title: Idris 中类型安全的 printf
 date: 2018-04-05
 tags:
-  - 开发
+  - 编程
   - Idris
 ---
 

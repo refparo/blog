@@ -2,7 +2,7 @@
 title: Project Euler 欧拉计划 62 Cubic permutations 解题记录
 date: 2017-06-13
 tags:
-  - 开发
+  - 编程
   - Project Euler
   - Haskell
 ---

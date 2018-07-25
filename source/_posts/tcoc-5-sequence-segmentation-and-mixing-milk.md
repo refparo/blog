@@ -2,7 +2,7 @@
 title: TCOC005 数列分段与混合牛奶
 date: 2017-04-29
 tags:
-  - 开发
+  - 编程
   - the Collision of Code
 toc: true
 ---

@@ -2,7 +2,7 @@
 title: 这段时间的欧拉计划解题记录
 date: 2017-07-13
 tags:
-  - 开发
+  - 编程
   - Project Euler
   - Haskell
 toc: true

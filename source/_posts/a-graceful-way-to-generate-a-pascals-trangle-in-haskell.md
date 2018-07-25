@@ -2,7 +2,7 @@
 title: TCOC006 补充：用 Haskell 优雅地生成杨辉三角
 date: 2017-05-12
 tags:
-  - 开发
+  - 编程
   - the Collision of Code
 ---
 

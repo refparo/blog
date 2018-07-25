@@ -2,7 +2,7 @@
 title: TCOC002 简单的数学题
 date: 2017-03-25
 tags:
-  - 开发
+  - 编程
   - the Collision of Code
 toc: true
 ---
