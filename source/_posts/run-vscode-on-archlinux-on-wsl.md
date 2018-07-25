@@ -19,7 +19,7 @@ tags:
 
 ## 安装字体
 
-安装你喜欢的 [字体](https://wiki.archlinux.org/index.php/Fonts_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))。我的选择是 `noto-fonts noto-fonts-cjk noto-fonts-emoji otf-fira-code`。
+安装你喜欢的 [字体](https://wiki.archlinux.org/index.php/Fonts_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29)。我的选择是 `noto-fonts noto-fonts-cjk noto-fonts-emoji otf-fira-code`。
 
 安装字体后需要设置默认字体。编辑 `~/.config/fontconfig/fonts.conf`：
 
