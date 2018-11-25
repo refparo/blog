@@ -2,6 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css");
 
 :root {
-  --mono-font-family: 'Fira Code', 'PingFang SC',
-    'WenQuanYi Micro Hei', 'Microsoft Yahei UI', monospace !important;
+  --mono-font-family:
+    'Fira Code', 'Noto Sans CJK SC', 'Source Han Sans',
+    'PingFang SC', 'Microsoft Yahei', monospace !important;
 }
