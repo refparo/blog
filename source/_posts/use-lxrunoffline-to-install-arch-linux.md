@@ -38,7 +38,7 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 
 ## 安装系统
 
-首先删除 `/etc/resolv.conf`，退出 WSL 再重新进入使 Windows 自动生成这个文件。然后 `cat /etc/pacman.d/mirrorlist` 选择一个镜像服务器，`echo 'Server = <你选择的镜像服务器> >> /etc/pacman.d/mirrorlist'。（因为这时 Arch Linux 内还没有安装任何编辑器。）
+首先删除 `/etc/resolv.conf`，退出 WSL 再重新进入使 Windows 自动生成这个文件。然后 `cat /etc/pacman.d/mirrorlist` 选择一个镜像服务器，`echo 'Server = <你选择的镜像服务器> >> /etc/pacman.d/mirrorlist'`。（因为这时 Arch Linux 内还没有安装任何编辑器。）
 
 然后安装基础软件：
 
