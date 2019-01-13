@@ -10,11 +10,10 @@ menu:
 avatar: /images/avatar.png
 
 social_links:
-  github: //github.com/problem233
-  twitter: //twitter.com/problem_233
-  weibo: //weibo.com/228521472
-  telegram: //t.me/problem233
-  steam-square: //steamcommunity.com/profiles/76561198285568182/
+  github: https://github.com/problem233
+  zhihu: https://www.zhihu.com/people/problem233
+  twitter: https://twitter.com/problem_233
+  steam-square: https://steamcommunity.com/profiles/76561198285568182/
 
 icon: /favicon.ico
 

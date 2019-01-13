@@ -22,13 +22,13 @@ title: 关于
 
 ## 与我联系
 
-- Github: [problem233](https://github.com/problem233)
-- Telegram：[@problem233](https://t.me/problem233)
-- QQ：[2285214727](http://wpa.qq.com/msgrd?v=3&amp;uin=2285214727&amp;site=qq&amp;menu=yes)
 - E-mail：[problem233@outlook.com](mailto:Problem233@outlook.com)
+- QQ：[2285214727](http://wpa.qq.com/msgrd?v=3&amp;uin=2285214727&amp;site=qq&amp;menu=yes)
+- Telegram：[@problem233](https://t.me/problem233)
+- Github: [problem233](https://github.com/problem233)
+- 知乎：[Problem233](https://www.zhihu.com/people/problem233)
 - Steam：[problem_233](http://steamcommunity.com/profiles/76561198285568182/)
 - SoundCloud: [problem233](https://soundcloud.com/problem233)
-- 知乎：[Problem233](https://www.zhihu.com/people/problem233)
+- osu!：[Problem233](https://osu.ppy.sh/users/5931775)
 - Twitter：[@problem_233](https://twitter.com/problem_233)
 - 新浪微博：[@Problem233](http://www.weibo.com/qq2285214727)
-- osu!：[Problem233](https://osu.ppy.sh/users/5931775)
