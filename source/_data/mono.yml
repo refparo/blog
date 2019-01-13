@@ -6,7 +6,7 @@ menu:
 
 # Avatar
 # This must be exist.
-avatar: /images/avatar.jpg
+avatar: /images/avatar.png
 
 social_links:
   github: //github.com/problem233
@@ -21,7 +21,7 @@ icon: /favicon.ico
 katex: true
 
 # HTML code of comment area
-# `MONOPAGEID` will be replaced to the ID of the D
+# `MONOPAGEID` will be replaced to the ID of the page
 comment: |
   <em>请转到
   <a href="//github.com/problem233/blog/issues" target="_blank">issue</a>
