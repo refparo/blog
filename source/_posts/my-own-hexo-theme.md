@@ -6,6 +6,8 @@ tags:
 date: 2018-02-18
 ---
 
+*最后编辑：2019-01-13*
+
 经过近半个月的~~低效的~~开发，我的自制博客主题终于完成了！
 
 <!-- more -->
@@ -111,11 +113,11 @@ $ git submodule update --remote
 - `avatar`：设置头像。
 - `social_links`：设置左下角（移动端在头像旁边）的外链。格式：
   ```yaml
-  github: https://github.com/your_github/
-  weibo: https://weibo.com/your_weibo
-  steam: https://steamcommunity.com/profiles/your_steam/
+  "fab fa-github": https://github.com/your_github/
+  "fab fa-weibo": https://weibo.com/your_weibo
+  "fab fa-steam": https://steamcommunity.com/profiles/your_steam/
   ```
-  这里的图标用的是 [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/icons/)，所以只能用那里有的图标。
+  这里的图标用的是 [Font Awesome](https://fontawesome.com/)，所以只能用那里有的图标。
 - `icon`：设置网页图标。
 - `katex`：设置 $\KaTeX$ 的版本。设置这个选项是为了便于升级。
 - `comment`：设置下方的评论区。请填入 HTML 代码，代码内的 `MONOPAGEID` 会被主题自动替换成页面 ID。
@@ -150,7 +152,7 @@ $ git submodule update --remote
 }
 ```
 
-这里的 `--color-<0-4>` 分别表示页面中的五种色彩。一般情况下只需要更改亮度值就可以达到需求，但你想改得五彩斑斓也没人反对。
+这里的 `--color-<0-4>` 分别表示页面中的五种色彩。一般情况下只需要更改亮度值就可以达到需求，但也没规定不能改得五彩斑斓。
 
 除此之外，`custom.css` 内还可以自定义页面中的任何样式。比如自定义代码高亮（主题默认没有加入代码高亮的 `css`）、自定义字体等。更多用法就等待你自己去发现了。不过，一般情况下是不需要改太多的，不然你就该自己做个主题了。
 
