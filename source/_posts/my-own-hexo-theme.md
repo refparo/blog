@@ -113,9 +113,12 @@ $ git submodule update --remote
 - `avatar`：设置头像。
 - `social_links`：设置左下角（移动端在头像旁边）的外链。格式：
   ```yaml
-  "fab fa-github": https://github.com/your_github/
-  "fab fa-weibo": https://weibo.com/your_weibo
-  "fab fa-steam": https://steamcommunity.com/profiles/your_steam/
+  # FontAwesome v4 图标
+  github: https://github.com/your_github/
+  # FontAwesome v5 中的 Brands 类图标
+  zhihu: { isV5: https://www.zhihu.com/people/your_zhihu }
+  weibo: https://weibo.com/your_weibo
+  steam: https://steamcommunity.com/profiles/your_steam/
   ```
   这里的图标用的是 [Font Awesome](https://fontawesome.com/)，所以只能用那里有的图标。
 - `icon`：设置网页图标。
