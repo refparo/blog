@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+      <div id="outer">
+        <div id="inner">
+          {{- partial "header.html" . -}}
+          <main>
+          {{- block "main" . }}{{- end }}
+          </main>
+          <footer>{{ .Site.Params.copyright | safeHTML }}</footer>
+        </div>
+      </div>
+    </body>
+</html>

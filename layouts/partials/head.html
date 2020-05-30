@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ .Site.Title }}</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <link rel="stylesheet" href="/css/highlight.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(
+            document.querySelector('main'),
+            {
+              delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$' }
+              ],
+              macros: {
+                '\\n': '\\\\'
+              }
+            }
+          )"></script>
+</head>

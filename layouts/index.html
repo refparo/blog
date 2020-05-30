@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <div id="index">
+    <div id="sections">
+      {{ range .Sections }}
+        <a class="section" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </div>
+    <div id="pages">
+      {{ range .RegularPages }}
+        <a class="section" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

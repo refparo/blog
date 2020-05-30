@@ -1,0 +1,35 @@
+title: problem233 的宇宙
+defaultContentLanguage: zh-cn
+taxonomies:
+  tag: tags
+params:
+  comment:
+    <em>请转到
+    <a href="//github.com/problem233/blog/issues" target="_blank">issue</a>
+    页评论。</em>
+  copyright:
+    © 2020 Problem233
+    <br>
+    Licensed under
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+       target="_blank">CC BY-SA 4.0</a>
+    if not otherwise specified
+    <br>
+    Built with
+    <a href="https://gohugo.io">Hugo</a>
+
+baseURL: http://problem233.github.io/
+#enableGitInfo: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+    noClasses: false
+    style: solorized-dark
+    tabWidth: 2
+  tableOfContents:
+    ordered: true
+    startLevel: 2
+    endLevel: 3

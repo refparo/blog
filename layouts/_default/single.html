@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{- partial "post-meta.html" . -}}
+  {{ if .Params.toc }}
+    <h2 class="toc">目录</h2>
+    <div class="toc">{{ .TableOfContents }}</div>
+  {{ end }}
+  <article>
+    {{ replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "content-filter.html" }}
+  </article>
+  {{ .Site.Params.comment | safeHTML }}
+{{ end }}

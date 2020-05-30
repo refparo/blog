@@ -1,0 +1,6 @@
+{{ define "main" }}
+  {{ range .Paginator.Pages }}
+    {{- partial "post-item.html" . -}}
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

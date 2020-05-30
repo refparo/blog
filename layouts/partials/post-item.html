@@ -1,0 +1,10 @@
+<article>
+  <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  {{- partial "post-meta.html" . -}}
+  <div>{{ replaceRE "<!-- more -->[^\x00]*" "" .Content | partial "content-filter.html" }}</div>
+  {{ range (findRE "<!-- more -->" .Content 1) }}
+    <a href="{{ $.Permalink }}#more">继续阅读»</a>
+  {{ else }}
+    <a href="{{ $.Permalink }}#comment">前往评论»</a>
+  {{ end }}
+</article>

@@ -1,0 +1,2 @@
+{{ . | replaceRE "<a (href=\"(http|https):)" "<a target=\"_blank\" $1" | safeHTML }}
+ 
