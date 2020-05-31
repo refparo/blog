@@ -1,7 +1,4 @@
 <header>
   {{- partial "breadcrumb.html" . -}}
   <h1>{{ .Title }}</h1>
-  <nav>{{- range .Site.Params.nav -}}
-    <a href="{{ .link }}">{{ .name }}</a>
-  {{- end -}}</nav>
 </header>

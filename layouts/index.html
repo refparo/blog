@@ -2,12 +2,12 @@
   <div id="index">
     <div id="sections">
       {{ range .Sections }}
-        <a class="section" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="section" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ end }}
     </div>
     <div id="pages">
       {{ range .RegularPages }}
-        <a class="section" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="section" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ end }}
     </div>
   </div>

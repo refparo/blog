@@ -1,4 +1,4 @@
 {{- if not .IsHome -}}
   {{- partial "breadcrumb-inner.html" .Parent -}}
-  <a href="{{ .Parent.Permalink }}">{{ .Parent.Title }}/</a>
+  <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}/</a>
 {{- end -}}

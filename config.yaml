@@ -18,7 +18,7 @@ params:
     Built with
     <a href="https://gohugo.io">Hugo</a>
 
-baseURL: http://problem233.github.io/
+baseURL: https://problem233.github.io/
 #enableGitInfo: true
 markup:
   goldmark:
