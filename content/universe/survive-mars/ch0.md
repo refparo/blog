@@ -1,7 +1,9 @@
 ---
 title: 引子：来自地球的最后一封信
-draft: true
+date: 2020-05-31
 ---
+
+<div id="ch0">
 
 <p style="text-indent: 0;">火星前哨的勇士们：
 
@@ -22,11 +24,13 @@ draft: true
 此致，\
 敬礼！
 
-<p style="text-indent: 0; text-align: right; float: right;">NASA 全体成员<br>
+<p style="text-indent: 0; text-align: right;">NASA 全体成员<br>
 2053 年 4 月 13 日
 
+</div>
+
 <style>
-p {
+#ch0 p {
   text-indent: 2em;
 }
 </style>

@@ -1,6 +1,25 @@
 {{ define "main" }}
-  {{ range .Paginator.Pages }}
-    {{- partial "post-item.html" . -}}
-  {{ end }}
-  {{ template "_internal/pagination.html" . }}
+  {{- if eq .Content "" -}}
+    {{- $paginator := .Paginate .Pages -}}
+    {{- range $paginator.Pages -}}
+      {{- partial "post-item.html" . -}}
+    {{- end -}}
+    {{- template "_internal/pagination.html" . -}}
+  {{- else -}}
+    {{- partial "post-meta.html" . -}}
+    <div id="list-page">
+      <article>
+        {{ replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "content-filter.html" }}
+      </article>
+      <h2 class="toc">目录</h2>
+      <div class="toc">
+        <ol>
+          {{- range .Pages -}}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{- end -}}
+        </ol>
+      </div>
+    </div>
+    {{- .Site.Params.comment | safeHTML -}}
+  {{- end -}}
 {{ end }}

@@ -3,7 +3,7 @@
     {{- with .Format "2006-01-02" }}<time datetime="{{ . }}">{{ . }} 发布</time>{{ end -}}
   {{- end -}}
   {{- if not (eq .PublishDate .Lastmod) -}}
-    {{ with .Lastmod.Format "2006-01-02" }}<time datetime="{{ . }}">{{ . }} 编辑</time>{{ end }}
+    {{ with .Lastmod.Format "2006-01-02" }}<time datetime="{{ . }}">{{ . }} 更新</time>{{ end }}
   {{- end -}}
   {{- with .Params.tags -}}
     <span class="tags">
@@ -11,5 +11,8 @@
         <a href="/tags/{{ . | urlize }}/" class="tag">#{{ . }}</a>
       {{- end -}}
     </span>
+  {{- end -}}
+  {{- with .Params.info -}}
+    <span>{{ . }}</span>
   {{- end -}}
 </div>

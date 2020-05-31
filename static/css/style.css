@@ -308,6 +308,31 @@ footer {
 }
 
 /* }}} */
+/* List Page with Content {{{ */
+
+#list-page {
+  margin-bottom: 5vw;
+}
+
+#list-page article {
+  margin: 0;
+}
+
+#list-page h2.toc {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: revert;
+}
+
+#list-page .toc {
+  font-size: unset;
+}
+
+#list-page .toc ol {
+  list-style-type: "• ";
+}
+
+/* }}} */
 /* Paginator {{{ */
 
 ul.pagination {
