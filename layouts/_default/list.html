@@ -14,7 +14,7 @@
       <h2 class="toc">目录</h2>
       <div class="toc">
         <ol>
-          {{- range .Pages -}}
+          {{- range .Pages.Reverse -}}
             <li>
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
               {{- partial "post-meta.html" . -}}
