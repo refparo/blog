@@ -332,6 +332,11 @@ footer {
   list-style-type: "• ";
 }
 
+#list-page .toc li .meta {
+  display: inline;
+  margin-left: 2pt;
+}
+
 /* }}} */
 /* Paginator {{{ */
 

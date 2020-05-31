@@ -15,7 +15,10 @@
       <div class="toc">
         <ol>
           {{- range .Pages -}}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{- partial "post-meta.html" . -}}
+            </li>
           {{- end -}}
         </ol>
       </div>
