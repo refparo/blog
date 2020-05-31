@@ -1,0 +1,23 @@
+{{- if .Parent.Params.chapters -}}
+  <p class="chapters-navigator">
+    {{- with .Prev -}}
+      {{- if eq .Parent $.Parent -}}
+        <a href="{{ .RelPermalink }}">«上一章</a>
+      {{- else -}}
+        <a class="disabled">«上一章</a>
+      {{- end -}}
+    {{- else -}}
+      <a class="disabled">«上一章</a>
+    {{- end }}
+    <a href="{{ .Parent.RelPermalink }}">返回目录</a>
+    {{ with .Next -}}
+      {{- if eq .Parent $.Parent -}}
+        <a href="{{ .RelPermalink }}">下一章»</a>
+      {{- else -}}
+        <a class="disabled">下一章»</a>
+      {{- end -}}
+    {{- else -}}
+      <a class="disabled">下一章»</a>
+    {{- end -}}
+  </p>
+{{- end -}}

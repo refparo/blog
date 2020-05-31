@@ -5,7 +5,9 @@
     <div class="toc">{{ .TableOfContents }}</div>
   {{ end }}
   <article>
+    {{ partial "chapters-navigator.html" . }}
     {{ replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "content-filter.html" }}
+    {{ partial "chapters-navigator.html" . }}
   </article>
   {{ .Site.Params.comment | safeHTML }}
 {{ end }}

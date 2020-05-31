@@ -338,7 +338,7 @@ footer {
 }
 
 /* }}} */
-/* Paginator {{{ */
+/* Paginator & Chapters Navigator {{{ */
 
 ul.pagination {
   margin: 0;
@@ -348,15 +348,15 @@ ul.pagination {
 
 ul.pagination li {
   display: inline;
-  margin-right: 2px;
 }
 
-.page-item a:not(:hover) {
+.page-item a:not(:hover), .chapters-navigator a:not(:hover) {
   text-decoration: none;
 }
 
-.page-item.disabled a:hover {
-  color: var(--color-2);
+.page-item.disabled a, .page-item.disabled a:hover,
+  .chapters-navigator a.disabled, .chapters-navigator a.disabled:hover {
+  color: var(--color-3);
 }
 
 .page-item.active a, .page-item.active a:hover {
