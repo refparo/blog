@@ -121,10 +121,10 @@ th, td {
 }
 
 hr {
-  margin: 2em 0;
-  border-width: 2px;
-  border-color: var(--color-3);
-  border-style: solid;
+  margin: 2em auto;
+  width: 38%;
+  border: none;
+  border-top: 1px solid;
 }
 
 /* }}} */
