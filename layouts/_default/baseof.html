@@ -8,7 +8,7 @@
           <main>
           {{- block "main" . }}{{- end }}
           </main>
-          <footer>{{ .Site.Params.copyright | safeHTML }}</footer>
+          <footer>{{ .Params.copyright | safeHTML }}</footer>
         </div>
       </div>
     </body>
