@@ -1,7 +1,6 @@
 ---
 title: 兰斯修理店的日常
 info: 单元剧式长篇日常，不定期更新
-lastmod: 2020-06-07
 chapters: true
 ---
 
