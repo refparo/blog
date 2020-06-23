@@ -1,0 +1,13 @@
+{
+  "search.exclude": {
+    "public": true,
+    "resources": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "yaml.schemas": {
+    "resources/dict.schema.json": "content/universe/pan-human-intermediate-language/dict.yaml"
+  }
+}
