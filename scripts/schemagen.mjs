@@ -1,3 +1,4 @@
+#!/bin/node
 import fsSync, { promises as fs } from 'fs'
 import { default as tjs } from 'typescript-json-schema'
 
