@@ -16,9 +16,9 @@ export interface Dict {
   }
   /** 例句 */
   examples?: Array<{
-    /** 例句 */
-    text: string
+    /** 解释 */
+    expl: string
     /** 翻译 */
-    trsl: string
+    text: string[]
   }>
 }

@@ -11,13 +11,13 @@ const C = [
 const QC = C
   .filter(c => ! [...'mnryw'].includes(c))
   .map(c => c + c)
-const V = [...'aaaiiiuuueo']
+const V = [...'aaaiiiuuueeoo']
 const VR = [
   ...V.flatMap(v => Array(5).fill(v + v)),
   ...['ai', 'ae', 'ie'].flatMap(v => Array(5).fill(v)),
   ...[...'aiue'].flatMap(v1 => V.map(v2 => v1 + v2)).filter(v => v != 'ei')]
 /** @type string[] */
-const S = [...Array(17).fill('CV'), 'CVQ', 'CVR', 'CVn']
+const S = [...Array(7).fill('CV'), 'CVQ', 'CVR', 'CVn']
 
 const wordgen = input => input
   .replace(/S/g, () => randSel(S))
