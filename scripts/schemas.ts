@@ -3,7 +3,9 @@ export interface Dict {
   dict?: {
     [word: string]: {
       /** 含义 */
-      defn: string
+      defn: string | string[]
+      /** 特殊译法 */
+      spcf?: { [expr: string]: string }
       /** 说明 */
       note?: string
       /** 词源 */
@@ -19,6 +21,6 @@ export interface Dict {
     /** 解释 */
     expl: string
     /** 翻译 */
-    text: string[]
+    text: string | string[]
   }>
 }
