@@ -1,12 +1,14 @@
+# word count: /(?<=^  )\w*(?=:)/
+# handbook progress: P79
 comment:
-  suni   dixu   haabe  nekko  duhho  momin  kihi   mase
+  dixu   haabe  nekko  duhho  momin  kihi   mase
   tubba  dussu  raze
-  cidi   toda   bire   dete   kangi  nage   yoti
+  cidi   toda   bire   dete   kangi  yoti
   ponka  beugoo nomu   yansa  eedun  giuzo
   tuzzu  euta   dense  mura
   retae  uume   uuhe   kehe   tanzun
   miti   ihha   reta   meri   baba   zenu   wogi
-  noddu  meri   maro   rete   kupe   kadda
+  noddu  maro   rete   kupe   kadda
 dict:
   ai:
     defn:
@@ -332,6 +334,13 @@ dict:
     tags: [逻辑运算]
   mebbon:
     defn: _k1_ 与 _k2_ 用 _k3_ 打赌 _S1_ 为真
+  meda:
+    etym: <me>-<da>
+    defn:
+      - _S*_ 中哪一个为真？
+      - _k*_ 满足 _S*(x*)_ 中的哪一个？
+      - _k1_ 属于 _k+_ 中的哪一个？
+    tags: [疑问词]
   mega:
     defn:
       - _k1_ 是一百万个满足 _S1(x)_ 的对象
@@ -350,6 +359,11 @@ dict:
     rels:
       近义词: [genture]
     tags: [度量, 物理学]
+  meri:
+    defn:
+      - _k1_ 喜欢 _k2_
+      - _k1_ 喜欢做 _S1(x)_
+    tags: [感情]
   mesuu:
     defn:
       - _k1_ 长
@@ -408,6 +422,9 @@ dict:
       - _k1_ 是零个满足 _S1(x)_ 的对象
       - _k1_ 是零
     tags: [数量]
+  nage:
+    defn: _k1_ 是冬季
+    tags: [时间]
   name:
     etym: <na>-<me>
     defn: _k*_ 是否 _S1(x*)_？是否 _S1_？
@@ -526,6 +543,9 @@ dict:
     defn: _k1_ 窄
     rels:
       反义词: [deza]
+  suni:
+    defn: _k1_ 是夏季
+    tags: [时间]
   suta:
     defn:
       - _k1_ 活着，_k1_ 是生物
@@ -610,6 +630,8 @@ examples:
     text:
       - ha ki heyo ka gime ku ani ti ripi.
       - ha ki heyo ka ripi se, gime ku ani.
+  - expl: 你喜欢夏天还是冬天？
+    text: ha ka suni ba nage bu meda bu meri so ka?
   - expl: 他们互相用与彼此的关系和对方的朋友打赌对方会帮助自己。
     text:
       - hera ri kin ta, a ge i gu ran ta, i ki mate ke,
