@@ -128,6 +128,31 @@ hr {
 }
 
 /* }}} */
+/* Anchor {{{ */
+
+.anchor {
+  position: absolute;
+  text-decoration: none;
+  transform: translateX(-100%);
+  padding-right: 5px;
+}
+
+.anchor-inner {
+  visibility: hidden;
+  color: var(--color-2);
+}
+
+.anchor:hover .anchor-inner,
+  h1:hover .anchor-inner, h2:hover .anchor-inner, h3:hover .anchor-inner,
+  h4:hover .anchor-inner, h5:hover .anchor-inner, h6:hover .anchor-inner {
+  visibility: visible;
+}
+
+.anchor-inner:hover {
+  color: var(--color-1);
+}
+
+/* }}} */
 /* Highlight {{{ */
 
 .highlight tr {
@@ -229,7 +254,11 @@ h2.toc {
 }
 
 .toc ol ol {
-  padding-left: 1rem;
+  padding-left: 2em;
+}
+
+.toc ::marker {
+  content: counters(list-item, '.') '.\A0';
 }
 
 /* }}} */

@@ -14,4 +14,4 @@ weight: 2
 ## 友情链接
 
 - [SW_Wind](https://swwind.me/)
-- [GatsbyJS](https://www.gatsbyjs.org/)
+- [Hugo](https://gohugo.io/)
