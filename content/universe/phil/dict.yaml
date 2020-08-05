@@ -1,14 +1,21 @@
-# word count: /(?<=^  )\w*(?=:)/
-# handbook progress: P79
+# word count: /(?<=^  )\w*(?=:$)/
+# handbook progress: P152
 comment:
-  dixu   haabe  nekko  duhho  momin  kihi   mase
-  tubba  dussu  raze
-  cidi   toda   bire   dete   kangi  yoti
-  ponka  beugoo nomu   yansa  eedun  giuzo
-  tuzzu  euta   dense  mura
-  retae  uume   uuhe   kehe   tanzun
-  miti   ihha   reta   meri   baba   zenu   wogi
-  noddu  maro   rete   kupe   kadda
+  dixu    haabe  nekko  duhho  momin  mase   digo
+  tubba   dussu  gape   xosa   zudai  kitu   macu
+  cidi    toda   dete   kangi  yoti   mona
+  ponka   beugoo nomu   yansa  eedun  giuzo  hooku
+  tuzzu   dense  mura   bunto  tezzun zuka
+  retae   uume   uuhe   kehe   tanzun suti   cara
+  miti    ihha   reta   meri   baba   wogi   mogo
+  noddu   maro   kupe   kadda  redi   kuso
+  iddii   itta   kara   yasu   jota   waru   honne
+  besu    gisu   suyu   zari   maza   sotu   kiho
+  heni    dabe   zuge   mako   zebbi  dago
+  yokki   nunna  zuta   juha   ripe   tunin  adan
+  hiduu   adi    dine   nuyun  retai  kati   bunre
+  sama    rato   deya   dopo   zaiwi  nunkon
+  dupe    huppu  rugu   nogo   dedo   seti
 dict:
   ai:
     defn:
@@ -46,6 +53,10 @@ dict:
       - _k1_ 是九个满足 _S1(x)_ 的对象
       - _k1_ 是九
     tags: [数量]
+  bire:
+    defn: _S1_ 开始
+    note: 起始体，强调开始，去除持续性。
+    tags: [体态]
   bipa:
     defn:
       - _k1_ 粗
@@ -92,7 +103,7 @@ dict:
     defn: 用什么方法、途径 _S1_？
     tags: [疑问词]
   de:
-    defn: （类谓词）（32 标记，交换 _S*(x*)_ 参数上谓词的 _k2_ 位与 _k3_ 位）
+    defn: （类谓词）（k32 标记，交换 _S*(x*)_ 参数上谓词的 _k2_ 位与 _k3_ 位）
     tags: [换位标记]
   dege:
     defn:
@@ -107,7 +118,7 @@ dict:
     tags: [度量]
   dere:
     etym: <de>-<re>
-    defn: （类谓词）（312 标记，把 _S*(x*)_ 参数的谓词的前三位轮换为 _k3_, _k1_, _k2_ 位）
+    defn: （类谓词）（k312 标记，把 _S*(x*)_ 参数的谓词的前三位轮换为 _k3_, _k1_, _k2_ 位）
     tags: [换位标记]
   deza:
     defn:
@@ -124,7 +135,9 @@ dict:
     defn: _k1_ 愿意、会做 _S1(x)_
     tags: [意向]
   enda:
-    defn: _k1_ 在 _k2_ 中最 _S1(x)_
+    defn:
+      - _k1_ 在 _k2_ 中最 _S1(x)_
+      - _k1_ 的 _S2(x)_ 在 _k2_ 的 _S2(x)_ 中最 _S1(x)_
     tags: [程度]
   eta:
     defn: _k1_ 是 _S1_ 发生的地点
@@ -135,6 +148,11 @@ dict:
       - _S*_ 都以一样的方式发生
     rels:
       近义词: [ani]
+  euta:
+    defn:
+      - _k1_ 是距现在 _k2_ 时间的将来
+      - 在将来 _k1_ 时间 _S1_
+    tags: [时间]
   gani:
     defn:
       - _k1_ 大
@@ -147,9 +165,8 @@ dict:
     defn: _k1_ 是 _k2_ 的大小/体积
     tags: [度量]
   gara:
-    defn: _S1_ 正在不断进行
-    rels:
-      注意区分: [ku]
+    defn: _S1_ 反复多次发生
+    note: 反复体，指事件连续反复发生的状态。
     tags: [体态]
   gaya:
     defn:
@@ -232,6 +249,11 @@ dict:
   ige:
     defn: _k1_ 中存在对象满足 _S1(x)_
     tags: [量词]
+  ise:
+    defn:
+      - _k1_ 是现在
+      - 在现在 _S1_
+    tags: [时间]
   ka:
     defn: （叹词）表示疑问
     tags: [叹词]
@@ -279,6 +301,15 @@ dict:
   ki:
     defn: _k1_ 是上文提到的对象
     tags: [语境代词]
+  kihi:
+    defn:
+      - _k1_ 快
+      - _k1_ 的速度/速率为 _k2_
+      - _S1_ 快
+      - _S1_ 的速度/速率为 _k1_
+    rels:
+      反义词: [zenu]
+    tags: [度量]
   kimi:
     defn: _k1_ 是（与短语所在位置语境下的自己相对的）对方
     tags: [语境代词]
@@ -299,8 +330,7 @@ dict:
     tags: [程度]
   ku:
     defn: _S1_ 处于未完成的状态、正在进行
-    rels:
-      注意区分: [gara]
+    note: 持续体，指事件持续的状态。
     tags: [体态]
   kuma:
     defn:
@@ -392,6 +422,10 @@ dict:
     rels:
       反义词: [rin]
     tags: [性别]
+  mu:
+    defn: _S1_ 结束
+    note: 终结体，强调或添加终结，去除持续性。
+    tags: [体态]
   mun:
     defn:
       - _k1_ 是四个满足 _S1(x)_ 的对象
@@ -423,7 +457,11 @@ dict:
       - _k1_ 是零
     tags: [数量]
   nage:
-    defn: _k1_ 是冬季
+    defn:
+      - _k1_ 是冬季
+      - 在冬季 _S1_
+    rels:
+      相对词: [suni]
     tags: [时间]
   name:
     etym: <na>-<me>
@@ -450,8 +488,8 @@ dict:
     tags: [植物]
   niru:
     defn:
-      - _S1_ 是因为 _S2_
-      - _k*_ _S1(x*)_ 是因为 _S2(x*)_
+      - _S1_ 是因为 _S2_，_S1_ 是为了 _S2_
+      - _k*_ _S1(x*)_ 是因为 _S2(x*)_，_k*_ _S1(x*)_ 是为了 _S2(x*)_，
     rels:
       相对词: [rinu]
   no:
@@ -470,11 +508,16 @@ dict:
     defn: （类谓词）_k1_ 满足包含谓词 _k+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
   rawa:
     defn: _k1_ 是除 _k2_ 以外其他满足 _S1(x)_ 的对象，_k1_ 满足 _S1(x)_ 但不是 _k2_
+  raze:
+    defn: _k1_ 跑，_k1_ 跑步
+    tags: [运动, 交通]
   re:
     defn: （类谓词）（被动标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k2_ 位）
     tags: [换位标记]
   regu:
-    defn: _k1_ 比 _k2_ 更 _S1_
+    defn:
+      - _k1_ 比 _k2_ 更 _S1(x)_
+      - _k1_ 的 _S2(x)_ 比 _k2_ 的 _S2(x)_ 更 _S1(x)_
     tags: [程度]
   reta:
     defn: _k1_ 把 _k2_ 给 _k3_
@@ -483,6 +526,10 @@ dict:
     etym: <reta>-<kezu>
     defn: _k1_ 把 _k2_ 托付给 _k3_
     tags: [让渡, 使役]
+  rete:
+    defn: _S1_ 发生一次
+    note: 单变体，强调动作一次性发生，去除持续性。
+    tags: [体态]
   ria:
     defn:
       - _k1_ 是三个满足 _S1(x)_ 的对象
@@ -495,8 +542,8 @@ dict:
     tags: [性别]
   rinu:
     defn:
-      - 因为 _S1_，所以 _S2_
-      - _k*_ 因为 _S1(x*)_ 才 _S2(x*)_
+      - 因为 _S1_ 所以 _S2_，为了 _S1_ 所以 _S2_
+      - _k*_ 因为 _S1(x*)_ 才 _S2(x*)_，_k*_ 为了 _S1(x*)_ 才 _S2(x*)_
     rels:
       相对词: [niru]
   ripi:
@@ -514,7 +561,7 @@ dict:
       - _k1_ 是五
     tags: [数量]
   se:
-    defn: （类谓词）（31 标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k3_ 位）
+    defn: （类谓词）（k31 标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k3_ 位）
     tags: [换位标记]
   sehu:
     defn: _k1_ 轻
@@ -537,14 +584,18 @@ dict:
     tags: [约数]
   sere:
     etym: <se>-<re>
-    defn: （类谓词）（231 标记，把 _S1_ 参数的谓词的前三位轮换为 _k2_, _k3_, _k1_ 位）
+    defn: （类谓词）（k231 标记，把 _S1_ 参数的谓词的前三位轮换为 _k2_, _k3_, _k1_ 位）
     tags: [换位标记]
   sese:
     defn: _k1_ 窄
     rels:
       反义词: [deza]
   suni:
-    defn: _k1_ 是夏季
+    defn:
+      - _k1_ 是夏季
+      - 在夏季 _S1_
+    rels:
+      相对词: [nage]
     tags: [时间]
   suta:
     defn:
@@ -553,9 +604,8 @@ dict:
     etym: <suta>-<xi>
     defn: _k1_ 是 _k2_ 的人生
   ta:
-    defn: _S1_ 完成了、结束了、终止了
-    rels:
-      注意区分: [zuta]
+    defn: _S1_ 过了
+    note: 完成体，指事件已完成的状态。
     tags: [体态]
   taci:
     defn:
@@ -580,6 +630,10 @@ dict:
   uni:
     defn: _k1_ 是 _k2_（社会意义上的）父/母亲
     tags: [社会关系]
+  wa:
+    defn: 经常、在 _S1_
+    note: 惯常体，指事件在一段时间内时常发生的状态。
+    tags: [体态]
   xi:
     defn: _k1_ 是 _S1_ 这件事
   xiri:
@@ -605,22 +659,27 @@ dict:
     tags: [数量]
   yupi:
     defn: _k1_ 抓 _k2_，_k1_ 捕捉 _k2_
+  yuri:
+    defn:
+      - _k1_ 是距现在 _k2_ 时间的过去
+      - 在过去 _k1_ 时间 _S1_
+    tags: [时间]
   ze:
     defn:
       - _S*_ 中有一部分为真
       - _k*_ 满足 _S*(x*)_ 中的一部分
       - _k1_ 属于 _k+_ 的并集
     tags: [逻辑运算]
+  zenu:
+    defn: _S1_ 慢
+    rels:
+      反义词: [kihi]
+    tags: [度量]
   zu:
     defn:
       - _k1_ 尊敬地 _S1(x)_
       - _k1_ 是尊敬的 _k2_
     tags: [敬语]
-  zuta:
-    defn: _S1_ 已经完成，_S1_ 在过去完成
-    rels:
-      注意区分: [ta]
-    tags: [体态]
 examples:
   - expl: 啊我死了。
     text: aa, mi ki nedi xi ta.
@@ -643,9 +702,13 @@ examples:
       - hera ri kin ta gisa ki sutaxi ki retakezu su de.
   - expl: 他们相爱。
     text: hera ri ai xi kin. 
+  - expl: 我比他跑得快。
+    text: mi ka he ke kihi ti raze su regu.
   - expl: 我的房子很新。
     text: mi ki no ni kirure ki xiri.
   - expl: 我跟你什么关系？（哥们语气）
     text: mi ka ha ke da ku cisu ne?
+  - expl: 我跑步速度比他快。
+    text: mi ka he ke gani se raze xi kihi su regu.
   - expl: 小草在生长。
     text: nesu ri huuni xi ku.

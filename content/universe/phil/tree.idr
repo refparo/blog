@@ -49,9 +49,9 @@ genTrees (S n) m =
       subTrees = genTrees n m
       gen' : Nat -> List Tree
       gen' Z = map (Node . (:: [])) subTrees
-      gen' (S n) = let prev = gen' n
-                    in prev ++ [Node (x :: xs) |
-                                Node xs <- prev, x <- subTrees]
+      gen' (S n) =
+        let prev = gen' n
+         in prev ++ [Node (x :: xs) | Node xs <- prev, x <- subTrees]
    in gen' m
 
 covering
@@ -89,9 +89,10 @@ mutual
           showTreeHelper " └" "  " l
 
 (Show a, ShowLines b) => ShowLines (a, b) where
-  showLines (x, y) = ("(" ++ show x ++ ",") ::
-                     map ("  " ++) (showLines y) `snoc`
-                     ")"
+  showLines (x, y) = 
+    ("(" ++ show x ++ ",") ::
+    map ("  " ++) (showLines y) `snoc`
+    ")"
 
 [lines] ShowLines a => Show a where
   show = unlines . showLines
