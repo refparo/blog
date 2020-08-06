@@ -274,4 +274,4 @@ main = print $ maximum [vmax, hmax, lsmax, rsmax]
 
 ## 下期预告
 
-下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「数列分段」](https://www.luogu.org/problem/show?pid=1181) 和 [「混合牛奶」](https://www.luogu.org/problem/show?pid=1208)。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「数列分段」](https://www.luogu.org/problem/show?pid=1181) 和 [「混合牛奶」](https://www.luogu.org/problem/show?pid=1208)。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/paro-zo/blog/issues) 提交你的答案~

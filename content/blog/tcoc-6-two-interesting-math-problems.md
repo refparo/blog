@@ -167,4 +167,4 @@ Frank 提供的程序均未经过测试。
 
 ## 下期预告
 
-下期还是做欧拉计划的题：[Problem 68 Magic 5-gon ring](https://projecteuler.net/problem=68) 和 [Problem 79 Passcode derivation](https://projecteuler.net/problem=79)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+下期还是做欧拉计划的题：[Problem 68 Magic 5-gon ring](https://projecteuler.net/problem=68) 和 [Problem 79 Passcode derivation](https://projecteuler.net/problem=79)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/paro-zo/blog/issues) 提交你的答案~

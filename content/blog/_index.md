@@ -3,7 +3,7 @@ title: Blog
 weight: 1
 cascade:
   copyright:
-    © 2020 problem233
+    © 2020 Paro zo
     <br>
     Licensed under
     <a href="https://creativecommons.org/licenses/by-sa/4.0/"

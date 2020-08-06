@@ -26,7 +26,7 @@ data HList : {default Type t : _} -> (ts : List t) -> Type where
   (::) : a -> HList ts -> HList (a :: ts)
 ```
 
-它的类型中有一个 `List t` 参数来指定每个元素的类型。在 [我的 Github](https://github.com/problem233/sandbox/blob/cd748aeb4dd8153f23b8cae8fb17c35a194c6853/Sandbox/HList.idr) 上还有一些简单函数的定义，但这里只需要这个类型定义就够了。
+它的类型中有一个 `List t` 参数来指定每个元素的类型。在 [我的 Github](https://github.com/paro-zo/sandbox/blob/cd748aeb4dd8153f23b8cae8fb17c35a194c6853/Sandbox/HList.idr) 上还有一些简单函数的定义，但这里只需要这个类型定义就够了。
 
 （[prism.js](https://prismjs.com/) 不支持 Idris，差评……）
 

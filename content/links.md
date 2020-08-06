@@ -6,10 +6,10 @@ weight: 2
 
 ## 我的作品
 
-- [catch-the-bugs](https://problem233.github.io/catch-the-bugs/)
-- [proj-solar-simulation](https://problem233.github.io/proj-solar-simulation/)
-- （汉化）[光丝图谱](https://problem233.github.io/silk/)
-- （汉化）[Simulation the world in emoji](https://problem233.github.io/simulating/model/)
+- [catch-the-bugs](https://paro-zo.github.io/catch-the-bugs/)
+- [proj-solar-simulation](https://paro-zo.github.io/proj-solar-simulation/)
+- （汉化）[光丝图谱](https://paro-zo.github.io/silk/)
+- （汉化）[Simulation the world in emoji](https://paro-zo.github.io/simulating/model/)
 
 ## 友情链接
 

@@ -9,7 +9,7 @@ tags:
 
 前段时间重装系统之后我就一直在 WSL 内开发。Ubuntu 因为我不喜欢所以直接放弃（？？？），所以就一直在用 openSUSE。然而现在越用越感觉 zypper 的下载源坑爹……于是在 Github 上一阵搜索之后，我终于找到了这个神器：[LxRunOffline](https://github.com/DDoSolitary/LxRunOffline)。于是我毅然卸载了 openSUSE，开始尝试安装 Arch Linux……
 
-> 2018-07-25 修改，原文见 [Github](https://github.com/problem233/blog/blob/6c9bc90ae4f50cc55efcf146908c614f8a07f677/source/_posts/use-lxrunoffline-to-install-arch-linux.md)
+> 2018-07-25 修改，原文见 [Github](https://github.com/paro-zo/blog/blob/6c9bc90ae4f50cc55efcf146908c614f8a07f677/source/_posts/use-lxrunoffline-to-install-arch-linux.md)
 
 <!-- more -->
 

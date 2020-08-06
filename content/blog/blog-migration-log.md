@@ -34,10 +34,10 @@ tags:
 
 # 再次，Gatsby
 
-于是我还是回到了 Gatsby。在理解了 [它的 Node 模型](https://www.gatsbyjs.org/docs/node-interface/) 之后，它的整个架构还是比较容易理解的。它的程序化生成页面的 API 虽然略显复杂，但给了用户足够的自由度。很多需求都有插件提供支持，但还是有一些常见于博客的需求没有被考虑到（或者没有文档）。其中我也在 Gatsby 的 Github 仓库提了 [一个问题](https://github.com/gatsbyjs/gatsby/issues/13148)，使用了一点不太优雅的 [Hack](https://github.com/problem233/blog/commit/d4d2f9dc3c629c0465adbed1ea3e6e29e128a01a)（或许这个不能算 Hack，但我有点代码洁癖）。不管怎样，我的博客最终还是用 Gatsby 搭建起来了。你现在看到的这个页面就是 Gatsby 渲染的。
+于是我还是回到了 Gatsby。在理解了 [它的 Node 模型](https://www.gatsbyjs.org/docs/node-interface/) 之后，它的整个架构还是比较容易理解的。它的程序化生成页面的 API 虽然略显复杂，但给了用户足够的自由度。很多需求都有插件提供支持，但还是有一些常见于博客的需求没有被考虑到（或者没有文档）。其中我也在 Gatsby 的 Github 仓库提了 [一个问题](https://github.com/gatsbyjs/gatsby/issues/13148)，使用了一点不太优雅的 [Hack](https://github.com/paro-zo/blog/commit/d4d2f9dc3c629c0465adbed1ea3e6e29e128a01a)（或许这个不能算 Hack，但我有点代码洁癖）。不管怎样，我的博客最终还是用 Gatsby 搭建起来了。你现在看到的这个页面就是 Gatsby 渲染的。
 
 # 总结
 
 回顾整个迁移过程，为什么我只尝试了 Node.js 上的生成器呢？这主要是生态所导致的。我所需要的重要库，有的是 NPM 上的更好（如 [Remark](https://remark.js.org/)），还有的是只有 Node.js 上有（如 [KaTeX](https://katex.org/)）。可以说，Node.js 的流行与其生态是密不可分的。生态也导致我们无法脱离一些让人厌恶的东西，比如 [Webpack](https://webpack.js.org/)——生态的发展导致了前端开发复杂化。也正因如此，Node.js 的原作者才另立门户，创建 [Deno](https://deno.land/)。
 
-最后，我的博客生成器算是暂时确定了。[旧的](https://github.com/problem233/blog/tree/old)和[新的](https://github.com/problem233/blog/tree/d4d2f9dc3c629c0465adbed1ea3e6e29e128a01a)博客源码都公开在 Github 以供参考。或许接下来我还会尝试自制博客生成器，但那就未完待续了……
+最后，我的博客生成器算是暂时确定了。[旧的](https://github.com/paro-zo/blog/tree/old)和[新的](https://github.com/paro-zo/blog/tree/d4d2f9dc3c629c0465adbed1ea3e6e29e128a01a)博客源码都公开在 Github 以供参考。或许接下来我还会尝试自制博客生成器，但那就未完待续了……

@@ -207,4 +207,4 @@ main = print $ (28433 * 2 ^ 7830457 + 1) `mod` 10000000000
 
 ## 下期预告
 
-下一期我想做两道 [Codewars](https://www.codewars.com/) 上难度为 5 kyu 的题目：[Diophantine Equation](https://www.codewars.com/kata/diophantine-equation) 和 [Is my friend cheating?](https://www.codewars.com/kata/is-my-friend-cheating)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/Problem233/blog/issues) 提交你的答案~
+下一期我想做两道 [Codewars](https://www.codewars.com/) 上难度为 5 kyu 的题目：[Diophantine Equation](https://www.codewars.com/kata/diophantine-equation) 和 [Is my friend cheating?](https://www.codewars.com/kata/is-my-friend-cheating)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/paro-zo/blog/issues) 提交你的答案~
