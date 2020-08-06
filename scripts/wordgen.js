@@ -5,19 +5,18 @@
 const randSel = arr => arr[Math.floor(Math.random() * arr.length)]
 
 const C = [
-  ...'mntdkgszry'.repeat(5),
-  ...'pbhw'.repeat(2),
-  ...'cxj']
+  ...'mntdkgszr'.repeat(5),
+  ...'pbfw'.repeat(2)]
 const QC = C
-  .filter(c => ! [...'mnryw'].includes(c))
+  .filter(c => ! [...'mnr'].includes(c))
   .map(c => c + c)
 const V = [...'aaaiiiuuueeoo']
 const VR = [
   ...V.flatMap(v => Array(5).fill(v + v)),
-  ...['ai', 'ae', 'ie'].flatMap(v => Array(5).fill(v)),
-  ...[...'aiue'].flatMap(v1 => V.map(v2 => v1 + v2)).filter(v => v != 'ei')]
+  ...['ai', 'ae'].flatMap(v => Array(5).fill(v)),
+  ...[...'aiueo'].flatMap(v1 => V.map(v2 => v1 + v2))]
 /** @type string[] */
-const S = [...Array(7).fill('CV'), 'CVQ', 'CVR', 'CVn']
+const S = [...Array(12).fill('CV'), 'CVQ', 'CVR', 'CVn']
 
 const wordgen = input => input
   .replace(/S/g, () => randSel(S))
@@ -27,8 +26,9 @@ const wordgen = input => input
   .replace(/C/g, () => randSel(C))
   .replace(/VR/g, () => randSel(VR))
   .replace(/V/g, () => randSel(V))
-  .replace(/n([mpbf])/g, (_, c) => 'm' + c)
-  .replace(/^.*([cxjy]e|[szy]i|iy|wu|uw).*$/, () => wordgen(input))
+  .replace(/n(?=[mpb])/g, 'm')
+  .replace(/fi/g, 'hi').replace(/ffi/g, 'hhi')
+  .replace(/\bf(?!u)/g, 'h')
 
 const num = process.argv[3] ?? 1
 const pattern = process.argv[2] ?? 'SS'

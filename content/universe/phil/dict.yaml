@@ -1,21 +1,14 @@
 # word count: /(?<=^  )\w*(?=:$)/
 # handbook progress: P152
 comment:
-  dixu    haabe  nekko  duhho  momin  mase   digo
-  tubba   dussu  gape   xosa   zudai  kitu   macu
-  cidi    toda   dete   kangi  yoti   mona
-  ponka   beugoo nomu   yansa  eedun  giuzo  hooku
-  tuzzu   dense  mura   bunto  tezzun zuka
-  retae   uume   uuhe   kehe   tanzun suti   cara
-  miti    ihha   reta   meri   baba   wogi   mogo
-  noddu   maro   kupe   kadda  redi   kuso
-  iddii   itta   kara   yasu   jota   waru   honne
-  besu    gisu   suyu   zari   maza   sotu   kiho
-  heni    dabe   zuge   mako   zebbi  dago
-  yokki   nunna  zuta   juha   ripe   tunin  adan
-  hiduu   adi    dine   nuyun  retai  kati   bunre
-  sama    rato   deya   dopo   zaiwi  nunkon
-  dupe    huppu  rugu   nogo   dedo   seti
+  dassu  zudi   rati   haso   pittun ponii  mana   pazi
+  seta   reppii wami   zeru   zetu   uze    buezo  kiba
+  retta  demo   demmi  omu    nadi   bigge  wozzu  deme
+  kuko   wede   rade   doku   ati    tozu   bigu   sosu
+  seki   iipa   bedu   beto   guda   okku   bawa   munsu
+  murin  dumi   dora   gekko  tahi   ranwe  wisen  gima
+  niesaa zuzzi  esse   guggu  seke   ana    dine   dopi
+  bara   ziri   tuma   woku   taru   saru   duga   dopa
 dict:
   ai:
     defn:
@@ -68,11 +61,6 @@ dict:
     etym: <bipa>-<re>
     defn: _k1_ 是 _k2_ 的直径
     tags: [度量]
-  cisu:
-    defn: _k1_ 与 _k2_ 具有关系 _k3_
-  cisse:
-    etym: <cisu>-<se>
-    defn: _k1_ 是 _k2_ 与 _k3_ 的关系
   da:
     defn: _k1_ 是什么，_k1_ 满足什么命题？什么？
     tags: [疑问词]
@@ -184,7 +172,7 @@ dict:
       - _k1_ 重量为 _k2_
     rels:
       近义词: [mentu]
-      反义词: [sehu]
+      反义词: [sefu]
     tags: [度量]
   genture:
     etym: <gentu>-<re>
@@ -563,7 +551,7 @@ dict:
   se:
     defn: （类谓词）（k31 标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k3_ 位）
     tags: [换位标记]
-  sehu:
+  sefu:
     defn: _k1_ 轻
     rels:
       反义词: [gentu]
@@ -590,6 +578,10 @@ dict:
     defn: _k1_ 窄
     rels:
       反义词: [deza]
+  si:
+    defn: _k1_ 是 _S1_ 这件事
+  siri:
+    defn: _k1_ 新、未受损耗
   suni:
     defn:
       - _k1_ 是夏季
@@ -600,18 +592,23 @@ dict:
   suta:
     defn:
       - _k1_ 活着，_k1_ 是生物
-  sutaxi:
-    etym: <suta>-<xi>
+  sutasi:
+    etym: <suta>-<si>
     defn: _k1_ 是 _k2_ 的人生
   ta:
     defn: _S1_ 过了
     note: 完成体，指事件已完成的状态。
     tags: [体态]
-  taci:
+  tasi:
     defn:
       - _k1_ 是一个满足 _S1(x)_ 的对象
       - _k1_ 是一
     tags: [数量]
+  tesu:
+    defn: _k1_ 与 _k2_ 具有关系 _k3_
+  tesse:
+    etym: <tesu>-<se>
+    defn: _k1_ 是 _k2_ 与 _k3_ 的关系
   tino:
     defn: _k1_ 是 _k2_ 品种的鱼
     tags: [动物]
@@ -634,10 +631,6 @@ dict:
     defn: 经常、在 _S1_
     note: 惯常体，指事件在一段时间内时常发生的状态。
     tags: [体态]
-  xi:
-    defn: _k1_ 是 _S1_ 这件事
-  xiri:
-    defn: _k1_ 新、未受损耗
   ya:
     defn: 
       - S*_ 均为真
@@ -682,7 +675,7 @@ dict:
     tags: [敬语]
 examples:
   - expl: 啊我死了。
-    text: aa, mi ki nedi xi ta.
+    text: aa, mi ki nedi si ta.
   - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇
     text: mon ka tino ki sabu ni tino ki sabu ni ruso ku yupi xi ta.
   - expl: 你的眼睛像星星一样闪烁。
@@ -694,21 +687,21 @@ examples:
   - expl: 他们互相用与彼此的关系和对方的朋友打赌对方会帮助自己。
     text:
       - hera ri kin ta, a ge i gu ran ta, i ki mate ke,
-        a ka i ku cisse ke, i ka a ki yaka su e su mebbon.
+        a ka i ku tesse ke, i ka a ki yaka su e su mebbon.
   - expl: 他们互相托付终身。
     text:
-      - hera ra gisa ki sutaxi ki retakezu xi de su kin.
-      - hera ra kin te sutaxi ku retakezu.
-      - hera ri kin ta gisa ki sutaxi ki retakezu su de.
+      - hera ra gisa ki sutasi ki retakezu si de su kin.
+      - hera ra kin te sutasi ku retakezu.
+      - hera ri kin ta gisa ki sutasi ki retakezu su de.
   - expl: 他们相爱。
-    text: hera ri ai xi kin. 
+    text: hera ri ai si kin. 
   - expl: 我比他跑得快。
     text: mi ka he ke kihi ti raze su regu.
   - expl: 我的房子很新。
-    text: mi ki no ni kirure ki xiri.
+    text: mi ki no ni kirure ki siri.
   - expl: 我跟你什么关系？（哥们语气）
-    text: mi ka ha ke da ku cisu ne?
+    text: mi ka ha ke da ku tesu ne?
   - expl: 我跑步速度比他快。
-    text: mi ka he ke gani se raze xi kihi su regu.
+    text: mi ka he ke gani se raze si kihi su regu.
   - expl: 小草在生长。
-    text: nesu ri huuni xi ku.
+    text: nesu ri huuni si ku.
