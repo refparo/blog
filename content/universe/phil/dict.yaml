@@ -141,6 +141,8 @@ dict:
       - _k1_ 是距现在 _k2_ 时间的将来
       - 在将来 _k1_ 时间 _S1_
     tags: [时间]
+  fuuni:
+    defn: _k1_ 生长
   gani:
     defn:
       - _k1_ 大
@@ -230,8 +232,6 @@ dict:
       - _k1_ 是七个满足 _S1(x)_ 的对象
       - _k1_ 是七
     tags: [数量]
-  huuni:
-    defn: _k1_ 生长
   iga:
     defn: _k1_ 是 _S1_ 发生的时刻
   ige:
@@ -542,7 +542,7 @@ dict:
   sabu:
     defn: _k1_ 咬 _k2_
     spcf:
-      sabu xi ku: 衔着
+      sabu si ku: 衔着
   sau:
     defn:
       - _k1_ 是五个满足 _S1(x)_ 的对象
@@ -675,33 +675,33 @@ dict:
     tags: [敬语]
 examples:
   - expl: 啊我死了。
-    text: aa, mi ki nedi si ta.
+    text: aa, mi ni nedi si ta.
   - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇
-    text: mon ka tino ki sabu ni tino ki sabu ni ruso ku yupi xi ta.
+    text: mon na tino ni sabu ki tino ni sabu ki ruso nu yupi si ta.
   - expl: 你的眼睛像星星一样闪烁。
     text:
-      - ha ki heyo ka gime ku ani ti ripi.
-      - ha ki heyo ka ripi se, gime ku ani.
+      - ha ni heyo na gime nu ani di ripi.
+      - ha ni heyo na ripi se, gime nu ani.
   - expl: 你喜欢夏天还是冬天？
-    text: ha ka suni ba nage bu meda bu meri so ka?
+    text: ha na suni ma nage mu meda mu meri so ka?
   - expl: 他们互相用与彼此的关系和对方的朋友打赌对方会帮助自己。
     text:
-      - hera ri kin ta, a ge i gu ran ta, i ki mate ke,
-        a ka i ku tesse ke, i ka a ki yaka su e su mebbon.
+      - hera ri kin da, a ge i gu ran da, i ni mate ne,
+        a na i nu tesse ne, i na a ni yaka su e su mebbon.
   - expl: 他们互相托付终身。
     text:
-      - hera ra gisa ki sutasi ki retakezu si de su kin.
-      - hera ra kin te sutasi ku retakezu.
-      - hera ri kin ta gisa ki sutasi ki retakezu su de.
+      - hera ra gisa ni sutasi na retakezu su de su kin.
+      - hera ra kin de sutasi nu retakezu.
+      - hera ri kin da gisa ni sutasi ne retakezu su de.
   - expl: 他们相爱。
     text: hera ri ai si kin. 
   - expl: 我比他跑得快。
-    text: mi ka he ke kihi ti raze su regu.
+    text: mi na he ne kihi di raze su regu.
   - expl: 我的房子很新。
-    text: mi ki no ni kirure ki siri.
+    text: mi ni no ki kirure ni siri.
   - expl: 我跟你什么关系？（哥们语气）
-    text: mi ka ha ke da ku tesu ne?
+    text: mi na ha ne da nu tesu so ne?
   - expl: 我跑步速度比他快。
-    text: mi ka he ke gani se raze si kihi su regu.
+    text: mi na he ne gani se raze si kihi su regu.
   - expl: 小草在生长。
-    text: nesu ri huuni si ku.
+    text: nesu ri fuuni si ku.
