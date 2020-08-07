@@ -1,14 +1,14 @@
 # word count: /(?<=^  )\w*(?=:$)/
 # handbook progress: P152
 comment:
-  dassu  zudi   rati   haso   pittun ponii  mana   pazi
-  seta   reppii wami   zeru   zetu   uze    buezo  kiba
-  retta  demo   demmi  omu    nadi   bigge  wozzu  deme
-  kuko   wede   rade   doku   ati    tozu   bigu   sosu
-  seki   iipa   bedu   beto   guda   okku   bawa   munsu
-  murin  dumi   dora   gekko  tahi   ranwe  wisen  gima
-  niesaa zuzzi  esse   guggu  seke   ana    dine   dopi
-  bara   ziri   tuma   woku   taru   saru   duga   dopa
+  rimu   nika   kupu   nadu   teka   gotte  honta  sao
+  tara   gore   karon  suan   iso    ai     tuna   dio
+  nasi   nano   niti   hina   suna   tibo   ima    tuo
+  rae    naso   zimu   zatti  teka   pua    raga   sane
+  sui    paita  tame   nasi   gori   suta   nada   sibo
+  tusa   uree   gikki  asa    kaa    tite   reto   pugu
+  kaita  ano    pora   zara   noora  ana    tiku   madu
+  zou    titoo  koran  gaa    bume   zua    asa    pupo
 dict:
   ai:
     defn:

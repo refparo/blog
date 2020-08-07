@@ -4,25 +4,35 @@
 /** @type <T>(arr: Array<T>) => T */
 const randSel = arr => arr[Math.floor(Math.random() * arr.length)]
 
-const C = [
-  ...'mntdkgszr'.repeat(5),
-  ...'pbfw'.repeat(2)]
-const QC = C
-  .filter(c => ! [...'mnr'].includes(c))
-  .map(c => c + c)
-const V = [...'aaaiiiuuueeoo']
-const VR = [
-  ...V.flatMap(v => Array(5).fill(v + v)),
-  ...['ai', 'ae'].flatMap(v => Array(5).fill(v)),
-  ...[...'aiueo'].flatMap(v1 => V.map(v2 => v1 + v2))]
 /** @type string[] */
-const S = [...Array(12).fill('CV'), 'CVQ', 'CVR', 'CVn']
+const C = [
+  ['', 120],
+  ['m', 47], ['n', 86],
+  ['p', 20], ['b', 20],
+  ['t', 116], ['d', 38],
+  ['k', 30], ['g', 25],
+  ['f', 20], ['w', 11],
+  ['s', 49], ['z', 30],
+  ['r', 72]
+].flatMap(([c, f]) => Array(f).fill(c))
+const QC = C
+  .filter(c => ! [...'mnr', ''].includes(c))
+  .map(c => c + c)
+const V = [...'aaaaaiiiuuueeoo']
+/** @type string[] */
+const VR = [
+  'ai', 'ai', 'ai',
+  'oo', 'oo', 'ee', 'ee',
+  'aa']
+/** @type string[] */
+const S = [
+  ...Array(30).fill('CV'),
+  'CVR', 'CVR', 'CVQ', 'CVn']
 
 const wordgen = input => input
   .replace(/S/g, () => randSel(S))
   .replace(/Q\b/g, '')
   .replace(/QC/g, () => randSel(QC))
-  .replace(/\bC/g, () => randSel([...Array(8).fill(''), ...C]))
   .replace(/C/g, () => randSel(C))
   .replace(/VR/g, () => randSel(VR))
   .replace(/V/g, () => randSel(V))
