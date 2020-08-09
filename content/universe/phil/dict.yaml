@@ -1,9 +1,9 @@
 # word count: /(?<=^  )\w*(?=:$)/
-# handbook progress: P167
+# handbook progress: P244
 comment:
   rimu   nika   kupu   nadu   gotte  honta  sao
   tara   gore   karon  suan   iso    ai     tuna   dio
-  nano   niti   hina   suna   tibo   ima    tuo
+  nano   niti   suna   tibo   ima    tuo
   rae    zimu   zatti  pua    raga
   sui    paita  tame   gori   suta   nada   sibo
   tusa   gikki  asa    kaa    tite   reto   pugu
@@ -233,6 +233,8 @@ dict:
     tags: [度量]
   heyo:
     defn: _n1_ 是 _n2_ 的眼睛
+  hina:
+    defn: _n*_ 越 _S2(x*)_，越 _S1(x*)_
   hire:
     defn:
       - _n1_ 是七个满足 _S1(x)_ 的对象
