@@ -1,50 +1,50 @@
 # word count: /(?<=^  )\w*(?=:$)/
-# handbook progress: P152
+# handbook progress: P167
 comment:
-  rimu   nika   kupu   nadu   teka   gotte  honta  sao
+  rimu   nika   kupu   nadu   gotte  honta  sao
   tara   gore   karon  suan   iso    ai     tuna   dio
-  nasi   nano   niti   hina   suna   tibo   ima    tuo
-  rae    naso   zimu   zatti  teka   pua    raga   sane
-  sui    paita  tame   nasi   gori   suta   nada   sibo
-  tusa   uree   gikki  asa    kaa    tite   reto   pugu
-  kaita  ano    pora   zara   noora  ana    tiku   madu
+  nano   niti   hina   suna   tibo   ima    tuo
+  rae    zimu   zatti  pua    raga
+  sui    paita  tame   gori   suta   nada   sibo
+  tusa   gikki  asa    kaa    tite   reto   pugu
+  kaita  ano    pora   noora  ana    tiku   madu
   zou    titoo  koran  gaa    bume   zua    asa    pupo
 dict:
   ai:
     defn:
-      - _k1_ 爱 _k2_
-      - _k1_ 热爱做 _S1(x)_
+      - _n1_ 爱 _n2_
+      - _n1_ 热爱做 _S1(x)_
     tags: [感情]
   aikasu:
     etym: <ai>-<kasu>
-    defn: _k1_ 是 _k2_ 的恋人
+    defn: _n1_ 是 _n2_ 的恋人
     tags: [社会关系]
   aikin:
     etym: <ai>-<kin>
-    defn: _k1_ 是情侣
+    defn: _n1_ 是情侣
     tags: [社会关系]
   aiso:
-    defn: _k1_ 薄
+    defn: _n1_ 薄
     rels:
       反义词: [nada]
     tags: [度量]
   ama:
     defn:
-      - _k1_ 在那里，_k1_ 是那个
+      - _n1_ 在那里，_n1_ 是那个
       - 在那里 _S1_
     tags: [指示词]
   ani:
     defn:
-      - _k1_ 像 _k2_ 一样 _S1(x)_
-      - _S*_ 都以相似的方式为真
+      - _n+_ 都以相似的方式 _S1(x)_
+      - _S2+_ 都以相似的方式为真
     rels:
       近义词: [eto]
   ayu:
-    defn: _k1_ 是 _k3_ 中按 _S1(x)_ 排序的第 _k2_ 个
+    defn: _n1_ 是 _n3_ 中按 _S1(x)_ 排序的第 _n2_ 个
   bii:
     defn:
-      - _k1_ 是九个满足 _S1(x)_ 的对象
-      - _k1_ 是九
+      - _n1_ 是九个满足 _S1(x)_ 的对象
+      - _n1_ 是九
     tags: [数量]
   bire:
     defn: _S1_ 开始
@@ -52,17 +52,17 @@ dict:
     tags: [体态]
   bipa:
     defn:
-      - _k1_ 粗
-      - _k1_ 直径为 _k2_
+      - _n1_ 粗
+      - _n1_ 直径为 _n2_
     rels:
       反义词: [hesan]
     tags: [度量]
   bipare:
     etym: <bipa>-<re>
-    defn: _k1_ 是 _k2_ 的直径
+    defn: _n1_ 是 _n2_ 的直径
     tags: [度量]
   da:
-    defn: _k1_ 是什么，_k1_ 满足什么命题？什么？
+    defn: _n1_ 是什么，_n1_ 满足什么命题？什么？
     tags: [疑问词]
   daeta:
     etym: <da>-<eta>
@@ -70,8 +70,8 @@ dict:
     tags: [疑问词]
   dai:
     defn:
-      - _k1_ 是十个满足 _S1(x)_ 的对象
-      - _k1_ 是十
+      - _n1_ 是十个满足 _S1(x)_ 的对象
+      - _n1_ 是十
     tags: [数量]
   daiga:
     etym: <da>-<iga>
@@ -79,10 +79,10 @@ dict:
     tags: [疑问词]
   dakasu:
     etym: <da>-<kasu>
-    defn: _k1_ 是谁？
+    defn: _n1_ 是谁？
     tags: [疑问词]
   dano:
-    defn: _k1_ 小
+    defn: _n1_ 小
     rels:
       反义词: [gani]
     tags: [度量]
@@ -91,68 +91,69 @@ dict:
     defn: 用什么方法、途径 _S1_？
     tags: [疑问词]
   de:
-    defn: （类谓词）（k32 标记，交换 _S*(x*)_ 参数上谓词的 _k2_ 位与 _k3_ 位）
+    defn: （类谓词）（n32 标记，交换 _S+(x3+)_ 参数上谓词的 _n2_ 位与 _n3_ 位）
     tags: [换位标记]
   dege:
     defn:
-      - _k1_ 深
-      - _k1_ 深度为 _k2_
+      - _n1_ 深
+      - _n1_ 深度为 _n2_
     rels:
       反义词: [kera]
     tags: [度量]
   degere:
     etym: <dege>-<re>
-    defn: _k1_ 是 _k2_ 的深度
+    defn: _n1_ 是 _n2_ 的深度
     tags: [度量]
   dere:
     etym: <de>-<re>
-    defn: （类谓词）（k312 标记，把 _S*(x*)_ 参数的谓词的前三位轮换为 _k3_, _k1_, _k2_ 位）
+    defn: （类谓词）（n312 标记，把 _S+(x3+)_ 参数的谓词的前三位轮换为 _n3_, _n1_, _n2_ 位）
     tags: [换位标记]
   deza:
     defn:
-      - _k1_ 宽
-      - _k1_ 宽度为 _k2_
+      - _n1_ 宽
+      - _n1_ 宽度为 _n2_
     rels:
       反义词: [sese]
     tags: [度量]
   dezare:
     etym: <deza>-<re>
-    defn: _k1_ 是 _k2_ 的宽度
+    defn: _n1_ 是 _n2_ 的宽度
     tags: [度量]
   e:
-    defn: _k1_ 愿意、会做 _S1(x)_
+    defn: _n1_ 愿意、会做 _S1(x)_
     tags: [意向]
   enda:
     defn:
-      - _k1_ 在 _k2_ 中最 _S1(x)_
-      - _k1_ 的 _S2(x)_ 在 _k2_ 的 _S2(x)_ 中最 _S1(x)_
+      - _n1_ 在 _n2_ 中最 _S1(x)_
+      - _n1_ 的 _S2(x)_ 在 _n2_ 的 _S2(x)_ 中最 _S1(x)_
     tags: [程度]
   eta:
-    defn: _k1_ 是 _S1_ 发生的地点
+    defn: _n1_ 是 _S1_ 发生的地点
   eto:
     defn:
-      - _k1_ 和 _k2_ 一样 _S1(x)_
-      - _k*_ 都一样地 _S1(x)_
-      - _S*_ 都以一样的方式发生
+      - _n+_ 都一样地 _S1(x)_
+      - _S2+_ 都以一样的方式发生
     rels:
       近义词: [ani]
   euta:
     defn:
-      - _k1_ 是距现在 _k2_ 时间的将来
-      - 在将来 _k1_ 时间 _S1_
+      - _n1_ 是距现在 _n2_ 时间的将来
+      - 在将来 _n1_ 时间 _S1_
     tags: [时间]
   fuuni:
-    defn: _k1_ 生长
+    defn: _n1_ 生长
+  ga:
+    defn: （类谓词）（S1 名词化标记，对 _S+(x*)_ 参数上谓词的 _S1_ 位名词化）
   gani:
     defn:
-      - _k1_ 大
-      - _k1_ 大小/体积为 _k2_
+      - _n1_ 大
+      - _n1_ 大小/体积为 _n2_
     rels:
       反义词: [dano]
     tags: [度量]
   ganire:
     etym: <gani>-<re>
-    defn: _k1_ 是 _k2_ 的大小/体积
+    defn: _n1_ 是 _n2_ 的大小/体积
     tags: [度量]
   gara:
     defn: _S1_ 反复多次发生
@@ -160,86 +161,91 @@ dict:
     tags: [体态]
   gaya:
     defn:
-      - _k1_ 是十亿个满足 _S1(x)_ 的对象
-      - _k1_ 是十亿
+      - _n1_ 是十亿个满足 _S1(x)_ 的对象
+      - _n1_ 是十亿
     tags: [数量]
   gee:
     defn:
-      - _k1_ 是两个满足 _S1(x)_ 的对象
-      - _k1_ 是二
+      - _n1_ 是两个满足 _S1(x)_ 的对象
+      - _n1_ 是二
     tags: [数量]
   gentu:
     defn:
-      - _k1_ 重量大
-      - _k1_ 重量为 _k2_
+      - _n1_ 重量大
+      - _n1_ 重量为 _n2_
     rels:
       近义词: [mentu]
       反义词: [sefu]
     tags: [度量]
   genture:
     etym: <gentu>-<re>
-    defn: _k1_ 是 _k2_ 的重量
+    defn: _n1_ 是 _n2_ 的重量
     rels:
       近义词: [menture]
     tags: [度量]
   gime:
-    defn: _k1_ 是星星（非当前恒星系的恒星）
+    defn: _n1_ 是星星（非当前恒星系的恒星）
   gisa:
-    defn: _k1_ 是（短语所在位置语境下的）自己
+    defn: 如果本句中出现过指代本参数的上层命题位参数的、满足 _S1(x)_ 的逻辑 _n1_
+          参数指代的对象的 <gisa> 参数，则 _n1_ 指代第一个这样的参数指代的对象，否则
+          _n1_ 指代除本参数之外的、句法树上离本参数最近的上层命题位参数的、满足 _S1(x)_
+          的逻辑 _n1_ 参数指代的对象
+    rels:
+      相对词: [kimi]
     tags: [语境代词]
   gisandike:
     etym: <gisa>-<nedike>
-    defn: _k1_ 自杀
+    defn: _n1_ 自杀
   ha:
-    defn: _k1_ 是你（指听话者）
+    defn: _n1_ 是你（指听话者）
     tags: [人称代词]
   hagu:
     defn:
-      - _k1_ 数量很多
+      - _n1_ 数量很多
       - _S1_ 多次发生
     rels:
       反义词: [semi]
     tags: [约数]
   hami:
     etym: <ha>-<mi>
-    defn: _k1_ 是咱们（说话者和听话者）
+    defn: _n1_ 是咱们（说话者和听话者）
     tags: [人称代词]
   hara:
     etym: <ha>-<ra>
-    defn: _k1_ 是你们（听话者）
+    defn: _n1_ 是你们（听话者）
     tags: [人称代词]
   hasu:
     defn:
-      - _k1_ 是一百个满足 _S1(x)_ 的对象
-      - _k1_ 是一百
+      - _n1_ 是一百个满足 _S1(x)_ 的对象
+      - _n1_ 是一百
     tags: [数量]
   he:
-    defn: _k1_ 是他/她/它（除说话和听话之外的第三者）
+    defn: _n1_ 是他/她/它（除说话和听话之外的第三者）
     tags: [人称代词]
   hera:
     etym: <he>-<ra>
-    defn: _k1_ 是他/她/它们（除说话和听话之外的第三者）
+    defn: _n1_ 是他/她/它们（除说话和听话之外的第三者）
     tags: [人称代词]
   hesan:
-    defn: _k1_ 细
+    defn: _n1_ 细
     rels:
       反义词: [bipa]
     tags: [度量]
   heyo:
-    defn: _k1_ 是 _k2_ 的眼睛
+    defn: _n1_ 是 _n2_ 的眼睛
   hire:
     defn:
-      - _k1_ 是七个满足 _S1(x)_ 的对象
-      - _k1_ 是七
+      - _n1_ 是七个满足 _S1(x)_ 的对象
+      - _n1_ 是七
     tags: [数量]
   iga:
-    defn: _k1_ 是 _S1_ 发生的时刻
+    defn: _n1_ 是 _S1_ 发生的时刻
   ige:
-    defn: _k1_ 中存在对象满足 _S1(x)_
+    defn: _n1_ 中存在对象满足 _S1(x)_
     tags: [量词]
   ise:
     defn:
-      - _k1_ 是现在
+      - _n1_ 是现在
       - 在现在 _S1_
     tags: [时间]
   ka:
@@ -247,74 +253,78 @@ dict:
     tags: [叹词]
   kase:
     defn:
-      - _k1_ 高
-      - _k1_ 高度为 _k2_
+      - _n1_ 高
+      - _n1_ 高度为 _n2_
     rels:
       反义词: [nukke]
     tags: [度量]
   kasere:
     etym: <kase>-<re>
-    defn: _k1_ 是 _k2_ 的高度
+    defn: _n1_ 是 _n2_ 的高度
     tags: [度量]
   kasu:
-    defn: _k1_ 是人（泛指一切智慧生物）
+    defn: _n1_ 是人（泛指一切智慧生物）
   ke:
     defn:
-      - _k1_ 使 _S1_ 发生，_k1_ 使 _S1_ 变为真
-      - _k1_ 使 _k2_ 做 _S1(x)_
+      - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 变为真
+      - _n1_ 使 _n2_ 做 _S1(x)_
     tags: [使役]
   kemi:
     defn:
-      - _k1_ 是一千个满足 _S1(x)_ 的对象
-      - _k1_ 是一千
+      - _n1_ 是一千个满足 _S1(x)_ 的对象
+      - _n1_ 是一千
     tags: [数量]
   kera:
-    defn: _k1_ 浅
+    defn: _n1_ 浅
     rels:
       反义词: [dege]
     tags: [度量]
   kesa:
-    defn:
-      - 如果 _S2_，那么 _S1_
-      - _k*_ 如果 _S2(x*)_，就 _S1(x*)_
+    defn: _n*_ 如果 _S2(x*)_，就 _S1(x*)_
     rels:
-      相对词: [seka]
+      相对词: [teka]
     tags: [逻辑运算]
   kezu:
     etym: <ke>-<zu>
     defn:
-      - _k1_ 尊敬地使 _S1_ 发生
-      - _k1_ 请 _k2_ 做 _S1(x)_
+      - _n1_ 尊敬地使 _S1_ 发生
+      - _n1_ 请 _n2_ 做 _S1(x)_
     tags: [使役]
   ki:
-    defn: _k1_ 是上文提到的对象
+    defn: _n1_ 是上文提到满足 _S1(x)_ 的对象
     tags: [语境代词]
   kihi:
     defn:
-      - _k1_ 快
-      - _k1_ 的速度/速率为 _k2_
+      - _n1_ 快
+      - _n1_ 的速度/速率为 _n2_
       - _S1_ 快
-      - _S1_ 的速度/速率为 _k1_
+      - _S1_ 的速度/速率为 _n1_
     rels:
       反义词: [zenu]
     tags: [度量]
   kimi:
-    defn: _k1_ 是（与短语所在位置语境下的自己相对的）对方
+    defn: 如果本句中出现过指代本参数的上层命题位参数的逻辑 _n1_ 参数指代的对象的
+          <gisa> 参数，且与那个 _n1_ 参数的同级的逻辑 _n2_ 参数满足 _S1(x)_，则
+          _n1_ 指代第一个这样的 <gisa> 参数的相应的逻辑 _n2_ 参数指代的对象，否则
+          _n1_ 指代除本参数之外的、句法树上离本参数最近的上层命题位参数的、满足
+          _S1(x)_ 的逻辑 _n2_ 参数指代的对象
+    rels:
+      相对词: [gisa]
     tags: [语境代词]
   kin:
     defn:
-      - _k*_ 中所有对象互相 _S1(x1, x2)_
+      - _n+_ 中所有对象互相 _S1(x1, x2)_
       - _S1_ 互相地发生
   kiru:
-    defn: _k1_ 用材料 _k3_ 建造 _k2_
+    defn: _n1_ 用材料 _n3_ 建造 _n2_
   kirure:
     etym: <kiru>-<re>
-    defn: _k1_ 是用材料 _k2_ 建造的房子、建筑物
+    defn: _n1_ 是用材料 _n2_ 建造的房子、建筑物
   ko:
-    defn: _k1_ 是下文将提到的对象
+    defn: _n1_ 是下文将提到的满足 _S1(x)_ 的对象
     tags: [语境代词]
   kowa:
-    defn: _k1_ 非常 _S1(x)_
+    defn: _n1_ 非常 _S1(x)_
     tags: [程度]
   ku:
     defn: _S1_ 处于未完成的状态、正在进行
@@ -322,91 +332,89 @@ dict:
     tags: [体态]
   kuma:
     defn:
-      - _k1_ 在这里，_k1_ 是这个
+      - _n1_ 在这里，_n1_ 是这个
       - 在这里 _S1_
     tags: [指示词]
   kun:
-    defn: _k1_ 是 _k2_（社会意义上的）孩子
+    defn: _n1_ 是 _n2_（社会意义上的）孩子
     tags: [社会关系]
   ma:
     defn:
-      - _k1_ 处于时间/地点 _k2_
-      - 在时间/地点/以方式 _k1_ 发生 _S1_
+      - _n1_ 处于时间/地点 _n2_
+      - 在时间/地点/以方式 _n1_ 发生 _S1_
   mai:
     defn:
-      - _k1_ 是八个满足 _S1(x)_ 的对象
-      - _k1_ 是八
+      - _n1_ 是八个满足 _S1(x)_ 的对象
+      - _n1_ 是八
     tags: [数量]
   mate:
-    defn: _k1_ 是 _k2_ 的朋友
+    defn: _n1_ 是 _n2_ 的朋友
     tags: [社会关系]
   matekin:
     etym: <mate>-<kin>
-    defn: _k1_ 是（成对的）朋友
+    defn: _n1_ 是（成对的）朋友
     tags: [社会关系]
   me:
     defn:
-      - _S*_ 中有且只有一个为真
-      - _k*_ 满足且只满足 _S*(x*)_ 中的一个
-      - _k1_ 属于且只属于 _k+_ 中的一个
+      - _n*_ 满足且只满足 _S+(x*)_ 中的一个
+      - _n1_ 属于且只属于 _n+_ 中的一个
     tags: [逻辑运算]
   mebbon:
-    defn: _k1_ 与 _k2_ 用 _k3_ 打赌 _S1_ 为真
+    defn: _n1_ 与 _n2_ 用 _n3_ 打赌 _S1_ 为真
   meda:
     etym: <me>-<da>
     defn:
-      - _S*_ 中哪一个为真？
-      - _k*_ 满足 _S*(x*)_ 中的哪一个？
-      - _k1_ 属于 _k+_ 中的哪一个？
+      - _n*_ 满足 _S+(x*)_ 中的哪一个？
+      - _n1_ 属于 _n+_ 中的哪一个？
     tags: [疑问词]
   mega:
     defn:
-      - _k1_ 是一百万个满足 _S1(x)_ 的对象
-      - _k1_ 是一百万
+      - _n1_ 是一百万个满足 _S1(x)_ 的对象
+      - _n1_ 是一百万
     tags: [数量]
   mentu:
     defn:
-      - _k1_ 质量大
-      - _k1_ 质量为 _k2_
+      - _n1_ 质量大
+      - _n1_ 质量为 _n2_
     rels:
       近义词: [gentu]
     tags: [度量, 物理学]
   menture:
     etym: <mentu>-<re>
-    defn: _k1_ 是 _k2_ 的质量
+    defn: _n1_ 是 _n2_ 的质量
     rels:
       近义词: [genture]
     tags: [度量, 物理学]
   meri:
     defn:
-      - _k1_ 喜欢 _k2_
-      - _k1_ 喜欢做 _S1(x)_
+      - _n1_ 喜欢 _n2_
+      - _n1_ 喜欢做 _S1(x)_
     tags: [感情]
   mesuu:
     defn:
-      - _k1_ 长
-      - _k1_ 长度为 _k2_
+      - _n1_ 长
+      - _n1_ 长度为 _n2_
     rels:
       反义词: [mizzo]
     tags: [度量]
   mesuure:
     etym: <mesuu>-<re>
-    defn: _k1_ 是 _k2_ 的长度
+    defn: _n1_ 是 _n2_ 的长度
     tags: [度量]
   mi:
-    defn: _k1_ 是我（说话者）
+    defn: _n1_ 是我（说话者）
     tags: [人称代词]
   mira:
     etym: <mi>-<ra>
-    defn: _k1_ 是我们（说话者，不包括听话者）
+    defn: _n1_ 是我们（说话者，不包括听话者）
     tags: [人称代词]
   mizzo:
-    defn: _k1_ 短
+    defn: _n1_ 短
     rels:
       反义词: [mesuu]
     tags: [度量]
   mon:
-    defn: _k1_ 是男的（指社会性别）
+    defn: _n1_ 是男的（指社会性别）
     rels:
       反义词: [rin]
     tags: [性别]
@@ -416,103 +424,113 @@ dict:
     tags: [体态]
   mun:
     defn:
-      - _k1_ 是四个满足 _S1(x)_ 的对象
-      - _k1_ 是四
+      - _n1_ 是四个满足 _S1(x)_ 的对象
+      - _n1_ 是四
     tags: [数量]
   muse:
-    defn: _k1_ 中存在唯一对象满足 _S1(x)_
+    defn: _n1_ 中存在唯一对象满足 _S1(x)_
     tags: [量词]
   na:
     defn:
       - _S1_ 为假
-      - _k1_ 不满足 _S1(x)_
-      - _k1_ 不属于 _k2_
+      - _n1_ 不满足 _S1(x)_
+      - _n1_ 不属于 _n2_
     tags: [逻辑运算]
   nada:
     defn:
-      - _k1_ 厚
-      - _k1_ 厚度为 _k2_
+      - _n1_ 厚
+      - _n1_ 厚度为 _n2_
     rels:
       反义词: [aiso]
     tags: [度量]
   nadare:
     etym: <nada>-<re>
-    defn: _k1_ 是 _k2_ 的厚度
+    defn: _n1_ 是 _n2_ 的厚度
     tags: [度量]
   nae:
     defn:
-      - _k1_ 是零个满足 _S1(x)_ 的对象
-      - _k1_ 是零
+      - _n1_ 是零个满足 _S1(x)_ 的对象
+      - _n1_ 是零
     tags: [数量]
   nage:
     defn:
-      - _k1_ 是冬季
+      - _n1_ 是冬季
       - 在冬季 _S1_
     rels:
       相对词: [suni]
     tags: [时间]
   name:
     etym: <na>-<me>
-    defn: _k*_ 是否 _S1(x*)_？是否 _S1_？
+    defn: _n*_ 是否 _S1(x*)_？
     tags: [疑问词]
+  nasi:
+    defn: _n*_ 因为 _S1(x*)_ 才 _S2(x*)_，_n*_ 为了 _S1(x*)_ 才 _S2(x*)_
+    rels:
+      相对词: [niru]
+  naso:
+    defn: _n*_ 虽然 _S2(x*)_，但是 _S1(x*)_
   ne:
     defn: （叹词）表示反问/设问
     tags: [叹词]
   nedi:
-    defn: _k1_ 死于 _S1(x)_
+    defn: _n1_ 死于 _S1(x)_
   nedike:
     etym: <nedi>-<ke>
     defn:
-      - _k1_ 杀死 _k2_
-      - _k1_ 使 _k2_ 死于 _S1(x)_
+      - _n1_ 杀死 _n2_
+      - _n1_ 使 _n2_ 死于 _S1(x)_
   nedikkin:
     etym: <nedike>-<kin>
-    defn: _k1_ 自相残杀
+    defn: _n1_ 自相残杀
   nee:
     defn: （叹词）表示肯定
     tags: [叹词]
   nesu:
-    defn: _k1_ 是 _k2_ 品种的草
+    defn: _n1_ 是 _n2_ 品种的草
     tags: [植物]
   niru:
-    defn:
-      - _S1_ 是因为 _S2_，_S1_ 是为了 _S2_
-      - _k*_ _S1(x*)_ 是因为 _S2(x*)_，_k*_ _S1(x*)_ 是为了 _S2(x*)_，
+    defn: _n*_ _S1(x*)_ 是因为 _S2(x*)_，_n*_ _S1(x*)_ 是为了 _S2(x*)_，
     rels:
-      相对词: [rinu]
+      相对词: [nasi]
   no:
-    defn: _k1_ 归属于 _k2_，_k1_ 被 _k2_ 拥有
+    defn: _n1_ 归属于 _n2_，_n1_ 被 _n2_ 拥有
   nukke:
-    defn: _k1_ 矮
+    defn: _n1_ 矮
     rels:
       反义词: [kase]
     tags: [度量]
   ra:
-    defn: _k1_ 是 _S1(x)_ 们，_k1_ 是多个满足 _S1(x)_ 的对象
+    defn: _n1_ 是 _S1(x)_ 们，_n1_ 是多个满足 _S1(x)_ 的对象
     tags: [数量]
   ragu:
-    defn: _k1_ 是 _S1_ 发生的具体方法、途径
+    defn: _n1_ 是 _S1_ 发生的具体方法、途径
   ran:
-    defn: （类谓词）_k1_ 满足包含谓词 _k+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
+    defn: （类谓词）_n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
   rawa:
-    defn: _k1_ 是除 _k2_ 以外其他满足 _S1(x)_ 的对象，_k1_ 满足 _S1(x)_ 但不是 _k2_
+    defn: _n1_ 是除 _n2_ 以外其他满足 _S1(x)_ 的对象，_n1_ 满足 _S1(x)_ 但不是 _n2_
+  raza:
+    defn:
+      - _n*_ 按步骤做 _S2+(x*)_
+      - _n*_ 按顺序做 _S1(x)_
+    rels:
+      相对词: [zara]
   raze:
-    defn: _k1_ 跑，_k1_ 跑步
+    defn: _n1_ 跑，_n1_ 跑步
     tags: [运动, 交通]
   re:
-    defn: （类谓词）（被动标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k2_ 位）
+    defn: （类谓词）（被动标记，交换 _S1_ 参数的谓词的 _n1_ 位与 _n2_ 位）
     tags: [换位标记]
   regu:
     defn:
-      - _k1_ 比 _k2_ 更 _S1(x)_
-      - _k1_ 的 _S2(x)_ 比 _k2_ 的 _S2(x)_ 更 _S1(x)_
+      - _n1_ 比 _n2_ 更 _S1(x)_
+      - _n1_ 的 _S2(x)_ 比 _n2_ 的 _S2(x)_ 更 _S1(x)_
     tags: [程度]
   reta:
-    defn: _k1_ 把 _k2_ 给 _k3_
+    defn: _n1_ 把 _n2_ 给 _n3_
     tags: [让渡]
   retakezu:
     etym: <reta>-<kezu>
-    defn: _k1_ 把 _k2_ 托付给 _k3_
+    defn: _n1_ 把 _n2_ 托付给 _n3_
     tags: [让渡, 使役]
   rete:
     defn: _S1_ 发生一次
@@ -520,148 +538,144 @@ dict:
     tags: [体态]
   ria:
     defn:
-      - _k1_ 是三个满足 _S1(x)_ 的对象
-      - _k1_ 是三
+      - _n1_ 是三个满足 _S1(x)_ 的对象
+      - _n1_ 是三
     tags: [数量]
   rin:
-    defn: _k1_ 是女的（指社会性别）
+    defn: _n1_ 是女的（指社会性别）
     rels:
       反义词: [mon]
     tags: [性别]
-  rinu:
-    defn:
-      - 因为 _S1_ 所以 _S2_，为了 _S1_ 所以 _S2_
-      - _k*_ 因为 _S1(x*)_ 才 _S2(x*)_，_k*_ 为了 _S1(x*)_ 才 _S2(x*)_
-    rels:
-      相对词: [niru]
   ripi:
-    defn: _k1_ 以频率 _k2_ 闪烁
+    defn: _n1_ 以频率 _n2_ 闪烁
   ruso:
-    defn: _k1_ 是 _k2_ 品种的蛇
+    defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
   sabu:
-    defn: _k1_ 咬 _k2_
+    defn: _n1_ 咬 _n2_
     spcf:
       sabu si ku: 衔着
   sau:
     defn:
-      - _k1_ 是五个满足 _S1(x)_ 的对象
-      - _k1_ 是五
+      - _n1_ 是五个满足 _S1(x)_ 的对象
+      - _n1_ 是五
     tags: [数量]
   se:
-    defn: （类谓词）（k31 标记，交换 _S1_ 参数的谓词的 _k1_ 位与 _k3_ 位）
+    defn: （类谓词）（n31 标记，交换 _S1_ 参数的谓词的 _n1_ 位与 _n3_ 位）
     tags: [换位标记]
   sefu:
-    defn: _k1_ 轻
+    defn: _n1_ 轻
     rels:
       反义词: [gentu]
     tags: [度量]
-  seka:
-    defn:
-      - 如果 _S1_，那么 _S2_
-      - _k*_ 如果 _S1(x*)_，就 _S2(x*)_
-    rels:
-      相对词: [kesa]
-    tags: [逻辑运算]
   semi:
     defn:
-      - _k1_ 数量很少
+      - _n1_ 数量很少
       - _S1_ 很少发生
     rels:
       反义词: [hagu]
     tags: [约数]
   sere:
     etym: <se>-<re>
-    defn: （类谓词）（k231 标记，把 _S1_ 参数的谓词的前三位轮换为 _k2_, _k3_, _k1_ 位）
+    defn: （类谓词）（n231 标记，把 _S1_ 参数的谓词的前三位轮换为 _n2_, _n3_, _n1_ 位）
     tags: [换位标记]
   sese:
-    defn: _k1_ 窄
+    defn: _n1_ 窄
     rels:
       反义词: [deza]
   si:
-    defn: _k1_ 是 _S1_ 这件事
+    defn: _n1_ 是 _S1_ 这件事
   siri:
-    defn: _k1_ 新、未受损耗
+    defn: _n1_ 新、未受损耗
   suni:
     defn:
-      - _k1_ 是夏季
+      - _n1_ 是夏季
       - 在夏季 _S1_
     rels:
       相对词: [nage]
     tags: [时间]
   suta:
     defn:
-      - _k1_ 活着，_k1_ 是生物
+      - _n1_ 活着，_n1_ 是生物
   sutasi:
     etym: <suta>-<si>
-    defn: _k1_ 是 _k2_ 的人生
+    defn: _n1_ 是 _n2_ 的人生
   ta:
     defn: _S1_ 过了
     note: 完成体，指事件已完成的状态。
     tags: [体态]
   tasi:
     defn:
-      - _k1_ 是一个满足 _S1(x)_ 的对象
-      - _k1_ 是一
+      - _n1_ 是一个满足 _S1(x)_ 的对象
+      - _n1_ 是一
     tags: [数量]
+  teka:
+    defn: _n*_ 如果 _S1(x*)_，就 _S2(x*)_
+    rels:
+      相对词: [kesa]
+    tags: [逻辑运算]
   tesu:
-    defn: _k1_ 与 _k2_ 具有关系 _k3_
+    defn: _n1_ 与 _n2_ 具有关系 _n3_
   tesse:
     etym: <tesu>-<se>
-    defn: _k1_ 是 _k2_ 与 _k3_ 的关系
+    defn: _n1_ 是 _n2_ 与 _n3_ 的关系
   tino:
-    defn: _k1_ 是 _k2_ 品种的鱼
+    defn: _n1_ 是 _n2_ 品种的鱼
     tags: [动物]
   to:
-    defn: _k1_ 是 _k+_ 的并集
+    defn: _n1_ 是 _n+_ 的并集
     tags: [集合运算]
   toku:
-    defn: _k1_ 是点，_k1_ 是一块小区域
+    defn: _n1_ 是点，_n1_ 是一块小区域
     tags: [数量, 形状]
   una:
-    defn: _k1_ 中任意对象均满足 _S1(x)_
+    defn: _n1_ 中任意对象均满足 _S1(x)_
     tags: [量词]
   une:
-    defn: _k1_ 处于幼年，_k1_ 是孩子
+    defn: _n1_ 处于幼年，_n1_ 是孩子
     tags: [年龄]
   uni:
-    defn: _k1_ 是 _k2_（社会意义上的）父/母亲
+    defn: _n1_ 是 _n2_（社会意义上的）父/母亲
     tags: [社会关系]
+  uree:
+    defn: _n*_ 即使 _S2(x*)_，也 _S1(x*)_
   wa:
     defn: 经常、在 _S1_
     note: 惯常体，指事件在一段时间内时常发生的状态。
     tags: [体态]
   ya:
     defn: 
-      - S*_ 均为真
-      - _k*_ 满足 _S*(x*)_ 中每一个
-      - _k1_ 属于 _k+_ 的交集
+      - _n*_ 满足 _S+(x*)_ 中每一个
+      - _n1_ 属于 _n+_ 的交集
     tags: [逻辑运算]
   yaka:
-    defn: _k1_ 帮助 _k2_ 做 _S1(x)_
+    defn: _n1_ 帮助 _n2_ 做 _S1(x)_
   yumi:
-    defn: _k1_ 是 _k2_ 的配偶
+    defn: _n1_ 是 _n2_ 的配偶
     tags: [社会关系]
   yumikin:
     etym: <yumi>-<kin>
-    defn: _k1_ 是夫妻
+    defn: _n1_ 是夫妻
   yun:
     defn:
-      - _k1_ 是六个满足 _S(x)_ 的对象
-      - _k1_ 是六
+      - _n1_ 是六个满足 _S(x)_ 的对象
+      - _n1_ 是六
     tags: [数量]
   yupi:
-    defn: _k1_ 抓 _k2_，_k1_ 捕捉 _k2_
+    defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
   yuri:
     defn:
-      - _k1_ 是距现在 _k2_ 时间的过去
-      - 在过去 _k1_ 时间 _S1_
+      - _n1_ 是距现在 _n2_ 时间的过去
+      - 在过去 _n1_ 时间 _S1_
     tags: [时间]
+  zara:
+    defn: _S2_ 发生，然后 _S1_ 发生
+    rels:
+      相对词: [raza]
   ze:
     defn:
-      - _S*_ 中有一部分为真
-      - _k*_ 满足 _S*(x*)_ 中的一部分
-      - _k1_ 属于 _k+_ 的并集
+      - _n*_ 满足 _S+(x*)_ 中的一部分
+      - _n1_ 属于 _n+_ 的并集
     tags: [逻辑运算]
   zenu:
     defn: _S1_ 慢
@@ -670,38 +684,37 @@ dict:
     tags: [度量]
   zu:
     defn:
-      - _k1_ 尊敬地 _S1(x)_
-      - _k1_ 是尊敬的 _k2_
+      - _n1_ 尊敬地 _S1(x)_
+      - _n1_ 是尊敬的 _n2_
     tags: [敬语]
 examples:
   - expl: 啊我死了。
-    text: aa, mi ni nedi si ta.
+    text: aa, mi ri nedi si ta.
   - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇
     text: mon na tino ni sabu ki tino ni sabu ki ruso nu yupi si ta.
   - expl: 你的眼睛像星星一样闪烁。
     text:
-      - ha ni heyo na gime nu ani di ripi.
-      - ha ni heyo na ripi se, gime nu ani.
+      - ha ri heyo na gime nu ani di ripi.
+      - ha ri heyo na ripi se, gime nu ani.
   - expl: 你喜欢夏天还是冬天？
-    text: ha na suni ma nage mu meda mu meri so ka?
-  - expl: 他们互相用与彼此的关系和对方的朋友打赌对方会帮助自己。
+    text: ha ra suni ma nage mu meda mu meri so ka?
+  - expl: 他们互相用与你的关系打赌你会帮助他们。
     text:
-      - hera ri kin da, a ge i gu ran da, i ni mate ne,
-        a na i nu tesse ne, i na a ni yaka su e su mebbon.
+      - hera ri kin da, gisa ra ha ru tesse ne, ha ra gisa ri yaka su e su mebbon.
   - expl: 他们互相托付终身。
     text:
-      - hera ra gisa ni sutasi na retakezu su de su kin.
+      - hera ra gisa ri sutasi na retakezu su de su kin.
       - hera ra kin de sutasi nu retakezu.
-      - hera ri kin da gisa ni sutasi ne retakezu su de.
+      - hera ri kin da gisa ri sutasi ne retakezu su de.
   - expl: 他们相爱。
     text: hera ri ai si kin. 
   - expl: 我比他跑得快。
-    text: mi na he ne kihi di raze su regu.
+    text: mi ra he re kihi di raze su regu.
   - expl: 我的房子很新。
-    text: mi ni no ki kirure ni siri.
+    text: mi ri no ki kirure ni siri.
   - expl: 我跟你什么关系？（哥们语气）
-    text: mi na ha ne da nu tesu so ne?
+    text: mi ra ha re da nu tesu so ne?
   - expl: 我跑步速度比他快。
-    text: mi na he ne gani se raze si kihi su regu.
+    text: mi ra he re gani se raze si kihi su regu.
   - expl: 小草在生长。
     text: nesu ri fuuni si ku.
