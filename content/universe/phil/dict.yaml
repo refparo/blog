@@ -1,10 +1,10 @@
 # word count: /(?<=^  )\w*(?=:$)/
-# handbook progress: P244
+# handbook progress: P313
 comment:
   rimu   nika   kupu   nadu   gotte  honta  sao
   tara   gore   karon  suan   iso    ai     tuna   dio
   nano   niti   suna   tibo   ima    tuo
-  rae    zimu   zatti  pua    raga
+  rae    zatti  pua    raga
   sui    paita  tame   gori   suta   nada   sibo
   tusa   gikki  asa    kaa    tite   reto   pugu
   kaita  ano    pora   noora  ana    tiku   madu
@@ -91,8 +91,8 @@ dict:
     defn: 用什么方法、途径 _S1_？
     tags: [疑问词]
   de:
-    defn: （类谓词）（n32 标记，交换 _S+(x3+)_ 参数上谓词的 _n2_ 位与 _n3_ 位）
-    tags: [换位标记]
+    defn: 相当于 _S1(n1, n3, n2, n*)_
+    tags: [换位谓词]
   dege:
     defn:
       - _n1_ 深
@@ -106,8 +106,8 @@ dict:
     tags: [度量]
   dere:
     etym: <de>-<re>
-    defn: （类谓词）（n312 标记，把 _S+(x3+)_ 参数的谓词的前三位轮换为 _n3_, _n1_, _n2_ 位）
-    tags: [换位标记]
+    defn: 相当于 _S1(n3, n1, n2, n*)_
+    tags: [换位谓词]
   deza:
     defn:
       - _n1_ 宽
@@ -120,8 +120,13 @@ dict:
     defn: _n1_ 是 _n2_ 的宽度
     tags: [度量]
   e:
-    defn: _n1_ 愿意、会做 _S1(x)_
+    defn: _n1_ 要、会做 _S1(x)_
     tags: [意向]
+  eeta:
+    defn:
+      - _n1_ 是距现在 _n2_ 时间的将来
+      - 在将来 _n1_ 时间 _S1_
+    tags: [时间]
   enda:
     defn:
       - _n1_ 在 _n2_ 中最 _S1(x)_
@@ -135,15 +140,11 @@ dict:
       - _S2+_ 都以一样的方式发生
     rels:
       近义词: [ani]
-  euta:
-    defn:
-      - _n1_ 是距现在 _n2_ 时间的将来
-      - 在将来 _n1_ 时间 _S1_
-    tags: [时间]
   fuuni:
     defn: _n1_ 生长
   ga:
-    defn: （类谓词）（S1 名词化标记，对 _S+(x*)_ 参数上谓词的 _S1_ 位名词化）
+    defn: （S1 名词化标记，对 _S+(x*)_ 参数上谓词的 _S1_ 位名词化）
+    tags: [类谓词]
   gani:
     defn:
       - _n1_ 大
@@ -392,15 +393,15 @@ dict:
       - _n1_ 喜欢 _n2_
       - _n1_ 喜欢做 _S1(x)_
     tags: [感情]
-  mesuu:
+  mesu:
     defn:
       - _n1_ 长
       - _n1_ 长度为 _n2_
     rels:
       反义词: [mizzo]
     tags: [度量]
-  mesuure:
-    etym: <mesuu>-<re>
+  mesure:
+    etym: <mesu>-<re>
     defn: _n1_ 是 _n2_ 的长度
     tags: [度量]
   mi:
@@ -413,7 +414,7 @@ dict:
   mizzo:
     defn: _n1_ 短
     rels:
-      反义词: [mesuu]
+      反义词: [mesu]
     tags: [度量]
   mon:
     defn: _n1_ 是男的（指社会性别）
@@ -496,6 +497,9 @@ dict:
       相对词: [nasi]
   no:
     defn: _n1_ 归属于 _n2_，_n1_ 被 _n2_ 拥有
+  nore:
+    etym: <no>-<re>
+    defn: _n1_ 拥有 _n2_
   nukke:
     defn: _n1_ 矮
     rels:
@@ -507,7 +511,8 @@ dict:
   ragu:
     defn: _n1_ 是 _S1_ 发生的具体方法、途径
   ran:
-    defn: （类谓词）_n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
+    defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
+    tags: [类谓词]
   rawa:
     defn: _n1_ 是除 _n2_ 以外其他满足 _S1(x)_ 的对象，_n1_ 满足 _S1(x)_ 但不是 _n2_
   raza:
@@ -520,8 +525,8 @@ dict:
     defn: _n1_ 跑，_n1_ 跑步
     tags: [运动, 交通]
   re:
-    defn: （类谓词）（被动标记，交换 _S1_ 参数的谓词的 _n1_ 位与 _n2_ 位）
-    tags: [换位标记]
+    defn: 相当于 _S1(n2, n1, n*)_
+    tags: [换位谓词]
   regu:
     defn:
       - _n1_ 比 _n2_ 更 _S1(x)_
@@ -563,8 +568,8 @@ dict:
       - _n1_ 是五
     tags: [数量]
   se:
-    defn: （类谓词）（n31 标记，交换 _S1_ 参数的谓词的 _n1_ 位与 _n3_ 位）
-    tags: [换位标记]
+    defn: 相当于 _S1(n3, n2, n1, n*)_
+    tags: [换位谓词]
   sefu:
     defn: _n1_ 轻
     rels:
@@ -579,8 +584,8 @@ dict:
     tags: [约数]
   sere:
     etym: <se>-<re>
-    defn: （类谓词）（n231 标记，把 _S1_ 参数的谓词的前三位轮换为 _n2_, _n3_, _n1_ 位）
-    tags: [换位标记]
+    defn: 相当于 _S1(n2, n3, n1, n*)_
+    tags: [换位谓词]
   sese:
     defn: _n1_ 窄
     rels:
@@ -684,6 +689,9 @@ dict:
     rels:
       反义词: [kihi]
     tags: [度量]
+  zimu:
+    defn: _n1_ 是山
+    tags: [地理]
   zu:
     defn:
       - _n1_ 尊敬地 _S1(x)_
@@ -696,26 +704,27 @@ examples:
     text: mon na tino ni sabu ki tino ni sabu ki ruso nu yupi si ta.
   - expl: 你的眼睛像星星一样闪烁。
     text:
-      - ha ri heyo na gime nu ani di ripi.
+      - ha ri heyo na gime nu ani ki ripi.
       - ha ri heyo na ripi se, gime nu ani.
   - expl: 你喜欢夏天还是冬天？
     text: ha ra suni ma nage mu meda mu meri so ka?
   - expl: 他们互相用与你的关系打赌你会帮助他们。
     text:
-      - hera ri kin da, gisa ra ha ru tesse ne, ha ra gisa ri yaka su e su mebbon.
+      - hera ri kin ka, gisa ra ha ru tesse ne,
+        ha ra gisa ri yaka su e su mebbon.
   - expl: 他们互相托付终身。
     text:
       - hera ra gisa ri sutasi na retakezu su de su kin.
-      - hera ra kin de sutasi nu retakezu.
-      - hera ri kin da gisa ri sutasi ne retakezu su de.
+      - hera ra kin ke sutasi nu retakezu.
+      - hera ri kin ka gisa ri sutasi ne retakezu su de.
   - expl: 他们相爱。
     text: hera ri ai si kin. 
   - expl: 我比他跑得快。
-    text: mi ra he re kihi di raze su regu.
+    text: mi ra he re kihi ki raze su regu.
   - expl: 我的房子很新。
     text: mi ri no ki kirure ni siri.
   - expl: 我跟你什么关系？（哥们语气）
-    text: mi ra ha re da nu tesu so ne?
+    text: mi ra ha re ka nu tesu so ne?
   - expl: 我跑步速度比他快。
     text: mi ra he re gani se raze si kihi su regu.
   - expl: 小草在生长。
