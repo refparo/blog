@@ -1,14 +1,14 @@
 # word count: /(?<=^  )\w*(?=:$)/
-# handbook progress: P313
+# handbook progress: P350
 comment:
-  rimu   nika   kupu   nadu   gotte  honta  sao
-  tara   gore   karon  suan   iso    ai     tuna   dio
-  nano   niti   suna   tibo   ima    tuo
-  rae    zatti  pua    raga
-  sui    paita  tame   gori   suta   nada   sibo
-  tusa   gikki  asa    kaa    tite   reto   pugu
-  kaita  ano    pora   noora  ana    tiku   madu
-  zou    titoo  koran  gaa    bume   zua    asa    pupo
+  aza    ao     nami   roen   io     fura   miti
+  nou    naka   mai    sita   nuda   ano    ewi
+  bumen  nuni   kuza   sika   bore   ii
+  naisi  nutu   wobu   osai   nise   neeta  soda   node
+  damen  dau    hadi   isse   futtoo
+  rinte  tain   taaku  tuo    botu   neza
+  wue    natta  ukee   tewu   gumo   aki    tase
+  waito  mitu   efo    sota   noffo  reeta  gai    nada
 dict:
   ai:
     defn:
@@ -39,6 +39,8 @@ dict:
       - _S2+_ 都以相似的方式为真
     rels:
       近义词: [eto]
+  aro:
+    defn: _n1_ 和/带 _n2_ 一起做 _S1(x)_
   ayu:
     defn: _n1_ 是 _n3_ 中按 _S1(x)_ 排序的第 _n2_ 个
   bii:
@@ -197,6 +199,12 @@ dict:
   gisandike:
     etym: <gisa>-<nedike>
     defn: _n1_ 自杀
+  gumo:
+    defn: _n1_ 是枪
+    tags: [武器]
+  gundike:
+    etym: <gumo>-<nedike>
+    defn: _n1_ 用枪击杀 _n2_
   ha:
     defn: _n1_ 是你（指听话者）
     tags: [人称代词]
@@ -251,9 +259,17 @@ dict:
       - _n1_ 是现在
       - 在现在 _S1_
     tags: [时间]
+  iso:
+    defn: _n1_ 等于 _n2_，_n1_ 就是 _n2_
   ka:
     defn: （叹词）表示疑问
     tags: [叹词]
+  kapuri:
+    defn: _n1_ 是羊
+    tags: [动物]
+  kapurosu:
+    etym: <kapuri>-<osu>
+    defn: _n1_ 是羊毛
   kase:
     defn:
       - _n1_ 高
@@ -492,7 +508,7 @@ dict:
     defn: _n1_ 是 _n2_ 品种的草
     tags: [植物]
   niru:
-    defn: _n*_ _S1(x*)_ 是因为 _S2(x*)_，_n*_ _S1(x*)_ 是为了 _S2(x*)_，
+    defn: _n*_ _S1(x*)_ 是因为 _S2(x*)_，_n*_ _S1(x*)_ 是为了 _S2(x*)_
     rels:
       相对词: [nasi]
   no:
@@ -500,11 +516,18 @@ dict:
   nore:
     etym: <no>-<re>
     defn: _n1_ 拥有 _n2_
+  nosa:
+    defn:
+      - _n1_ 从 _n2_ 处听到 _S1_
+      - _n1_ 从 _n3_ 处听到 _n2_
   nukke:
     defn: _n1_ 矮
     rels:
       反义词: [kase]
     tags: [度量]
+  osu:
+    defn: _n1_ 是 _n2_ 物种/部位的毛发
+    tags: [身体]
   ra:
     defn: _n1_ 是 _S1(x)_ 们，_n1_ 是多个满足 _S1(x)_ 的对象
     tags: [数量]
@@ -570,6 +593,9 @@ dict:
   se:
     defn: 相当于 _S1(n3, n2, n1, n*)_
     tags: [换位谓词]
+  sedere:
+    etym: <seta>-<dere>
+    defn: _n1_ 被 _n3_ 当作 _n2_
   sefu:
     defn: _n1_ 轻
     rels:
@@ -590,8 +616,18 @@ dict:
     defn: _n1_ 窄
     rels:
       反义词: [deza]
+  seta:
+    defn: _n1_ 把 _n2_ 当作 _n3_
   si:
-    defn: _n1_ 是 _S1_ 这件事
+    defn:
+      - _n1_ 是 _S1_ 这件事
+      - _n1_ 是关于 _n2_ 的事
+      - 发生关于 _n1_ 的事
+  sino:
+    defn: _n1_ 用 _n3_ 射击 _n2_
+  sindike:
+    etym: <sino>-<nedike>
+    defn: _n1_ 用 _n3_ 射杀 _n2_
   siri:
     defn: _n1_ 新、未受损耗
   suni:
@@ -608,14 +644,20 @@ dict:
     etym: <suta>-<si>
     defn: _n1_ 是 _n2_ 的人生
   ta:
-    defn: _S1_ 过了
-    note: 完成体，指事件已完成的状态。
-    tags: [体态]
+    defn:
+      - _n1_ 是距现在 _n2_ 时间的过去
+      - 在过去 _n1_ 时间 _S1_
+    tags: [时间]
+  tari:
+    defn: _n1_ 从 _n3_ 处取得 _n2_
+    tags: [让渡]
   tasi:
     defn:
       - _n1_ 是一个满足 _S1(x)_ 的对象
       - _n1_ 是一
     tags: [数量]
+  te:
+    defn: _n1_ 用工具 _n2_ 做 _S1(x)_
   teka:
     defn: _n*_ 如果 _S1(x*)_，就 _S2(x*)_
     rels:
@@ -635,6 +677,17 @@ dict:
   toku:
     defn: _n1_ 是点，_n1_ 是一块小区域
     tags: [数量, 形状]
+  tona:
+    defn: _n1_ 快乐地做 _S1_
+    tags: [情绪]    
+  uma:
+    defn:
+      - _n1_ 对 _n2_ 说 _S1_
+      - _n1_ 对 _n3_ 说 _n2_
+  umanosa:
+    defn:
+      - _n1_ 从 _n2_ 处听说 _S1_
+      - _n1_ 从 _n3_ 处听说 _n2_
   una:
     defn: _n1_ 中任意对象均满足 _S1(x)_
     tags: [量词]
@@ -671,10 +724,9 @@ dict:
   yupi:
     defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
   yuri:
-    defn:
-      - _n1_ 是距现在 _n2_ 时间的过去
-      - 在过去 _n1_ 时间 _S1_
-    tags: [时间]
+    defn: _S1_ 过了
+    note: 完成体，指事件已完成的状态。
+    tags: [体态]
   zara:
     defn: _S2_ 发生，然后 _S1_ 发生
     rels:
@@ -729,3 +781,7 @@ examples:
     text: mi ra he re gani se raze si kihi su regu.
   - expl: 小草在生长。
     text: nesu ri fuuni si ku.
+  - expl: 有两个人被用枪杀了。
+    text:
+      - kasu si gee na gundike/sindike su re si ta.
+      - kasu si gee na gumo ni re ki te ku nedike si ta.
