@@ -1,15 +1,22 @@
 # word count: /(?<=^  )\w*(?=:$)/
-# handbook progress: P350
 comment:
-  aza    ao     nami   roen   io     fura   miti
-  nou    naka   mai    sita   nuda   ano    ewi
-  bumen  nuni   kuza   sika   bore   ii
-  naisi  nutu   wobu   osai   nise   neeta  soda   node
-  damen  dau    hadi   isse   futtoo
-  rinte  tain   taaku  tuo    botu   neza
-  wue    natta  ukee   tewu   gumo   aki    tase
-  waito  mitu   efo    sota   noffo  reeta  gai    nada
+  roen   io     gooza  masu
+  sita   nuda   daa    maitu
+  nuni   bore   toodi
+  naisi  neeta  node   tudi
+  damen  dau    isse   futtoo rama
+  rinte  tain   botu   neza   tudo
+  natta  ronwi  odu    tame
+  waito  mitu   efo    noffo  nada
+  aire   ihi    ae     hamu
+  ramme  raiti  rabe   sasu   tutun
+  sata   io     naza   ozzi
+  tusoo  niso   reddi  tatai  tane
+  bana   riza   naia   tafa
 dict:
+  a:
+    defn: _n1_ 是某（表示根据上下文省略）
+    tags: [语境代词]
   ai:
     defn:
       - _n1_ 爱 _n2_
@@ -28,6 +35,17 @@ dict:
     rels:
       反义词: [nada]
     tags: [度量]
+  aka:
+    defn: _n1_ 帮助 _n2_ 做 _S1(x)_
+  aki:
+    defn: _n1_ 是 _n2_ 星球的中午
+    tags: [时间]
+  aku:
+    defn: _n1_ 是 1/60 个 _S1(x)_
+  akieta:
+    etym: <aki>-<eeta>
+    defn: _n1_ 是 _n2_ 星球的上午
+    tags: [时间]
   ama:
     defn:
       - _n1_ 在那里，_n1_ 是那个
@@ -39,10 +57,24 @@ dict:
       - _S2+_ 都以相似的方式为真
     rels:
       近义词: [eto]
+  ano:
+    defn: _n1_ 是 _n2_ 的旁边
+    tags: [方位]
+  ao:
+    defn: _n1_ 是亮的，_n1_ 是亮色的
+    tags: [颜色]
   aro:
     defn: _n1_ 和/带 _n2_ 一起做 _S1(x)_
-  ayu:
-    defn: _n1_ 是 _n3_ 中按 _S1(x)_ 排序的第 _n2_ 个
+  asa:
+    defn: 时间段 _n1_ 长 _n3_ 星球的 _n2=1_ 天
+    tags: [时间]
+  atta:
+    etym: <aki>-<ta>
+    defn: _n1_ 是 _n2_ 星球的下午
+    tags: [时间]
+  aza:
+    defn: _n1_ 是青色的（a*b* 平面的左下角）
+    tags: [颜色]
   bii:
     defn:
       - _n1_ 是九个满足 _S1(x)_ 的对象
@@ -63,6 +95,9 @@ dict:
     etym: <bipa>-<re>
     defn: _n1_ 是 _n2_ 的直径
     tags: [度量]
+  bumen:
+    defn: _n1_ 是青绿色的（青色到绿色，a*b* 平面的左半部分）
+    tags: [颜色]
   da:
     defn: _n1_ 是什么，_n1_ 满足什么命题？什么？
     tags: [疑问词]
@@ -122,18 +157,28 @@ dict:
     defn: _n1_ 是 _n2_ 的宽度
     tags: [度量]
   e:
-    defn: _n1_ 要、会做 _S1(x)_
-    tags: [意向]
+    defn: _n1_ 将要、会 _S1(x)_
+    tags: [情态]
   eeta:
     defn:
       - _n1_ 是距现在 _n2_ 时间的将来
-      - 在将来 _n1_ 时间 _S1_
+      - 在距现在的将来 _n1_ 时间 _S1_
+    tags: [时间]
+  emmia:
+    defn: 时间段 _n1_ 长 _n3_ 历法的 _n2=1_ 秒
     tags: [时间]
   enda:
     defn:
       - _n1_ 在 _n2_ 中最 _S1(x)_
       - _n1_ 的 _S2(x)_ 在 _n2_ 的 _S2(x)_ 中最 _S1(x)_
     tags: [程度]
+  ene:
+    defn: 时间段 _n1_ 长历法 _n3_ 中的 _n2=1_ 小时
+    tags: [时间]
+  enaku:
+    etym: <ene>-<aku>
+    defn: 时间段 _n1_ 长历法 _n3_ 中的 _n2=1_ 分钟
+    tags: [时间]
   eta:
     defn: _n1_ 是 _S1_ 发生的地点
   eto:
@@ -142,11 +187,35 @@ dict:
       - _S2+_ 都以一样的方式发生
     rels:
       近义词: [ani]
+  etu:
+    defn: _n1_ 有点 _S1(x)_
+    tags: [程度]
+  ewi:
+    defn: _n1_ 是 _n2_ 在球坐标系 _n4_ 下的东方 _n3_ 距离处
+    rels:
+      反义词: [wobu]
+    tags: [方位]
+  funti:
+    defn: _n1_ 相比于合适的 _n2_ 而言过于 _S1(x)_
+    tags: [程度]
+  fura:
+    defn: _n1_ 想要、希望 _S1_ 发生
+    tags: [情态]
+  furazu:
+    etym: <fura>-<zu>
+    defn: _n1_ 祝愿 _S1_ 发生
+    tags: [情态]
+  furen:
+    defn: _n1_ 是粉红色的（红色到紫色，a*b* 平面的右半部分）
+    tags: [颜色]
   fuuni:
     defn: _n1_ 生长
   ga:
     defn: （S1 名词化标记，对 _S+(x*)_ 参数上谓词的 _S1_ 位名词化）
     tags: [类谓词]
+  gai:
+    defn: _n1_ 是蓝色的（紫色到青色，a*b* 平面的下半部分）
+    tags: [颜色]
   gani:
     defn:
       - _n1_ 大
@@ -162,7 +231,7 @@ dict:
     defn: _S1_ 反复多次发生
     note: 反复体，指事件连续反复发生的状态。
     tags: [体态]
-  gaya:
+  gasa:
     defn:
       - _n1_ 是十亿个满足 _S1(x)_ 的对象
       - _n1_ 是十亿
@@ -194,7 +263,7 @@ dict:
           _n1_ 指代除本参数之外的、句法树上离本参数最近的上层命题位参数的、满足 _S1(x)_
           的逻辑 _n1_ 参数指代的对象
     rels:
-      相对词: [kimi]
+      反义词: [kimi]
     tags: [语境代词]
   gisandike:
     etym: <gisa>-<nedike>
@@ -208,6 +277,14 @@ dict:
   ha:
     defn: _n1_ 是你（指听话者）
     tags: [人称代词]
+  habu:
+    defn: _n1_（由于自身）应该做 _S1(x)_
+    rels:
+      近义词: [neba]
+    tags: [情态]
+  hadi:
+    defn: _n1_ 围绕 _n2_ 移动着做 _S1(x)_
+    tags: [路径]
   hagu:
     defn:
       - _n1_ 数量很多
@@ -215,6 +292,9 @@ dict:
     rels:
       反义词: [semi]
     tags: [约数]
+  hai:
+    defn: 时间段 _n1_ 是 _n2_ 星球的白天
+    tags: [时间]
   hami:
     etym: <ha>-<mi>
     defn: _n1_ 是咱们（说话者和听话者）
@@ -235,13 +315,13 @@ dict:
     etym: <he>-<ra>
     defn: _n1_ 是他/她/它们（除说话和听话之外的第三者）
     tags: [人称代词]
+  heo:
+    defn: _n1_ 是 _n2_ 的眼睛
   hesan:
     defn: _n1_ 细
     rels:
       反义词: [bipa]
     tags: [度量]
-  heyo:
-    defn: _n1_ 是 _n2_ 的眼睛
   hina:
     defn: _n*_ 越 _S2(x*)_，越 _S1(x*)_
   hire:
@@ -249,11 +329,23 @@ dict:
       - _n1_ 是七个满足 _S1(x)_ 的对象
       - _n1_ 是七
     tags: [数量]
+  hoki:
+    defn: _n1_ 是 _n2_ 左方 _n3_ 距离处
+    rels:
+      反义词: [rami]
+    tags: [方位]
   iga:
     defn: _n1_ 是 _S1_ 发生的时刻
   ige:
     defn: _n1_ 中存在对象满足 _S1(x)_
     tags: [量词]
+  ii:
+    defn: _n1_ 合适地、足够 _S1(x)_
+    tags: [程度]
+  iina:
+    etym: <ii>-<na>
+    defn: _n1_ 不够 _S1(x)_
+    tags: [程度]
   ise:
     defn:
       - _n1_ 是现在
@@ -265,6 +357,7 @@ dict:
     defn: （叹词）表示疑问
     tags: [叹词]
   kapuri:
+    etym: _拉丁 Caprini_
     defn: _n1_ 是羊
     tags: [动物]
   kapurosu:
@@ -328,7 +421,7 @@ dict:
           _n1_ 指代除本参数之外的、句法树上离本参数最近的上层命题位参数的、满足
           _S1(x)_ 的逻辑 _n2_ 参数指代的对象
     rels:
-      相对词: [gisa]
+      反义词: [gisa]
     tags: [语境代词]
   kin:
     defn:
@@ -354,13 +447,28 @@ dict:
       - _n1_ 在这里，_n1_ 是这个
       - 在这里 _S1_
     tags: [指示词]
+  kume:
+    defn: _n1_（由于外界）必须做 _S1(x)_
+    rels:
+      近义词: [nora]
+    tags: [情态]
   kun:
     defn: _n1_ 是 _n2_（社会意义上的）孩子
     tags: [社会关系]
+  kuza:
+    defn: _n1_ 是 _n2_ 下方 _n3_ 距离处
+    rels:
+      反义词: [nami]
+    tags: [方位]
   ma:
     defn:
-      - _n1_ 处于时间/地点 _n2_
-      - 在时间/地点/以方式 _n1_ 发生 _S1_
+      - _n1_ 处于时间/地点 _n+_
+      - 在时间/地点/以方式 _n+_ 发生 _S1_
+  mae:
+    defn: _n1_ 是 _n2_ 前方 _n2_ 距离处
+    rels:
+      反义词: [tuo]
+    tags: [方位]
   mai:
     defn:
       - _n1_ 是八个满足 _S1(x)_ 的对象
@@ -373,6 +481,9 @@ dict:
     etym: <mate>-<kin>
     defn: _n1_ 是（成对的）朋友
     tags: [社会关系]
+  mati:
+    defn: _n1_ 是红色的（a*b* 平面的右上角）
+    tags: [颜色]
   me:
     defn:
       - _n*_ 满足且只满足 _S+(x*)_ 中的一个
@@ -423,10 +534,15 @@ dict:
   mi:
     defn: _n1_ 是我（说话者）
     tags: [人称代词]
+  mia:
+    defn: _n1_ 是 1/3600 个 _S1(x)_
   mira:
     etym: <mi>-<ra>
     defn: _n1_ 是我们（说话者，不包括听话者）
     tags: [人称代词]
+  miti:
+    defn: _n1_ 是 _n2_ 的两侧 _n3_ 距离处
+    tags: [方位]
   mizzo:
     defn: _n1_ 短
     rels:
@@ -437,6 +553,9 @@ dict:
     rels:
       反义词: [rin]
     tags: [性别]
+  monga:
+    defn: _n1_ 是蓝紫色的（a*b* 平面的右下角）
+    tags: [颜色]
   mu:
     defn: _S1_ 结束
     note: 终结体，强调或添加终结，去除持续性。
@@ -472,16 +591,27 @@ dict:
       - _n1_ 是零
     tags: [数量]
   nage:
-    defn:
-      - _n1_ 是冬季
-      - 在冬季 _S1_
+    defn: _n1_ 是冬季
     rels:
-      相对词: [suni]
+      反义词: [suni]
     tags: [时间]
+  naka:
+    defn: _n1_ 是 _n2_ 的里面、内部
+    rels:
+      反义词: [sota]
+    tags: [方位]
   name:
     etym: <na>-<me>
     defn: _n*_ 是否 _S1(x*)_？
     tags: [疑问词]
+  nami:
+    defn: _n1_ 是 _n2_ 的上方 _n3_ 距离处
+    rels:
+      反义词: [kuza]
+    tags: [方位]
+  nana:
+    defn: _S1_ 肯定为真
+    tags: [情态]
   nasi:
     defn: _n*_ 因为 _S1(x*)_ 才 _S2(x*)_，_n*_ 为了 _S1(x*)_ 才 _S2(x*)_
     rels:
@@ -491,6 +621,11 @@ dict:
   ne:
     defn: （叹词）表示反问/设问
     tags: [叹词]
+  neba:
+    defn: _n1_ （由于外界）应该做 _S1(x)_
+    rels:
+      近义词: [habu]
+    tags: [情态]
   nedi:
     defn: _n1_ 死于 _S1(x)_
   nedike:
@@ -507,12 +642,28 @@ dict:
   nesu:
     defn: _n1_ 是 _n2_ 品种的草
     tags: [植物]
+  ninu:
+    defn: _n1_ 是 _n2_ 星球的夜晚
+    tags: [时间]
+  nira:
+    defn: 时间段 _n1_ 长 _n3_ 星球的 _n2=1_ 年
+    tags: [时间]
   niru:
     defn: _n*_ _S1(x*)_ 是因为 _S2(x*)_，_n*_ _S1(x*)_ 是为了 _S2(x*)_
     rels:
       相对词: [nasi]
+  nise:
+    defn:
+      - _n1_ 是 _n2_ 和 _n3_ 之间的区域
+      - _n1_ 是一群物体 _n2_ 中间的区域
+    tags: [方位]
   no:
     defn: _n1_ 归属于 _n2_，_n1_ 被 _n2_ 拥有
+  nora:
+    defn: _n1_（为了自身）必须做 _S1(x)_
+    rels:
+      近义词: [kuba]
+    tags: [情态]
   nore:
     etym: <no>-<re>
     defn: _n1_ 拥有 _n2_
@@ -520,19 +671,41 @@ dict:
     defn:
       - _n1_ 从 _n2_ 处听到 _S1_
       - _n1_ 从 _n3_ 处听到 _n2_
+  nou:
+    defn: _n1_ 暗，_n1_ 是暗色的
+    tags: [颜色]
   nukke:
     defn: _n1_ 矮
     rels:
       反义词: [kase]
     tags: [度量]
+  nutu:
+    defn: _n1_ 是 _n2_ 在球坐标系 _n4_ 下的北方 _n3_ 距离处
+    rels:
+      反义词: [soda]
+    tags: [方位]
+  osai:
+    defn: 时间段 _n1_ 长 _n3_ 历法下的 _n2=1_ 个月
+    tags: [时间]
   osu:
     defn: _n1_ 是 _n2_ 物种/部位的毛发
     tags: [身体]
+  pa:
+    defn: _n1_ 是 _n2_ 的表面
+    tags: [方位]
+  pasu:
+    defn: _S1_ 可能为真
+    tags: [情态]
   ra:
     defn: _n1_ 是 _S1(x)_ 们，_n1_ 是多个满足 _S1(x)_ 的对象
     tags: [数量]
   ragu:
     defn: _n1_ 是 _S1_ 发生的具体方法、途径
+  rami:
+    defn: _n1_ 是 _n2_ 右方 _n3_ 距离处
+    rels:
+      反义词: [hoki]
+    tags: [方位]
   ran:
     defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
     tags: [类谓词]
@@ -545,16 +718,26 @@ dict:
     rels:
       相对词: [zara]
   raze:
-    defn: _n1_ 跑，_n1_ 跑步
+    defn: _n1_ 从 _n2_ 跑步到 _n3_
     tags: [运动, 交通]
   re:
     defn: 相当于 _S1(n2, n1, n*)_
     tags: [换位谓词]
+  reeta:
+    defn: 时间段 _n1_ 长 _n3_ 历法下的 _n2=1_ 周
+    tags: [时间]
   regu:
     defn:
       - _n1_ 比 _n2_ 更 _S1(x)_
       - _n1_ 的 _S2(x)_ 比 _n2_ 的 _S2(x)_ 更 _S1(x)_
     tags: [程度]
+  remi:
+    defn: _n1_ 会、可以、有能力做 _S1(x)_
+    tags: [情态]
+  ressa:
+    etym: <reeta>-<u>-<asa>
+    defn: _n1_ 是 _n3_ 历法下一周的第 _n2_ 天
+    tags: [时间]
   reta:
     defn: _n1_ 把 _n2_ 给 _n3_
     tags: [让渡]
@@ -571,6 +754,9 @@ dict:
       - _n1_ 是三个满足 _S1(x)_ 的对象
       - _n1_ 是三
     tags: [数量]
+  rima:
+    defn: _n1_ 是 _n2_ 的颜色
+    tags: [颜色]
   rin:
     defn: _n1_ 是女的（指社会性别）
     rels:
@@ -578,9 +764,17 @@ dict:
     tags: [性别]
   ripi:
     defn: _n1_ 以频率 _n2_ 闪烁
+  romee:
+    defn: _n1_ 长 _n3_ 星球的 _n2=1_ 季（_n2=1_/4 年）
+    tags: [时间]
   ruso:
     defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
+  sa:
+    defn: 
+      - _n*_ 满足 _S+(x*)_ 中每一个
+      - _n1_ 属于 _n+_ 的交集
+    tags: [逻辑运算]
   sabu:
     defn: _n1_ 咬 _n2_
     spcf:
@@ -623,6 +817,11 @@ dict:
       - _n1_ 是 _S1_ 这件事
       - _n1_ 是关于 _n2_ 的事
       - 发生关于 _n1_ 的事
+  sika:
+    defn:
+      - _n1_ 是 _n2_ 的附近
+      - _n1_ 是离 _n2_ _n3_ 距离处
+    tags: [方位]
   sino:
     defn: _n1_ 用 _n3_ 射击 _n2_
   sindike:
@@ -630,13 +829,24 @@ dict:
     defn: _n1_ 用 _n3_ 射杀 _n2_
   siri:
     defn: _n1_ 新、未受损耗
-  suni:
-    defn:
-      - _n1_ 是夏季
-      - 在夏季 _S1_
+  soda:
+    defn: _n1_ 是 _n2_ 在球坐标系 _n4_ 下的南方 _n3_ 距离处
     rels:
-      相对词: [nage]
+      反义词: [nutu]
+    tags: [方位]
+  sota:
+    defn: _n1_ 是 _n2_ 的外面、外部
+    rels:
+      反义词: [naka]
+    tags: [方位]
+  suni:
+    defn: _n1_ 是夏季
+    rels:
+      反义词: [nage]
     tags: [时间]
+  susu:
+    defn: _n1_ 被 _n2_ 允许做 _S1(x)_
+    tags: [情态]
   suta:
     defn:
       - _n1_ 活着，_n1_ 是生物
@@ -646,16 +856,31 @@ dict:
   ta:
     defn:
       - _n1_ 是距现在 _n2_ 时间的过去
-      - 在过去 _n1_ 时间 _S1_
+      - 在距现在的过去 _n1_ 时间 _S1_
     tags: [时间]
+  taaku:
+    defn: _n1_ 是 _n2_ 相对于 _n3_ 的对面、对侧
+    note: 若 _n3_ 在 _n2_ 内部，则 _n1_ 也在 _n2_ 内部，反之亦然。
+    tags: [方位]
+  tadde:
+    etym: <taaku>-<de>
+    defn: _n1_ 是 _n3_ 相对于 _n2_ 的对面、对侧
+    note: 若 _n2_ 在 _n3_ 内部，则 _n1_ 也在 _n3_ 内部，反之亦然。
+    tags: [方位]
   tari:
     defn: _n1_ 从 _n3_ 处取得 _n2_
     tags: [让渡]
+  tase:
+    defn: _n1_ 沿着 _n2_ 移动着做 _S1(x)_
+    tags: [路径]
   tasi:
     defn:
       - _n1_ 是一个满足 _S1(x)_ 的对象
       - _n1_ 是一
     tags: [数量]
+  tatu:
+    defn: _n1_ 是黄色的（绿色到红色，a*b* 平面的上半部分）
+    tags: [颜色]
   te:
     defn: _n1_ 用工具 _n2_ 做 _S1(x)_
   teka:
@@ -671,6 +896,9 @@ dict:
   tino:
     defn: _n1_ 是 _n2_ 品种的鱼
     tags: [动物]
+  tinu:
+    defn: _n1_ 是绿色的（a*b* 平面的左上角）
+    tags: [颜色]
   to:
     defn: _n1_ 是 _n+_ 的并集
     tags: [集合运算]
@@ -679,7 +907,16 @@ dict:
     tags: [数量, 形状]
   tona:
     defn: _n1_ 快乐地做 _S1_
-    tags: [情绪]    
+    tags: [情绪]
+  tuo:
+    defn: _n1_ 是 _n2_ 后方 _n3_ 距离处
+    rels:
+      反义词: [mae]
+    tags: [方位]
+  u:
+    defn: _n1_ 是 _n3_ 中按 _S1(x)_ 排序的第 _n2_ 个
+  ukee:
+    defn: _n1_ 是 _n2_ 的名字
   uma:
     defn:
       - _n1_ 对 _n2_ 说 _S1_
@@ -688,6 +925,17 @@ dict:
     defn:
       - _n1_ 从 _n2_ 处听说 _S1_
       - _n1_ 从 _n3_ 处听说 _n2_
+  umi:
+    defn: _n1_ 是 _n2_ 的配偶
+    tags: [社会关系]
+  umikin:
+    etym: <umi>-<kin>
+    defn: _n1_ 是夫妻
+  un:
+    defn:
+      - _n1_ 是六个满足 _S(x)_ 的对象
+      - _n1_ 是六
+    tags: [数量]
   una:
     defn: _n1_ 中任意对象均满足 _S1(x)_
     tags: [量词]
@@ -697,36 +945,50 @@ dict:
   uni:
     defn: _n1_ 是 _n2_（社会意义上的）父/母亲
     tags: [社会关系]
+  unira:
+    etym: <u>-<nira>
+    defn: _n1_ 是 _n3_ 历法的第 _n2_ 年
+    tags: [时间]
+  upi:
+    defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
   uree:
     defn: _n*_ 即使 _S2(x*)_，也 _S1(x*)_
+  uri:
+    defn: _S1_ 过了
+    note: 完成体，指事件已完成的状态。
+    tags: [体态]
   wa:
     defn: 经常、在 _S1_
     note: 惯常体，指事件在一段时间内时常发生的状态。
     tags: [体态]
-  ya:
-    defn: 
-      - _n*_ 满足 _S+(x*)_ 中每一个
-      - _n1_ 属于 _n+_ 的交集
-    tags: [逻辑运算]
-  yaka:
-    defn: _n1_ 帮助 _n2_ 做 _S1(x)_
-  yumi:
-    defn: _n1_ 是 _n2_ 的配偶
-    tags: [社会关系]
-  yumikin:
-    etym: <yumi>-<kin>
-    defn: _n1_ 是夫妻
-  yun:
-    defn:
-      - _n1_ 是六个满足 _S(x)_ 的对象
-      - _n1_ 是六
-    tags: [数量]
-  yupi:
-    defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
-  yuri:
-    defn: _S1_ 过了
-    note: 完成体，指事件已完成的状态。
-    tags: [体态]
+  wasa:
+    etym: <u>-<asa>
+    defn: _n1_ 是 _n3_ 历法的一个月的第 _n2_ 天
+    tags: [时间]
+  wemmia:
+    etym: <u>-<emmia>
+    defn: _n1_ 是 _n3_ 历法的一分钟的第 _n2_ 秒
+    tags: [时间]
+  wenaku:
+    etym: <u>-<enaku>
+    defn: _n1_ 是 _n3_ 历法的一小时的第 _n2_ 分钟
+    tags: [时间]
+  wene:
+    etym: <u>-<ene>
+    defn: _n1_ 是 _n3_ 历法的一天的第 _n2_ 小时
+    tags: [时间]
+  wobu:
+    defn: _n1_ 是 _n2_ 在球坐标系 _n4_ 下的西方 _n3_ 距离处
+    rels:
+      反义词: [ewi]
+    tags: [方位]
+  wosai:
+    etym: <u>-<osai>
+    defn: _n1_ 是 _n3_ 历法的一年的第 _n2_ 个月
+    tags: [时间]
+  wue:
+    defn: _n1_ 是黑白的、灰色的、彩度低的（a*b* 平面的中间部分）
+    tags: [颜色]
   zara:
     defn: _S2_ 发生，然后 _S1_ 发生
     rels:
@@ -753,17 +1015,17 @@ examples:
   - expl: 啊我死了。
     text: aa, mi ri nedi si ta.
   - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇
-    text: mon na tino ni sabu ki tino ni sabu ki ruso nu yupi si ta.
+    text: mon na tino ni sabu ki tino ni sabu ki ruso nu upi si ta.
   - expl: 你的眼睛像星星一样闪烁。
     text:
-      - ha ri heyo na gime nu ani ki ripi.
-      - ha ri heyo na ripi se, gime nu ani.
+      - ha ri heo na gime nu ani ki ripi.
+      - ha ri heo na ripi se, gime nu ani.
   - expl: 你喜欢夏天还是冬天？
     text: ha ra suni ma nage mu meda mu meri so ka?
   - expl: 他们互相用与你的关系打赌你会帮助他们。
     text:
       - hera ri kin ka, gisa ra ha ru tesse ne,
-        ha ra gisa ri yaka su e su mebbon.
+        ha ra gisa ri aka su e su mebbon.
   - expl: 他们互相托付终身。
     text:
       - hera ra gisa ri sutasi na retakezu su de su kin.

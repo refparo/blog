@@ -55,7 +55,7 @@ draft: true
     - 0~4 nae tasi gee ria mun
     - 5~9 sau yun hire mai bii
     - ×10<sup>1~2</sup> dai hasu
-    - ×1000<sup>1~3</sup> kemi mega gaya
+    - ×1000<sup>1~3</sup> kemi mega gasa
     - 小数点 toku
     - 复数 ra
 - 类谓词
