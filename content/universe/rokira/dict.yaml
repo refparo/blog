@@ -9,7 +9,7 @@ comment:
   natta  ronwi  odu    tame
   waito  mitu   efo    noffo  nada
   aire   ihi    ae     hamu
-  ramme  raiti  rabe   sasu   tutun
+  raiti  rabe   sasu   tutun
   sata   io     naza   ozzi
   tusoo  niso   reddi  tatai  tane
   bana   riza   naia   tafa
@@ -706,6 +706,8 @@ dict:
     rels:
       反义词: [hoki]
     tags: [方位]
+  ramme:
+    defn: _n1_ 是被 _n2_ 人/地区使用的语言
   ran:
     defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
     tags: [类谓词]
@@ -764,9 +766,17 @@ dict:
     tags: [性别]
   ripi:
     defn: _n1_ 以频率 _n2_ 闪烁
+  rokasu:
+    etym: <roo>-<kasu>
+    defn: _n1_ 是全体泛人类（指起源于太阳系的智慧生物，包括智人和兽人）
+  rokira:
+    etym: <rokasu>-ki-<ramme>
+    defn: _n1_ 是泛人类中间语
   romee:
     defn: _n1_ 长 _n3_ 星球的 _n2=1_ 季（_n2=1_/4 年）
     tags: [时间]
+  roo:
+    defn: _n1_ 是太阳
   ruso:
     defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
@@ -919,8 +929,8 @@ dict:
     defn: _n1_ 是 _n2_ 的名字
   uma:
     defn:
-      - _n1_ 对 _n2_ 说 _S1_
-      - _n1_ 对 _n3_ 说 _n2_
+      - _n1_ 告诉 _n2_ _S1_
+      - _n1_ 告诉 _n3_ _n2_
   umanosa:
     defn:
       - _n1_ 从 _n2_ 处听说 _S1_

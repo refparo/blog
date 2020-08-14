@@ -5,7 +5,7 @@ const yaml = require('js-yaml')
 /** @typedef {Dict['dict'][string]} Entry */
 
 /** @type {Dict} */
-const dictFile = yaml.load(fs.readFileSync('content/universe/phil/dict.yaml'))
+const dictFile = yaml.load(fs.readFileSync('content/universe/rokira/dict.yaml'))
 const { dict: dictObj, examples } = dictFile
 const dict = Object.entries(dictObj)
 
