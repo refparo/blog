@@ -30,6 +30,11 @@ dict:
     etym: <ai>-<kin>
     defn: _n1_ 是情侣
     tags: [社会关系]
+  aire:
+    defn: _n1_ 是光、光线、光束
+  airenaku:
+    etym: <aire>-<enaku>
+    defn: _n1_ 是 1 光分的长度
   aiso:
     defn: _n1_ 薄
     rels:
@@ -776,7 +781,7 @@ dict:
     defn: _n1_ 长 _n3_ 星球的 _n2=1_ 季（_n2=1_/4 年）
     tags: [时间]
   roo:
-    defn: _n1_ 是太阳
+    defn: _n1_ 是行星 _n2=地球_ 的恒星
   ruso:
     defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
