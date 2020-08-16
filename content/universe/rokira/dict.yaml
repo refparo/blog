@@ -1,13 +1,13 @@
 # word count: /(?<=^  )\w*(?=:$)/
 comment:
   doi    miu    tibbo  sihi
-  bokke  tada   asa    nese   sati   ie     oa
-  mofu   kifo   ane    rana   tapi   kedi   bete
-  nogi   unsa   reu    dimu   zata
-  teri   dupa   poma   teta   dau    haa    gibe   dou
-  taa    zebi   sera   sene   zetu   wika   saa    ride
-  guee   gaa    witti  ata    tuu    mugo   tapa
-  tii    dipi   afa    kidi   zaiko  saki   sipoo
+  bokke  tada   sati   oa
+  mofu   kifo   ane    rana   bete
+  nogi   unsa   reu
+  teri   dupa   teta   haa    gibe   dou
+  taa    zebi   sera   zetu   ride
+  guee   gaa    ata    tuu    tapa
+  tii    dipi   afa    kidi   sipoo
 dict:
   a:
     defn: _n1_ 是满足 _S1(x)_ 的某（表示根据上下文省略）
@@ -141,6 +141,11 @@ dict:
     etym: <da>-<ragu>
     defn: 用什么方法、途径 _S1_？
     tags: [疑问词]
+  dau:
+    defn:
+      - _n1_ 是半个满足 _S1(x)_ 的对象
+      - _n1_ 是二分之一
+    tags: [数词]
   de:
     defn: 相当于 _S1(n1, n3, n2, n*)_
     tags: [换位谓词]
@@ -170,6 +175,8 @@ dict:
     etym: <deza>-<re>
     defn: _n1_ 是 _n2_ 的宽度
     tags: [度量]
+  dimu:
+    defn: _n1_ 垫在 _n2_ 上方、_n3_ 下方
   e:
     defn: _n1_ 将要、会 _S1(x)_
     tags: [情态]
@@ -319,7 +326,15 @@ dict:
       - _n1_ 数量很多
       - _S1_ 多次发生
     rels:
-      反义词: [semi]
+      反义词: [haguna, semi]
+    tags: [约数]
+  haguna:
+    etym: <hagu>-<na>
+    defn:
+      - _n1_ 数量不多
+      - _S1_ 偶尔发生
+    rels:
+      反义词: [hagu]
     tags: [约数]
   hai:
     defn: 时间段 _n1_ 是 _n2_ 星球的白天
@@ -366,6 +381,8 @@ dict:
     rels:
       反义词: [rami]
     tags: [方位]
+  ie:
+    defn: _S1_ 显得为真、让 _n1_ 感觉似乎为真
   iga:
     defn: _n1_ 是 _S1_ 发生的时刻
   ige:
@@ -415,6 +432,10 @@ dict:
       - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 变为真
       - _n1_ 使 _n2_ 做 _S1(x)_
     tags: [使役]
+  kedi:
+    defn:
+      - _n1_ 是装着 _n2_ 的袋子
+      - _n1_ 是用一个袋子装好的满足 _S1(x)_ 的对象
   kemi:
     defn:
       - _n1_ 是一千个满足 _S1(x)_ 的对象
@@ -491,6 +512,9 @@ dict:
     tags: [社会关系]
   kuru:
     defn: _n1_ 是床
+  kurudimu:
+    etym: <kuru>-<dimu>
+    defn: _n1_ 是床垫
   kuza:
     defn: _n1_ 是 _n2_ 下方 _n3_ 距离处
     rels:
@@ -600,12 +624,22 @@ dict:
     defn: _n1_ 是蓝紫色的（a*b* 平面的右下角）
     tags: [颜色]
   mou:
-    defn: _n1_ 是 _n+=1_ 的乘积
+    defn:
+      - _n1_ 是 _n+=1_ 的乘积
+      - _n1_ 是 _n+=1_ 的乘积个满足 _S1(x)_ 的对象
     tags: [算术]
   mu:
     defn: _S1_ 结束
     note: 终结体，强调或添加终结，去除持续性。
     tags: [体态]
+  mugo:
+    defn:
+      - _n1_ 硬
+      - _n1_ 的硬度为 _n2_
+    tags: [度量]
+  mugokuru:
+    etym: <mugo>-<kuru>
+    defn: _n1_ 是硬板床（没有床垫的床）
   mun:
     defn:
       - _n1_ 是四个满足 _S1(x)_ 的对象
@@ -671,6 +705,11 @@ dict:
     defn: _n*_ 因为 _S1(x*)_ 才 _S2(x*)_，_n*_ 为了 _S1(x*)_ 才 _S2(x*)_
     rels:
       相对词: [niru]
+  nasigaigena:
+    etym: <nasi>-<ga>-<ige>-<na>
+    defn:
+      - _n1_ 发呆
+      - _n1_ 漫无目的地做 _S1(x)_
   naso:
     defn: _n*_ 虽然 _S2(x*)_，但是 _S1(x*)_
   natta:
@@ -696,6 +735,11 @@ dict:
   nee:
     defn: （叹词）表示肯定
     tags: [叹词]
+  nese:
+    defn: _n1_ 睡觉
+  nesekedi:
+    etym: <nese>-<kedi>
+    defn: _n1_ 是睡袋
   nesu:
     defn: _n1_ 是 _n2_ 品种的草
     tags: [植物]
@@ -763,6 +807,10 @@ dict:
   pasu:
     defn: _S1_ 可能为真
     tags: [情态]
+  poma:
+    defn: _n1_ 朴素、不奢侈
+    rels:
+      反义词: [zaiko]
   ra:
     defn: _n1_ 是 _S1(x)_ 们，_n1_ 是多个满足 _S1(x)_ 的对象
     tags: [数量]
@@ -862,6 +910,8 @@ dict:
     spcf:
       …sa: ……分别
     tags: [逻辑运算]
+  saa:
+    defn: _S1_ 大概为真
   sabu:
     defn: _n1_ 咬 _n2_
     spcf:
@@ -897,6 +947,10 @@ dict:
     rels:
       反义词: [hagu]
     tags: [约数]
+  sene:
+    defn:
+      - _n1_ 看 _n2_
+      - _n1_ 看 _S1_ 发生
   sere:
     etym: <se>-<re>
     defn: 相当于 _S1(n2, n3, n1, n*)_
@@ -975,6 +1029,8 @@ dict:
     tags: [天文]
   tame:
     defn: _n1_ 迎接 _n2_ 来到 _n3_
+  tapi:
+    defn: _n1_ 是 _n2_ 的顶部、屋顶、天花板
   tari:
     defn: _n1_ 从 _n3_ 处取得 _n2_
     tags: [让渡]
@@ -1093,6 +1149,11 @@ dict:
     etym: <u>-<ene>
     defn: _n1_ 是 _n3_ 历法的一天的第 _n2_ 小时
     tags: [时间]
+  wika:
+    defn: _n1_ 装着 _n2_
+  witti:
+    defn: _n1_ 烦恼、烦躁、躁动
+    tags: [情绪]
   wobu:
     defn: _n1_ 是 _n2_ 在球坐标系 _n4_ 下的西方 _n3_ 距离处
     rels:
@@ -1105,10 +1166,19 @@ dict:
   wue:
     defn: _n1_ 是黑白的、灰色的、彩度低的（a*b* 平面的中间部分）
     tags: [颜色]
+  zaiko:
+    defn: _n1_ 奢华
+    rels:
+      反义词: [poma]
   zara:
     defn: _S2_ 发生，然后 _S1_ 发生
     rels:
       相对词: [raza]
+  zata:
+    defn:
+      - _n1_ 是 _n+=0_ 的和
+      - _n1_ 是 _n+=0_ 的和个满足 _S1(x)_ 的对象
+    tags: [算术]
   ze:
     defn:
       - _n*_ 满足 _S+(x*)_ 中的一部分
@@ -1125,8 +1195,10 @@ dict:
     defn: _n1_ 是山
     tags: [地理]
   zire:
-    defn: _n1_ 是 _n2_ 除以 _n3_ 的商
-    tags: [算数]
+    defn:
+      - _n1_ 是 _n2_ 除以 _n3_ 的商
+      - _n1_ 是 _n2_ 除以 _n3_ 的商个满足 _S1(x)_ 的对象
+    tags: [算术]
   zu:
     defn:
       - _n1_ 尊敬地 _S1(x)_
