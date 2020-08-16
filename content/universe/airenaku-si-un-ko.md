@@ -6,7 +6,7 @@ date: 2020-08-15
 
 “祝贺各位平安来到火星。各位经历了漫长的旅途，想必已经十分劳累。接下来各位可以在各自的房间里放松，明早我们将正式为大家分配住处和任务。”
 
-听完简短的欢迎致辞，棕狼走进分配给他的房间，把全身的重量重重地砸在床上——在仅有地球的 2/5 的重力作用下。
+听完简短的欢迎致辞，棕狼兽人走进了分配给他的房间，把全身的重量重重地砸在床上——在仅有地球的 2/5 的重力作用下。
 
 不管怎么说，他还是躺到了床上。“啊——没想到火星的床还挺舒服的……”
 
@@ -48,14 +48,20 @@ date: 2020-08-15
 
 ## 双语对照
 
-<ruby>“祝贺各位平安来到火星。<rt>“hara ra futtoo ke muntain ru hamu si uri si sata.</ruby>
-<ruby>各位经历了漫长的旅途，想必已经十分劳累。<rt>hara ra mesu na isse si ta si kesa ki, neza ki ku ki kowa ki damen.</ruby>
-<ruby>接下来各位可以在各自的房间里放松，<rt>eeta ri ma ka, hara ri sa ma gisa ni tafa ni ma ki natta su susu.</ruby>
+<div id="compare">
+
+<ruby>“祝贺各位平安来到火星。<rt>“hara ra futtoo ke muntain ru hamu si uri si sata.</ruby>\
+<ruby>各位经历了漫长的旅途，想必已经十分劳累。<rt>hara ra mesu na isse si ta si kesa ki, neza ki ku ki kowa ki damen.</ruby>\
+<ruby>接下来各位可以在各自的房间里放松，<rt>eeta ri ma ka, hara ri sa ma gisa ni tafa ni ma ki natta su susu.</ruby>\
 <ruby>明早我们将正式为大家分配住处和任务。”<rt>eetawasa ki tatai ka mira re masuma na borega nu to ne hara re sareta.”</ruby>
 
-听完简短的欢迎致辞，棕狼走进分配给他的房间，把全身的重量重重地砸在床上——在仅有地球的 2/5 的重力作用下。
+<ruby>听完简短的欢迎致辞，<rt>a ra mizzo ka tame si niru ku umare nu nosa si uri si eeta ka,</ruby>\
+<ruby>棕狼兽人走进了分配给他的房间，<rt>nomati ki ruupumi ra gisa ra sareta su sere ki tafa nu sete su uri sa,</ruby>\
+<ruby>把全身的重量重重地砸在床上<rt>bota ri uu ra kuru re gentu ku gangi si,</ruby>\
+<ruby>——在仅有地球的 2/5 的重力作用下。<rt>tain ni gentoma na gee na sau su zire nu mou si a nu aka su ta.</ruby>
 
-不管怎么说，他还是躺到了床上。“啊——没想到火星的床还挺舒服的……”
+<ruby>不管怎么说，他还是躺到了床上。<rt>naa, he ra niro se kuru ru sete si uri.</ruby>\
+<ruby>“啊——没想到火星的床还挺舒服的……”<rt>“aa— muntain ri ma ki kuru ra zeera si ii su ke si neza si na si ta so…”</ruby>
 
 大概是因为睡了一个半月的睡袋，一张朴素的硬板床都显得如同最奢华的席梦思。
 
@@ -91,14 +97,18 @@ date: 2020-08-15
 
 话语突然中断，界面上显示出“是否发送”的字样。棕狼选择“取消”，举着右手还想说些什么，但还是放下了右手，默然长叹。
 
+</div>
+
 ## Gloss
+
+<div id="gloss"></div>
 
 </div>
 
 <style>
-ruby {
+#compare ruby {
   ruby-align: start;
-  line-height: normal;
+  line-height: 1.2;
 }
 ruby rt {
   font-size: inherit;
