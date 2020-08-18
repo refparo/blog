@@ -1,13 +1,17 @@
 # word count: /(?<=^  )\w*(?=:$)/
 comment:
-  doi    miu    tibbo  sihi
-  bokke  tada   sati   oa
-  mofu   kifo   ane    rana   bete
-  nogi   unsa   reu
-  teri   dupa   teta   haa    gibe   dou
-  taa    zebi   sera   zetu   ride
-  guee   gaa    ata    tuu    tapa
-  tii    dipi   afa    kidi   sipoo
+  doi    miu    tibbo  taa    zetu   ride
+  mofu   kifo   ane    rana   bete   reu
+  dupa   teta   haa    gibe   dou    bokke
+  guee   gaa    ata    tuu    tapa   tii    dipi   afa
+  resa   numo   zafe   riza
+  reu    disa   ruto   tobi   maro
+  tuma   motu   sua    pina   seena  ion    geki
+  seema  saa    toota  tuni   mero   siti   depu
+  au     turo   hooza  oa     are    rari   tito   rade
+  meri   sakan  zuma   ia     rata   tuta
+  nufu   tezi   aru    kame   hini   rai
+  nifa   haze   rati   numu   diu    nane   buzoo  nizu
 dict:
   a:
     defn: _n1_ 是满足 _S1(x)_ 的某（表示根据上下文省略）
@@ -107,6 +111,7 @@ dict:
     defn: _n1_ 是 _n2_ 的任务
   bota:
     defn: _n1_ 是 _n2_ 的身体
+    tags: [身体]
   bumen:
     defn: _n1_ 是青绿色的（青色到绿色，a*b* 平面的左半部分）
     tags: [颜色]
@@ -160,6 +165,8 @@ dict:
     etym: <dege>-<re>
     defn: _n1_ 是 _n2_ 的深度
     tags: [度量]
+  denu:
+    defn: _n1_ 按下、点击、选中 _n2_
   dere:
     etym: <de>-<re>
     defn: 相当于 _S1(n3, n1, n2, n*)_
@@ -388,13 +395,25 @@ dict:
   ige:
     defn: _n1_ 中存在对象满足 _S1(x)_
     tags: [量词]
+  igenangi:
+    etym: <ige>-<na>-<nogi>
+    defn: _n1_ 是真空区域
   ii:
-    defn: _n1_ 合适地、足够 _S1(x)_
+    defn:
+      - _n1_ 合适地、足够 _S1(x)_
+      - _n1_ 好、各方面处于好的状态
+      - _S1_ 进行得好、顺利
     tags: [程度]
   iina:
     etym: <ii>-<na>
     defn: _n1_ 不够 _S1(x)_
     tags: [程度]
+  ini:
+    defn:
+      - _n1_ 是内容为 _n2_ 的消息
+      - _n1_ 是内容为 _S1_ 的消息
+  ire:
+    defn: _n1_ 是 _n2_ 的代表、象征
   ise:
     defn:
       - _n1_ 是现在
@@ -435,7 +454,7 @@ dict:
   kedi:
     defn:
       - _n1_ 是装着 _n2_ 的袋子
-      - _n1_ 是用一个袋子装好的满足 _S1(x)_ 的对象
+      - _n1_ 是用一个袋子装着的满足 _S1(x)_ 的对象
   kemi:
     defn:
       - _n1_ 是一千个满足 _S1(x)_ 的对象
@@ -460,6 +479,8 @@ dict:
   ki:
     defn: _n1_ 是上文提到满足 _S1(x)_ 的对象
     tags: [语境代词]
+  kidi:
+    defn: _n1_ 乱、不整洁、不整齐
   kihi:
     defn:
       - _n1_ 快
@@ -585,6 +606,9 @@ dict:
       - _n1_ 喜欢 _n2_
       - _n1_ 喜欢做 _S1(x)_
     tags: [感情]
+  messaru:
+    etym: <mesu>-<saru>
+    defn: _n1_ 对 _n2_ 认识很久、经常遇见、熟悉
   mesu:
     defn:
       - _n1_ 长
@@ -601,6 +625,10 @@ dict:
     tags: [人称代词]
   mia:
     defn: _n1_ 是 1/3600 个 _S1(x)_
+  mima:
+    defn: _n1_ 出现、从不可见到可见
+  mimake:
+    defn: _n1_ 唤出、召唤出 _n2_
   mira:
     etym: <mi>-<ra>
     defn: _n1_ 是我们（说话者，不包括听话者）
@@ -651,6 +679,9 @@ dict:
       - _n1_ 是火星
       - _n1_ 是 _n2_ 星系/恒星的从内到外第四个行星
     tags: [天文]
+  mun-teri:
+    etym: <mun>-<teri>
+    defn: _n1_ 是地球和火星
   muse:
     defn: _n1_ 中存在唯一对象满足 _S1(x)_
     tags: [量词]
@@ -701,6 +732,11 @@ dict:
   nana:
     defn: _S1_ 肯定为真
     tags: [情态]
+  naro:
+    defn: _n1_ 想、思考内容 _n2_
+  narosi:
+    etym: <naro>-<si>
+    defn: _n1_ 是 _n2_ 的意识
   nasi:
     defn: _n*_ 因为 _S1(x*)_ 才 _S2(x*)_，_n*_ 为了 _S1(x*)_ 才 _S2(x*)_
     rels:
@@ -714,11 +750,14 @@ dict:
     defn: _n*_ 虽然 _S2(x*)_，但是 _S1(x*)_
   natta:
     defn: _n1_ 放松、休闲地 _S1(x)_
+  nazo:
+    defn: _n1_ 是 _n2_ 的头
+    tags: [身体]
   ne:
     defn: （叹词）表示反问/设问
     tags: [叹词]
   neba:
-    defn: _n1_ （由于外界）应该做 _S1(x)_
+    defn: _n1_（由于外界）应该做 _S1(x)_
     rels:
       近义词: [habu]
     tags: [情态]
@@ -764,6 +803,8 @@ dict:
     tags: [方位]
   no:
     defn: _n1_ 归属于 _n2_，_n1_ 被 _n2_ 拥有
+  nogi:
+    defn: _n1_ 是空间、区域、空的、被 _n2=空气_ 填充的地方
   nomati:
     etym: <no>-<mati>
     defn: _n1_ 是暗红色的、红棕色的
@@ -826,6 +867,11 @@ dict:
   ran:
     defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
     tags: [类谓词]
+  ratu:
+    defn: _n1_ 是描绘 _n2_ 的画、图
+  ratuire:
+    etym: <ratu>-<ire>
+    defn: _n1_ 是 _n2_ 的头像、代表、标志、商标
   rawa:
     defn: _n1_ 是除 _n2_ 以外其他满足 _S1(x)_ 的对象，_n1_ 满足 _S1(x)_ 但不是 _n2_
   raza:
@@ -881,6 +927,9 @@ dict:
     tags: [性别]
   ripi:
     defn: _n1_ 以频率 _n2_ 闪烁
+  ro:
+    defn: （叹词）表示劝说、劝慰
+    tags: [叹词]
   rokasu:
     etym: <roo>-<kasu>
     defn: _n1_ 是全体泛人类（指起源于太阳系的智慧生物，包括智人和兽人）
@@ -920,10 +969,16 @@ dict:
     etym: <sa>-<reta>
     defn: _n1_ 把 _n2_ 分配给 _n3_
     tags: [让渡]
+  saru:
+    defn:
+      - _n1_ 知道 _S1_
+      - _n1_ 知道 _n2_ 的存在、认识 _n2_
   sata:
     defn:
       - _n1_ 庆贺、祝贺 _n2_
       - _n1_ 庆贺、祝贺 _S1_ 发生
+  sati:
+    defn: _n1_ 整理 _n2_
   sau:
     defn:
       - _n1_ 是五个满足 _S1(x)_ 的对象
@@ -951,6 +1006,8 @@ dict:
     defn:
       - _n1_ 看 _n2_
       - _n1_ 看 _S1_ 发生
+  sera:
+    defn: _n1_ 穿着 _n2_
   sere:
     etym: <se>-<re>
     defn: 相当于 _S1(n2, n3, n1, n*)_
@@ -969,6 +1026,8 @@ dict:
       - _n1_ 是 _S1_ 这件事
       - _n1_ 是关于 _n2_ 的事
       - 发生关于 _n1_ 的事
+  sihi:
+    defn: _n1_ 蓬松
   sika:
     defn:
       - _n1_ 是 _n2_ 的附近
@@ -979,6 +1038,9 @@ dict:
   sindike:
     etym: <sino>-<nedike>
     defn: _n1_ 用 _n3_ 射杀 _n2_
+  sippo:
+    defn: _n1_ 是 _n2_ 物种/部位的尾巴
+    tags: [身体]
   siri:
     defn: _n1_ 新、未受损耗
   soda:
@@ -991,6 +1053,11 @@ dict:
     rels:
       反义词: [naka]
     tags: [方位]
+  sononsa:
+    etym: <sotanogi>-<unsa>
+    defn: _n1_ 是航天服、太空服
+  sotanogi:
+    defn: _n1_ 是包围着天体 _n2_ 的外太空
   suni:
     defn: _n1_ 是夏季
     rels:
@@ -1015,6 +1082,8 @@ dict:
     defn: _n1_ 是 _n2_ 相对于 _n3_ 的对面、对侧
     note: 若 _n3_ 在 _n2_ 内部，则 _n1_ 也在 _n2_ 内部，反之亦然。
     tags: [方位]
+  tada:
+    defn: _n1_ 起身、起来
   tadde:
     etym: <taaku>-<de>
     defn: _n1_ 是 _n3_ 相对于 _n2_ 的对面、对侧
@@ -1023,9 +1092,7 @@ dict:
   tafa:
     defn: _n1_ 是 _n2_ 使用的房间
   tain:
-    defn:
-      - _n1_ 是地球
-      - _n1_ 是恒星/星系 _n3_ 的从内到外第 _n2_ 个行星
+    defn: _n1_ 是恒星/星系 _n3_ 的从内到外第 _n2_ 个行星
     tags: [天文]
   tame:
     defn: _n1_ 迎接 _n2_ 来到 _n3_
@@ -1054,6 +1121,16 @@ dict:
     rels:
       相对词: [kesa]
     tags: [逻辑运算]
+  tena:
+    defn: _n1_ 调动、运用 _n2_ 做 _S1(x)_
+  tere:
+    etym: <te>-<re>
+    defn: _n1_ 是被 _n2_ 用来 _S1(x)_ 的工具
+  teri:
+    defn: _n1_ 是大地、地球
+  teriani:
+    etym: <teri>-<ani>
+    defn: _n1_ 是类地行星
   tesu:
     defn: _n1_ 与 _n2_ 具有关系 _n3_
   tesse:
@@ -1087,6 +1164,9 @@ dict:
     defn:
       - _n1_ 告诉 _n2_ _S1_
       - _n1_ 告诉 _n3_ _n2_
+  umakin:
+    etym: <uma>-<kin>
+    defn: _n+_ 互相交流、通讯
   umanosa:
     etym: <uma>-<nosa>
     defn:
@@ -1119,6 +1199,8 @@ dict:
     etym: <u>-<nira>
     defn: _n1_ 是 _n3_ 历法的第 _n2_ 年
     tags: [时间]
+  unsa:
+    defn: _n1_ 是服装、衣服（指全身的服饰）
   upi:
     defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
   uree:
@@ -1166,6 +1248,12 @@ dict:
   wue:
     defn: _n1_ 是黑白的、灰色的、彩度低的（a*b* 平面的中间部分）
     tags: [颜色]
+  wuru:
+    etym: _拉丁 Vulpes_
+    defn: _n1_ 是狐
+  wurupesu:
+    etym: _拉丁 Vulpes_
+    defn: _n1_ 是赤狐
   zaiko:
     defn: _n1_ 奢华
     rels:
@@ -1184,6 +1272,9 @@ dict:
       - _n*_ 满足 _S+(x*)_ 中的一部分
       - _n1_ 属于 _n+_ 的并集
     tags: [逻辑运算]
+  zebi:
+    defn: _n1_ 把 _n2_ 发送、送出给 _n3_
+    tags: [让渡]
   zeera:
     defn: _n1_ 感到舒适
   zenu:
