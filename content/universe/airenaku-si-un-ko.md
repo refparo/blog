@@ -9,7 +9,7 @@ date: 2020-08-15
 
 <!-- more -->
 
-<orig>a ra mizzo ka tame si niru ku umare nu nosa si uri si eeta ka, nomati ki ruupumi ra gisa ra sareta su sere ki tafa nu sete su uri sa, bota ri uu ra kuru re gentu ku gangi si, teri ni gentoma sa gee ne sau nu zire si a nu aka su ta.</orig>
+<orig>a ra mizzo ka tame si niru ku umare nu nosa si uri si zara ka, nomati ki ruupumi ra gisa ra sareta su sere ki tafa nu sete su uri sa, bota ri uu ra kuru re gentu ku gangi si, teri ni gentoma sa gee ne sau nu zire si a nu aka su ta.</orig>
 听完简短的欢迎致辞，棕狼兽人走进了分配给他的房间，把全身的重量重重地砸在床上——在仅有地球的 2/5 的重力作用下。
 
 <orig>naa, he ra niro se kuru ru sete si uri. “aa— muntain ri ma ki kuru ra zeera si ii su ke si neza si na si ta…”</orig>
@@ -21,12 +21,13 @@ date: 2020-08-15
 <orig>nasigaigena ka tapi ru sene si ku sa haguna ki enaku nu ma sa, damen si ta ki he ri witti si bire su ta.</orig>
 望着天花板发了几分钟的呆，棕狼原本疲劳的心情就又躁动起来了。
 
-<orig>“da si habu so ka…”he ra tada se, rete ka sononsa ni sera si ta si niru ki kidi si ke su re ka sihi ku sippo ru sati su sa. “a ra ii si ini ne he ru zebi so ro.”</orig>
+<orig>“da si habu so ka…”he ra siti si tada se, rete ka sononsa ni sera si ta si niru ki kidi si ke su re ka sihi ku sippo ru sati su sa. “a ra ii si ini ne he ru zebi so ro.”</orig>
 “做点什么好呢……”他坐起来，理了理穿航天服弄乱的蓬松尾巴。“给他发条消息报平安吧。”
 
 <orig>niru ka he ra mun-teri ri umakin si tere ri mimake sa narosi ru tena sa, ko ka messaru ke wurupesu ni ratuire ri denu su sa.</orig>
 于是他调动意识呼出地火通讯程序，选中那个熟悉的赤狐头像。
 
+<orig>“mi ra hamu si mu si ta~”he ra zebi zu denu.“a ra ratu ni zebi si ata so ro.”he ra kame si tada se, seena ra rari su ke su sa; wuegai ka nizu ku roo ri aire ra haze ra, nuntapi re, sakan ru to ri pina su tuni ka he ra dano ku tafa re ao su ke.“mero so oo.”he ra tobi si turo su iga ka, he ra sene su re ka hini ri bokke se, ki ri zebi su sa.</orig>
 “我着陆了～”他选中发送。“再发一张照片吧。”他站起来。拉开窗帘，灰蓝色的落日透过沙尘、穹顶和窗户把他的小房间照亮。“真美啊，”他暗暗感叹，拍下眼前的景色，发送。
 
 “还有什么事情可做呢……”他扶着栏杆，凝视落日接触地平线。打开船员群，无人发言。“大概是都累了吧。”
