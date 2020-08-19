@@ -1,13 +1,13 @@
 # word count: /(?<=^  )\w*(?=:$)/
 comment:
-  zai    bamo   tekke  toga   reta   rabo   tutoo  meru
-  zootu  kegu   ronto  ona    dono   meesa  gosu   riti
-  gose   ziaa   taizin tissai ita    gaira  pape   ozzu
-  rannai adi    minfee tata   inki   uppu
-  gemun  booga  assa   reti   efa    mana   koorai denun
-  nare   bunai  katai  rua    oai    taa    roki   mare
-  dina   terun  rei    rasse  seei   gaon   ranzu
-  naro   maite  wesa   ramu   toome  meetu  reeru  netu
+  zai    bamo   tutoo  meru
+  zootu  ronto  dono   meesa  gosu   riti
+  gose   ziaa   taizin tissai ita    ozzu
+  rannai adi    minfee tata
+  gemun  booga  koorai
+  oai    taa    mare
+  dina   terun  rasse  seei   gaon   ranzu
+  naro   maite  wesa   ramu   toome  reeru  netu
 dict:
   a:
     defn: _n1_ 是满足 _S1(x)_ 的某（表示根据上下文省略）
@@ -78,6 +78,16 @@ dict:
   asa:
     defn: 时间段 _n1_ 长 _n3_ 星球的 _n2=1_ 天
     tags: [时间]
+  assa:
+    defn: _n1_ 是 _n2_ 处的网络
+  assaefa:
+    etym: <assa>-<efa>
+    defn: _n1_ 是提供 _n2_ 内容/服务的网页
+  assama:
+    etym: <assa>-<ma>
+    defn: _n1_ 是提供 _n2_ 内容/服务的网站
+  assatari:
+    defn: _n1_ 从网站/网页 _n3_ 下载 _n2_
   ata:
     defn: 进一步发生 _S1_、再 _S1_
   atta:
@@ -88,7 +98,7 @@ dict:
     defn: _n1_ 是青色的（a*b* 平面的左下角）
     tags: [颜色]
   bana:
-    defn: _n1_ 是由 _n2_ 组成的群、组、队等小组织
+    defn: _n1_ 是由 _n2_ 组成的群、组、队等小团体
   bii:
     defn:
       - _n1_ 是九个满足 _S1(x)_ 的对象
@@ -122,6 +132,9 @@ dict:
   bumen:
     defn: _n1_ 是青绿色的（青色到绿色，a*b* 平面的左半部分）
     tags: [颜色]
+  bunai:
+    defn: _n1_ 是 _n2_ 的大脑、头脑
+    tags: [身体]
   da:
     defn: _n1_ 是什么，_n1_ 满足什么命题？什么？
     tags: [疑问词]
@@ -144,6 +157,9 @@ dict:
     tags: [疑问词]
   damen:
     defn: _n1_ 疲劳、劳累地做 _S1(x)_
+  daniru:
+    etym: <da>-<niru>
+    defn: 为什么 _S1_ 发生？
   dano:
     defn: _n1_ 小
     rels:
@@ -174,6 +190,8 @@ dict:
     tags: [度量]
   denu:
     defn: _n1_ 按下、点击、选中 _n2_
+  denun:
+    defn: _n1_ 排成一排、一列
   dere:
     etym: <de>-<re>
     defn: 相当于 _S1(n3, n1, n2, n*)_
@@ -210,7 +228,10 @@ dict:
       - _n1_ 是明天
       - _S1_ 在明天发生
     tags: [事件]
+  efa:
+    defn: _n1_ 是 _n2_ 中的一页
   emmia:
+    etym: <ena>-<mia>
     defn: 时间段 _n1_ 长 _n3_ 历法的 _n2=1_ 秒
     tags: [时间]
   enda:
@@ -242,7 +263,7 @@ dict:
       反义词: [wobu]
     tags: [方位]
   funti:
-    defn: _n1_ 相比于合适的 _n2_ 而言过于 _S1(x)_
+    defn: _n1_ 相比于合适的 _n2_ 而言太过于 _S1(x)_
     tags: [程度]
   fura:
     defn: _n1_ 想要、希望 _S1_ 发生
@@ -264,6 +285,8 @@ dict:
   gai:
     defn: _n1_ 是蓝色的（紫色到青色，a*b* 平面的下半部分）
     tags: [颜色]
+  gaira:
+    defn: _n1_ 是 _n2_ 中随机、随意的一个
   gangi:
     defn: _n1_ 用 _n2_ 砸 _n3_
   gani:
@@ -433,6 +456,8 @@ dict:
     defn:
       - _n1_ 是内容为 _n2_ 的消息
       - _n1_ 是内容为 _S1_ 的消息
+  inki:
+    defn: _n1_ 创造、创作出 _n2_
   ire:
     defn: _n1_ 是 _n2_ 的代表、象征
   ise:
@@ -471,6 +496,8 @@ dict:
     defn: _n1_ 是人（泛指一切智慧生物）
   kata:
     defn: _n1_ 是飞机、潜艇、飞船等可在由 _n2_ 填充的空间中运动的机械
+  katai:
+    defn: _n1_ 播放 _n2_
   ke:
     defn:
       - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 变为真
@@ -480,6 +507,8 @@ dict:
     defn:
       - _n1_ 是装着 _n2_ 的袋子
       - _n1_ 是用一个袋子装着的满足 _S1(x)_ 的对象
+  kegu:
+    defn: _n1_ 展示、显示物体/内容 _n2_
   kemi:
     defn:
       - _n1_ 是一千个满足 _S1(x)_ 的对象
@@ -588,6 +617,11 @@ dict:
       - _n1_ 是八个满足 _S1(x)_ 的对象
       - _n1_ 是八
     tags: [数量]
+  mana:
+    defn: _n1_ 使用/消耗 _n2_ 来做 _S1(x)_
+  manare:
+    etym: <mana>-<re>
+    defn: _n1_ 是用于 _S1_ 的资源、资料
   masu:
     defn: _n1_ 生活
   masuma:
@@ -616,6 +650,8 @@ dict:
       - _n*_ 满足 _S+(x*)_ 中的哪一个？
       - _n1_ 属于 _n+_ 中的哪一个？
     tags: [疑问词]
+  meetu:
+    defn: _n1_ 是关于 _n2_ 的数据
   mega:
     defn:
       - _n1_ 是一百万个满足 _S1(x)_ 的对象
@@ -641,6 +677,8 @@ dict:
     tags: [感情]
   mero:
     defn: _n1_ 美
+  meroke:
+    defn: _n1_ 是美工
   messaru:
     etym: <mesu>-<saru>
     defn: _n1_ 对 _n2_ 认识很久、经常遇见、熟悉
@@ -767,8 +805,14 @@ dict:
   nana:
     defn: _S1_ 肯定为真
     tags: [情态]
+  nare:
+    defn:
+      - _n1_ 记得 _n2_
+      - _n1_ 记得 _S1_
   naro:
-    defn: _n1_ 想、思考内容 _n2_
+    defn:
+      - _n1_ 想、思考内容 _n2_
+      - _n1_ 想、思考 _S1_
   narosi:
     etym: <naro>-<si>
     defn: _n1_ 是 _n2_ 的意识
@@ -888,6 +932,8 @@ dict:
   omesuro:
     etym: <ome>-<suro>
     defn: _n1_ 做实验研究 _n2_
+  ona:
+    defn: _n1_ 以做 _S1(x)_ 为职业、工作
   oo:
     defn: （叹词）表示惊叹、赞叹
     tags: [叹词]
@@ -902,6 +948,11 @@ dict:
   pa:
     defn: _n1_ 是 _n2_ 的表面
     tags: [方位]
+  pape:
+    defn: _n1_ 是储存在媒介 _n3_ 中的内容为 _n2_ 的一个条目、记录、文件
+  papetekke:
+    etym: <pape>-<tekke>
+    defn: _n1_ 是储存在媒介 _n3_ 中的内容为 _n2_ 的文件夹、文件集
   pasu:
     defn: _S1_ 可能为真
     tags: [情态]
@@ -915,6 +966,8 @@ dict:
   ra:
     defn: _n1_ 是 _S1(x)_ 们，_n1_ 是多个满足 _S1(x)_ 的对象
     tags: [数量]
+  rabo:
+    defn: _n1_ 是聚落、城镇，作为 _n2_ 地区的中心
   ragu:
     defn: _n1_ 是 _S1_ 发生的具体方法、途径
   rami:
@@ -956,6 +1009,11 @@ dict:
       - _n1_ 比 _n2_ 更 _S1(x)_
       - _n1_ 的 _S2(x)_ 比 _n2_ 的 _S2(x)_ 更 _S1(x)_
     tags: [程度]
+  rei:
+    defn: _n1_ 是音乐
+  reinki:
+    etym: <rei>-<inki>
+    defn: _n1_ 是音乐人、音乐家
   remi:
     defn: _n1_ 会、可以、有能力做 _S1(x)_
     tags: [情态]
@@ -974,6 +1032,8 @@ dict:
     defn: _S1_ 发生一次
     note: 单变体，强调动作一次性发生，去除持续性。
     tags: [体态]
+  reti:
+    defn: _S1_ 直接地、未经其他步骤地发生
   ria:
     defn:
       - _n1_ 是三个满足 _S1(x)_ 的对象
@@ -995,6 +1055,10 @@ dict:
   rokasu:
     etym: <roo>-<kasu>
     defn: _n1_ 是全体泛人类（指起源于太阳系的智慧生物，包括智人和兽人）
+  roki:
+    defn:
+      - _n1_ 用做 _S1(x)_ 回答、回应、回复 _n2_
+      - _n1_ 用 _n2_ 回答、回应、回复 _n3_
   rokira:
     etym: <rokasu>-ki-<ramme>
     defn: _n1_ 是泛人类中间语
@@ -1004,6 +1068,10 @@ dict:
   roo:
     defn: _n1_ 是行星 _n2=地球_ 的恒星
     tags: [天文]
+  rua:
+    defn: _n1_ 唱/演奏 _n2_
+  ruare:
+    defn: _n1_ 是 _n2_ 唱/演奏的歌/曲
   ruso:
     defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
@@ -1075,6 +1143,8 @@ dict:
     defn:
       - _n1_ 看 _n2_
       - _n1_ 看 _S1_ 发生
+  senere:
+    defn: _n1_ 是 _n2_ 的视线、视野、看到的东西
   senesuro:
     etym: <sene>-<suro>
     defn: _n1_ 观察研究 _n2_
@@ -1202,6 +1272,8 @@ dict:
     rels:
       相对词: [kesa]
     tags: [逻辑运算]
+  tekke:
+    defn: _n1_ 是由 _n2_ 组成的集合
   tena:
     defn: _n1_ 调动、运用 _n2_ 做 _S1(x)_
   tere:
@@ -1232,6 +1304,11 @@ dict:
     tags: [集合运算]
   tobi:
     defn: _n1_ 对 _n2_ 感到惊叹而做 _S1(x)_
+  toga:
+    defn: _n1_ 是公司、军队、政府等大组织
+  togarabo:
+    etym: <toga>-<rabo>
+    defn: _n1_ 是被 _n2_ 管辖的基地
   toku:
     defn: _n1_ 是点，_n1_ 是一块小区域
     tags: [数量, 形状]
@@ -1294,6 +1371,8 @@ dict:
     defn: _n1_ 是服装、衣服（指全身的服饰）
   upi:
     defn: _n1_ 抓 _n2_，_n1_ 捕捉 _n2_
+  uppu:
+    defn: _S1_ 忽然发生、未被 _n1_ 预料地发生
   uree:
     defn: _n*_ 即使 _S2(x*)_，也 _S1(x*)_
   uri:

@@ -9,7 +9,7 @@ date: 2020-08-15
 
 <!-- more -->
 
-<orig>a ra mizzo ka tame si niru ku umare nu nosa si uri si zara ka, nomati ki ruupumi ra gisa ra sareta su sere ki tafa nu sete su uri sa, bota ri uu ra kuru re gentu ku gangi si, teri ni gentoma sa gee ne sau nu zire si a nu aka su ta.</orig>
+<orig>ko ra mizzo ka tame si niru ku umare nu nosa si uri si zara ka, nomati ki ruupumi ra gisa ra sareta su sere ki tafa nu sete su uri sa, bota ri uu ra kuru re gentu ku gangi si, teri ni gentoma sa gee ne sau nu zire si a nu aka su ta.</orig>
 听完简短的欢迎致辞，棕狼兽人走进了分配给他的房间，把全身的重量重重地砸在床上——在仅有地球的 2/5 的重力作用下。
 
 <orig>naa, he ra niro se kuru ru sete si uri. “aa— muntain ri ma ki kuru ra zeera si ii su ke si neza si na si ta…”</orig>
@@ -36,10 +36,13 @@ date: 2020-08-15
 <orig>hera ra muntain ru hamu si ku si ta si naso ka, iga re tasi-dau ni osai sa, kata ri ma ka hera re omesuro sa senesuro su ze si bore su re si ata su nasi. hamu si eeta ka mizzo nu ma ki natta si si ra, he ri ii si na su ke si naso.</orig>
 虽说是来火星的行程，但毕竟长达一个半月，因此在飞船上他们也有许多实验和观测任务。着陆后这短暂的悠闲，反倒让棕狼感到有些不适应了。
 
+<orig>“daniru ka he ra mi ru roki si uri su na…”uppu ka he ra teri ri ma ka umanosa su re ka muntain ri ma ku reinki ru nare su bire.“da ka rei na kuma ru ma si ran si sene so ro.”</orig>
 “为什么他还没回我……”忽然他想起在地球时听说的火星音乐家，“看看这里有什么音乐吧。”
 
-他打开基地的网络导航。没有专职美工，网站的外观有些朴素。打开“音乐”，一列歌曲文件就直接排列在了他面前。“这可真的有点简陋啊……”
+<orig>he ra togarabo ri ma ka manare nu assama ru denu. meruke si ona si ige si na si niru ka, ki ki assama ri poma si sene. a ra rei zu denu si zara ka, rei ni pape si ra ni denun sa he ra senere ru ma su reti.“kuma ra puma su funti so nee…”</orig>
+他打开基地的资源网站。没有专职美工，网站的外观有些朴素。打开“音乐”，一列音乐文件就直接排列在了他面前。“这也太简陋了吧……”
 
+<orig>ata ka a re muntain ri ma ka inki su re ki rei zi ukee ki papetekka ru denu sa, assaefa ra muntain ri ma ki reinki ra inki su re ki rei nu kegu su raza. he ra ruare ri gaira si ra nu assatari; rei na bunai ri ma ke katai su re si bire.</orig>
 继续打开“火星原创音乐”文件夹，网页显示的就是火星的音乐人创作的音乐了。棕狼随便下载了几首，音乐在脑中响起。
 
 关掉浏览器窗口，把目光转向西沉的蓝日。太阳已经被大地吞没了一半。两颗月亮呈现不规则的月牙形，反射着蓝白的光；星空则被尘埃遮挡而模糊不清。
