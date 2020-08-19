@@ -4,7 +4,7 @@ info: 微型小说，造语
 date: 2020-08-15
 ---
 
-<orig>“hara ra futtoo ke muntain ru hamu si uri si sata. hara ra mesu na isse si ta si kesa ki, neza ki ku ki kowa ki damen. eeta ri ma ka, hara ri sa ma gisa ni tafa ni ma ki natta su susu. eetawasa ki tatai ka mira re masuma na borega nu to ne hara re sareta.”</orig>
+<orig>“hara ra futtoo ke muntain ru hamu si uri si sata. hara ra mesu na isse si ta si kusa ki, neza ki ku ki kowa ki damen. eeta ri ma ka, hara ri sa ma gisa ni tafa ni ma ki natta su susu. eetawasa ki tatai ka mira re masuma na borega nu to ne hara re sareta.”</orig>
 “祝贺各位平安来到火星。各位经历了漫长的旅途，想必已经十分劳累。接下来各位可以在各自的房间里放松，明早我们将正式为大家分配住处和任务。”
 
 <!-- more -->
@@ -24,13 +24,13 @@ date: 2020-08-15
 <orig>“da si habu so ka…”he ra siti si tada se, rete ka sononsa ni sera si ta si niru ki kidi si ke su re ka sihi ku sippo ru sati su sa. “a ra ii si ini ne he ru zebi so ro.”</orig>
 “做点什么好呢……”他坐起来，理了理穿航天服弄乱的蓬松尾巴。“给他发条消息报平安吧。”
 
-<orig>niru ka he ra mun-teri ri umakin si tere ri mimake sa narosi ru tena sa, ko ka messaru ke wurupesu ni ratuire ri denu su sa.</orig>
+<orig>niru ka he re mun-teri ri umakin si tere ri mimake sa narosi ru tena se, ko ka messaru ke wurupesu ni ratuire ri denu su sa.</orig>
 于是他调动意识呼出地火通讯程序，选中那个熟悉的赤狐头像。
 
 <orig>“mi ra hamu si mu si ta~”he ra zebi zu denu.“a ra ratu ni zebi si ata so ro.”he ra kame si tada se, seena ra rari su ke su sa; wuegai ka nizu ku roo ri aire ra haze ra, nuntapi re, sakan ru to ri pina su tuni ka he ra dano ku tafa ru aoke.“mero so oo.”he ra tobi si turo su iga ka, he ra sene su re ka hini ri bokke se, ki ri zebi su sa.</orig>
 “我着陆了～”他选中发送。“再发一张照片吧。”他站起来。拉开窗帘，灰蓝色的落日透过沙尘、穹顶和窗户把他的小房间照亮。“真美啊，”他暗暗感叹，拍下眼前的景色，发送。
 
-<orig>“da si susu si ata so ka…”he ra tapazona ri tapa sa, nizu ki roo ra dunokine ru nete si senagi su sa. a ra kesere ri bana ru denu sa, uma si ige si na su teu.“saa ka damen su una.”</orig>
+<orig>“da si susu si ata so ka…”he ra tapazona ri tapa se, nizu ki roo ra dunokine ru nete si senagi su sa. a ra kesere ri bana ru denu sa, uma si ige si na su teu.“saa ka damen su una.”</orig>
 “还有什么事情可做呢……”他扶着栏杆，凝视落日接触地平线。打开船员群，无人发言。“大概是都累了吧。”
 
 <orig>hera ra muntain ru hamu si ku si ta si naso ka, iga re tasi-dau ni osai sa, kata ri ma ka hera re omesuro sa senesuro su ze si bore su re si ata su nasi. hamu si eeta ka mizzo nu ma ki natta si si ra, he ri ii si na su ke si naso.</orig>
@@ -45,9 +45,11 @@ date: 2020-08-15
 <orig>ata ka a re muntain ri ma ka inki su re ki rei zi ukee ki papetekka ru denu sa, assaefa ra muntain ri ma ki reinki ra inki su re ki rei nu kegu su raza. he ra ruare ri gaira si ra nu assatari; rei na bunai ri ma ke katai su re si bire.</orig>
 继续打开“火星原创音乐”文件夹，网页显示的就是火星的音乐人创作的音乐了。棕狼随便下载了几首，音乐在脑中响起。
 
-关掉浏览器窗口，把目光转向西沉的蓝日。太阳已经被大地吞没了一半。两颗月亮呈现不规则的月牙形，反射着蓝白的光；星空则被尘埃遮挡而模糊不清。
+<orig>a ra assenete ri netu se, sene sa nizu ka gai ku roo ru ita su sa. roo ri dau ra duna re gosu su re si uri; gaon si gee ra ronto si na ki ramugaon si sene se, aogai ki aire ri rasse si ku su sa; gimmazai ra haze ra meru su re su niru ka rannai.</orig>
+关掉浏览器窗口，把目光转向西沉的蓝日。太阳已经被大地吞没了一半；两颗月亮呈现不规则的月牙形，反射着蓝白的光；星空则被尘埃遮挡而模糊不清。
 
-音乐的旋律清脆而柔和，像是敲打着天空中的两弯月牙，那是木琴的音色。音乐家为什么选择木琴呢？声声击键，似乎让模糊的天空变得澄净，点点星光闪耀其上，或许其中某一颗就是地球吧？然而棕狼明白，地球早在日落前就已经沉下地平线，这不过是音乐家对故乡思念的投射。
+<orig>rei ra zoki se, seei se, ie ka zai ri ma ki ramugaon si gee ri tare su ku su sa; ki ra nobogana nu sunsa. daniru ka reinki re nobogana ru sira so ka? tare si si si ra ra, rannai ki zai re tissai si tau su ke si ie; gime si ra ni taizin si ku si ki ri ma. pasu ka ki re teri ri iso su ige? naso ka he ru saru ka, roo ri nizu si ta ka teri ra dunakine ri dimu ru nizu su uri su kusa ka, ki re reinki ra tezai ru wesa si kegu su rou.</orig>
+音乐清脆而柔和，像是敲打着天空中的两弯月牙，那是木琴的音色。音乐家为什么选择木琴呢？声声击键，似乎让模糊的天空变得澄净，点点星光闪耀其上，或许其中某一颗就是地球吧？然而棕狼明白，地球早在日落前就已经沉下地平线，这不过是音乐家对故乡思念的投射。
 
 太阳伴着优美的音乐渐渐沉没，稀薄的大气没有给天空留下继续发光的机会。很快窗外亮着的，便只剩下穹顶下通明的灯火了。棕狼退回床边坐下，但没有开灯，依旧呆呆望着窗外黑暗的夜空——
 
@@ -55,7 +57,7 @@ date: 2020-08-15
 
 “哇，蓝色的日落！要是能一起看就好了……”
 
-于是棕狼举起右手，对着手环说道：“我也是，这日落看得我好想你！你怎么这么久才回我，都过了十多分钟——”
+于是棕狼举起右手，对着手环说道：“我也好想和你一起看！我好想你，你怎么这么久才回我，都过了十多分钟——”
 
 话语突然中断，界面上显示出“是否发送”的字样。棕狼选择“取消”，举着右手还想说些什么，但还是放下了右手，默然叹息。
 

@@ -1,13 +1,17 @@
 # word count: /(?<=^  )\w*(?=:$)/
 comment:
-  zai    bamo   tutoo  meru
-  zootu  ronto  dono   meesa  gosu   riti
-  gose   ziaa   taizin tissai ita    ozzu
-  rannai adi    minfee tata
-  gemun  booga  koorai
-  oai    taa    mare
-  dina   terun  rasse  seei   gaon   ranzu
-  naro   maite  wesa   ramu   toome  reeru  netu
+  bamo   tutoo  dotai  oe     zuro   noe
+  zootu  dono   meesa  riti   doosai neo    naddo  kafe
+  gose   ziaa   ooo    tini
+  adi    minfee tata   gizo   gira   dao    watu
+  gemun  booga  koorai tazi   zefee  meemu
+  oai    taa    mare   soi    soe    none
+  dina   terun  ranzu  rite   kano
+  maite  reeru  toome  danun  widdo  nera
+  duttoo dira   toga   daira  maidu  fuo    nonfee
+  atai   tesee  roe    aibai  neena  mowoo
+  satu   rou    tene   zoomi  niku   tonrai tena
+  raini  muna   eu     mita   toonaa tako   addu   saiu
 dict:
   a:
     defn: _n1_ 是满足 _S1(x)_ 的某（表示根据上下文省略）
@@ -70,6 +74,10 @@ dict:
   ao:
     defn: _n1_ 是亮的，_n1_ 是亮色的
     tags: [颜色]
+  aogai:
+    etym: <ao>-<gai>
+    defn: _n1_ 是亮蓝色的、蓝白色的
+    tags: [颜色]
   aoke:
     etym: <ao>-<ke>
     defn: _n1_ 把 _n2_ 照亮
@@ -88,6 +96,8 @@ dict:
     defn: _n1_ 是提供 _n2_ 内容/服务的网站
   assatari:
     defn: _n1_ 从网站/网页 _n3_ 下载 _n2_
+  assenete:
+    defn: _n1_ 是网络浏览器
   ata:
     defn: 进一步发生 _S1_、再 _S1_
   atta:
@@ -172,6 +182,7 @@ dict:
   dau:
     defn:
       - _n1_ 是半个满足 _S1(x)_ 的对象
+      - _n1_ 是 _n2_ 的一半
       - _n1_ 是二分之一
     tags: [数词]
   de:
@@ -287,6 +298,8 @@ dict:
     tags: [颜色]
   gaira:
     defn: _n1_ 是 _n2_ 中随机、随意的一个
+  gana:
+    defn: _n1_ 是键盘乐器
   gangi:
     defn: _n1_ 用 _n2_ 砸 _n3_
   gani:
@@ -300,6 +313,8 @@ dict:
     etym: <gani>-<re>
     defn: _n1_ 是 _n2_ 的大小/体积
     tags: [度量]
+  gaon:
+    defn: _n1_ 是 _n2_ 的卫星、月亮
   gara:
     defn: _S1_ 反复多次发生
     note: 反复体，指事件连续反复发生的状态。
@@ -333,7 +348,10 @@ dict:
       近义词: [menture]
     tags: [度量]
   gime:
-    defn: _n1_ 是星星（非当前恒星系的恒星）
+    defn: _n1_ 是 _n2_ 处看到的星星
+  gimmazai:
+    etym: <gime>-<ma>-<zai>
+    defn: _n1_ 是 _n2_ 处的星空
   gisa:
     defn: 如果本句中出现过指代本参数的上层命题位参数的、满足 _S1(x)_ 的逻辑 _n1_
           参数指代的对象的 <gisa> 参数，则 _n1_ 指代第一个这样的参数指代的对象，否则
@@ -345,6 +363,8 @@ dict:
   gisandike:
     etym: <gisa>-<nedike>
     defn: _n1_ 自杀
+  gosu:
+    defn: _n1_ 吞、咽 _n2_
   gumo:
     defn: _n1_ 是枪
     tags: [武器]
@@ -469,6 +489,8 @@ dict:
     defn: _n1_ 等于 _n2_，_n1_ 就是 _n2_
   isse:
     defn: _n1_ 走过、经历 _n2_
+  ita:
+    defn: _n1_ 朝向、面向 _n2_ 的方向做 _S1(x)_
   ka:
     defn: （叹词）表示疑问
     tags: [叹词]
@@ -500,7 +522,7 @@ dict:
     defn: _n1_ 播放 _n2_
   ke:
     defn:
-      - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 变为真
+      - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 为真
       - _n1_ 使 _n2_ 做 _S1(x)_
     tags: [使役]
   kedi:
@@ -508,7 +530,9 @@ dict:
       - _n1_ 是装着 _n2_ 的袋子
       - _n1_ 是用一个袋子装着的满足 _S1(x)_ 的对象
   kegu:
-    defn: _n1_ 展示、显示物体/内容 _n2_
+    defn:
+      - _n1_ 展示、显示物体/内容 _n2_
+      - _n1_ 体现出、反映出 _S1_
   kemi:
     defn:
       - _n1_ 是一千个满足 _S1(x)_ 的对象
@@ -520,7 +544,7 @@ dict:
       反义词: [dege]
     tags: [度量]
   kesa:
-    defn: _n*_ 如果/既然 _S2(x*)_，就 _S1(x*)_
+    defn: _n*_ 如果 _S2(x*)_，就 _S1(x*)_
     rels:
       相对词: [teka]
     tags: [逻辑运算]
@@ -598,6 +622,8 @@ dict:
   kurudimu:
     etym: <kuru>-<dimu>
     defn: _n1_ 是床垫
+  kusa:
+    defn: _n*_ 既然 _S2(x*)_，那么 _S1(x*)_
   kuza:
     defn: _n1_ 是 _n2_ 下方 _n3_ 距离处
     rels:
@@ -679,6 +705,8 @@ dict:
     defn: _n1_ 美
   meroke:
     defn: _n1_ 是美工
+  meru:
+    defn: _n1_ 从 _n3_ 的角度看遮着 _n2_
   messaru:
     etym: <mesu>-<saru>
     defn: _n1_ 对 _n2_ 认识很久、经常遇见、熟悉
@@ -865,6 +893,8 @@ dict:
     tags: [植物]
   nete:
     defn: _n1_ 碰到、接触 _n2_
+  netu:
+    defn: _n1_ 关闭、合上 _n2_
   neza:
     defn: _n1_ 认为 _S1_ 为真
   ninu:
@@ -885,15 +915,21 @@ dict:
       - _n1_ 是一群物体 _n2_ 中间的区域
     tags: [方位]
   nizu:
-    defn: _n1_ 下落、下降
+    defn: _n1_ 从 _n3_ 下落、下降到 _n2_
     tags: [移动]
   no:
     defn: _n1_ 归属于 _n2_，_n1_ 被 _n2_ 拥有
+  nobo:
+    defn: _n1_ 是木头
+  nobogana:
+    etym: <nobo>-<gana>
+    defn: _n1_ 是木琴
   nogi:
     defn: _n1_ 是空间、区域、空的、被 _n2=空气_ 填充的地方
   nomati:
     etym: <no>-<mati>
     defn: _n1_ 是暗红色的、红棕色的
+    tags: [颜色]
   nora:
     defn: _n1_（为了自身）必须做 _S1(x)_
     rels:
@@ -977,11 +1013,21 @@ dict:
     tags: [方位]
   ramme:
     defn: _n1_ 是被 _n2_ 人/地区使用的语言
+  ramu:
+    defn: _n1_ 是弯的、弯曲的
+  ramugaon:
+    defn: _n1_ 是月牙
   ran:
     defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
     tags: [类谓词]
+  rannai:
+    defn: _n1_ 浑浊、模糊
+    rels:
+      反义词: [tissai]
   rari:
     defn: _n1_ 张开着、开放着、没有合/闭上
+  rasse:
+    defn: _n1_ 把 _n2_ 反射/反弹
   ratu:
     defn: _n1_ 是描绘 _n2_ 的画、图、照片
   ratuire:
@@ -1065,9 +1111,13 @@ dict:
   romee:
     defn: _n1_ 长 _n3_ 星球的 _n2=1_ 季（_n2=1_/4 年）
     tags: [时间]
+  ronto:
+    defn: _n1_ 的形状规则
   roo:
     defn: _n1_ 是行星 _n2=地球_ 的恒星
     tags: [天文]
+  rou:
+    defn: _n*_ 只做、只不过做 _S1(x*)_
   rua:
     defn: _n1_ 唱/演奏 _n2_
   ruare:
@@ -1120,6 +1170,8 @@ dict:
   sedere:
     etym: <seta>-<dere>
     defn: _n1_ 被 _n3_ 当作 _n2_
+  seei:
+    defn: _n1_ 柔软/柔和
   seena:
     defn: _n1_ 是覆盖开口 _n2_ 的盖、帘
   sefu:
@@ -1144,10 +1196,14 @@ dict:
       - _n1_ 看 _n2_
       - _n1_ 看 _S1_ 发生
   senere:
+    etym: <sene>-<re>
     defn: _n1_ 是 _n2_ 的视线、视野、看到的东西
   senesuro:
     etym: <sene>-<suro>
     defn: _n1_ 观察研究 _n2_
+  senete:
+    etym: <sene>-<te>
+    defn: _n1_ 是用来查看/浏览 _n2_ 的查看器/浏览器
   sera:
     defn: _n1_ 穿着 _n2_
   sere:
@@ -1183,6 +1239,10 @@ dict:
   sippo:
     defn: _n1_ 是 _n2_ 物种/部位的尾巴
     tags: [身体]
+  sira:
+    defn:
+      - _n1_ 在 _n3_ 中选择 _n2_
+      - _n1_ 在 _S+(x)_ 中选择做 _S1(x)_
   siri:
     defn: _n1_ 新、未受损耗
   siti:
@@ -1207,6 +1267,10 @@ dict:
     rels:
       反义词: [nage]
     tags: [时间]
+  sunsa:
+    defn:
+      - _n1_ 是 _S1_ 发生的声音、音色
+      - _n1_ 是 _n2_ 发出的声音、音色
   suro:
     defn: _n1_ 通过做 _S1(x)_ 分析、检查 _n2_
   susu:
@@ -1240,6 +1304,8 @@ dict:
   tain:
     defn: _n1_ 是恒星/星系 _n3_ 的从内到外第 _n2_ 个行星
     tags: [天文]
+  taizin:
+    defn: _n1_ 耀眼、闪耀
   tame:
     defn: _n1_ 迎接 _n2_ 来到 _n3_
   tapa:
@@ -1252,6 +1318,8 @@ dict:
   tari:
     defn: _n1_ 从 _n3_ 处取得 _n2_
     tags: [让渡]
+  tare:
+    defn: _n1_ 敲击、敲打 _n2_
   tase:
     defn: _n1_ 沿着 _n2_ 移动着做 _S1(x)_
     tags: [路径]
@@ -1265,6 +1333,8 @@ dict:
   tatu:
     defn: _n1_ 是黄色的（绿色到红色，a*b* 平面的上半部分）
     tags: [颜色]
+  tau:
+    defn: _n1_ 变得、变成 _S1(x)_
   te:
     defn: _n1_ 用工具 _n2_ 做 _S1(x)_
   teka:
@@ -1293,12 +1363,18 @@ dict:
     defn: _n*_ 虽然 _S1(x*)_，但是 _S2(x*)_
     rels:
       相对词: [naso]
+  tezai:
+    defn: _n1_ 是 _n2_ 的故乡、产地，_n1_ 出产 _n2_
   tino:
     defn: _n1_ 是 _n2_ 品种的鱼
     tags: [动物]
   tinu:
     defn: _n1_ 是绿色的（a*b* 平面的左上角）
     tags: [颜色]
+  tissai:
+    defn: _n1_ 澄清、澄净、不浑浊模糊
+    rels:
+      反义词: [rannai]
   to:
     defn: _n1_ 是 _n+_ 的并集
     tags: [集合运算]
@@ -1401,6 +1477,10 @@ dict:
     etym: <u>-<ene>
     defn: _n1_ 是 _n3_ 历法的一天的第 _n2_ 小时
     tags: [时间]
+  wesa:
+    defn:
+      - _n1_ 思念、想念、怀念 _n2_
+      - _n1_ 思念、想念、怀念做 _S1_
   wika:
     defn: _n1_ 装着 _n2_
   witti:
@@ -1421,12 +1501,15 @@ dict:
   wuegai:
     etym: <wue>-<gai>
     defn: _n1_ 是灰蓝色的
+    tags: [颜色]
   wuru:
     etym: _拉丁 Vulpes_
     defn: _n1_ 是狐
   wurupesu:
     etym: _拉丁 Vulpes_
     defn: _n1_ 是赤狐
+  zai:
+    defn: _n1_ 是 _n2_ 处的天空
   zaiko:
     defn: _n1_ 奢华
     rels:
@@ -1465,6 +1548,8 @@ dict:
       - _n1_ 是 _n2_ 除以 _n3_ 的商
       - _n1_ 是 _n2_ 除以 _n3_ 的商个满足 _S1(x)_ 的对象
     tags: [算术]
+  zoki:
+    defn: _n1_ 脆、容易断裂；声音 _n1_ 清脆
   zona:
     defn: _n1_ 是分隔 _n2_ 和 _n3_ 的栅栏
   zu:
