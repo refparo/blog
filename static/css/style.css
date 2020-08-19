@@ -9,8 +9,9 @@
   --color-3: hsl(var(--theme-color-h), var(--theme-color-s), 80%);
   --color-4: hsl(var(--theme-color-h), var(--theme-color-s), 98%);
   --font-family:
-    'Noto Sans', 'Open Sans', 'Droid Sans', 'Segoe UI', Verdana,
     'Noto Sans CJK SC', 'Source Han Sans', 'PingFang SC', 'Microsoft Yahei', sans-serif;
+  --western-font-family:
+    'Noto Sans', 'Open Sans', 'Droid Sans', 'Segoe UI', Verdana, sans-serif;
   --mono-font-family:
     'Fira Code', 'Noto Sans CJK SC', 'Source Han Sans',
     'PingFang SC', 'Microsoft Yahei', monospace;
