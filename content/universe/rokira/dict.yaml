@@ -1,17 +1,13 @@
 # word count: /(?<=^  )\w*(?=:$)/
 comment:
-  doi    miu    tibbo  taa    zetu   ride
-  mofu   kifo   ane    rana   bete   reu
-  dupa   teta   haa    gibe   dou
-  guee   gaa    tuu    tapa   tii    dipi   afa
-  resa   zafe   riza
-  reu    disa   ruto   maro
-  tuma   motu   sua    ion    geki
-  seema  saa    toota  depu
-  au     hooza  oa     are    tito   rade
-  meri   zuma   ia     rata   tuta
-  nufu   tezi   aru    rai
-  nifa   rati   numu   diu    nane   buzoo
+  zai    bamo   tekke  toga   reta   rabo   tutoo  meru
+  zootu  kegu   ronto  ona    dono   meesa  gosu   riti
+  gose   ziaa   taizin tissai ita    gaira  pape   ozzu
+  rannai adi    minfee tata   inki   uppu
+  gemun  booga  assa   reti   efa    mana   koorai denun
+  nare   bunai  katai  rua    oai    taa    roki   mare
+  dina   terun  rei    rasse  seei   gaon   ranzu
+  naro   maite  wesa   ramu   toome  meetu  reeru  netu
 dict:
   a:
     defn: _n1_ 是满足 _S1(x)_ 的某（表示根据上下文省略）
@@ -19,6 +15,8 @@ dict:
   aa:
     defn: （叹词）啊
     tags: [叹词]
+  agi:
+    defn: _n1_ 静止不动或运动极慢地做 _S1(x)_
   ai:
     defn:
       - _n1_ 爱 _n2_
@@ -72,6 +70,9 @@ dict:
   ao:
     defn: _n1_ 是亮的，_n1_ 是亮色的
     tags: [颜色]
+  aoke:
+    etym: <ao>-<ke>
+    defn: _n1_ 把 _n2_ 照亮
   aro:
     defn: _n1_ 和/带 _n2_ 一起做 _S1(x)_
   asa:
@@ -86,6 +87,8 @@ dict:
   aza:
     defn: _n1_ 是青色的（a*b* 平面的左下角）
     tags: [颜色]
+  bana:
+    defn: _n1_ 是由 _n2_ 组成的群、组、队等小组织
   bii:
     defn:
       - _n1_ 是九个满足 _S1(x)_ 的对象
@@ -188,6 +191,10 @@ dict:
     tags: [度量]
   dimu:
     defn: _n1_ 垫在 _n2_ 上方、_n3_ 下方
+  duna:
+    defn: _n1_ 是 _n2_ 空间的地面
+  dunakine:
+    defn: _n1_ 是 _n2_ 处看到的地平线
   e:
     defn: _n1_ 将要、会 _S1(x)_
     tags: [情态]
@@ -195,6 +202,7 @@ dict:
     defn:
       - _n1_ 是距现在 _n2_ 时间的将来
       - 在距现在的将来 _n1_ 时间 _S1_
+      - _S2_ 发生之后 _S1_ 发生
     tags: [时间]
   eetawasa:
     etym: <eeta>-<wasa>
@@ -401,7 +409,7 @@ dict:
     defn: _S1_ 显得为真、让 _n1_ 感觉似乎为真
   iga:
     defn:
-      - _n1_ 是 _S1_ 发生的时刻
+      - _n1_ 是 _S1_ 发生的时刻/时间段
       - _n1_ 同时做 _S2+(x)_
       - _S2+_ 同时发生
     tags: [时间]
@@ -461,6 +469,8 @@ dict:
     tags: [度量]
   kasu:
     defn: _n1_ 是人（泛指一切智慧生物）
+  kata:
+    defn: _n1_ 是飞机、潜艇、飞船等可在由 _n2_ 填充的空间中运动的机械
   ke:
     defn:
       - _n1_ 使 _S1_ 发生，_n1_ 使 _S1_ 变为真
@@ -485,6 +495,11 @@ dict:
     rels:
       相对词: [teka]
     tags: [逻辑运算]
+  kese:
+    defn: _n1_ 运载着 _n2_
+  kesere:
+    etym: <kese>-<re>
+    defn: _n1_ 是 _n2_ 运载的乘客/货物
   kezu:
     etym: <ke>-<zu>
     defn:
@@ -518,6 +533,9 @@ dict:
     defn:
       - _n+_ 中所有对象互相 _S1(x1, x2)_
       - _S1_ 互相地发生
+  kine:
+    defn: _n1_ 是平面图形 _n2_ 的边界
+    tags: [方位]
   kiru:
     defn: _n1_ 用材料 _n3_ 建造 _n2_
   kirure:
@@ -765,6 +783,8 @@ dict:
       - _n1_ 漫无目的地做 _S1(x)_
   naso:
     defn: _n*_ 虽然 _S2(x*)_，但是 _S1(x*)_
+    rels:
+      相对词: [teu]
   natta:
     defn: _n1_ 放松、休闲地 _S1(x)_
   nazo:
@@ -799,6 +819,8 @@ dict:
   nesu:
     defn: _n1_ 是 _n2_ 品种的草
     tags: [植物]
+  nete:
+    defn: _n1_ 碰到、接触 _n2_
   neza:
     defn: _n1_ 认为 _S1_ 为真
   ninu:
@@ -861,9 +883,16 @@ dict:
   oma:
     defn: _n1_ 是 _n2_ 对 _n3_ 的力
     tags: [物理]
+  ome:
+    defn: _n1_ 在现实中（而非想象中）做 _S1(x)_
+  omesuro:
+    etym: <ome>-<suro>
+    defn: _n1_ 做实验研究 _n2_
   oo:
     defn: （叹词）表示惊叹、赞叹
     tags: [叹词]
+  oru:
+    defn: _S1_ 确实为真
   osai:
     defn: 时间段 _n1_ 长 _n3_ 历法下的 _n2=1_ 个月
     tags: [时间]
@@ -989,8 +1018,6 @@ dict:
     defn: 
       - _n*_ 满足 _S+(x*)_ 中每一个
       - _n1_ 属于 _n+_ 的交集
-    spcf:
-      …sa: ……分别
     tags: [逻辑运算]
   saa:
     defn: _S1_ 大概为真
@@ -1039,10 +1066,18 @@ dict:
     rels:
       反义词: [hagu]
     tags: [约数]
+  senagi:
+    etym: <sene>-<agi>
+    defn:
+    - _n1_ 凝视 _n2_
+    - _n1_ 凝视 _S1_ 发生
   sene:
     defn:
       - _n1_ 看 _n2_
       - _n1_ 看 _S1_ 发生
+  senesuro:
+    etym: <sene>-<suro>
+    defn: _n1_ 观察研究 _n2_
   sera:
     defn: _n1_ 穿着 _n2_
   sere:
@@ -1102,6 +1137,8 @@ dict:
     rels:
       反义词: [nage]
     tags: [时间]
+  suro:
+    defn: _n1_ 通过做 _S1(x)_ 分析、检查 _n2_
   susu:
     defn: _n1_ 被 _n2_ 允许做 _S1(x)_
     tags: [情态]
@@ -1135,6 +1172,11 @@ dict:
     tags: [天文]
   tame:
     defn: _n1_ 迎接 _n2_ 来到 _n3_
+  tapa:
+    defn: _n1_ 扶着 _n2_
+  tapazona:
+    etym: <tapa>-<zona>
+    defn: _n1_ 是分隔 _n2_ 和 _n3_ 的（可以扶的）栏杆
   tapi:
     defn: _n1_ 是 _n2_ 的顶部、屋顶、天花板
   tari:
@@ -1166,7 +1208,7 @@ dict:
     etym: <te>-<re>
     defn: _n1_ 是被 _n2_ 用来 _S1(x)_ 的工具
   teri:
-    defn: _n1_ 是大地、地球
+    defn: _n1_ 是地球
   teriani:
     etym: <teri>-<ani>
     defn: _n1_ 是类地行星
@@ -1175,6 +1217,10 @@ dict:
   tesse:
     etym: <tesu>-<se>
     defn: _n1_ 是 _n2_ 与 _n3_ 的关系
+  teu:
+    defn: _n*_ 虽然 _S1(x*)_，但是 _S2(x*)_
+    rels:
+      相对词: [naso]
   tino:
     defn: _n1_ 是 _n2_ 品种的鱼
     tags: [动物]
@@ -1306,6 +1352,8 @@ dict:
     defn: _n1_ 奢华
     rels:
       反义词: [poma]
+  zake:
+    defn: _n1_ 是船、车等能在 _n2_ 与 _n3=空气_ 的界面上行驶的机械
   zara:
     defn: _S2_ 发生，然后 _S1_ 发生
     rels:
@@ -1338,6 +1386,8 @@ dict:
       - _n1_ 是 _n2_ 除以 _n3_ 的商
       - _n1_ 是 _n2_ 除以 _n3_ 的商个满足 _S1(x)_ 的对象
     tags: [算术]
+  zona:
+    defn: _n1_ 是分隔 _n2_ 和 _n3_ 的栅栏
   zu:
     defn:
       - _n1_ 尊敬地 _S1(x)_

@@ -18,7 +18,7 @@ const C = [
 const QC = C
   .filter(c => ! [...'mnr', ''].includes(c))
   .map(c => c + c)
-const V = [...'aaaaaiiiuuueeoo']
+const V = [...'aaaaaiiiuuueeeooo']
 /** @type string[] */
 const VR = [
   'ai', 'ai', 'ai',
@@ -26,7 +26,7 @@ const VR = [
   'aa']
 /** @type string[] */
 const S = [
-  ...Array(30).fill('CV'),
+  ...Array(12).fill('CV'),
   'CVR', 'CVR', 'CVQ', 'CVn']
 
 const wordgen = input => input

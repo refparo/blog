@@ -18,7 +18,7 @@ date: 2020-08-15
 <orig>saa ka tasi-dau ni osai na ma ka, nesekedi nu ma ka nese su wa su niru ka, poma ki mugokuru ma zaiko si enda ki kurudimu nu ani si ie.</orig>
 大概是因为睡了一个半月的睡袋，一张朴素的硬板床都显得如同最奢华的席梦思。
 
-<orig>nasigaigena ka tapi ru sene si ku sa haguna ki enaku nu ma sa, damen si ta ki he ri witti si bire su ta.</orig>
+<orig>nasigaigena ka tapi ru sene si ku sa haguna ki enaku nu ma sa, ta ki damen ki he ri witti si bire su ta.</orig>
 望着天花板发了几分钟的呆，棕狼原本疲劳的心情就又躁动起来了。
 
 <orig>“da si habu so ka…”he ra siti si tada se, rete ka sononsa ni sera si ta si niru ki kidi si ke su re ka sihi ku sippo ru sati su sa. “a ra ii si ini ne he ru zebi so ro.”</orig>
@@ -27,11 +27,13 @@ date: 2020-08-15
 <orig>niru ka he ra mun-teri ri umakin si tere ri mimake sa narosi ru tena sa, ko ka messaru ke wurupesu ni ratuire ri denu su sa.</orig>
 于是他调动意识呼出地火通讯程序，选中那个熟悉的赤狐头像。
 
-<orig>“mi ra hamu si mu si ta~”he ra zebi zu denu.“a ra ratu ni zebi si ata so ro.”he ra kame si tada se, seena ra rari su ke su sa; wuegai ka nizu ku roo ri aire ra haze ra, nuntapi re, sakan ru to ri pina su tuni ka he ra dano ku tafa re ao su ke.“mero so oo.”he ra tobi si turo su iga ka, he ra sene su re ka hini ri bokke se, ki ri zebi su sa.</orig>
+<orig>“mi ra hamu si mu si ta~”he ra zebi zu denu.“a ra ratu ni zebi si ata so ro.”he ra kame si tada se, seena ra rari su ke su sa; wuegai ka nizu ku roo ri aire ra haze ra, nuntapi re, sakan ru to ri pina su tuni ka he ra dano ku tafa ru aoke.“mero so oo.”he ra tobi si turo su iga ka, he ra sene su re ka hini ri bokke se, ki ri zebi su sa.</orig>
 “我着陆了～”他选中发送。“再发一张照片吧。”他站起来。拉开窗帘，灰蓝色的落日透过沙尘、穹顶和窗户把他的小房间照亮。“真美啊，”他暗暗感叹，拍下眼前的景色，发送。
 
+<orig>“da si susu si ata so ka…”he ra tapazona ri tapa sa, nizu ki roo ra dunokine ru nete si senagi su sa. a ra kesere ri bana ru denu sa, uma si ige si na su teu.“saa ka damen su una.”</orig>
 “还有什么事情可做呢……”他扶着栏杆，凝视落日接触地平线。打开船员群，无人发言。“大概是都累了吧。”
 
+<orig>hera ra muntain ru hamu si ku si ta si naso ka, iga re tasi-dau ni osai sa, kata ri ma ka hera re omesuro sa senesuro su ze si bore su re si ata su nasi. hamu si eeta ka mizzo nu ma ki natta si si ra, he ri ii si na su ke si naso.</orig>
 虽说是来火星的行程，但毕竟长达一个半月，因此在飞船上他们也有许多实验和观测任务。着陆后这短暂的悠闲，反倒让棕狼感到有些不适应了。
 
 “为什么他还没回我……”忽然他想起在地球时听说的火星音乐家，“看看这里有什么音乐吧。”
