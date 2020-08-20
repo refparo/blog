@@ -94,14 +94,17 @@ dict:
     etym: <assa>-<ma>
     defn: _n1_ 是提供 _n2_ 内容/服务的网站
   assatari:
+    etym: <assa>-<tari>
     defn: _n1_ 从网站/网页 _n3_ 下载 _n2_
   assenete:
+    etym: <assa>-<sene>-<te>
     defn: _n1_ 是网络浏览器
   ata:
     defn: 进一步发生 _S1_、再 _S1_
   atai:
     defn: _n1_ 从 _n3_ 上升到 _n2_
   ataike:
+    etym: <atai>-<ke>
     defn: _n1_ 举起 _n2_，_n1_ 把 _n2_ 举起到 _n3_
   atta:
     etym: <aki>-<ta>
@@ -124,7 +127,7 @@ dict:
       - _n1_ 是九
     tags: [数量]
   bire:
-    defn: _S1_ 开始
+    defn: _n*_ 开始做 _S1(x*)_
     note: 起始体，强调开始，去除持续性。
     tags: [体态]
   bipa:
@@ -339,7 +342,7 @@ dict:
   gaon:
     defn: _n1_ 是 _n2_ 的卫星、月亮
   gara:
-    defn: _S1_ 反复多次发生
+    defn: _n*_ 反复多次做 _S1(x*)_
     note: 反复体，指事件连续反复发生的状态。
     tags: [体态]
   gasa:
@@ -635,7 +638,7 @@ dict:
     defn: _n1_ 非常 _S1(x)_
     tags: [程度]
   ku:
-    defn: _S1_ 处于未完成的状态、正在进行
+    defn: _n*_ 正在做、未完成做 _S1(x*)_
     note: 持续体，指事件持续的状态。
     tags: [体态]
   kuma:
@@ -765,6 +768,7 @@ dict:
   mima:
     defn: _n1_ 出现、从不可见到可见
   mimake:
+    etym: <mima>-<ke>
     defn: _n1_ 唤出、召唤出 _n2_
   mira:
     etym: <mi>-<ra>
@@ -794,7 +798,7 @@ dict:
       - _n1_ 是 _n+=1_ 的乘积个满足 _S1(x)_ 的对象
     tags: [算术]
   mu:
-    defn: _S1_ 结束
+    defn: _n*_ 做 _S1(x*)_ 结束
     note: 终结体，强调或添加终结，去除持续性。
     tags: [体态]
   mugo:
@@ -834,7 +838,7 @@ dict:
       - _n1_ 不属于 _n2_
     tags: [逻辑运算]
   naa:
-    defn: （叹词）= _英语 anyway_
+    defn: （叹词）= _英 anyway_
     tags: [叹词]
   nada:
     defn:
@@ -1068,6 +1072,7 @@ dict:
   ramu:
     defn: _n1_ 是弯的、弯曲的
   ramugaon:
+    etym: <ramu>-<gaon>
     defn: _n1_ 是月牙
   ran:
     defn: _n1_ 满足包含谓词 _n+=<da>_ 依次作为变量的公式 _S1_ 表示的命题
@@ -1127,7 +1132,7 @@ dict:
     defn: _n1_ 把 _n2_ 托付给 _n3_
     tags: [让渡, 使役]
   rete:
-    defn: _S1_ 发生一次
+    defn: _n*_ 做 _S1(x*)_ 一次
     note: 单变体，强调动作一次性发生，去除持续性。
     tags: [体态]
   reti:
@@ -1320,6 +1325,7 @@ dict:
     etym: <sotanogi>-<unsa>
     defn: _n1_ 是航天服、太空服
   sotanogi:
+    etym: <sota>-<nogi>
     defn: _n1_ 是包围着天体 _n2_ 的外太空
   suni:
     defn: _n1_ 是夏季
@@ -1541,13 +1547,13 @@ dict:
   uree:
     defn: _n*_ 即使 _S2(x*)_，也 _S1(x*)_
   uri:
-    defn: _S1_ 过了
+    defn: _n*_ 做过 _S1(x*)_ 了
     note: 完成体，指事件已完成的状态。
     tags: [体态]
   uu:
     defn: _n1_ 是整个 _n2_
   wa:
-    defn: 经常、在 _S1_
+    defn: _n*_ 经常、在做 _S1(x*)_
     note: 惯常体，指事件在一段时间内时常发生的状态。
     tags: [体态]
   wasa:

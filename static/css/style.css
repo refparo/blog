@@ -52,7 +52,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0.67em 0;
-  page-break-after: avoid;
 }
 
 h1 {
@@ -77,10 +76,6 @@ h5 {
 
 h6 {
   font-size: 15pt;
-}
-
-p {
-  page-break-inside: avoid;
 }
 
 latin, .latin {
@@ -114,6 +109,7 @@ img {
 blockquote {
   border-left: var(--color-1) solid;
   padding-left: 1em;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 900px) {
@@ -410,6 +406,42 @@ ul.pagination li {
 
 .page-item.active a, .page-item.active a:hover {
   color: var(--color-1);
+}
+
+/* }}} */
+/* Print {{{ */
+
+@media print {
+  body {
+    background: none;
+  }
+
+  #outer {
+    padding: 0;
+  }
+
+  #inner {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  a {
+    text-decoration-style: solid;
+  }
+}
+
+@page {
+  margin: 2.54cm 3.18cm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}
+
+p, blockquote, ul, ol, li {
+  orphans: 2;
+  widows: 2;
 }
 
 /* }}} */
