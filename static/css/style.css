@@ -1,3 +1,8 @@
+@import 'https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css';
+@import 'https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css';
+@import '/fonts/doulos-sil/DoulosSIL.css';
+@import 'highlight.css';
+
 /* Body {{{ */
 
 :root {
@@ -9,11 +14,12 @@
   --color-3: hsl(var(--theme-color-h), var(--theme-color-s), 80%);
   --color-4: hsl(var(--theme-color-h), var(--theme-color-s), 98%);
   --font-family:
-    'Noto Sans CJK SC', 'Source Han Sans', 'PingFang SC', 'Microsoft Yahei', sans-serif;
-  --western-font-family:
-    'Noto Sans', 'Open Sans', 'Droid Sans', 'Segoe UI', Verdana, sans-serif;
+    'Source Han Sans SC', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft Yahei',
+    var(--latin-font-family);
+  --latin-font-family: 'Source Sans Pro', 'Noto Sans', Tahoma, sans-serif;
+  --ipa-font-family: DoulosSIL, serif;
   --mono-font-family:
-    'Fira Code', 'Noto Sans CJK SC', 'Source Han Sans',
+    'Fira Code', 'Source Han Sans SC', 'Noto Sans CJK SC',
     'PingFang SC', 'Microsoft Yahei', monospace;
 }
 
@@ -46,6 +52,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0.67em 0;
+  page-break-after: avoid;
 }
 
 h1 {
@@ -70,6 +77,18 @@ h5 {
 
 h6 {
   font-size: 15pt;
+}
+
+p {
+  page-break-inside: avoid;
+}
+
+latin, .latin {
+  font-family: var(--latin-font-family);
+}
+
+ipa, .ipa {
+  font-family: var(--ipa-font-family);
 }
 
 a {
