@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Andika Phon';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Andika Phon'),
+       local(Andika),
+       url(AndikaPhon-R.woff) format('woff');
+}

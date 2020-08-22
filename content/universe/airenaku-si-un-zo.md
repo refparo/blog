@@ -1385,7 +1385,7 @@ orig, gl orig {
 
 gl ipa {
   display: block;
-  min-height: 1.4em;
+  min-height: 1.65em;
   font-size: initial;
 }
 gl sub {
@@ -1429,17 +1429,22 @@ header h1::after {
   color: var(--color-2);
   content: 'by Paro zo';
 }
+</style>
+<!----
+<style>
+@import '/fonts/charis-sil-phon/charis-sil-phon.css';
 
-/*
 body {
   --font-family:
     'Source Han Serif SC', 'Noto Serif CJK SC', 'ST Song', 宋体,
     var(--latin-font-family);
   --latin-font-family:
     'Source Serif Pro', 'Noto Serif', Georgia, serif;
+  --ipa-font-family:
+    'Charis SIL Phon', serif;
 }
 header #breadcrumb, .meta, article + em, footer {
   display: none;
 }
-*/
 </style>
+<!---->

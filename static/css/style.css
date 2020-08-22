@@ -1,6 +1,6 @@
 @import 'https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css';
 @import 'https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css';
-@import '/fonts/doulos-sil/DoulosSIL.css';
+@import '/fonts/andika-phon/andika-phon.css';
 @import 'highlight.css';
 
 /* Body {{{ */
@@ -17,7 +17,7 @@
     'Source Han Sans SC', 'Noto Sans CJK SC', 'PingFang SC', 'Microsoft Yahei',
     var(--latin-font-family);
   --latin-font-family: 'Source Sans Pro', 'Noto Sans', Tahoma, sans-serif;
-  --ipa-font-family: DoulosSIL, serif;
+  --ipa-font-family: 'Andika Phon', serif;
   --mono-font-family:
     'Fira Code', 'Source Han Sans SC', 'Noto Sans CJK SC',
     'PingFang SC', 'Microsoft Yahei', monospace;
