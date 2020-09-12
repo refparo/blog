@@ -151,6 +151,9 @@ dict:
   bota:
     defn: _n1_ 是 _n2_ 的身体
     tags: [身体]
+  bu:
+    defn: 相当于 _S1(n1, n4, n2, n3, n*)_
+    tags: [换位谓词]
   bumen:
     defn: _n1_ 是青绿色的（青色到绿色，a*b* 平面的左半部分）
     tags: [颜色]
@@ -217,10 +220,6 @@ dict:
     defn: _n1_ 按下、点击、选中 _n2_
   denun:
     defn: _n1_ 排成一排、一列
-  dere:
-    etym: <de>-<re>
-    defn: 相当于 _S1(n3, n1, n2, n*)_
-    tags: [换位谓词]
   deza:
     defn:
       - _n1_ 宽
@@ -532,7 +531,7 @@ dict:
     defn: _n1_ 陪伴、伴随 _n2_ 做 _S1(x)_
     note: _n1_ 不一定做 _S1(x)_
   kapuri:
-    etym: _拉丁 Caprini_
+    etym: _拉丁 caprini_
     defn: _n1_ 是羊
     tags: [动物]
   kapurosu:
@@ -669,7 +668,7 @@ dict:
   ma:
     defn:
       - _n1_ 处于时间/地点 _n+_
-      - 在时间/地点/以方式 _n+_ 发生 _S1_
+      - 在时间/地点 _n+_ 发生 _S1_
   mae:
     defn: _n1_ 是 _n2_ 前方 _n2_ 距离处
     rels:
@@ -1137,6 +1136,9 @@ dict:
     tags: [体态]
   reti:
     defn: _S1_ 直接地、未经其他步骤地发生
+  ri:
+    defn: 相当于 _S1(n4, n1, n2, n3, n*)_
+    tags: [换位谓词]
   ria:
     defn:
       - _n1_ 是三个满足 _S1(x)_ 的对象
@@ -1183,7 +1185,7 @@ dict:
     defn: _n1_ 是 _n2_ 品种的蛇
     tags: [动物]
   ruupu:
-    etym: _拉丁 Lupus_
+    etym: _拉丁 lupus_
     defn: _n1_ 是狼
     tags: [动物]
   ruupumi:
@@ -1222,7 +1224,7 @@ dict:
       - _n1_ 是五
     tags: [数量]
   se:
-    defn: 相当于 _S1(n3, n2, n1, n*)_
+    defn: 相当于 _S1(n3, n1, n2, n*)_
     tags: [换位谓词]
   sedere:
     etym: <seta>-<dere>
@@ -1263,10 +1265,6 @@ dict:
     defn: _n1_ 是用来查看/浏览 _n2_ 的查看器/浏览器
   sera:
     defn: _n1_ 穿着 _n2_
-  sere:
-    etym: <se>-<re>
-    defn: 相当于 _S1(n2, n3, n1, n*)_
-    tags: [换位谓词]
   sese:
     defn: _n1_ 窄
     rels:
@@ -1316,14 +1314,14 @@ dict:
       - _n1_ 是 _n2_ 多一点的满足 _S1(x)_ 的对象
       - _n1_ 是比 _n2_ 大一点的数字
     tags: [数量]
+  sononsa:
+    etym: <sotanogi>-<unsa>
+    defn: _n1_ 是航天服、太空服
   sota:
     defn: _n1_ 是 _n2_ 的外面、外部
     rels:
       反义词: [naka]
     tags: [方位]
-  sononsa:
-    etym: <sotanogi>-<unsa>
-    defn: _n1_ 是航天服、太空服
   sotanogi:
     etym: <sota>-<nogi>
     defn: _n1_ 是包围着天体 _n2_ 的外太空
@@ -1598,10 +1596,10 @@ dict:
     defn: _n1_ 是灰蓝色的
     tags: [颜色]
   wuru:
-    etym: _拉丁 Vulpes_
+    etym: _拉丁 vulpes_
     defn: _n1_ 是狐
   wurupesu:
-    etym: _拉丁 Vulpes_
+    etym: _拉丁 vulpes_
     defn: _n1_ 是赤狐
   zai:
     defn: _n1_ 是 _n2_ 处的天空
@@ -1659,7 +1657,7 @@ dict:
 examples:
   - expl: 啊我死了。
     text: aa, mi ri nedi si ta.
-  - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇
+  - expl: 男子抓到一条口里咬着一条咬着鱼的鱼的蛇。
     text: mon na tino ni sabu ki tino ni sabu ki ruso nu upi si ta.
   - expl: 你的眼睛像星星一样闪烁。
     text:
@@ -1684,6 +1682,8 @@ examples:
     text: mi ri no ki kirure ni siri.
   - expl: 我跟你什么关系？（哥们语气）
     text: mi ra ha re ka nu tesu so ne?
+  - expl: 我满足地让他摸头。
+    text: TODO
   - expl: 我跑步速度比他快。
     text: mi ra he re gani se raze si kihi su regu.
   - expl: 小草在生长。

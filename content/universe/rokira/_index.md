@@ -71,9 +71,131 @@ draft: true
       - 引用冠词 zV
     - 命题位助词 sV
   - 修饰语助词 kV
+  - 位格助词 dV = ni ma kV
 - 叹词
 
 由于中间语的语法比较抽象，下面我们将通过分析例子来讲解语法。
+
+```
+TODO
+- 写程序管理词典
+- 重做体态
+- 重做全部词汇，使之更加对称、一致
+```
+
+```
+新版词法
+
+词干
+  -类型标记/修饰语标记-(引用标记)-(一一对应标记)
+  -(黏着副词*)-(变量标记)-(格标记/第二变量标记)-树标记
+
+# 对于修饰语标记，变量标记表示被修饰语代入的格，第二变量标记表示代入时所带的变量
+
+# 词干规定：不允许含有两个 za
+
+类型：
+  命题 -s- P
+  对象：
+    全称 -m- ∀
+    存在 -n- ∃
+    有定 -r- ι
+
+修饰语 -k- A
+
+（剩下的可用辅音：pbtdgfwz）
+
+引用标记：
+  单词名称 ez WRDQ
+  短语名称 oz PHRQ
+  内容 az CNTQ
+
+# Paro-r-ez-o 帕勒（人名）
+# Airenaku-s-i Un-r-oz-o 六光分（小说题）
+# “ha-r-ah-i ai-s”-az-o “爱你”（某人说的话）
+
+一一对应标记 ip RESP
+
+# 被动仍然用谓词表达，但是变成：
+# X-n-a […… V-s-ef]-u re-s-o.
+# 注意这个 ef，如果有主语则可以省略
+
+黏着副词：
+  否定 ib NEG
+  体态：
+    ……
+
+变量标记：
+  无变量 -ew- λ∅
+  主动 -eb- λNOM
+  被动 -ef- λACC
+  间接被动 -et- λDAT
+  内容被动 -eg- λCOMP
+  λ -ed- λ
+
+格：
+  论元格：
+    主格 -ab- NOM
+    宾格 -af- ACC
+    间接格 -at- DAT
+    内容格 -ag- COMP
+  附加格：
+    位格 -ad- LOC
+    ……
+
+第二变量标记：
+  （包括所有格标记，gloss 简写前加 λ′）
+  无变量 -aw- λ′∅
+
+树标记：
+  第一个子节点 -a [
+  最后一个子节点 -u ]
+  中间子节点 -e ,
+  唯一子节点 -i >
+  根节点 -o ◦
+
+引用括号：
+  za-X-za … X 整体作为词干
+    X 是一串不包含 za 的合法的 Rokira 音节，
+    且引用内容中未出现过和 X 读音或拼写相同的片段。
+    引用内容可以是任意语言。
+
+# zaraza “What the f*ck?” ranaga heru umaso.
+# za-ra-za “What the f*ck?” ra-n-ag-a he-r-u uma-s-o.
+# 引用开始 “What the f*ck?” 引用结束-∃-内容-a 他-ι-u 说-P-o。
+# 他说：“What the f*ck?”
+
+# 测试
+#
+# 1. 他坐起来，理了理穿航天服弄乱的蓬松尾巴。
+#    旧：he-ra siti-si tada-se, rete-ka sononsa-ni sera-si ta-si niru-ki kidi-si ke-su re-ka sihi-ku sippo-ru sati-su sa-so.
+#    新：he-ra siti-si tada-se, sononsa-n-ah-i sera-si ta-si niru-ki kidi-si ke-k-ef-a sihi-ku sippo-ru sati-su sa-so.
+```
+
+| 动词分类 | -过程 | +过程 |
+|-:|:-:|:-:|
+| **+影响** | achievement | accomplishment |
+| **-影响** | semelfactive | activity |
+| **状态** | state ||
+
+```
+体态：
+  未然体 : 事件 -> 状态 = 事件开始前
+  经验体 : 事件 -> 状态 = 事件结束后
+  惯常体 : 事件 -> 状态 = 事件经常发生
+
+  反复体 : 事件 -> +过程 = 事件连续多次发生的过程
+
+  开始体 : * -> -过程 = 事件/状态开始
+  终结体 : * -> -过程 = 事件/状态结束
+
+  进行体 : +过程 -> 状态 = 事件进行中
+
+  完整体 : +过程 -> -过程 = 过程中任意一点
+  单变体 : +过程 -> -过程 = 把过程看作一点
+
+  完成体 : +影响 -> 状态 = 事件影响中
+```
 
 <style>
 html body h1, html body h2, html body h3,

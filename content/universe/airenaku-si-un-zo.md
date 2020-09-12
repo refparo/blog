@@ -4,6 +4,8 @@ info: 微型小说，造语
 date: 2020-08-15
 ---
 
+> 注：本文已不再符合目前版本的语法。
+
 <orig>“hara ra futtoo ke muntain ru hamu si uri si sata. hara ra mesu na isse si ta si kusa ki, neza ki ku ki kowa ki damen. eeta ri ma ka, hara ri sa ma gisa ni tafa ni ma ki natta su susu. eetawasa ki tatai ka mira re masuma na borega nu to ne hara re sareta.”</orig>
 “祝贺各位平安来到火星。各位经历了漫长的旅途，想必已经十分劳累。接下来各位可以在各自的房间里放松，明早我们将正式为大家分配住处和任务。”
 
