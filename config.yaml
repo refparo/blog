@@ -5,10 +5,10 @@ taxonomies:
 params:
   comment:
     <em>请转到
-    <a href="https://github.com/paro-zo/blog/issues" target="_blank">issues</a>
+    <a href="https://github.com/parorezo/blog/issues" target="_blank">issues</a>
     页发表评论。</em>
 
-baseURL: https://paro-zo.github.io/
+baseURL: https://parorezo.github.io/
 #enableGitInfo: true
 markup:
   goldmark:

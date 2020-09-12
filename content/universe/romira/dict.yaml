@@ -1164,12 +1164,12 @@ dict:
     defn:
       - _n1_ 用做 _S1(x)_ 回答、回应、回复 _n2_
       - _n1_ 用 _n2_ 回答、回应、回复 _n3_
-  rokira:
-    etym: <rokasu>-ki-<ramme>
-    defn: _n1_ 是泛人类中间语
   romee:
     defn: _n1_ 长 _n3_ 星球的 _n2=1_ 季（_n2=1_/4 年）
     tags: [时间]
+  romira:
+    etym: <rokasu>-mi-<ramme>
+    defn: _n1_ 是泛人类中间语
   ronto:
     defn: _n1_ 的形状规则
   roo:

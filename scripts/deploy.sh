@@ -8,4 +8,4 @@ cd public
 git init
 git add .
 git commit -m "site update"
-git push -f git@github.com:paro-zo/paro-zo.github.io.git master
+git push -f git@github.com:parorezo/parorezo.github.io.git master

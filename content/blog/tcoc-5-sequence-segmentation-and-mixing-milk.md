@@ -171,4 +171,4 @@ gets = fmap read <$> fmap words getLine
 
 ## 下期预告
 
-下一期的题目是 [欧拉计划](https://projecteuler.net/) 的 [Problem 9 Special Pythagorean triplet](https://projecteuler.net/problem=9) 和 [Problem 15 Lattice paths](https://projecteuler.net/problem=15)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/paro-zo/blog/issues) 提交你的答案~
+下一期的题目是 [欧拉计划](https://projecteuler.net/) 的 [Problem 9 Special Pythagorean triplet](https://projecteuler.net/problem=9) 和 [Problem 15 Lattice paths](https://projecteuler.net/problem=15)，感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/parorezo/blog/issues) 提交你的答案~

@@ -8,6 +8,6 @@
   },
   "typescript.tsdk": "node_modules/typescript/lib",
   "yaml.schemas": {
-    "resources/dict.schema.json": "content/universe/rokira/dict.yaml"
+    "resources/dict.schema.json": "content/universe/romira/dict.yaml"
   }
 }
