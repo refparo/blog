@@ -87,72 +87,62 @@ TODO
 新版词法
 
 词干
-  -类型标记/修饰语标记-(引用标记)-(一一对应标记)
-  -(黏着副词*)-(变量标记)-(格标记/第二变量标记)-树标记
-
-# 对于修饰语标记，变量标记表示被修饰语代入的格，第二变量标记表示代入时所带的变量
+  -量词-(引用标记)-(类型标记)
+  -(黏着副词*)-(变量标记)-(格标记|修饰语标记)-树标记
 
 # 词干规定：不允许含有两个 za
 
-类型：
-  命题 -s- P
-  对象：
-    全称 -m- ∀
-    存在 -n- ∃
-    有定 -r- ι
+量词：
+  全称 -s-
+  存在 -n-
+  有定 -r-
 
-修饰语 -k- A
-
-（剩下的可用辅音：pbtdgfwz）
+（剩下的可用辅音：mpbtdkgfwz）
 
 引用标记：
-  单词名称 ez WRDQ
-  短语名称 oz PHRQ
-  内容 az CNTQ
+  单词名称 -ez-
+  短语名称 -oz-
+  内容 -az-
 
 # Paro-r-ez-o 帕勒（人名）
 # Airenaku-s-i Un-r-oz-o 六光分（小说题）
-# “ha-r-ah-i ai-s”-az-o “爱你”（某人说的话）
+# “ha-r-ah-i ai-r”-az-ag-a he-r-u uma-r-o. 他说：“爱你。”
 
-一一对应标记 ip RESP
-
-# 被动仍然用谓词表达，但是变成：
-# X-n-a […… V-s-ef]-u re-s-o.
-# 注意这个 ef，如果有主语则可以省略
+类型标记：
+  指物 -om-
+  指事 -em-
 
 黏着副词：
-  否定 ib NEG
+  否定 -im-
+  标记 -Vp-
   体态：
     ……
+```
 
-变量标记：
-  无变量 -ew- λ∅
-  主动 -eb- λNOM
-  被动 -ef- λACC
-  间接被动 -et- λDAT
-  内容被动 -eg- λCOMP
-  λ -ed- λ
+| \ | 变量标记 e | 格标记 a |
+|-:|:-|:-|
+| 无 w | -ew- | / |
+| 主格 b | -eb- | -ab- |
+| 宾格 f | -ef- | -af- |
+| 间接格 t | -et- | -at- |
+| 内容格 g | -eg- | -ag- |
+| λ | -ek(Vp)(Vp)- | / |
+| 位格 | / | -ad- |
 
-格：
-  论元格：
-    主格 -ab- NOM
-    宾格 -af- ACC
-    间接格 -at- DAT
-    内容格 -ag- COMP
-  附加格：
-    位格 -ad- LOC
-    ……
+```
+修饰语标记 -ak(Vp)-
 
-第二变量标记：
-  （包括所有格标记，gloss 简写前加 λ′）
-  无变量 -aw- λ′∅
+# 经典例句：
+# 我满足地把头给他摸。
+# 我-r-om-eb-at-a 满足-r-em-eb-ak-et-e 他-r-om-eb-ab-i 摸-r-em-ef-ak-ew-u 头-r-em-ew-o.
+# mirata meemurakete herabi fuoraku nazoro.
 
 树标记：
-  第一个子节点 -a [
-  最后一个子节点 -u ]
-  中间子节点 -e ,
-  唯一子节点 -i >
-  根节点 -o ◦
+  第一个子节点 -a
+  最后一个子节点 -u
+  中间子节点 -e
+  唯一子节点 -i
+  根节点 -o
 
 引用括号：
   za-X-za … X 整体作为词干
@@ -160,16 +150,16 @@ TODO
     且引用内容中未出现过和 X 读音或拼写相同的片段。
     引用内容可以是任意语言。
 
-# zaraza “What the f*ck?” ranaga heru umaso.
-# za-ra-za “What the f*ck?” ra-n-ag-a he-r-u uma-s-o.
-# 引用开始 “What the f*ck?” 引用结束-∃-内容-a 他-ι-u 说-P-o。
+# zaraza “What the f*ck?” ranaga heru umaro.
+# za-ra-za “What the f*ck?” ra-n-ag-a he-r-u uma-r-o.
+# 引用开始 “What the f*ck?” 引用结束-∃-内容格-[ 他-ι-] 说-ι-。
 # 他说：“What the f*ck?”
 
 # 测试
 #
 # 1. 他坐起来，理了理穿航天服弄乱的蓬松尾巴。
 #    旧：he-ra siti-si tada-se, rete-ka sononsa-ni sera-si ta-si niru-ki kidi-si ke-su re-ka sihi-ku sippo-ru sati-su sa-so.
-#    新：he-ra siti-si tada-se, sononsa-n-ah-i sera-si ta-si niru-ki kidi-si ke-k-ef-a sihi-ku sippo-ru sati-su sa-so.
+#    新：he-ra siti-ri tada-re, sononsa-ni sera-ni ta-ni niru-naka kidi-nu ke-refaka sihi-naku sippo-ru sati-ru sa-ro.
 ```
 
 | 动词分类 | -过程 | +过程 |

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-    {{- partial "head.html" . -}}
-    <body>
-      <div id="outer">
-        <div id="inner">
-          {{- partial "header.html" . -}}
-          <main>
-          {{- block "main" . }}{{- end }}
-          </main>
-          <footer>{{ .Params.copyright | safeHTML }}</footer>
-        </div>
-      </div>
-    </body>
+<html lang="zh">
+{{- partial "head.html" . -}}
+<body>
+  <div id="outer"><div id="inner">
+    {{- partial "header.html" . -}}
+    <main>{{- block "main" . -}}{{- end -}}</main>
+    <footer>
+      © 2020 Parorezo. Built with <a href="https://gohugo.io">Hugo</a>.
+    </footer>
+  </div></div>
+</body>
 </html>

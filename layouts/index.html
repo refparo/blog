@@ -1,14 +1,7 @@
-{{ define "main" }}
+{{- define "main" -}}
   <div id="index">
-    <div id="sections">
-      {{ range .Sections }}
-        <a class="section" href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ end }}
-    </div>
-    <div id="pages">
-      {{ range .RegularPages }}
-        <a class="section" href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ end }}
-    </div>
+    {{- range .Pages -}}
+    <a class="section" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- end -}}
   </div>
-{{ end }}
+{{- end -}}

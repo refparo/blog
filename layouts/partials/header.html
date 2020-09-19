@@ -1,4 +1,4 @@
 <header>
   {{- partial "breadcrumb.html" . -}}
-  <h1>{{ .Title }}</h1>
+  <h1>{{ if and (eq .Type "tags") (not (eq .RelPermalink "/tags/")) }}#{{ end }}{{ .Title }}</h1>
 </header>

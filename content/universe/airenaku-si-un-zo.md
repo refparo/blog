@@ -1,6 +1,6 @@
 ---
 title: 六光分
-info: 微型小说，造语
+tags: [微型小说, 造语]
 date: 2020-08-15
 ---
 
@@ -1378,10 +1378,6 @@ orig, gl orig {
 @media screen and (max-width: 900px) {
   .columns {
     column-count: 1;
-    margin: -1em 0;
-  }
-  .columns p, .columns ul {
-    margin: revert;
   }
 }
 

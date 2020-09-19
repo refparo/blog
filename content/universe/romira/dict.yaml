@@ -4,12 +4,12 @@ comment:
   zootu  meesa  riti   doosai neo    kafe
   gose   ziaa   ooo
   adi    minfee tata   dao    watu
-  booga  zefee  meemu
+  booga  zefee
   oai    taa    none   ranzu  rite
   maite  reeru  toome  danun  widdo  nera
-  duttoo dira   maidu  fuo    nonfee
+  duttoo dira   maidu  nonfee
   tesee  roe    aibai  neena  mowoo
-  satu   tene   zoomi  niku   tonrai tena
+  satu   zoomi  niku   tonrai tena
   raini  mita   addu   saiu
 dict:
   a:
@@ -301,6 +301,8 @@ dict:
   funti:
     defn: _n1_ 相比于合适的 _n2_ 而言太过于 _S1(x)_
     tags: [程度]
+  fuo:
+    defn: _n1_ 摸 _n2_
   fura:
     defn: _n1_ 想要、希望 _S1_ 发生
     tags: [情态]
@@ -714,6 +716,8 @@ dict:
       - _n*_ 满足 _S+(x*)_ 中的哪一个？
       - _n1_ 属于 _n+_ 中的哪一个？
     tags: [疑问词]
+  meemu:
+    defn: _n1_ 对做 _S1(x)_ 感到满足
   meetu:
     defn: _n1_ 是关于 _n2_ 的数据
   mega:

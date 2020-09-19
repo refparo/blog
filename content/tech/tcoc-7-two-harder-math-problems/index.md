@@ -7,7 +7,7 @@ tags:
 toc: true
 ---
 
-如 [上期结尾](/blog/tcoc-6-two-interesting-math-problems/#%E4%B8%8B%E6%9C%9F%E9%A2%84%E5%91%8A) 所述，这次我要做更难一些的题目。这次的题目是欧拉计划上的 [Problem 68 Magic 5-gon ring](https://projecteuler.net/problem=68) 和 [Problem 79 Passcode derivation](https://projecteuler.net/problem=79)。
+如 [上期结尾](/tech/tcoc-6-two-interesting-math-problems/#%E4%B8%8B%E6%9C%9F%E9%A2%84%E5%91%8A) 所述，这次我要做更难一些的题目。这次的题目是欧拉计划上的 [Problem 68 Magic 5-gon ring](https://projecteuler.net/problem=68) 和 [Problem 79 Passcode derivation](https://projecteuler.net/problem=79)。
 
 <!-- more -->
 
