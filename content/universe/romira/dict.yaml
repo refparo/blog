@@ -1,8 +1,8 @@
 # fafi  noo   nigo  goe   ana   zefu  ia    sodi
-# buta  paza  oto   diso  dasa  gese  mata  biri
+# buta  oto   diso  dasa  gese  mata  biri
 # aa    tafe  ue    sego  sida  mose  nase  magi
 # fepa  dede  duso  niko  teo   pia   daza  teme
-# sefa  uto   meta  ratu  teki  ue    rota  segi
+# uto   meta  ratu  ue    rota  segi
 # tako  zuki  mume  nitu  kada  ou    ebu
 # ripu  namo  ati   sai   tiwu  eu    zaa   dago
 # rofa  zabe  nuso  rito  noma  gose  tafu  sadi
@@ -19,10 +19,6 @@ vocabulary:
   - trsl: [升, 升起]
     defn: (b:n) 从 (p:n) 上升到 (m:n)
     tags: [移动]
-  gara:
-  - trsl: [反复, 不断, 不停]
-    defn: (t:s) 连续反复多次发生
-    tags: [虚词]
   da:
   - trsl: [你, 您]
     defn: (b:n) 是你
@@ -43,10 +39,10 @@ vocabulary:
     defn: (b:n) 是这里
     etym: <ade kikuma>
     tags: [指示词]
-  te:
-  - trsl: [他, 她, 它]
-    defn: (b:n) 是他/她/它
-    tags: [人称代词]
+  gara:
+  - trsl: [反复, 不断, 不停]
+    defn: (t:s) 连续反复多次发生
+    tags: [虚词]
   ka:
   - trsl: [在, 正在, 正]
     defn: (t:s) 正在进行中
@@ -66,6 +62,14 @@ vocabulary:
     defn: (b:n) 是 (m:n/s/s(n)) 的恋人/爱好者
     etym: <akasu ginammai>
     tags: [社会关系]
+  ke:
+  - trsl: [使, 让, 令, 把]
+    defn: (b:n) 使 (t:s) 发生
+    tags: [虚词]
+  kenedi:
+  - trsl: [杀]
+    defn: (b:n) 杀死 (m:n)；(b:n) 使 (m:n) 死于 (t:n/s/s(n))
+    etym: <sake sinedi>
   kin:
   - trsl: [互相]
     defn: (b:n/n+) 互相 (t:s(n,n))
@@ -102,6 +106,13 @@ vocabulary:
     defn: (t:s) 为假
     note: 否定副词，有黏着形态 _-mi-_。
     tags: [虚词]
+  nedi:
+  - trsl: [死, 死亡, 亡]
+    defn: (b:n) 死于 (t:n/s/s(n))
+  paza:
+  - trsl: [占, 包括, 囊括, 达到, 覆盖, 范围]
+    defn: (b:n) 包括、能达到、覆盖范围 (m:n)
+    note: 对宾格名词化表示“范围”义。
   rada:
   - trsl: [你们, 诸位, 各位]
     defn: (b:n) 是你们
@@ -114,14 +125,45 @@ vocabulary:
   - trsl: [他们, 她们, 它们]
     defn: (b:n) 是他们/她们/它们
     tags: [人称代词]
-  rete:
-  - trsl: [经常, 常, 常常]
-    defn: (t:s) 经常发生
+  re:
+  - trsl: [在, 每]
+    defn: (t:s) 在一段时间内习惯性地经常发生
+    note: 表示事实的惯常状态，有黏着形式 _-re-_。
     tags: [虚词]
+    xmpl:
+    - trsl: （这段时间）我在拓展兴趣范围。
+      text:
+      - .sare sike emi susefa binappaza isakki
+      - .tarekke emi susefa binappaza isakki
   roo:
   - trsl: [太阳, 恒星, 星]
     defn: (b:n) 是行星 (m:n=地球) 的恒星
     tags: [天文]
+  ru:
+  - trsl: [曾, 曾经]
+    defn: (t:s) 过去曾经发生，且已经结束
+    note: 表示事实的结束状态，有黏着形式 _-ru-_。
+    tags: [虚词]
+    xmpl:
+    - trsl: 我曾来到这里。
+      text:
+      - .saru simea emi nudekuma
+      - .tarummea emi nudekuma
+  sa:
+  - trsl: [做]
+    defn: (b:n) 做 (t:s(n))；(b:n) 满足 (t:s(n))
+    note: 可用于表示被动。
+    tags: [虚词]
+    xmpl:
+    - trsl: 有个人被杀了。
+      text: .tatassa ekasu tunakkenedi
+  - trsl: [事]
+    defn: (b:n) 做 (t:n)
+    note: 一般与其它词组成合成词，单用需要加 -sa- 词缀才能表名词义。
+    tags: [抽象名词]
+  sefa:
+  - trsl: [拓, 扩, 展, 伸展, 拓展, 扩展, 扩大]
+    defn: (b:n) 伸展、扩大、拓展
   sete:
   - trsl: [去, 走, 离, 往]
     defn: (b:n) 从 (p:n=这里) 去 (m:n) 做 (t:s(n))
@@ -139,15 +181,18 @@ vocabulary:
     - trsl: 他已经离开了。
       text:
       - .sata sisete ite
-      - .satassete ite
+      - .tatassete ite
       note: 也就是说，他已经不在这里了，即他还没回来。
-  uri:
-  - trsl: [曾经, 已经]
-    defn: (t:s) 过去曾经发生，且已经结束
-    note: 表示事件的结束状态，有黏着形式 _-ru-_。
-    tags: [虚词]
-    xmpl:
-    - trsl: 我来过这里。
-      text:
-      - .sauri simea emi nudekuma
-      - .tarummea emi nudekuma
+  te:
+  - trsl: [他, 她, 它]
+    defn: (b:n) 是他/她/它
+    tags: [人称代词]
+  teki:
+  - trsl: [喜欢, 爱好]
+    defn: (b:n) 喜欢、爱好 (m:n/s/s(n))
+    tags: [感情]
+  sakki:
+  - trsl: [兴趣, 爱好]
+    defn: (b:n) 是 (m:n) 的兴趣、爱好
+    etym: <basassa kiteki>
+    tags: [抽象名词]
