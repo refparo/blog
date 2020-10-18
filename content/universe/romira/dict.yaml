@@ -51,8 +51,8 @@ vocabulary:
     xmpl:
     - trsl: 太阳正冉冉升起。
       text:
-      - .saka siatai eroo kusoe
-      - .takan-atai eroo kusoe
+      - .aroo gikan-atai kisoe
+      - .aroo kika siatai kisoe
   kasu:
   - trsl: [人]
     defn: (b:n) 是人（泛指一切智慧生物）
@@ -113,6 +113,11 @@ vocabulary:
   - trsl: [占, 包括, 囊括, 达到, 覆盖, 范围]
     defn: (b:n) 包括、能达到、覆盖范围 (m:n)
     note: 对宾格名词化表示“范围”义。
+  - trsl: [广, 广泛, 广阔]
+    defn: (b:n) 包括、能达到、覆盖的范围大
+    xmpl:
+    - trsl: 我兴趣很广泛
+      text: .asakki nemi kupaza
   rada:
   - trsl: [你们, 诸位, 各位]
     defn: (b:n) 是你们
@@ -133,8 +138,8 @@ vocabulary:
     xmpl:
     - trsl: （这段时间）我在拓展兴趣范围。
       text:
-      - .sare sike emi susefa binappaza isakki
-      - .tarekke emi susefa binappaza isakki
+      - .ami kire sike sisefa binappaza isakki
+      - .ami girekke sisefa binappaza isakki
   roo:
   - trsl: [太阳, 恒星, 星]
     defn: (b:n) 是行星 (m:n=地球) 的恒星
@@ -147,8 +152,8 @@ vocabulary:
     xmpl:
     - trsl: 我曾来到这里。
       text:
-      - .saru simea emi nudekuma
-      - .tarummea emi nudekuma
+      - .ami kiru simea nidekuma
+      - .ami girummea nidekuma
   sa:
   - trsl: [做]
     defn: (b:n) 做 (t:s(n))；(b:n) 满足 (t:s(n))
@@ -156,7 +161,9 @@ vocabulary:
     tags: [虚词]
     xmpl:
     - trsl: 有个人被杀了。
-      text: .tatassa ekasu tunakkenedi
+      text:
+      - .akasu gitassa tinakkenedi
+      - .akasu ginatakkenedi
   - trsl: [事]
     defn: (b:n) 做 (t:n)
     note: 一般与其它词组成合成词，单用需要加 -sa- 词缀才能表名词义。
@@ -180,8 +187,8 @@ vocabulary:
     xmpl:
     - trsl: 他已经离开了。
       text:
-      - .sata sisete ite
-      - .tatassete ite
+      - .ate kita sisete
+      - .ate gitassete
       note: 也就是说，他已经不在这里了，即他还没回来。
   te:
   - trsl: [他, 她, 它]
