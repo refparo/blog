@@ -6,10 +6,10 @@ weight: 6
 
 ## 我的作品
 
-- [catch-the-bugs](https://parorezo.github.io/catch-the-bugs/)
-- [proj-solar-simulation](https://parorezo.github.io/proj-solar-simulation/)
-- （汉化）[光丝图谱](https://parorezo.github.io/silk/)
-- （汉化）[Simulation the world in emoji](https://parorezo.github.io/simulating/model/)
+- [catch-the-bugs](https://zaparo.github.io/catch-the-bugs/)
+- [proj-solar-simulation](https://zaparo.github.io/proj-solar-simulation/)
+- （汉化）[光丝图谱](https://zaparo.github.io/silk/)
+- （汉化）[Simulation the world in emoji](https://zaparo.github.io/simulating/model/)
 
 ## 友情链接
 

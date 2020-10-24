@@ -103,7 +103,7 @@ $ npm i --save hexo-renderer-jade
 然后在你的博客内把主题作为 submodule 添加：
 
 ```shell
-$ git submodule add https://github.com/parorezo/hexo-theme-mono.git themes/mono
+$ git submodule add https://github.com/zaparo/hexo-theme-mono.git themes/mono
 ```
 
 更新时只需要这样：
@@ -170,7 +170,7 @@ $ git submodule update --remote
 
 除此之外，`custom.css` 内还可以自定义页面中的任何样式。比如自定义代码高亮（主题默认没有加入代码高亮的 `css`）、自定义字体等。更多用法就等待你自己去发现了。不过，一般情况下是不需要改太多的，不然你就该自己做个主题了。
 
-使用示例：[我的博客的源码](https://github.com/parorezo/blog)
+使用示例：[我的博客的源码](https://github.com/zaparo/blog)
 
 ### 如何添加标签页面？
 
@@ -187,6 +187,6 @@ layout: tags
 
 ### 没有 XXX 功能吗？
 
-可能是因为我认为不需要（如：搜索、标签、归档），那么如果你真的需要就请 [fork](https://github.com/parorezo/hexo-theme-mono) 后自行解决；也有可能是我没想到，那么请 [提交 issue](https://github.com/parorezo/hexo-theme-mono/issues)。
+可能是因为我认为不需要（如：搜索、标签、归档），那么如果你真的需要就请 [fork](https://github.com/zaparo/hexo-theme-mono) 后自行解决；也有可能是我没想到，那么请 [提交 issue](https://github.com/zaparo/hexo-theme-mono/issues)。
 
 ### 有待添加……

@@ -19,7 +19,7 @@ tags:
 
 ## 题解
 
-Github：[ProjectEuler.hs](https://github.com/parorezo/sandbox/blob/cc661ed3045584da9f7e64549469d275a50d6c1f/src/ProjectEuler.hs#L271)
+Github：[ProjectEuler.hs](https://github.com/zaparo/sandbox/blob/cc661ed3045584da9f7e64549469d275a50d6c1f/src/ProjectEuler.hs#L271)
 
 ```haskell
 answer62_1 :: String

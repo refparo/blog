@@ -239,4 +239,4 @@ main =
 
 ## 下期预告
 
-这个坑的更新频率大概是一周一更。下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「分数线划定」](https://www.luogu.org/problem/show?pid=1068)。另外，从下期开始将会移除 Java 版本，因为我感觉做这种题目的时候 Java 和 C++ 并没有什么区别。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/parorezo/blog/issues) 提交你的答案~
+这个坑的更新频率大概是一周一更。下一期的题目是 [洛谷](https://www.luogu.org/) 上的 [「分数线划定」](https://www.luogu.org/problem/show?pid=1068)。另外，从下期开始将会移除 Java 版本，因为我感觉做这种题目的时候 Java 和 C++ 并没有什么区别。感兴趣的读者可以写别的语言的版本然后在 Github 上的 [Issues 页面](https://github.com/zaparo/blog/issues) 提交你的答案~

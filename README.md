@@ -1,6 +1,6 @@
 # Blog
 
-本仓库储存了我的博客的源文件。[点此访问](https://parorezo.github.io/)
+本仓库储存了我的博客的源文件。[点此访问](https://zaparo.github.io/)
 
 ## 版权
 
