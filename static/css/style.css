@@ -32,12 +32,6 @@ body {
   font-feature-settings: "calt" 1;
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    font-size: 90%;
-  }
-}
-
 #outer {
   padding: 0 4vw;
 }

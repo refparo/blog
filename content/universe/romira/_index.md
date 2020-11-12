@@ -108,7 +108,7 @@ TODO
 # zaNu siAirenaku 六光分（小说题）
 
 # 他说：“爱你。”
-# .sauma ete ru-“ai nida”
+# .ate kiuma ri-“ai nida”
 
 ② 复杂形式
   格缀-结构缀
@@ -147,9 +147,10 @@ TODO
 # .a-nazo he-mi go-no-m-memu ku-fuo i-te
 
 类型缀：
-     ∀    ∃
-  NP -nu- -ne-
-  VP -su- -se-
+  NP：
+    ∀ -nu-
+    ∃ -ne-
+  VP -se-
 
 黏着助动词：
   否定 -mi- : t -> t
@@ -172,36 +173,13 @@ TODO
   内容 -za(X)-
 
 # 引号引用的用法
-# 词干 = za + 内容 + X
-# X 是一串不包含 /za/ 和 /Q/ 的合法音节，且确保内容中听不到 X
+# 词干 = 内容 + X
+# X 是一串不包含 /Q/ 的合法音节，且确保内容中听不到 X
 # 内容可以是任何声音信息
 
 # 他说：“What the f*ck?”
-# .sauma ete tuzananza “What the f*ck?” na
+# .ate kiuma tizanan “What the f*ck?” na
 
 # 更多例句：
 # 他坐起来，理了理穿航天服弄乱的蓬松尾巴。
-# .saraza ete sotada sisiti susati nisipo kesihi gupanke sekidi kuniru sita sisera nisononsa
-```
-
-| 动词分类 | -过程 | +过程 |
-|-:|:-:|:-:|
-| **+影响** | achievement | accomplishment |
-| **-影响** | semelfactive | activity |
-| **状态** | / | state |
-
-```
-体态：
-  未然体 : 事件 -> 状态 = 事件开始前
-  经验体 : 事件 -> 状态 = 事件结束后
-  惯常体 : 事件 -> 状态 = 事件经常发生
-
-  反复体 : 事件 -> +过程 = 事件连续多次发生的过程
-
-  开始体 : +过程 -> -过程 = 事件/状态开始
-  终结体 : +过程 -> -过程 = 事件/状态结束
-
-  进行体 : +过程 -> 状态 = 事件进行中
-
-  完成体 : +影响 -> 状态 = 事件影响中
 ```

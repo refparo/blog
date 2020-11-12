@@ -1,9 +1,9 @@
 # fafi  noo   nigo  goe   ana   zefu  ia    sodi
 # buta  oto   diso  gese  mata  biri
-# aa    tafe  ue    sego  sida  nase
-# fepa  dede  duso  niko  teo   pia   teme
+# aa    tafe  ue    sego  sida
+# fepa  dede  duso  niko  teo   pia
 # uto   meta  ratu  ue
-# tako  mume  nitu  kada  ou    ebu
+# tako  mume  nitu  ou    ebu
 # namo  ati   sai   tiwu  eu    zaa   dago
 # rofa  zabe  noma  gose  tafu  sadi
 vocabulary:
@@ -41,7 +41,7 @@ vocabulary:
     tags: [人称代词]
   dasa:
   - trsl: [灼, 灼烧]
-    defn: (b:n) 以高温灼烧 (m:n)
+    defn: (b:n) 灼烧 (m:n)
   daza:
   - trsl: [霾]
     defn: (b:n) 是霾
@@ -49,7 +49,10 @@ vocabulary:
   de:
   - trsl: [在, 于]
     defn: 在时间/地点 (m:n) 发生 (t:s)
-    tags: [介词]
+    tags: [虚词]
+  - trsl: [在, 当]
+    defn: 在 (m:s) 发生的时间/地点发生 (t:s)
+    tags: [虚词]
   - trsl: [地方, 地点, 处, 位置, 处所]
     defn: (b:n) 是 (t:s) 发生的地点
     tags: [抽象名词]
@@ -76,6 +79,13 @@ vocabulary:
       text:
       - .aroo gikan-atai kisoe
       - .aroo kika siatai kisoe
+  kada:
+  - trsl: [那个, 那]
+    defn: (b:n) 是那个、在那里/那时
+    tags: [指示词]
+  - trsl: [在那里, 那时, 彼时]
+    defn: 在那里/那时 (t:s)
+    tags: [指示词]
   kasu:
   - trsl: [人]
     defn: (b:n) 是人（泛指一切智慧生物）
@@ -112,10 +122,10 @@ vocabulary:
     tags: [社会关系]
   kuma:
   - trsl: [这个, 这, 此]
-    defn: (b:n) 是这个、在这里
+    defn: (b:n) 是这个、在这里/这时
     tags: [指示词]
-  - trsl: [在这里, 在此]
-    defn: 在这里 (t:s)
+  - trsl: [在这里, 这时, 在此, 此时]
+    defn: 在这里/这时 (t:s)
     tags: [指示词]
   magi:
   - trsl: [灯]
@@ -146,6 +156,13 @@ vocabulary:
     defn: (t:s) 为假
     note: 否定副词，有黏着形态 _-mi-_。
     tags: [虚词]
+  nase:
+  - trsl: [像, 似乎]
+    defn: 对 (p:n) 来说 (t:s) 似乎为真
+    tags: [虚词]
+    xmpl:
+    - trsl: 那时的他，好像在发着光
+      text: .ate kekada, kunase tikatteme niari
   nedi:
   - trsl: [死, 死亡, 亡]
     defn: (b:n) 死于 (t:n/s/s(n))
@@ -217,15 +234,10 @@ vocabulary:
     defn: (b:n) 是行星 (p:n=地球) 的恒星
     tags: [天文]
   rota:
-  - trsl: [能, 会, 可能]
+  - trsl: [能, 可能, 会]
     defn: (t:s) 有可能为真
-    note: 表示事实的可能性，有黏着形式 _-ro-_。
+    note: 表示命题为真的可能性，有黏着形式 _-ro-_。
     tags: [虚词]
-    xmpl:
-    - trsl: 灯光像是能灼烧眼睛。
-      text:
-      - .aarimagi kirota sidasa nirito
-      - .aarimagi girondasa nirito
   ru:
   - trsl: [曾, 曾经]
     defn: (t:s) 过去曾经发生，且已经结束
@@ -248,7 +260,7 @@ vocabulary:
       - .akasu ginatakkenedi
   - trsl: [事]
     defn: (b:n) 做 (t:n)
-    note: 一般与其它词组成合成词，单用需要加 -sa- 词缀才能表名词义。
+    note: 一般与其它词组成合成词，单用需要加 _-sa-_ 词缀才能表名词义。
     tags: [抽象名词]
   sakki:
   - trsl: [兴趣, 爱好]
@@ -299,6 +311,10 @@ vocabulary:
   - trsl: [他, 她, 它]
     defn: (b:n) 是他/她/它
     tags: [人称代词]
+  teme:
+  - trsl: [给, 放, 发]
+    defn: (b:n) 给出/放出/发出 (m:n) 给 (p:n)
+    tags: [让渡]
   teki:
   - trsl: [喜欢, 爱好]
     defn: (b:n) 喜欢、爱好 (m:n/s/s(n))
