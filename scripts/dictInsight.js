@@ -14,14 +14,35 @@ function union(xs, ys) {
   return [...xs, ...ys.filter(y => ! xs.includes(y))]
 }
 
-const tags = () => [vocabulary]
-  .map(dict => dict
-    .map(([, { tags }]) => tags ?? []) // TODO changed data model
-    .reduce(union)
-    .map(/** @type {(tag: string) => [string, Entry[]]} */
-      tag => [tag,
-        dict.filter(([, { tags }]) =>
-          (tags ?? []).includes(tag))]))
-  .map(e => Object.fromEntries(e))[0]
+/** @type {(sentence: string) => string[]} */
+function splitWords (sentence) {
+  return sentence.split(/\s|\s?[.,?!“”‘’:;/]\s?/).filter(s => s && s.length > 0)
+}
 
-module.exports = { tags }
+/** @type {(word: string) => string} */
+function stem (word) {
+  if ('bmptg'.includes(word[0]))
+    return word
+      .replace(/^[bmptg].+?((?<c>[ptkfs])(?=\k<c>)|m(?=[mbw])|n(?=[ndgzr])|n-)/, '')
+  else return word.replace(/^[^aiueo]?[aiueo]/, '')
+}
+
+const wordsWithExample = () => vocabulary
+  .flatMap(([, entry]) =>
+    entry.flatMap(def =>
+      (def.xmpl ?? []).flatMap(xmpl => {
+        if (typeof xmpl.text === 'string') return [xmpl.text]
+        else return xmpl.text
+      })))
+  .flatMap(sentence => splitWords(sentence).map(stem))
+
+const wordsWithoutExample = (wWE = wordsWithExample()) =>
+  vocabulary.filter(word => ! wWE.includes(word[0]))
+
+module.exports = {
+  vocabulary,
+  splitWords,
+  stem,
+  wordsWithExample,
+  wordsWithoutExample
+}

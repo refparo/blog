@@ -1,10 +1,10 @@
-# fafi  noo   nigo  goe   ana   zefu  ia    sodi
-# buta  oto   diso  gese  mata  biri
+# fafi  noo   nigo  goe   ana   ia
+# buta  oto   diso  gese  biri
 # aa    tafe  ue    sego  sida
-# fepa  dede  duso  niko  teo   pia
+# fepa  dede  niko  teo   pia
 # uto   meta  ratu  ue
-# tako  mume  nitu  ou    ebu
-# namo  ati   sai   tiwu  eu    zaa   dago
+# mume  nitu  ou    ebu
+# namo  ati   tiwu  eu    zaa   dago
 # rofa  zabe  noma  gose  tafu  sadi
 vocabulary:
   aa:
@@ -65,10 +65,16 @@ vocabulary:
   - trsl: [草地]
     defn: (b:n) 是草地
     etym: <ade sinesu>
+  duso:
+  - trsl: [城, 城市]
+    defn: (b:n) 是城市
   gara:
   - trsl: [反复, 不断, 不停]
     defn: (t:s) 连续反复多次发生
     tags: [虚词]
+    xmpl:
+    - trsl: 他死了一次又一次。（游戏中）
+      text: .ate kigara sinedi
   ka:
   - trsl: [在, 正在, 正]
     defn: (t:s) 正在进行中
@@ -138,6 +144,13 @@ vocabulary:
     xmpl:
     - trsl: （我）爱你。
       text: .samai nida
+  mata:
+  - trsl: [天, 日]
+    defn: (b:n) 是某一天，(b:n) 是（一个月中的）(m:n) 日
+    tags: [时刻]
+    xmpl:
+    - trsl: 你好！
+      text: .amata!
   mea:
   - trsl: [到, 到达, 抵达]
     defn: (b:n) 到达 (m:n)
@@ -158,11 +171,17 @@ vocabulary:
     tags: [虚词]
   nase:
   - trsl: [像, 似乎]
-    defn: 对 (p:n) 来说 (t:s) 似乎为真
+    defn: 对 (p:n) 来说 (t:s) 好像为真（实际不为真）
     tags: [虚词]
+    rels:
+      注意区分: [sai]
     xmpl:
     - trsl: 那时的他，好像在发着光
       text: .ate kekada, kunase tikatteme niari
+  nee:
+  - trsl: [呢]
+    defn: (int) 呢（表肯定）
+    tags: [叹词]
   nedi:
   - trsl: [死, 死亡, 亡]
     defn: (b:n) 死于 (t:n/s/s(n))
@@ -262,6 +281,10 @@ vocabulary:
     defn: (b:n) 做 (t:n)
     note: 一般与其它词组成合成词，单用需要加 _-sa-_ 词缀才能表名词义。
     tags: [抽象名词]
+  sai:
+  - trsl: [似乎, 看起来]
+    defn: (p:n) 根据表象推测 (t:s) 为真
+    tags: [虚词]
   sakki:
   - trsl: [兴趣, 爱好]
     defn: (b:n) 是 (p:n) 的兴趣、爱好
@@ -275,8 +298,8 @@ vocabulary:
     xmpl:
     - trsl: 我的生活，会有一天被照亮吗？
       text:
-      - .ananzuki emi, gunisse deiga tunakketao?
-      - .ananzuki emi, gunanisekketao diiga?
+      - .bananzefu emi, gunisse deiga tunakketao?
+      - .bananzefu emi, gunanisekketao diiga?
   sefa:
   - trsl: [拓, 扩, 展, 伸展, 拓展, 扩展, 扩大]
     defn: (b:n) 伸展、扩大、拓展
@@ -288,6 +311,13 @@ vocabulary:
   - trsl: [去, 走, 离, 往]
     defn: (b:n) 从 (p:n=这里) 去 (m:n) 做 (t:s(n))
     tags: [移动]
+  sodi:
+  - trsl: [围, 包, 覆, 罩]
+    defn: (b:n) 包围、罩住 (m:n)
+    xmpl:
+    - trsl: 城市被霾笼罩。
+      text: .aduso ginatassodi idaza
+      note: 完成体表状态。
   soe:
   - trsl: [慢慢, 逐渐, 冉冉]
     defn: (t:s) 逐渐地、缓慢地进行
@@ -303,6 +333,12 @@ vocabulary:
       - .ate kita sisete
       - .ate gitassete
       note: 也就是说，他已经不在这里了，即他还没回来。
+  tako:
+  - trsl: [赞同, 认同, 同意]
+    defn: (b:n) 赞同 (m:n/s)
+    xmpl:
+    - trsl: 你的恋人似乎并不认同你的观点呢。
+      text: .akasumai hida kisai timittako nida nee
   tao:
   - trsl: [亮, 明]
     defn: (b:n) 是明亮的、亮色的
@@ -319,9 +355,9 @@ vocabulary:
   - trsl: [喜欢, 爱好]
     defn: (b:n) 喜欢、爱好 (m:n/s/s(n))
     tags: [感情]
-  zuki:
+  zefu:
   - trsl: [活, 生活, 过]
     defn: (b:n) 生活在环境 (m:n) 中
     xmpl:
     - trsl: 生活
-      text: ananzuki
+      text: bananzefu
