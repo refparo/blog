@@ -53,26 +53,6 @@ h1 {
   font-weight: normal;
 }
 
-h2 {
-  font-size: 19pt;
-}
-
-h3 {
-  font-size: 18pt;
-}
-
-h4 {
-  font-size: 17pt;
-}
-
-h5 {
-  font-size: 16pt;
-}
-
-h6 {
-  font-size: 15pt;
-}
-
 latin, .latin {
   font-family: var(--latin-font-family);
 }
@@ -107,7 +87,7 @@ blockquote {
   overflow: hidden;
 }
 
-article div {
+article div, article table {
   margin: 1em 0;
 }
 
@@ -258,10 +238,11 @@ article > h1 {
 h2.toc {
   margin-bottom: 0;
   font-weight: bold;
-  font-size: 15pt;
+  font-size: 1.17em;
 }
 
 .toc {
+  margin: 0;
   padding-left: 1rem;
   font-size: smaller;
 }
