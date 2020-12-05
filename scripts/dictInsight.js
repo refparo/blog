@@ -23,7 +23,7 @@ function splitWords (sentence) {
 function stem (word) {
   if ('bmptg'.includes(word[0]))
     return word
-      .replace(/^[bmptg].+?((?<c>[ptkfs])(?=\k<c>)|m(?=[mbw])|n(?=[ndgzr])|n-)/, '')
+      .replace(/^[bmptg].+?q/, '')
   else return word.replace(/^[^aiueo]?[aiueo]/, '')
 }
 
