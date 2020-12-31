@@ -1,16 +1,19 @@
-# kazi  zina  pomo  kese  zuti  dore  muza  tara
-# soza  zie   teno  dame  zaa   uta   nabi
-# kio   ika   tia   toko  tee   zonu  keu   apo
-# teni  mui   datu  gato  nuno  toka  mie   mone
-# mefu  tata  aa    soo   rau   mesu  tezu
-# tata  aa    buu   fai   nima  rou   eo    nedo
-# ota   tare  mini  sono  roba  ruo   rozo
-# rusi  sope  noi   tage  muu   ezo   pazu  maki
+# nio   kavi  titu  vine  daku  ea    puda  nea
+# vane  nagi  vogi  afe   nana  veti  nadu
+# nimu  somi  vepu  mena  kaga  egu   mudu  garo
+# teri  bou   gika  tame  nanu  nea   vau   gavu
+# ovo   maa   rea   rita  rugo  metu  kee   vono
+# rada  vise  tosa  didu  risu  rofo  ava
+# oa    vuo   nara  ora   gina  tia   pore  kasa
+# fao   kivo  teka  tadu  patu  gaka  kevu  vade
 vocabulary:
   aa:
   - trsl: [啊, 啊啊]
     defn: (int) 啊
     tags: [叹词]
+  ava:
+  - trsl: [树]
+    defn: (b:n) 是树状的
   da:
   - trsl: [你, 您]
     defn: (b:n) 是你
@@ -24,8 +27,15 @@ vocabulary:
     defn: (b:n) 灼烧 (m:n)
     xmpl:
     - trsl: 阳光灼烧着地面。
-      text: .afarireo gikaqdasa nidedi
-  daza:
+      text: .afarireo gikaqdasa nidere
+  dasaqto:
+  - trsl: [刺眼]
+    defn: (b:n) 刺眼
+    orig: <dasa>-<mito>
+    xmpl:
+    - trsl: 灯光刺眼。
+      text: .afarimagi kidasaqto
+  dava:
   - trsl: [霾]
     defn: (b:n) 是霾
     tags: [自然]
@@ -39,18 +49,18 @@ vocabulary:
   - trsl: [地方, 地点, 处, 位置, 处所]
     defn: (b:n) 是 (t:s) 发生的地点
     tags: [抽象名词]
-  dedi:
-  - trsl: [地, 大地, 地面]
-    defn: (b:n) 是 (p:n) 处的地面
   dekuma:
   - trsl: [这里, 此处]
     defn: (b:n) 是这里
-    etym: <ade kikuma>
+    orig: <de>-<kuma>
     tags: [指示词]
   denesu:
   - trsl: [草地]
     defn: (b:n) 是草地
-    etym: <ade sinesu>
+    orig: <de>-<nesu>
+  dere:
+  - trsl: [地, 大地, 地面]
+    defn: (b:n) 是 (p:n) 处的地面
   duso:
   - trsl: [城, 城市]
     defn: (b:n) 是城市
@@ -61,15 +71,15 @@ vocabulary:
   farimagi:
   - trsl: [灯光]
     defn: (b:n) 是灯 (p:n) 发出的灯光
-    etym: <afari fimagi>
+    orig: <fari>-<magi>
   farireo:
   - trsl: [阳光, 日光]
     defn: (b:n) 是（本恒星系的恒星发出的）阳光
     tags: [自然]
-    etym: <afari fireo>
+    orig: <fari>-<reo>
     xmpl:
     - trsl: 阳光穿过云隙在草地上投下亮斑。
-      text: .afarireo kisegi nenise piraqnuso suketao miraqripu didenesu
+      text: .afarireo kisegi nenise piraqnuso sukevio miraqripu didenesu
   gara:
   - trsl: [反复, 不断, 不停]
     defn: (t:s) 连续反复多次发生
@@ -94,6 +104,14 @@ vocabulary:
   - trsl: [在那里, 那时, 彼时]
     defn: 在那里/那时 (t:s)
     tags: [指示词]
+  Kasiava:
+  - trsl: [卡西阿瓦语]
+    defn: (b:n) 是卡西阿瓦语
+    orig: <kasi>-<ava>
+    tags: [专名]
+  kasi:
+  - trsl: [语, 讲, 语言]
+    defn: (b:n) 讲 (m:n) 语
   kasu:
   - trsl: [人]
     defn: (b:n) 是人（泛指一切智慧生物）
@@ -101,7 +119,7 @@ vocabulary:
   kasumai:
   - trsl: [恋人, 爱人, 爱好者]
     defn: (b:n) 是 (p:n/s/s(n)) 的恋人/爱好者
-    etym: <akasu ginaqmai>
+    orig: <kasu>-<mai>
     tags: [社会关系]
   ke:
   - trsl: [使, 让, 令, 把]
@@ -110,11 +128,11 @@ vocabulary:
   kenedi:
   - trsl: [杀]
     defn: (b:n) 杀死 (m:n)；(b:n) 使 (m:n) 死于 (t:n/s/s(n))
-    etym: <sake sinedi>
-  ketao:
+    orig: <ke>-<nedi>
+  kevio:
   - trsl: [照亮]
     defn: (b:n) 照亮 (m:n)
-    etym: <sake sitao>
+    orig: <ke>-<vio>
   iga:
   - trsl: [时, 时候, 时刻]
     defn: (b:n) 是 (t:s) 发生的时间、时刻
@@ -126,7 +144,7 @@ vocabulary:
   kiqmai:
   - trsl: [情侣, 对]
     defn: (b:n) 是一对情侣
-    etym: <akin simai>
+    orig: <kin>-<mai>
     tags: [社会关系]
   kuma:
   - trsl: [这个, 这, 此]
@@ -149,7 +167,7 @@ vocabulary:
   marusu:
   - trsl: [苹果]
     defn: (b:n) 是苹果
-    etym: 拉丁 _malus_
+    orig: 拉丁 _malus_
   mata:
   - trsl: [天, 日]
     defn: (b:n) 是某一天，(b:n) 是（一个月中的）(m:n) 日
@@ -165,11 +183,15 @@ vocabulary:
   - trsl: [我]
     defn: (b:n) 是我
     tags: [人称代词]
+  mito:
+  - trsl: [眼, 目]
+    defn: (b:n) 是 (p:n) 的眼睛
+    tags: [身体]
   mose:
   - trsl: [烟, 雾, 尘]
     defn: (b:n) 是一定介质中的由 (p:n) 小颗粒/液滴构成的悬浮体系
     rels:
-      注意区分: [daza, nuso]
+      注意区分: [dava, nuso]
   nai:
   - trsl: [不]
     defn: (t:s) 为假
@@ -191,12 +213,6 @@ vocabulary:
   nedi:
   - trsl: [死, 死亡, 亡]
     defn: (b:n) 死于 (t:n/s/s(n))
-  nero:
-  - trsl: [语, 讲, 语言]
-    defn: (b:n) 讲 (m:n) 语
-    xmpl:
-    - trsl: 巴纳坎内洛语
-      text: banakaqnero
   nesu:
   - trsl: [草]
     defn: (b:n) 是草
@@ -214,7 +230,7 @@ vocabulary:
   - trsl: [云, 雾]
     defn: (b:n) 是（气象意义上的）云/雾
     tags: [自然]
-  paza:
+  pava:
   - trsl: [占, 包括, 囊括, 达到, 覆盖, 范围]
     defn: (b:n) 包括、能达到、覆盖范围 (m:n)
     note: 对宾格名词化表示“范围”义。
@@ -222,7 +238,7 @@ vocabulary:
     defn: (b:n) 包括、能达到、覆盖的范围大
     xmpl:
     - trsl: 我兴趣很广泛。
-      text: .asaqki femi kupaza
+      text: .asaqki femi kupava
   rada:
   - trsl: [你们, 诸位, 各位]
     defn: (b:n) 是你们
@@ -243,8 +259,8 @@ vocabulary:
     xmpl:
     - trsl: （这段时间）我在拓展兴趣范围。
       text:
-      - .ami kire sike sisefa binaqpaza isaqki
-      - .ami gireqke sisefa binaqpaza isaqki
+      - .ami kire sike sisefa binaqpava isaqki
+      - .ami gireqke sisefa binaqpava isaqki
   reo:
   - trsl: [太阳, 恒星, 星]
     defn: (b:n) 是行星 (p:n=地球) 的恒星
@@ -253,17 +269,6 @@ vocabulary:
   - trsl: [斑, 斑块]
     defn: (b:n) 是形状不规则的斑块
     tags: [形状]
-  rito:
-  - trsl: [眼, 目]
-    defn: (b:n) 是 (p:n) 的眼睛
-    tags: [身体]
-  rodaqto:
-  - trsl: [刺眼]
-    defn: (b:n) 刺眼
-    etym: <taroqdasa nirito>
-    xmpl:
-    - trsl: 灯光刺眼。
-      text: .afarimagi kirodaqto
   rota:
   - trsl: [能, 可能, 会]
     defn: (t:s) 有可能为真
@@ -300,12 +305,12 @@ vocabulary:
   sakki:
   - trsl: [兴趣, 爱好]
     defn: (b:n) 是 (p:n) 的兴趣、爱好
-    etym: <basaqsa kiteki>
+    orig: <sa>-<teki>
     tags: [抽象名词]
-  sazefu:
+  savefu:
   - trsl: [生活]
     defn: (b:n) 是 (p:n) 的生活
-    etym: <bawaqsa sizefu>
+    orig: <sa>-<vefu>
     tags: [抽象名词]
   se:
   - trsl: [将, 要, 会, 未]
@@ -315,8 +320,8 @@ vocabulary:
     xmpl:
     - trsl: 我的生活，会有一天被照亮吗？
       text:
-      - .asazefu emi, guniqse deiga tunaqketao?
-      - .asazefu emi, gunaniseqketao diiga?
+      - .asavefu emi, guniqse deiga tunaqkevio?
+      - .asavefu emi, gunaniseqkevio diiga?
   sefa:
   - trsl: [拓, 扩, 展, 伸展, 拓展, 扩展, 扩大]
     defn: (b:n) 伸展、扩大、拓展
@@ -333,7 +338,7 @@ vocabulary:
     defn: (b:n) 包围、罩住 (m:n)
     xmpl:
     - trsl: 城市被霾笼罩着。
-      text: .aduso ginataqsodi idaza
+      text: .aduso ginataqsodi idava
   soe:
   - trsl: [慢慢, 逐渐, 冉冉]
     defn: (t:s) 逐渐地、缓慢地进行
@@ -358,10 +363,6 @@ vocabulary:
     xmpl:
     - trsl: 你的恋人似乎并不认同你的观点呢。
       text: .akasumai fida kisai timiqtako nida nee
-  tao:
-  - trsl: [亮, 明]
-    defn: (b:n) 是明亮的、亮色的
-    tags: [颜色]
   te:
   - trsl: [他, 她, 它]
     defn: (b:n) 是他/她/它
@@ -374,12 +375,16 @@ vocabulary:
   - trsl: [喜欢, 爱好]
     defn: (b:n) 喜欢、爱好 (m:n/s/s(n))
     tags: [感情]
-  zane:
+  vane:
   - trsl: [毁, 破, 毁坏]
     defn: (b:n) 毁坏、破坏 (m:n)
     xmpl:
     - trsl: 他们生活的地方已经被破坏了。
-      text: .ade sezefu irate gunataqzane
-  zefu:
+      text: .ade sevefu irate gunataqvane
+  vefu:
   - trsl: [活, 生活, 过]
     defn: (b:n) 生活在环境 (m:n) 中
+  vio:
+  - trsl: [亮, 明]
+    defn: (b:n) 是明亮的、亮色的
+    tags: [颜色]

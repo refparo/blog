@@ -8,7 +8,7 @@ export interface Dict {
       /** 含义 */
       defn: string
       /** 词源 */
-      etym?: string
+      orig?: string
       /** 说明 */
       note?: string
       /** 标签 */
