@@ -1,10 +1,6 @@
 ---
 title: 在 WSL 上的 Arch Linux 里运行 VSCode
 date: 2018-07-25
-tags:
-  - 笔记
-  - 编程
-  - 编程工具
 ---
 
 上次我们 [用 LxRunOffline 安装了 Arch Linux](/tech/use-lxrunoffline-to-install-arch-linux/)，下一步就要在 WSL 之上构建开发环境了。开发环境的一个很重要的部分就是代码编辑器（或者 IDE），这里就要在 WSL 上安装运行 [VSCode](https://code.visualstudio.com/)。

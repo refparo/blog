@@ -1,9 +1,6 @@
 ---
 title: Idris 中类型安全的 printf
 date: 2018-04-05
-tags:
-  - 编程
-  - Idris
 ---
 
 从寒假开始，断断续续地玩了两个月 [Idris](http://idris-lang.org/)。最开始让我决定开 Idris 这个坑的还是 [这篇文章](https://www.zhihu.com/question/55342708/answer/148680032) 中的这句话：
@@ -115,7 +112,7 @@ printf fmtStr = curryHList $ printfHList fmtStr
 
 完成！从这个函数的实现可以窥见类型系统的强大之处。效果：
 
-```idris
+```plain
 *Sandbox> format "hello, %s" "problem233"
 "hello, problem233" : String
 *Sandbox> format "hello, %s" 1

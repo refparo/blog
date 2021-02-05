@@ -2,9 +2,6 @@
 title: 用 LxRunOffline 安装 Arch Linux
 date: 2018-02-15
 lastmod: 2018-07-25
-tags:
-  - 笔记
-  - 编程工具
 ---
 
 前段时间重装系统之后我就一直在 WSL 内开发。Ubuntu 因为我不喜欢所以直接放弃（？？？），所以就一直在用 openSUSE。然而现在越用越感觉 zypper 的下载源坑爹……于是在 Github 上一阵搜索之后，我终于找到了这个神器：[LxRunOffline](https://github.com/DDoSolitary/LxRunOffline)。于是我毅然卸载了 openSUSE，开始尝试安装 Arch Linux……
@@ -25,13 +22,13 @@ tags:
 
 在 LxRunOffline 目录下打开 CMD 或 PowerShell，输入
 
-```shell
+```plain
 > .\LxRunOffline.exe install -n <用于向 Windows 注册的系统名> -f <到 rootfs 文件的路径> -d <安装到的目录> -r root.x86_64
 ```
 
 LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令。LxRunOffline 会把系统安装到指定的目录。正常安装完成后 LxRunOffline 不会有任何输出（真是遵循 UNIX 哲学）。然后输入：
 
-```shell
+```plain
 > .\LxRunOffline.exe set-default -n <之前输入的系统名>
 ```
 
@@ -43,7 +40,7 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 
 然后安装基础软件：
 
-```shell
+```plain
 # pacman-key --init
 # pacman-key --populate archlinux
 # pacman -Syyu base base-devel
@@ -53,7 +50,7 @@ LxRunOffline 可能会要求重启，那么重启之后再次输入上述命令�
 
 这里建议
 
-```shell
+```plain
 rm /etc/pacman.d/mirrorlist
 mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
 ```
@@ -62,13 +59,13 @@ mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
 
 然后设置语言和时间：使用 vi 或 nano 编辑 `/etc/locale.gen`，取消注释需要使用的语言（一般是 `en_US.UTF-8 UTF-8` 和 `zh_CN.UTF-8 UTF-8`），输入 `locale-gen` 生成语言文件。输入 `ln -sf /usr/share/zoneinfo/<区域>/<子区域> /etc/localtime` 来设置时区，如我的是：
 
-```shell
+```plain
 # ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 接下来设置用户：
 
-```shell
+```plain
 # useradd -m -G wheel -s /bin/bash <用户名>
 # passwd root
 # passwd <用户名>
@@ -78,7 +75,7 @@ mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
 
 接下来输入 `id -u <用户名>` 查看 UID，然后退出 Bash，输入
 
-```shell
+```plain
 > .\LxRunOffline.exe config-uid -n <之前输入的系统名> -v <UID>
 ```
 
@@ -88,6 +85,6 @@ mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
 
 到这里为止，Arch Linux 就安装完成了。（撒花🎉~）此时系统内还有一些无用的用于安装系统的软件，强迫症可以输入以下命令卸载它们：
 
-```shell
+```plain
 $ sudo pacman -R arch-install-scripts
 ```

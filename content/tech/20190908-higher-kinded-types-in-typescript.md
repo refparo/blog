@@ -1,9 +1,6 @@
 ---
 title: 在 Typescript 中模拟高阶类型
 date: 2019-09-08
-tags:
-  - 编程
-  - Typescript
 toc: true
 ---
 
