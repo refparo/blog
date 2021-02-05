@@ -1,23 +1,25 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{{ if not (eq .Title .Site.Title) }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  {{- with .Params.math -}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  {{- end -}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css">
+  <link rel="stylesheet" href="/fonts/andika-phon/andika-phon.css">
+  <link rel="stylesheet" href="/css/highlight.css">
   <link rel="stylesheet" href="/css/style.css">
+  {{- with .Params.math -}}
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
-          onload="renderMathInElement(
-            document.querySelector('main'),
-            {
+          onload="Array.from(document.querySelectorAll('.content'))
+            .forEach(elem => renderMathInElement(elem, {
               delimiters: [
                 { left: '$$', right: '$$', display: true },
                 { left: '$', right: '$' }
-              ],
-              macros: {
-                '\\n': '\\\\'
-              }
-            }
-          )"></script>
+              ]
+            }))"></script>
+  {{- end -}}
 </head>

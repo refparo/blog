@@ -1,4 +1,9 @@
 <header>
-  {{- partial "breadcrumb.html" . -}}
-  <h1>{{ if and (eq .Type "tags") (not (eq .RelPermalink "/tags/")) }}#{{ end }}{{ .Title }}</h1>
+  <nav>
+  {{- partial "header/breadcrumb.html" . -}}
+  {{- if not .IsHome -}}
+    {{- partial "header/site-nav.html" . -}}
+  {{- end -}}
+  </nav>
+  <h1>{{ .Title }}</h1>
 </header>

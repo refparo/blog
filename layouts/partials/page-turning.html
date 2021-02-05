@@ -1,0 +1,6 @@
+{{- with .PrevInSection -}}
+  <a title="上一章节" class="page-turner" id="prev-chapter" href="{{ .Permalink }}">⟨</div>
+{{- end -}}
+{{- with .NextInSection -}}
+  <a title="下一章节" class="page-turner" id="next-chapter" href="{{ .Permalink }}">⟩</div>
+{{- end -}}

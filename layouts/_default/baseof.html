@@ -5,9 +5,12 @@
   <div id="outer"><div id="inner">
     {{- partial "header.html" . -}}
     <main>{{- block "main" . -}}{{- end -}}</main>
-    <footer>
-      © 2020 vaParo. Built with <a href="https://gohugo.io">Hugo</a>.
-    </footer>
+    {{- partial "footer.html" . -}}
   </div></div>
+  {{- with .Parent -}}
+    {{- if eq .Layout "toc" -}}
+      {{- partial "page-turning.html" $ -}}
+    {{- end -}}
+  {{- end -}}
 </body>
 </html>
