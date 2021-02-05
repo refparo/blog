@@ -6,8 +6,5 @@
     "**/bower_components": true,
     "**/*.code-search": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "yaml.schemas": {
-    "resources/dict.schema.json": "content/universe/20201121-proposal-on-a-unified-language-banakaqnero/dict.yaml"
-  }
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
