@@ -21,6 +21,7 @@ toc: true
 
 | 时间 | 事件 |
 |-|-|
+| 2021年 2月 8日 | 网站模板和样式重构 |
 | 2020年 5月 31日 | 博客改用 Hugo 生成器，结构和样式改动以适应新的需求 |
 | 2019年 7月 20日 | 博客样式调整 |
 | 2019年 4月 6日 | 博客改用 Gatsby 框架 |
@@ -41,14 +42,14 @@ toc: true
 
 兴趣广泛，然而大多比较小众。喜欢 Furry、人造语言、架空设定、编程语言、独立音乐。没有太多时间玩游戏，常玩的是音游 osu!。最后，如你所见，是个 gay。
 
-恰好兴趣相投的旅者，可以在这些地方找到我。
+恰好兴趣相投的旅者，可以在这些地方找到我——
 
 - E-mail：[vap4ro@outlook.com](mailto:vap4ro@outlook.com)
 - QQ：[2285214727](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
-- Github: [vaparo](https://github.com/vaparo)
-- 知乎：[Paro ci](https://www.zhihu.com/people/paro_ci)
+- Github: [@vaparo](https://github.com/vaparo)
+- 知乎：[@vaParo](https://www.zhihu.com/people/paro_ci)
 - Steam：[vaparo](http://steamcommunity.com/id/vaparo/)
-- SoundCloud: [vaparo](https://soundcloud.com/vaparo)
+- SoundCloud: [@vaparo](https://soundcloud.com/vaparo)
 - osu!：[Problem233](https://osu.ppy.sh/users/5931775)
 - Twitter：[@vap4ro](https://twitter.com/vap4ro)
 - 微博：[@vaParo](http://www.weibo.com/qq2285214727)
