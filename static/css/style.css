@@ -25,7 +25,7 @@
   }
 }
 
-html:lang(zh) {
+:root:lang(zh) {
   font-family: var(--zh-font-family);
 }
 .ipa {
