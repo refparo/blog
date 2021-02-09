@@ -2,7 +2,7 @@
   <article>
     {{- partial "main/meta.html" . -}}
     {{- if .Params.toc -}}
-      <div class="toc">
+      <div id="toc">
         <h2>目录</h2>
         {{- .TableOfContents -}}
       </div>
@@ -10,5 +10,6 @@
     <div class="content">
       {{- replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "main/content-filter.html" -}}
     </div>
+    {{- partial "main/comment.html" -}}
   </article>
 {{- end -}}

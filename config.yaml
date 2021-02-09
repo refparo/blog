@@ -1,5 +1,6 @@
 title: vaParo 的世界
 defaultContentLanguage: zh-cn
+hasCJKLanguage: true
 baseURL: https://vaparo.github.io/
 disableKinds: [taxonomy, term]
 markup:

@@ -4,7 +4,7 @@
     <div class="content">
       {{- replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "main/content-filter.html" -}}
     </div>
-    <div class="toc">
+    <div id="toc">
       <h2>目录</h2>
       <ol>
         {{- range .Pages.Reverse -}}
@@ -15,5 +15,6 @@
         {{- end -}}
       </ol>
     </div>
+    {{- partial "main/comment.html" -}}
   </article>
 {{- end -}}

@@ -99,33 +99,33 @@ main {
 
 /*** Main: TOC */
 
-.toc {
+#toc {
   margin: 0;
   padding-left: 1rem;
   font-size: smaller;
 }
 
-.toc h2 {
+#toc h2 {
   margin-bottom: 0;
   font-weight: bold;
   font-size: 1.17rem;
 }
 
-.toc p {
+#toc p {
   margin: 0;
 }
 
-.toc ol {
+#toc ol {
   margin: 0;
   padding-left: 0;
   list-style-type: decimal;
 }
 
-.toc ol ol {
+#toc ol ol {
   padding-left: 2em;
 }
 
-.toc ::marker {
+#toc ::marker {
   content: counters(list-item, '.') '.\A0';
 }
 
@@ -145,9 +145,6 @@ main {
 
 /*** Main: Content */
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.67em 0;
-}
 h1 {
   font-weight: normal;
 }
@@ -162,6 +159,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 a:hover {
   color: var(--color-1);
   text-decoration-style: solid;
+}
+
+.content > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -343,21 +345,21 @@ div.chroma {
 
 /*** Main: TOC Page */
 
-.toc:last-child {
+#toc:last-child {
   font-size: revert;
 }
 
-.toc:last-child h2 {
+#toc:last-child h2 {
   margin: 0.67em 0;
   font-weight: bold;
   font-size: revert;
 }
 
-.toc:last-child ol {
+#toc:last-child ol {
   list-style-type: "• ";
 }
 
-.toc:last-child .meta {
+#toc:last-child .meta {
   display: inline-block;
   margin-left: 0.2rem;
   border-left: 2px solid var(--color-3);
