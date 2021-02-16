@@ -1,6 +1,7 @@
 title: vaParo 的世界
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
+disableHugoGeneratorInject: true
 baseURL: https://vaparo.github.io/
 disableKinds: [taxonomy, term]
 markup:
