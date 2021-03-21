@@ -7,6 +7,8 @@
       <div class="content">{{- replaceRE "<!-- more -->[^\x00]*" "" .Content | partial "main/content-filter.html" -}}</div>
       {{- if (findRE "<!-- more -->" .Content 1) -}}
         <a href="{{ .RelPermalink }}#more">继续阅读»</a>
+      {{- else -}}
+        <a href="{{ .RelPermalink }}#comment">前往评论»</a>
       {{- end -}}
     </article>
   {{- else -}}
