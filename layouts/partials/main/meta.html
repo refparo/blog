@@ -1,6 +1,8 @@
 <div class="meta">
-  {{- with .PublishDate -}}
-    {{- with .Format "2006-01-02" -}}<time datetime="{{ . }}">{{ . }} 发布</time>{{- end -}}
+  {{- if not .Params.hideDate -}}
+    {{- with .PublishDate -}}
+      {{- with .Format "2006-01-02" -}}<time datetime="{{ . }}">{{ . }} 发布</time>{{- end -}}
+    {{- end -}}
   {{- end -}}
   {{- if not (eq .Lastmod .PublishDate) -}}
     {{ with .Lastmod.Format "2006-01-02" -}}<time datetime="{{ . }}">{{ . }} 更新</time>{{- end -}}
