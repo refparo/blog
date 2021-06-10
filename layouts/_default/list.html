@@ -4,8 +4,10 @@
     <article>
       <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       {{- partial "main/meta.html" . -}}
-      <div class="content">{{- replaceRE "<!-- more -->[^\x00]*" "" .Content | partial "main/content-filter.html" -}}</div>
-      {{- if (findRE "<!-- more -->" .Content 1) -}}
+      <div class="content">{{- .Content | replaceRE "<!-- more -->[^\x00]*" "" | replaceRE "[^\x00]*<!-- more: -->" "" | partial "main/content-filter.html" -}}</div>
+      {{- if (in .Content "<!-- more: -->") -}}
+        <a href="{{ .RelPermalink }}">继续阅读»</a>
+      {{- else if (in .Content "<!-- more -->") -}}
         <a href="{{ .RelPermalink }}#more">继续阅读»</a>
       {{- else -}}
         <a href="{{ .RelPermalink }}#comment">前往评论»</a>

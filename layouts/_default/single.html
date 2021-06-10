@@ -8,7 +8,11 @@
       </div>
     {{- end -}}
     <div class="content">
-      {{- replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "main/content-filter.html" -}}
+      {{- if not (in .Content "<!-- more: -->") -}}
+        {{- replaceRE "<!-- more -->" "<div id=\"more\"></div>" .Content | partial "main/content-filter.html" -}}
+      {{- else -}}
+        {{- .Content | partial "main/content-filter.html" -}}
+      {{- end -}}
     </div>
     {{- partial "main/comment.html" -}}
   </article>
