@@ -28,4 +28,4 @@ lastmod: 2021-01-08
 
 “好，我等你。”
 
-> 本文经过重写。初始版本可点击 [此处](https://github.com/vaparo/blog/blob/66eb4241a9c15b1f60cdcc592fc30834594a7f8b/content/universe/20200815-six-lightminutes.md) 阅读。
+> 本文经过重写。初始版本可点击 [此处](https://github.com/refparo/blog/blob/66eb4241a9c15b1f60cdcc592fc30834594a7f8b/content/universe/20200815-six-lightminutes.md) 阅读。

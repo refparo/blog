@@ -1,8 +1,8 @@
-title: vaParo 的世界
+title: Paro 的世界
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
 disableHugoGeneratorInject: true
-baseURL: https://vaparo.github.io/
+baseURL: https://refparo.github.io/
 disableKinds: [taxonomy, term]
 markup:
   goldmark:
