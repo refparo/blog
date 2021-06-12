@@ -1,4 +1,4 @@
 ---
-title: 博学
+title: 杂学
 weight: 3
 ---

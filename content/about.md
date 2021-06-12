@@ -1,19 +1,17 @@
 ---
 title: 关于
-lastmod: 2021-02-05
+lastmod: 2021-06-12
 weight: 6
 toc: true
 ---
 
 ## 关于本站
 
-本站分为五个栏目。
+本站分为三个栏目。
 
 - 技术：发表信息技术相关内容。
 - 随想：发表散文、诗歌、现实背景的小说等。
-- 博学：分享各种杂学。
-- 记忆：记录值得被互联网记住的事件。
-- 宇宙：发表架空世界观下的相关内容。
+- 杂学：分享各种杂学。
 
 ### 站史
 
@@ -44,23 +42,23 @@ toc: true
 
 恰好兴趣相投的旅者，可以在这些地方找到我：
 
-- E-mail：[ref.paro@outlook.com](mailto:vap4ro@outlook.com)
+- E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
 - QQ：[2285214727](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
 - Github: [@refparo](https://github.com/refparo)
-- 知乎：[@vaParo](https://www.zhihu.com/people/paro_ci)
+- 知乎：[@vaParo](https://zhihu.com/people/paro_ci)
 - Steam：[Paro](https://steamcommunity.com/id/refparo)
 - osu!：[Problem233](https://osu.ppy.sh/users/5931775)
 - Twitter：[@refparo](https://twitter.com/refparo)
-- 微博：[@ref_Paro](https://www.weibo.com/refparo)
+- 微博：[@ref_Paro](https://weibo.com/refparo)
 
 ### 我的其它作品
 
 其实并没有什么拿得出手的东西。
 
-- [catch-the-bugs](https://vaparo.github.io/catch-the-bugs/)
-- [proj-solar-simulation](https://vaparo.github.io/proj-solar-simulation/)
-- （汉化）[光丝图谱](https://vaparo.github.io/silk/)
-- （汉化）[Simulation the world in emoji](https://vaparo.github.io/simulating/model/)
+- [catch-the-bugs](https://refparo.github.io/catch-the-bugs/)
+- [proj-solar-simulation](https://refparo.github.io/proj-solar-simulation/)
+- （汉化）[光丝图谱](https://refparo.github.io/silk/)
+- （汉化）[Simulation the world in emoji](https://refparo.github.io/simulating/model/)
 
 ## 友情链接
 
