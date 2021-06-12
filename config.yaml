@@ -1,9 +1,11 @@
 title: Paro 的博客
+author: { name: Paro }
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
 disableHugoGeneratorInject: true
 baseURL: https://refparo.github.io/
 disableKinds: [taxonomy, term]
+theme: [base]
 markup:
   goldmark:
     renderer:

@@ -1,9 +1,0 @@
-<header>
-  <nav>
-  {{- partial "header/breadcrumb.html" . -}}
-  {{- if not .IsHome -}}
-    {{- partial "header/site-nav.html" . -}}
-  {{- end -}}
-  </nav>
-  <h1>{{ .Title }}</h1>
-</header>
