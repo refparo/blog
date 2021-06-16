@@ -23,6 +23,15 @@ layout: single
 - Twitter：[@refparo](https://twitter.com/refparo)
 - 微博：[@ref_Paro](https://weibo.com/refparo)
 
+### 我的作品
+
+其实并没有什么拿得出手的东西。
+
+- [catch-the-bugs](https://refparo.github.io/catch-the-bugs/)
+- [proj-solar-simulation](https://refparo.github.io/proj-solar-simulation/)
+- （汉化）[光丝图谱](https://refparo.github.io/silk/)
+- （汉化）[Simulation the world in emoji](https://refparo.github.io/simulating/model/)
+
 ## 关于本站
 
 点击右上角的导航可以进入本站的三个栏目：
@@ -49,15 +58,6 @@ layout: single
 | 2016年初 | 删除原 WordPress 站 |
 | 2015年 5月 31日 | 发布第一篇文章《Hello WorldPress！》 |
 | 2015年 5月 | 网站建立 |
-
-### 我的其它作品
-
-其实并没有什么拿得出手的东西。
-
-- [catch-the-bugs](https://refparo.github.io/catch-the-bugs/)
-- [proj-solar-simulation](https://refparo.github.io/proj-solar-simulation/)
-- （汉化）[光丝图谱](https://refparo.github.io/silk/)
-- （汉化）[Simulation the world in emoji](https://refparo.github.io/simulating/model/)
 
 ## 友情链接
 
