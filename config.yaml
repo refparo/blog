@@ -3,7 +3,7 @@ author: { name: Paro }
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
 disableHugoGeneratorInject: true
-baseURL: https://refparo.github.io/
+baseURL: https://paro.one/
 disableKinds: [taxonomy, term]
 theme: [base]
 markup:
