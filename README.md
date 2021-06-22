@@ -1,6 +1,6 @@
 # Blog
 
-本仓库储存了我的博客的源文件。[点此访问](https://refparo.github.io/)
+本仓库储存了我的博客的源文件。[点此访问](https://paro.one/)
 
 ## 版权
 

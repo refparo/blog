@@ -15,7 +15,7 @@ layout: single
 恰好兴趣相投的旅者，可以在这些地方找到我：
 
 - E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
-- QQ：[2285214727](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
+- QQ：[Paro](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
 - Github: [@refparo](https://github.com/refparo)
 - 知乎：[@vaParo](https://zhihu.com/people/paro_ci)
 - Steam：[Paro](https://steamcommunity.com/id/refparo)
