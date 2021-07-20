@@ -1,6 +1,7 @@
 ---
 title: 2021 年的 Arch 安装完全笔记：从选择镜像到个性化
-date: 2021-07-16
+date: 2021-07-18
+lastmod: 2021-07-20
 toc: true
 ---
 
@@ -188,7 +189,7 @@ $ paru -S sway xorg-xwayland qt5-wayland qterminal \ # 换成你喜欢的终端�
 
 接下来是重点！就本文写作时而言，官方库内还没有原生支持 Wayland 的[显示管理器](https://wiki.archlinux.org/title/Display_manager)（唯一一款原生支持 Wayland 的需要自行编译和很复杂的配置，其它的虽然能启动 Wayland 桌面环境但本身必须运行在 X server 下），因此我们将不使用显示管理器，直接在登陆 TTY 后从 TTY 启动 Sway。下面需要手动编写一些 Systemd 单元文件。
 
-编辑 `~/.local/share/systemd/user/sway-session.target`：
+`~/.config/systemd/user/sway-session.target`：
 
 ```ini
 [Unit]
@@ -197,17 +198,30 @@ Documentation=man:systemd.special(7)
 BindsTo=graphical-session.target
 ```
 
-编辑 `~/.local/share/systemd/user/sway-autostart.target`：
+`~/.config/systemd/user/graphical-session.target.d/override.conf`：
+
+```ini
+[Unit]
+BindsTo=sway-session.target
+```
+
+`~/.config/systemd/user/sway-autostart.target`：
 
 ```ini
 [Unit]
 Description=Sway session autostart
 Documentation=man:systemd.special(7)
-BindsTo=xdg-desktop-autostart.target
-Requisite=graphical-session.target
+BindsTo=xdg-desktop-autostart.target graphical-session.target
 ```
 
-编辑 `~/.local/share/systemd/user/sway.service`：
+`~/.config/systemd/user/xdg-desktop-autostart.target.d`：
+
+```ini
+[Unit]
+BindsTo=sway-autostart.target
+```
+
+`~/.config/systemd/user/sway.service`：
 
 ```ini
 [Unit]
@@ -371,7 +385,7 @@ $ sudo udevadm trigger
 $ paru -S wob
 ```
 
-编写一些 Systemd 单元文件。`~/.local/share/systemd/user/wob@.socket`：
+编写一些 Systemd 单元文件。`~/.config/systemd/user/wob@.socket`：
 
 ```ini
 [Socket]
@@ -382,7 +396,7 @@ SocketMode=0600
 WantedBy=sockets.target
 ```
 
-`~/.local/share/systemd/user/wob@.service`：
+`~/.config/systemd/user/wob@.service`：
 
 ```ini
 [Unit]
@@ -439,7 +453,7 @@ $ paru -S swaylock swayidle
 - 当合上屏幕时，锁定；
 - 当持续 5 分钟无活动时，锁定并关闭屏幕。
 
-下面编写一些 Systemd 单元文件。`~/.local/share/systemd/user/sway-close-display.service`，用来实现第一点需求：
+下面编写一些 Systemd 单元文件。`~/.config/systemd/user/sway-close-display.service`，用来实现第一点需求：
 
 ```ini
 [Unit]
@@ -455,7 +469,7 @@ WantedBy=xdg-desktop-autostart.target
 ```
 
 
-`~/.local/share/systemd/user/sway-idle-lock.service`，用来实现其余三点：
+`~/.config/systemd/user/sway-idle-lock.service`，用来实现其余三点：
 
 ```ini
 [Unit]
@@ -550,6 +564,46 @@ $ paru -S fcitx5-im fcitx5-chinese-addons
 用应用启动器启动 Fcitx 5。所需的环境变量已经在前面配置好。下次启动 Sway 时 Fcitx 5 会自动启动。
 
 已知问题是[在 Firefox 的拓展的弹框内（例如 Saladict）输入法选项框无法显示](https://bugzilla.mozilla.org/show_bug.cgi?id=1720814)。
+
+### 基于 Chromium 的应用
+
+目前大部分基于 Chromium 的应用应该都还需要手动添加命令行参数才能原生运行在 Wayland 下，下面以 Visual Studio Code 为例。
+
+```bash
+$ paru -S visual-studio-code-bin
+$ mkdir -p ~/.local/share/applications
+$ cp /usr/share/applications/visual-studio-code* ~/.local/share/applications/
+```
+
+编辑 `~/.local/bin/code`：
+
+```bash
+#!/bin/bash
+/usr/bin/code --enable-features=UseOzonePlatform --ozone-platform=wayland "$@"
+```
+
+`~/.local/share/applications/visual-studio-code.desktop`：
+
+```diff
+@@ -5 +5 @@
+-Exec=/opt/visual-studio-code/code --no-sandbox --unity-launch %F
++Exec=code --no-sandbox --unity-launch %F
+@@ -17 +17 @@
+-Exec=/opt/visual-studio-code/code --no-sandbox --new-window %F
++Exec=code --no-sandbox --new-window %F
+```
+
+`~/.local/share/applications/visual-studio-code-url-handler.desktop`：
+
+```diff
+@@ -5 +5 @@
+-Exec=/opt/visual-studio-code/code --no-sandbox --open-url %U
++Exec=code --no-sandbox --open-url %U
+```
+
+现在 VSCode 就能原生在 Wayland 下运行了。
+
+已知问题是 [VSCode 内无法使用输入法](https://github.com/microsoft/vscode/issues/120084)。
 
 ### 代理
 
