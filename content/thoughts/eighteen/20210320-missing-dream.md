@@ -74,3 +74,6 @@ date: 2021-03-21
 我梦见了什么？
 
 ……
+
+![image](/thoughts/eighteen/missing-dream.jpg)
+
