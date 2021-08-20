@@ -30,3 +30,7 @@ weight: 2
 那是血液中来自荒野的基因，对千里之外明月的呼唤的回应。
 
 泪珠落在草叶上，灰狼以模糊的眼睛注视明月，许久才抹去眼泪，默默走下山去。
+
+![image 1](/thoughts/eighteen/mountain-climbing-1.png)
+
+![image 2](/thoughts/eighteen/mountain-climbing-2.png)
