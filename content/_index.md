@@ -17,7 +17,7 @@ layout: single
 - E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
 - QQ：[Paro](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
 - Github: [@refparo](https://github.com/refparo)
-- 知乎：[@vaParo](https://zhihu.com/people/paro_ci)
+- 知乎：[@Paro](https://zhihu.com/people/paro_ci)
 - Steam：[Paro](https://steamcommunity.com/id/refparo)
 - osu!：[Problem233](https://osu.ppy.sh/users/5931775)
 - Twitter：[@refparo](https://twitter.com/refparo)
