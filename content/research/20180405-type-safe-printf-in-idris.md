@@ -1,5 +1,6 @@
 ---
 title: Idris 中类型安全的 printf
+aliases: [/tech/20180405-type-safe-printf-in-idris/]
 date: 2018-04-05
 ---
 

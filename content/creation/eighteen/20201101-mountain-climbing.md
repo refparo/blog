@@ -31,6 +31,6 @@ weight: 2
 
 泪珠落在草叶上，灰狼以模糊的眼睛注视明月，许久才抹去眼泪，默默走下山去。
 
-![image 1](/thoughts/eighteen/mountain-climbing-1.jpg)
+![image 1](/research/eighteen/mountain-climbing-1.jpg)
 
-![image 2](/thoughts/eighteen/mountain-climbing-2.jpg)
+![image 2](/research/eighteen/mountain-climbing-2.jpg)

@@ -1,5 +1,6 @@
 ---
 title: 用 LxRunOffline 安装 Arch Linux
+aliases: [/tech/20180215-use-lxrunoffline-to-install-arch-linux/]
 date: 2018-02-15
 lastmod: 2018-07-25
 ---

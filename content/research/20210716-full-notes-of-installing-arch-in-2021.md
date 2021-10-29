@@ -1,5 +1,6 @@
 ---
 title: 2021 年的 Arch 安装完全笔记：从选择镜像到个性化
+aliases: [/tech/20210716-full-notes-of-installing-arch-in-2021/]
 date: 2021-07-18
 lastmod: 2021-07-20
 toc: true
