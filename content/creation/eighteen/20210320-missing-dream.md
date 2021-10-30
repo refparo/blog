@@ -75,5 +75,5 @@ date: 2021-03-21
 
 ……
 
-![image](/research/eighteen/missing-dream.jpg)
+![image](/creation/eighteen/missing-dream.jpg)
 
