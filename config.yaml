@@ -19,3 +19,9 @@ markup:
     ordered: true
     startLevel: 2
     endLevel: 3
+server:
+  headers:
+  - for: /**
+    values:
+      access-control-allow-origin: '*'
+      cache-control: no-cache
