@@ -5,6 +5,7 @@ hasCJKLanguage: true
 disableHugoGeneratorInject: true
 baseURL: https://paro.one/
 disableKinds: [taxonomy, term]
+paginate: 10
 theme: [base]
 markup:
   goldmark:
