@@ -24,13 +24,13 @@ data HList : {default Type t : _} -> (ts : List t) -> Type where
   (::) : a -> HList ts -> HList (a :: ts)
 ```
 
-它的类型中有一个 `List t` 参数来指定每个元素的类型。在 [我的 Github](https://github.com/refparo/sandbox/blob/cd748aeb4dd8153f23b8cae8fb17c35a194c6853/Sandbox/HList.idr) 上还有一些简单函数的定义，但这里只需要这个类型定义就够了。
+它的类型中有一个 `List t` 参数来指定每个元素的类型。在 [我的 GitHub](https://github.com/refparo/sandbox/blob/cd748aeb4dd8153f23b8cae8fb17c35a194c6853/Sandbox/HList.idr) 上还有一些简单函数的定义，但这里只需要这个类型定义就够了。
 
 （[prism.js](https://prismjs.com/) 不支持 Idris，差评……）
 
 ## 实现 format 函数
 
-要实现一个简单的类型安全的 format 函数，其第二个参数（格式化数据）的类型要依赖于第一个参数（格式化字符串），因此需要先实现由第一个参数得到第二个参数类型的函数。一开始我是由第一个参数直接得到第二个参数，但不明原因导致编译不过。参考了 Github 上已有的实现以后添加了一个中间类型来表示格式化字符串的解析结果：
+要实现一个简单的类型安全的 format 函数，其第二个参数（格式化数据）的类型要依赖于第一个参数（格式化字符串），因此需要先实现由第一个参数得到第二个参数类型的函数。一开始我是由第一个参数直接得到第二个参数，但不明原因导致编译不过。参考了 GitHub 上已有的实现以后添加了一个中间类型来表示格式化字符串的解析结果：
 
 ```idris
 data Fmt = FInt | FInteger | FNat | FDouble | FString | FLiteral Char

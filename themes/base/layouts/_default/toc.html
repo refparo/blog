@@ -1,0 +1,20 @@
+{{- define "main" -}}
+  <article>
+    {{- partial "main/meta.html" . -}}
+    <div class="content">
+      {{- .Content | partial "main/content-filter.html" -}}
+    </div>
+    <div id="toc-page">
+      <h2>目录</h2>
+      <ol>
+        {{- range .Pages.Reverse -}}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- partial "main/meta.html" . -}}
+          </li>
+        {{- end -}}
+      </ol>
+    </div>
+    {{- partial "main/comment.html" . -}}
+  </article>
+{{- end -}}

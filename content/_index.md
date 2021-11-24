@@ -16,7 +16,7 @@ layout: single
 
 - E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
 - QQ：[Paro](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
-- Github: [@refparo](https://github.com/refparo)
+- GitHub: [@refparo](https://github.com/refparo)
 - 知乎：[@Paro](https://zhihu.com/people/paro_ci)
 - Steam：[Paro](https://steamcommunity.com/id/refparo)
 - osu!：[Problem233](https://osu.ppy.sh/users/5931775)
@@ -50,10 +50,10 @@ layout: single
 | 2020 年 5 月 31 日 | 博客改用 Hugo 生成器，结构和样式改动以适应新的需求 |
 | 2019 年 7 月 20 日 | 博客样式调整 |
 | 2019 年 4 月 6 日 | 博客改用 Gatsby 框架 |
-| 2018 年 2 月 14 日 | 更换全新的自制主题 [Mono](https://github.com/refparo/mono) |
+| 2018 年 2 月 14 日 | 更换全新的自制主题 [Mono](https://github.com/refparo/hexo-theme-mono) |
 | 2016 年 12 月 11 日 | 博客移回根目录 |
 | 2016 年 10 月 15 日 | 博客移动到 `problem233/blog`，站点根目录另作他用 |
-| 2016 年 7 月 11 日 | 博客改用 Hexo 生成静态页面，使用 Icarus 主题，发布于 Github Pages |
+| 2016 年 7 月 11 日 | 博客改用 Hexo 生成静态页面，使用 Icarus 主题，发布于 GitHub Pages |
 | 2016 年 1 月 21 日 | 建立新的 Ghost 博客站 |
 | 2016 年初 | 删除原 WordPress 站 |
 | 2015 年 5 月 31 日 | 发布第一篇文章《Hello WorldPress！》 |

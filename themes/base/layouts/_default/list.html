@@ -1,0 +1,18 @@
+{{- define "main" -}}
+  {{- $paginator := .Paginate .Pages -}}
+  {{- range $paginator.Pages -}}
+    <article>
+      <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      {{- partial "main/meta.html" . -}}
+      <div class="content">{{- .Content | replaceRE "<!-- more -->[^\x00]*" "" | replaceRE "[^\x00]*<!-- :more -->" "" | replaceRE "<sup.*class=\"footnote-ref\".*</a></sup>" "" | partial "main/content-filter.html" -}}</div>
+      {{- if (in .Content "<!-- more -->") -}}
+        <a href="{{ .RelPermalink }}">继续阅读»</a>
+      {{- else -}}
+        <a href="{{ .RelPermalink }}#comment">前往评论»</a>
+      {{- end -}}
+    </article>
+  {{- else -}}
+    暂无内容
+  {{- end -}}
+  {{- template "_internal/pagination.html" . -}}
+{{- end -}}

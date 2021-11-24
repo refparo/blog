@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{{- partial "head.html" . -}}
+<body>
+  <div id="outer"><div id="inner">
+    {{- partial "header.html" . -}}
+    <main>{{- block "main" . -}}{{- end -}}</main>
+    {{- partial "footer.html" . -}}
+  </div></div>
+  {{- with .Parent -}}
+    {{- if eq .Layout "toc" -}}
+      {{- partial "page-turner.html" $ -}}
+    {{- end -}}
+  {{- end -}}
+  {{- partial "foot.html" . -}}
+</body>
+</html>

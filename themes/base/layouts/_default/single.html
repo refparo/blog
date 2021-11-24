@@ -1,0 +1,15 @@
+{{- define "main" -}}
+  <article>
+    {{- partial "main/meta.html" . -}}
+    {{- if .Params.toc -}}
+      <div id="toc">
+        <h2>目录</h2>
+        {{- .TableOfContents -}}
+      </div>
+    {{- end -}}
+    <div class="content">
+      {{- .Content | partial "main/content-filter.html" -}}
+    </div>
+    {{- partial "main/comment.html" . -}}
+  </article>
+{{- end -}}

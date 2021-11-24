@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{- if .IsHome -}}{{- hugo.Generator -}}{{- end -}}
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="shortcut icon" href="{{ .Site.Home.RelPermalink }}favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css">
+  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}fonts/charis-sil-phon/charis-sil-phon.css">
+  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}css/common.css">
+  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}css/site.css">
+</head>

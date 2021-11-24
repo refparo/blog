@@ -1,0 +1,129 @@
+/*** Color Defs */
+
+:root {
+  --color-text: hsl(45deg, 4%, 10%);
+  --color-foc: hsl(45deg, 4%, 20%);
+  --color-link: hsl(45deg, 4%, 40%);
+  --color-fig: hsl(45deg, 4%, 80%);
+  --color-hl: hsla(45deg, 30%, 70%, 50%);
+  --color-bg: hsl(45deg, 4%, 98%);
+  color-scheme: light;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-text: hsl(45deg, 4%, 80%);
+    --color-foc: hsl(45deg, 4%, 70%);
+    --color-link: hsl(45deg, 4%, 60%);
+    --color-fig: hsl(45deg, 4%, 20%);
+    --color-hl: hsla(45deg, 30%, 20%, 50%);
+    --color-bg: hsl(45deg, 4%, 4%);
+    color-scheme: dark;
+  }
+}
+
+/*** Font Defs */
+
+:root {
+  --zh-font-family: 'Bitter', 'Noto Serif SC', serif;
+  --latin-font-family: 'Bitter', serif;
+  --ipa-font-family: 'Charis SIL Phon', serif;
+  --mono-font-family: 'Fira Code VF', 'Noto Serif SC', monospace;
+}
+
+/*** Language Fonts */
+
+body:lang(zh) {
+  font-family: var(--zh-font-family);
+}
+:lang(ipa) {
+  font-family: var(--ipa-font-family);
+}
+:not(:lang(zh), :lang(ipa)) {
+  font-family: var(--latin-font-family);
+}
+
+/*** Content Style */
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: normal;
+}
+
+::selection {
+  background-color: var(--color-hl);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration-style: dashed;
+  text-decoration-thickness: from-font;
+}
+a:hover {
+  color: var(--color-foc);
+  text-decoration-style: solid;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+ul, ol {
+  padding-left: 1.15em;
+}
+
+blockquote {
+  margin: 1rem;
+  border-left: var(--color-fig) solid;
+  padding-left: 1em;
+  overflow: visible;
+}
+@media screen and (max-width: 900px) {
+  blockquote {
+    margin-left: unset;
+  }
+}
+
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+thead {
+  border-bottom: 3px solid var(--color-fig);
+}
+tr {
+  border-bottom: 1px solid var(--color-fig);
+}
+th, td {
+  padding: 6px;
+  text-align: left;
+}
+
+hr {
+  margin: 2em auto;
+  width: 38%;
+  border: none;
+  border-top: 1px solid;
+}
+
+code, kbd, pre, samp {
+  border-radius: 0.4em;
+  line-height: 1.5;
+  background-color: var(--color-hl);
+  font-family: var(--mono-font-family);
+  white-space: pre-wrap;
+}
+
+kbd {
+  border-color: var(--color-fig);
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 2px;
+  background-color: transparent;
+}

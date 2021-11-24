@@ -1,0 +1,8 @@
+<div id="site-nav">
+  {{- if .IsSection -}}
+    <a href="index.xml">RSS</a>
+  {{- end -}}
+  {{- range .Site.Home.Pages -}}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- end -}}
+</div>
