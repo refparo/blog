@@ -1,5 +1,10 @@
 /*** Body */
 
+:root {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   min-height: 100vh;
 }
