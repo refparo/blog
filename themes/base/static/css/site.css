@@ -244,6 +244,16 @@ div.chroma {
 .chroma .gs { font-weight: bold }
 .chroma .gu { color: #268bd2 }
 
+/*** Main: Footnotes */
+
+.footnotes {
+  font-size: smaller;
+}
+
+.footnotes li p {
+  margin: 0;
+}
+
 /*** Main: TOC Page */
 
 #toc-page {

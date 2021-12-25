@@ -2,6 +2,7 @@
 title: 人生意义与个人规划
 date: 2021-12-06
 math: true
+hidden: true
 ---
 
 > 本文截取自一次思修作业。
