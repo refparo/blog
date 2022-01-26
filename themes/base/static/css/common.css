@@ -48,16 +48,22 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: normal;
+  text-decoration-thickness: from-font;
 }
 
 ::selection {
   background-color: var(--color-hl);
 }
 
+i, em {
+  font-style: normal;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
 a {
   color: var(--color-link);
   text-decoration-style: dashed;
-  text-decoration-thickness: from-font;
 }
 a:hover {
   color: var(--color-foc);
