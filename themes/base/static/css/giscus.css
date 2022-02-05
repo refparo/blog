@@ -93,6 +93,11 @@ main {
   color-scheme: light;
 }
 
+.gsc-left-header em {
+  font-style: italic;
+  text-decoration-line: none;
+}
+
 /*! Dark mode */
 @media (prefers-color-scheme: dark) {
   /*! MIT License
