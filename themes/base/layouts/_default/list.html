@@ -4,7 +4,12 @@
     <article>
       <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       {{- partial "main/meta.html" . -}}
-      <div class="content">{{- .Content | replaceRE "<!-- more -->[^\x00]*" "" | replaceRE "[^\x00]*<!-- :more -->" "" | replaceRE "<sup.*class=\"footnote-ref\".*</a></sup>" "" | partial "main/content-filter.html" -}}</div>
+      <div class="content">
+        {{- $content := .Content | replaceRE "<!-- more -->[^\x00]*" "" -}}
+        {{- $content = $content | replaceRE "[^\x00]*<!-- :more -->" "" -}}
+        {{- $content = $content | replaceRE "<sup.*class=\"footnote-ref\".*</a></sup>" "" -}}
+        {{- $content | partial "main/content-filter.html" -}}
+      </div>
       {{- if (in .Content "<!-- more -->") -}}
         <a href="{{ .RelPermalink }}">继续阅读»</a>
       {{- else -}}

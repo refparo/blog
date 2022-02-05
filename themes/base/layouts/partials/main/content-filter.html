@@ -1,5 +1,5 @@
 {{- $res := . | replaceRE "<ipa>" "<span lang=\"ipa\">" -}}
-{{- $res := $res | replaceRE "</ipa>" "</span>" -}}
+{{- $res = $res | replaceRE "</ipa>" "</span>" -}}
 {{- $res = $res | replaceRE "<a (href=\"(http|https):)" "<a target=\"_blank\" $1" -}}
 {{- $res = $res | replaceRE "<h(\\d) id=\"(.*?)\">" "<h$1 id=\"$2\"><a class=\"anchor\" href=\"#$2\"><span class=\"anchor-inner\">¶</span></a>" -}}
 {{- $res | safeHTML -}}

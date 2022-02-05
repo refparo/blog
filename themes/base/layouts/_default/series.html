@@ -11,6 +11,16 @@
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             {{- partial "main/meta.html" . -}}
+            {{- if .IsSection -}}
+              <ol>
+                {{- range .Pages.Reverse -}}
+                  <li>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    {{- partial "main/meta.html" . -}}
+                  </li>
+                {{- end -}}
+              </ol>
+            {{- end -}}
           </li>
         {{- end -}}
       </ol>

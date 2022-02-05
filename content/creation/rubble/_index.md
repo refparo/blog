@@ -1,6 +1,6 @@
 ---
 title: 碎石
-layout: toc
+layout: series
 ---
 
 > 从上游冲下的往事\
