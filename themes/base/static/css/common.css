@@ -24,10 +24,15 @@
 /*** Font Defs */
 
 :root {
-  --zh-font-family: 'Bitter', 'Noto Serif SC', serif;
-  --latin-font-family: 'Bitter', serif;
+  --symbols-font-family: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2';
+  --zh-font-family: 'Bitter', 'Noto Serif SC', var(--symbols-font-family), serif;
+  --jp-font-family: 'Bitter', 'Noto Serif JP', var(--symbols-font-family), serif;
+  --ko-font-family: 'Bitter', 'Noto Serif KR', var(--symbols-font-family), serif;
+  --latin-font-family: 'Bitter', var(--symbols-font-family), serif;
+  --greek-font-family: 'Noto Serif', var(--symbols-font-family), serif;
+  --abjad-font-family: 'Bitter', 'Noto Naskh Arabic', var(--symbols-font-family), serif;
   --ipa-font-family: 'Charis SIL Phon', serif;
-  --mono-font-family: 'Fira Code VF', 'Noto Serif SC', monospace;
+  --mono-font-family: 'Fira Code VF', 'Noto Serif SC', var(--symbols-font-family), monospace;
 }
 
 /*** Language Fonts */
@@ -38,7 +43,19 @@ body:lang(zh) {
 :lang(ipa) {
   font-family: var(--ipa-font-family);
 }
-:not(:lang(zh), :lang(ipa)) {
+:lang(arb) {
+  font-family: var(--abjad-font-family);
+}
+:lang(el) {
+  font-family: var(--greek-font-family);
+}
+:lang(ja) {
+  font-family: var(--jp-font-family);
+}
+:lang(ko) {
+  font-family: var(--ko-font-family);
+}
+:not(:lang(zh), :lang(ipa), :lang(arb), :lang(el), :lang(ja), :lang(ko)) {
   font-family: var(--latin-font-family);
 }
 
@@ -55,11 +72,22 @@ body {
   text-decoration-thickness: from-font;
 }
 
-::selection {
+::selection, :target {
   background-color: var(--color-hl);
 }
 
-i, em {
+.float {
+  margin: 0;
+  float: right;
+}
+@media screen and (max-width: 900px) {
+  .float {
+    margin: inherit;
+    float: none;
+  }
+}
+
+i:lang(zh), em:lang(zh) {
   font-style: normal;
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -84,13 +112,25 @@ img, video {
   margin: auto;
 }
 
+figcaption {
+  text-align: center;
+  font-size: smaller;
+}
+
+figcaption > :first-child {
+  margin-top: 0;
+}
+figcaption > :last-child {
+  margin-bottom: 0;
+}
+
 ul, ol {
   padding-left: 1.15em;
 }
 
 blockquote {
   margin: 1rem;
-  border-left: var(--color-fig) solid;
+  border-left: 3px solid var(--color-fig);
   padding-left: 1em;
   overflow: visible;
 }
@@ -119,7 +159,7 @@ hr {
   margin: 2em auto;
   width: 38%;
   border: none;
-  border-top: 1px solid;
+  border-top: 1px solid var(--color-fig);
 }
 
 code, kbd, pre, samp {

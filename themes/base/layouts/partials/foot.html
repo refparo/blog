@@ -10,3 +10,50 @@
             ]
           }))"></script>
 {{- end -}}
+{{- with .Params.audioClips -}}
+<style>
+.audio-clip-btn {
+  display: inline-block;
+  border-radius: 0.4em;
+  border-style: dashed;
+  border-width: 1px;
+  width: 1em;
+  line-height: 1em;
+  text-align: center;
+  font-family: var(--symbols-font-family);
+  color: var(--color-link);
+  cursor: pointer;
+  user-select: none;
+}
+.audio-clip-btn:hover {
+  border-style: solid;
+  color: var(--color-foc);
+}
+@media print {
+  .audio-clip-btn {
+    display: none;
+  }
+}
+</style>
+<script>
+  for (const clip of document.getElementsByClassName('audio-clip')) {
+    clip.removeAttribute('controls')
+    const btn = document.createElement('a')
+    btn.className = 'audio-clip-btn'
+    btn.textContent = '▶'
+    btn.addEventListener('click', () => {
+      if (clip.paused) {
+        clip.play()
+        btn.textContent = '⏸'
+      } else {
+        clip.load()
+        btn.textContent = '▶'
+      }
+    })
+    clip.addEventListener('ended', () => {
+      btn.textContent = '▶'
+    })
+    clip.insertAdjacentElement('afterend', btn)
+  }
+</script>
+{{- end -}}

@@ -109,7 +109,7 @@ main {
 
 /*** Main: Content */
 
-.content > * {
+.content > *:not([class]) {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -319,6 +319,7 @@ ul.pagination li {
   text-align: center;
   font-size: 8vw;
   color: var(--color-fig);
+  user-select: none;
 }
 
 .page-turner::before, .page-turner::after {
@@ -345,6 +346,7 @@ ul.pagination li {
 @media print {
   body {
     background: none;
+    font-size: 10.5pt;
   }
 
   #outer {
@@ -361,14 +363,16 @@ ul.pagination li {
     text-decoration-style: solid;
   }
 
-  .content a:not(.anchor)::after {
+  .content a:not(.anchor, .footnote-ref, .footnote-backref)::after {
     display: inline-block;
-    content: "(" attr(href) ")";
+    content: "<" attr(href) ">";
     text-decoration: none;
     font-size: smaller;
+    /* Without this line, Chromium will have a ridiculous bug when a very lone URL occurs. */
+    overflow-wrap: anywhere;
   }
 
-  #comment {
+  #comment, .page-turner {
     display: none;
   }
 }
@@ -380,6 +384,10 @@ ul.pagination li {
 
 h1, h2, h3, h4, h5, h6 {
   page-break-after: avoid;
+}
+
+img, video, figure {
+  page-break-inside: avoid;
 }
 
 p, blockquote, ul, ol, li {
