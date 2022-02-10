@@ -1,6 +1,10 @@
 ---
 title: 人造语言综合教程
 layout: series
+cascade:
+  license:
+    name: CC BY-SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/
 ---
 
 近日[^1]，人造语言吧又遭遇了一次爆吧。中文互联网内人造语言资料依然匮乏，爆吧后前辈留下的旧教程大多已经佚失。同时，圈内又不断有新人涌入，生涩而朴素的造语填充了人造语言吧的首页。这样的情形下，急需一部完整的人造语言教程来为新人们提供指导。

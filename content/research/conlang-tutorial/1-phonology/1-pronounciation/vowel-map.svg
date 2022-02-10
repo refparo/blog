@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="700"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="Blank_vowel_trapezoid.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;display=swap" type="text/css"/>
+  <defs id="defs8"/>
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.72714286"
+     inkscape:cx="499.90177"
+     inkscape:cy="255.10806"
+     inkscape:window-width="1280"
+     inkscape:window-height="738"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     stroke="#000000"
+     fill="none"
+     stroke-width="4"
+     d="m 124.38114,68.255403 h 800 V 668.2554 h -400 z m 400,0 200,599.999997 m -466.667,-400 h 666.667 m -533.333,200 h 533.333"
+     id="path2" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="100.01965"
+     y="52.99511"
+     id="text20230"><tspan
+       sodipodi:role="line"
+       id="tspan20228"
+       x="100.01965"
+       y="52.99511">前</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="500.21609"
+     y="52.604485"
+     id="text24524"><tspan
+       sodipodi:role="line"
+       id="tspan24522"
+       x="500.21609"
+       y="52.604485">央</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="901.15912"
+     y="51.627922"
+     id="text28740"><tspan
+       sodipodi:role="line"
+       id="tspan28738"
+       x="901.15912"
+       y="51.627922">后</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="55.00983"
+     y="82.51474"
+     id="text35434"><tspan
+       sodipodi:role="line"
+       id="tspan35432"
+       x="55.00983"
+       y="82.51474">闭</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="259.92142"
+     y="387.81927"
+     id="text39332"><tspan
+       sodipodi:role="line"
+       id="tspan39330"
+       x="259.92142"
+       y="387.81927">中</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="462.08252"
+     y="679.37134"
+     id="text41382"><tspan
+       sodipodi:role="line"
+       id="tspan41380"
+       x="462.08252"
+       y="679.37134">开</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="288.80157"
+     y="479.96072"
+     id="text48118"><tspan
+       sodipodi:role="line"
+       id="tspan48116"
+       x="288.80157"
+       y="479.96072">半开</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="363.06485"
+     y="589.98035"
+     id="text50846"><tspan
+       sodipodi:role="line"
+       id="tspan50844"
+       x="363.06485"
+       y="589.98035">次开</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="159.52849"
+     y="283.3006"
+     id="text53028"><tspan
+       sodipodi:role="line"
+       id="tspan53026"
+       x="159.52849"
+       y="283.3006">半闭</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;line-height:1.25;font-family:'Noto Serif SC',serif;-inkscape-font-specification:'Noto Serif SC'"
+     x="94.891945"
+     y="192.53439"
+     id="text54406"><tspan
+       sodipodi:role="line"
+       id="tspan54404"
+       x="94.891945"
+       y="192.53439">次闭</tspan></text>
+</svg>
