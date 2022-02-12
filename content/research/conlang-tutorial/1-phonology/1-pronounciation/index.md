@@ -14,11 +14,11 @@ weight: 99
 >   - 鼻音和边音；
 > - 元音：开闭、前后与圆唇；
 > - 清浊音、发声态；
-> - 气流机制；
+> - 气流机制、非肺部气流辅音；
 > - 国际音标；
 > - 离散性与连续性。
 
-人类的语音，本质上是空气中传播的声波。要制造这些声波，首先需要一个能够容纳空气的空腔，也就是肺、气管、咽腔、口腔和鼻腔；之后需要一个波源，主要是声带；最后还需要一个动力推动空气，让空气流动起来，通常是肺的收缩。这三部分中，每一部分的变化都能造成声音的变化，从而产生丰富的人类语音。
+人类的语音，本质上是空气中传播的声波。要制造这些声波，首先需要一个能够容纳空气的空腔，也就是肺、气管、咽腔、口腔和鼻腔；之后需要一个波源，主要是声带；最后还需要一个动力推动空气，让空气流动起来，通常是肺的收缩。这三部分中，每一部分的变化都能造成声音的变化，进而产生丰富的人类语音。
 
 ## 调音部位
 
@@ -82,8 +82,8 @@ weight: 99
 - 舌面接触硬腭，得到*硬腭辅音*（palatal consonant），例如<audio class="audio-clip" controls src="pronunciation_ja_ひと.mp3"></audio>日语“<ruby lang="ja"><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>”中“<ruby><rb>ひ</rb><rp>（</rp><rt>hi</rt><rp>）</rp></ruby>”中的“h”；
 - 舌根接触软腭，得到*软腭辅音*（velar consonant），例如普通话“<ruby><rb>卡</rb><rp>（</rp><rt>kǎ</rt><rp>）</rp></ruby>”中的“k”；
 - 舌根接触小舌，得到*小舌辅音*（uvular consonant），例如<audio class="audio-clip" controls src="pronunciation_de_rad.mp3"></audio>德语“Rad（车轮）”中的“r”；
-- 舌根接触咽部，得到*咽辅音*（pharyngeal consonant），例如<audio class="audio-clip" controls src="pronunciation_ar_واحد.mp3"></audio>标准阿拉伯语“<ruby><rb lang="arb">وَاحِد</rb><rp>（</rp><rt>wāḥid</rt><rp>）</rp></ruby>（一）”中的“ḥ”；
-- 杓状会厌襞接触会厌，得到*会厌辅音*（epiglottal consonant），如阿美语[^amis]“ ʼuʼure（雾）”中的“ ʼ ”，这类音非常少见，经常与咽辅音合并为一类。
+- 舌根接触咽部，得到*咽辅音*（pharyngeal consonant），例如<audio class="audio-clip" controls src="pronunciation_ar_واحد.mp3"></audio>标准阿拉伯语“<ruby><rb lang="ar">وَاحِد</rb><rp>（</rp><rt>wāḥid</rt><rp>）</rp></ruby>（一）”中的“ḥ”；
+- 杓状会厌襞接触会厌，得到*会厌辅音*（epiglottal consonant），如阿美语[^amis]“&nbsp;ʼuʼure（雾）”中的“&nbsp;ʼ&nbsp;”，这类音非常少见，经常与咽辅音合并为一类。
 
 [^amis]: 台湾的一种少数民族语言。
 
@@ -101,7 +101,7 @@ weight: 99
 >
 > 尝试发出上面这些音，感受不同音的调音部位的差异。
 
-上面列出来的这些音都是辅音。对语音学有所了解的读者，或许已经在疑惑：元音在哪里？实际上，元音并不是没有调音部位，只是元音的调音部位集中在舌面与硬腭、软腭，上面的这些部位名称已经不足以区分不同的元音。下面就会介绍元音和辅音的区别以及描述元音的方式。
+上面列出来的这些音都是辅音。对语音学有所了解的读者，或许已经在疑惑：元音在哪里？元音当然也有调音部位，只是元音的调音部位集中在舌面与硬腭、软腭，上面的这些部位名称已经不足以区分不同的元音。下面就会介绍元音和辅音的区别以及描述元音的方式。
 
 ## 调音方式
 
@@ -296,6 +296,46 @@ weight: 99
 
 ## 气流机制
 
+在本节的开头，我们讲到了人类产生语音的三个要素，其中共鸣腔的变化就是调音，声门的变化就是发声态，而最后一个要素——动力的变化，就是这一小节的**气流机制**（airstream mechanism）。
+
+人类语言中绝大多数的音，都是依靠肺的收缩发出来的，这种气流机制称为*肺外呼气流*（pulmonic egressive airstream）。到这里为止，我们提到过的音的气流机制都是这个。但是，人体在口腔中产生气流的方式不只有这一种。人体有三种能在口腔中产生气流的器官：肺通过呼吸产生气流，声门通过上下移动产生气流，舌通过使舌体上下移动产生气流。这三个器官分别都能产生向外和向内的气流，这样一共能组合出 6 种气流机制：
+
+<figure>
+  <figcaption style="margin-bottom: 0.5em;">
+
+  **表**：气流机制
+
+  </figcaption>
+  <div style="overflow-x: auto;">
+
+  | | 肺（pulmonic） | 声门（glottalic） | 舌（lingual/velaric） |
+  |-:|:-:|:-:|:-:|
+  | **外呼（egressive）** | 肺外呼气流 | 声门外呼气流 | 舌外呼气流 |
+  | **内吸（ingressive）** | 肺内吸气流 | 声门内吸气流 | 舌内吸气流 |
+  {style="margin: 0 auto;"}
+
+  </div>
+</figure>
+
+除肺外呼气流以外，其它五种气流机制中，肺内吸气流和舌外呼气流没有出现在任何人类语言的词汇中，只用于表示惊叹等场合，这两种气流机制实际上也很难产生清晰可闻的声音。余下的三种气流机制，虽然比肺外呼气流要少见，但都或多或少出现在了人类语言中。
+
+*声门外呼气流*的产生方式是闭合并提高声门，压缩口腔内的空气，从而产生向外的气流。因为声门是闭合的（处于喉闭态），所以这样产生的音都是清音。由于这样产生的气流量比较少，不足以维持响音的发音，所以这样的音通常也都是阻音。这类音称为*挤喉音*，又称*喷音*（ejective）。其中，最常见的是挤喉塞音，如<audio class="audio-clip" controls src="pronunciation_ka_კაბა.mp3"></audio>格鲁吉亚语“<ruby lang="ka"><rb>კაბა</rb><rp>（</rp><rt>k'aba</rt><rp>）</rp></ruby>（裙子）”中的“<ruby lang="ka"><rb>კ</rb><rp>（</rp><rt>k'</rt><rp>）</rp></ruby>”就是*软腭挤喉塞音*。还有其它挤喉音的例子，如<audio class="audio-clip" controls src="Sʼeek.ogg"></audio>Lingít[^tlingit]“sʼeek（熊）”中的“sʼ&nbsp;”是*齿龈挤喉擦音*，<audio class="audio-clip" controls src="Nv-tłʼóoʼdi.ogg"></audio>纳瓦霍语[^navajo]“tłʼóoʼdi（在外面）”中的“tłʼ&nbsp;”是*齿龈边挤喉塞擦音*。
+
+[^tlingit]: 另一种美洲原住民语言。
+[^navajo]: 又一种美洲原住民语言。
+
+*声门内吸气流*的产生方式是在塞音成阻后降低声门，使口腔内空气气压降低，从而在塞音除阻时产生向内的气流。这个过程中声门通常并非完全闭合，因此同时也会存在一股肺外呼气流穿过声门，使声带振动，所以这样产生的音通常都是浊的。这类塞音称为*内爆音*（implosive）。例子如：<audio class="audio-clip" controls src="pronunciation_vi_bạn.mp3"></audio>越南语“bạn（你）”中的“b”是*浊双唇内爆音*，<audio class="audio-clip" controls src="Sd-ڄڀ.oga"></audio>信德语[^sindhi]“<ruby lang="sd"><rb>ڄِڀَ</rb><rp>（</rp><rt>jjibha</rt><rp>）</rp></ruby>（舌头）”中的“jj”是*浊硬腭内爆音*。清内爆音也存在，但是极其稀少。
+
+[^sindhi]: 信德族的民族语，信德族主要聚居在巴基斯坦。
+
+*舌内吸气流*的产生方式是，在塞音成阻的同时用舌根抵住软腭（实际上就是与软腭塞音协同调音），这时两个阻塞点之间就形成了一个封闭的气囊。之后降低舌面，使气囊扩大，内部气压降低。然后塞音再除阻，就会产生向内的气流。塞音除阻后，软腭处就是正常的软腭塞音除阻，可以是任何发声态。这样发音的塞音称为*搭嘴音*，又称<em><ruby><rb>喌</rb><rp>（</rp><rt>zhōu</rt><rp>）</rp></ruby>音</em>（click）。由于搭嘴音持阻期间，口腔与咽腔、鼻腔始终是被舌根隔绝的，所以发音时也可以有气流从咽腔直接流入鼻腔，形成鼻化搭嘴音。自然语言中，这类音几乎只出现在非洲语言中，例如<audio class="audio-clip" controls src="pronunciation_zu_nqoba.mp3"></audio>祖鲁语[^zulu]“nqoba（战胜）”中的“nq”是*清不送气鼻化齿龈搭嘴音*[^long-name]，<audio class="audio-clip" controls src="pronunciation_af_xhosa.mp3"></audio>科萨语[^xhosa]“Xhosa（科萨人）”中的“xh”是*清送气齿龈边搭嘴音*。除此之外，许多人表示厌恶或同情时咋舌的“啧啧”声也是搭嘴音，称为*清不送气齿搭嘴音*。
+
+[^zulu]: 祖鲁族的民族语，祖鲁族主要聚居在南非。
+[^long-name]: 被超长的辅音名弄迷糊了？我们来拆解一下：清·不送气·鼻化·齿龈·搭嘴音。你可以现在往回翻一翻这个名字中的知识点都在哪里。
+[^xhosa]: 科萨族的民族语，科萨族也主要聚居在南非。
+
+挤喉音、内爆音、搭嘴音三类辅音合称*非肺部气流辅音*（non-pulmonic consonants）。到此为止，发音的三要素就都讲完了，读者可以回顾一下我们都讲了些什么。
+
 > #### 练习
 >
 > 尝试用到这里为止讲过的所有材料，组合出几个你没有听到过的音，并为之命名。
@@ -325,26 +365,10 @@ weight: 99
 
 本节内容引用了以下图片：
 
-- [人体中的调音部位](https://commons.wikimedia.org/wiki/File:Places_of_articulation.svg)
-- [咽喉的后视图](https://commons.wikimedia.org/wiki/File:Gray955_zh.png)
-- [调音方式的分类](https://commons.wikimedia.org/wiki/File:IPA-euler-manners-features.svg)
-- [嘬唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-protruded-1.png)与[敛唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-compressed-1.png)
-- [声门的各种状态](https://commons.wikimedia.org/wiki/File:Glottis_positions.png)
-- [国际音标（2020 修订）](https://www.internationalphoneticassociation.org/IPAcharts/IPA_chart_orig/IPA_charts_E_img.html#images/IPA_Doulos_2020_full.svg)
+- 引用自 Wikimedia Commons 的[人体中的调音部位](https://commons.wikimedia.org/wiki/File:Places_of_articulation.svg)、[咽喉的后视图](https://commons.wikimedia.org/wiki/File:Gray955_zh.png)、[调音方式的分类](https://commons.wikimedia.org/wiki/File:IPA-euler-manners-features.svg)、[嘬唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-protruded-1.png)与[敛唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-compressed-1.png)、[声门的各种状态](https://commons.wikimedia.org/wiki/File:Glottis_positions.png)，
+- 引用自国际语音学协会的[国际音标（2020 修订）](https://www.internationalphoneticassociation.org/IPAcharts/IPA_chart_orig/IPA_charts_E_img.html#images/IPA_Doulos_2020_full.svg)。
 
 本节内容引用了以下音频：
 
-- [perro](https://commons.wikimedia.org/wiki/File:Perro_Voiced_alveolar_trill.wav)
-- [caro](https://commons.wikimedia.org/wiki/File:Caro_Voiced_alveolar_flap_Latino_Spanish.wav)
-- [<span lang="el">ήλιος</span>](https://commons.wikimedia.org/wiki/File:El-%CE%AE%CE%BB%CE%B9%CE%BF%CF%82.oga)
-- [hli](https://commons.wikimedia.org/wiki/File:Lhi.ogg)
-- [Nahuatl](https://commons.wikimedia.org/wiki/File:Nawatl.ogg)
-- [cat](https://commons.wikimedia.org/wiki/File:En-us-cat.ogg)
-- [bed](https://commons.wikimedia.org/wiki/File:En-us-bed.ogg)
-- [<span lang="ja">笑み</span>](https://commons.wikimedia.org/wiki/File:Ja-emi.ogg)
-- [not](https://commons.wikimedia.org/wiki/File:En-uk-not.ogg)
-- [schön](https://commons.wikimedia.org/wiki/File:De-sch%C3%B6n.ogg)
-- [<span lang="ja">空気</span>](https://commons.wikimedia.org/wiki/File:Ja-kuuki.ogg)
-- [öra](https://commons.wikimedia.org/wiki/File:Sv-%C3%B6ra.ogg)
-- [<span lang="hi">धार</span>](https://commons.wikimedia.org/wiki/File:Hi-%E0%A4%A4%E0%A4%BE%E0%A4%B2_%E0%A4%A5%E0%A4%BE%E0%A4%B2_%E0%A4%A6%E0%A4%BE%E0%A4%B2_%E0%A4%A7%E0%A4%BE%E0%A4%B0.ogg)
+- 引用自 Wikimedia Commons 的 [perro](https://commons.wikimedia.org/wiki/File:Perro_Voiced_alveolar_trill.wav)、[caro](https://commons.wikimedia.org/wiki/File:Caro_Voiced_alveolar_flap_Latino_Spanish.wav)、[<span lang="el">ήλιος</span>](https://commons.wikimedia.org/wiki/File:El-%CE%AE%CE%BB%CE%B9%CE%BF%CF%82.oga)、[hli](https://commons.wikimedia.org/wiki/File:Lhi.ogg)、[Nahuatl](https://commons.wikimedia.org/wiki/File:Nawatl.ogg)、[cat](https://commons.wikimedia.org/wiki/File:En-us-cat.ogg)、[bed](https://commons.wikimedia.org/wiki/File:En-us-bed.ogg)、[<span lang="ja">笑み</span>](https://commons.wikimedia.org/wiki/File:Ja-emi.ogg)、[not](https://commons.wikimedia.org/wiki/File:En-uk-not.ogg)、[schön](https://commons.wikimedia.org/wiki/File:De-sch%C3%B6n.ogg)、[<span lang="ja">空気</span>](https://commons.wikimedia.org/wiki/File:Ja-kuuki.ogg)、[öra](https://commons.wikimedia.org/wiki/File:Sv-%C3%B6ra.ogg)、[<span lang="hi">धार</span>](https://commons.wikimedia.org/wiki/File:Hi-%E0%A4%A4%E0%A4%BE%E0%A4%B2_%E0%A4%A5%E0%A4%BE%E0%A4%B2_%E0%A4%A6%E0%A4%BE%E0%A4%B2_%E0%A4%A7%E0%A4%BE%E0%A4%B0.ogg)、[sʼeek](https://commons.wikimedia.org/wiki/File:S%CA%BCeek.ogg)、[tłʼóoʼdi](https://commons.wikimedia.org/wiki/File:Nv-t%C5%82%CA%BC%C3%B3o%CA%BCdi.ogg)、[<span lang="sd">ڄِڀَ</span>](https://commons.wikimedia.org/wiki/File:Sd-%DA%84%DA%80.oga)；
 - 其余语音均引用自 [Forvo](https://forvo.com/)，版权属于音频提供者。

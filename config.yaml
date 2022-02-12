@@ -9,7 +9,11 @@ paginate: 10
 theme: [base]
 markup:
   goldmark:
-    typographer: false
+    extensions:
+      typographer: false
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: true
   highlight:

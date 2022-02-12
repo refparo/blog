@@ -24,44 +24,38 @@
 /*** Font Defs */
 
 :root {
-  --symbols-font-family: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2';
-  --zh-font-family: 'Bitter', 'Noto Serif SC', var(--symbols-font-family), serif;
-  --jp-font-family: 'Bitter', 'Noto Serif JP', var(--symbols-font-family), serif;
-  --ko-font-family: 'Bitter', 'Noto Serif KR', var(--symbols-font-family), serif;
-  --devanagari-font-family: 'Bitter', 'Noto Serif Devanagari', var(--symbols-font-family), serif;
-  --latin-font-family: 'Bitter', var(--symbols-font-family), serif;
-  --greek-font-family: 'Noto Serif', var(--symbols-font-family), serif;
-  --abjad-font-family: 'Bitter', 'Noto Naskh Arabic', var(--symbols-font-family), serif;
-  --ipa-font-family: 'Charis SIL Phon', serif;
-  --mono-font-family: 'Fira Code VF', 'Noto Serif SC', var(--symbols-font-family), monospace;
+  --symbols: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2';
+
+  --sc: 'Bitter', 'Noto Serif SC', var(--symbols), serif;
+  --jp: 'Bitter', 'Noto Serif JP', var(--symbols), serif;
+  --kr: 'Bitter', 'Noto Serif KR', var(--symbols), serif;
+
+  --arabic:     'Bitter', 'Noto Naskh Arabic',     var(--symbols), serif;
+  --devanagari: 'Bitter', 'Noto Serif Devanagari', var(--symbols), serif;
+  --georgian:   'Bitter', 'Noto Serif Georgian',   var(--symbols), serif;
+  --greek:      'Noto Serif',                      var(--symbols), serif;
+  --latin:      'Bitter',                          var(--symbols), serif;
+
+  --ipa: 'Charis SIL Phon', serif;
+  --monospace: 'Fira Code VF', 'Noto Serif SC', var(--symbols), monospace;
 }
 
 /*** Language Fonts */
 
-body:lang(zh) {
-  font-family: var(--zh-font-family);
-}
-:lang(ipa) {
-  font-family: var(--ipa-font-family);
-}
-:lang(arb) {
-  font-family: var(--abjad-font-family);
-}
-:lang(el) {
-  font-family: var(--greek-font-family);
-}
-:lang(hi) {
-  font-family: var(--devanagari-font-family);
-}
-:lang(ja) {
-  font-family: var(--jp-font-family);
-}
-:lang(ko) {
-  font-family: var(--ko-font-family);
-}
-:not(:lang(zh), :lang(ipa),
-  :lang(arb), :lang(el), :lang(hi), :lang(ja), :lang(ko)) {
-  font-family: var(--latin-font-family);
+body:lang(zh) { font-family: var(--sc); }
+:lang(ja) { font-family: var(--jp); }
+:lang(ko) { font-family: var(--kr); }
+
+:lang(ar), :lang(sd) { font-family: var(--arabic); }
+:lang(el) { font-family: var(--greek); }
+:lang(hi) { font-family: var(--devanagari); }
+:lang(ka) { font-family: var(--georgian); }
+
+:lang(ipa) { font-family: var(--ipa); }
+
+:not(:lang(zh), :lang(ja), :lang(ko), :lang(ipa),
+  :lang(ar), :lang(sd), :lang(el), :lang(hi), :lang(ka)) {
+  font-family: var(--latin);
 }
 
 /*** Content Style */
@@ -171,7 +165,7 @@ code, kbd, pre, samp {
   border-radius: 0.4em;
   line-height: 1.5;
   background-color: var(--color-hl);
-  font-family: var(--mono-font-family);
+  font-family: var(--monospace);
   white-space: pre-wrap;
 }
 
