@@ -28,6 +28,7 @@
   --zh-font-family: 'Bitter', 'Noto Serif SC', var(--symbols-font-family), serif;
   --jp-font-family: 'Bitter', 'Noto Serif JP', var(--symbols-font-family), serif;
   --ko-font-family: 'Bitter', 'Noto Serif KR', var(--symbols-font-family), serif;
+  --devanagari-font-family: 'Bitter', 'Noto Serif Devanagari', var(--symbols-font-family), serif;
   --latin-font-family: 'Bitter', var(--symbols-font-family), serif;
   --greek-font-family: 'Noto Serif', var(--symbols-font-family), serif;
   --abjad-font-family: 'Bitter', 'Noto Naskh Arabic', var(--symbols-font-family), serif;
@@ -49,13 +50,17 @@ body:lang(zh) {
 :lang(el) {
   font-family: var(--greek-font-family);
 }
+:lang(hi) {
+  font-family: var(--devanagari-font-family);
+}
 :lang(ja) {
   font-family: var(--jp-font-family);
 }
 :lang(ko) {
   font-family: var(--ko-font-family);
 }
-:not(:lang(zh), :lang(ipa), :lang(arb), :lang(el), :lang(ja), :lang(ko)) {
+:not(:lang(zh), :lang(ipa),
+  :lang(arb), :lang(el), :lang(hi), :lang(ja), :lang(ko)) {
   font-family: var(--latin-font-family);
 }
 
