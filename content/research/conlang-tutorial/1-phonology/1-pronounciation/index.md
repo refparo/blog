@@ -15,8 +15,8 @@ weight: 99
 > - 元音：开闭、前后与圆唇；
 > - 清浊音、发声态；
 > - 气流机制、非肺部气流辅音；
-> - 国际音标；
-> - 离散性与连续性。
+> - 语音单位：音节、音段、发声态势；
+> - 国际音标。
 
 人类的语音，本质上是空气中传播的声波。要制造这些声波，首先需要一个能够容纳空气的空腔，也就是肺、气管、咽腔、口腔和鼻腔；之后需要一个波源，主要是声带；最后还需要一个动力推动空气，让空气流动起来，通常是肺的收缩。这三部分中，每一部分的变化都能造成声音的变化，进而产生丰富的人类语音。
 
@@ -62,9 +62,9 @@ weight: 99
 
 - 1-2 上唇（labial）；
 - 3 齿（dental）；
-- 4 齿龈（alveolar）；
-- 5 齿龈的后部，简称龈后（post-alveolar）；
-- 6 齿龈和龈腭的交接点，简称龈腭（alveolo-palatal）；
+- 4 龈（alveolar）；
+- 5 龈的后部，简称龈后（post-alveolar）；
+- 6 龈和龈腭的交接点，简称龈腭（alveolo-palatal）；
 - 7 硬腭（palatal）；
 - 8 软腭（velar）；
 - 9 小舌，学名悬雍垂（uvular)，即软腭后端下垂的末端；
@@ -75,8 +75,9 @@ weight: 99
 
 - 下唇接触上唇，就是*双唇辅音*（bilabial consonant），例如普通话“<ruby><rb>八</rb><rp>（</rp><rt>bā</rt><rp>）</rp></ruby>”中的“b”；
 - 下唇接触齿，就是*唇齿辅音*（labiodental consonant），例如普通话“<ruby><rb>发</rb><rp>（</rp><rt>fā</rt><rp>）</rp></ruby>”中的“f”；
+- 舌尖接触上唇，就是*舌唇辅音*（linguolabial consonant），如 Tangoa[^tangoa]“p̈ep̈e”中的“p̈”，这类音非常少见；
 - 舌尖接触齿，就是*齿辅音*（dental consonant），例如英语“this”中的“th”；
-- 舌尖接触齿龈，得到*齿龈辅音*（alveolar consonant），例如普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”；
+- 舌尖接触龈，得到*龈辅音*（alveolar consonant），例如普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”；
 - 舌叶接触龈后，得到*龈后辅音*（post-alveolar consonant），例如英语“share”中的“sh”；
 - 舌面接触龈腭，得到*龈腭辅音*（alveolo-palatal consonant），例如普通话“<ruby><rb>家</rb><rp>（</rp><rt>jiā</rt><rp>）</rp></ruby>”中的“j”；
 - 舌面接触硬腭，得到*硬腭辅音*（palatal consonant），例如<audio class="audio-clip" controls src="pronunciation_ja_ひと.mp3"></audio>日语“<ruby lang="ja"><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>”中“<ruby><rb>ひ</rb><rp>（</rp><rt>hi</rt><rp>）</rp></ruby>”中的“h”；
@@ -85,6 +86,7 @@ weight: 99
 - 舌根接触咽部，得到*咽辅音*（pharyngeal consonant），例如<audio class="audio-clip" controls src="pronunciation_ar_واحد.mp3"></audio>标准阿拉伯语“<ruby><rb lang="ar">وَاحِد</rb><rp>（</rp><rt>wāḥid</rt><rp>）</rp></ruby>（一）”中的“ḥ”；
 - 杓状会厌襞接触会厌，得到*会厌辅音*（epiglottal consonant），如阿美语[^amis]“&nbsp;ʼuʼure（雾）”中的“&nbsp;ʼ&nbsp;”，这类音非常少见，经常与咽辅音合并为一类。
 
+[^tangoa]: 瓦努阿图的 Tangoa 岛上的原住民语言。
 [^amis]: 台湾的一种少数民族语言。
 
 通常一个被动调音部位只会对应一个主动调音部位，所以我们通常以被动调音部位来命名辅音，只有两个例外：
@@ -92,10 +94,10 @@ weight: 99
 - 舌冠向上翘起，接触硬腭前部，得到*卷舌辅音*（retroflex consonant），例如普通话“<ruby><rb>染</rb><rp>（</rp><rt>rǎn</rt><rp>）</rp></ruby>”中的“r”。这类音的调音部位比较模糊，因为这些调音部位组合所得到的音都比较相近。
 - 声门的开闭得到*声门辅音*（glottal consonant），例如英语“hat”中的“h”。这类音只由一个主动调音部位发出，因为声门有两瓣声带。
 
-除此之外，还可能有两组，甚至更多组主动和被动调音部位同时参与调音，这种情况叫做**协同调音**（coarticulation）。理论上，任何两组可以独立活动的调音部位都可以构成协同调音，最常见的有：
+除此之外，还可能有两组，甚至更多组主动和被动调音部位同时参与调音，这种情况叫做**协同调音**（coarticulation）。协同调音中的两组调音部位可以是并列的，但更多情况下，其中一组调音部位会占主导地位，称为*主要调音*（primary articulation），另一组则称为*次要调音*（secondary articulation）。理论上，任何两组可以独立活动的调音部位都可以构成协同调音，最常见的有：
 
 - 唇软腭辅音（labio-velar consonant），如普通话“<ruby><rb>玩</rb><rp>（</rp><rt>wán</rt><rp>）</rp></ruby>”中的“w”；
-- 软腭化齿龈辅音（velarized alveolar consonant），如英语“able”中的“l”（这个音在英语中被叫做 dark L）。
+- 软腭化龈辅音（velarized alveolar consonant），其中主要调音部位是龈，次要调音部位是软腭，如英语“able”中的“l”（这个音在英语中被叫做 dark L）。
 
 > #### 练习
 >
@@ -136,11 +138,11 @@ weight: 99
 
 *鼻音*（nasal）的产生方式是在发音时降低软腭（打开[图“人体中的调音部位”](#fig-places)中 9 软腭右侧的通道），让气流能够从鼻腔中通过，鼻腔的共鸣就会给声音加上一层鼻化色彩。除鼻音以外的音可以称为口音（oral consonant/vowel）。因为气流能够从鼻腔中不受阻碍地通过，所以鼻音属于响音。
 
-最常见的鼻音是鼻塞音（nasal occlusive），也就是鼻化的塞音，通常说“鼻音”默认就是指鼻塞音。例如，前面提到的普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”，就叫做*齿龈鼻音*；“<ruby><rb>糖</rb><rp>（</rp><rt>táng</rt><rp>）</rp></ruby>”中的“ng”，就叫做*软腭鼻音*。但其它音也能成为鼻音，只是不那么常见，例如<audio class="audio-clip" controls src="pronunciation_fr_blanc.mp3"></audio>法语“blanc（白）”中的“an”就是一个鼻化元音（nasal vowel）；鼻化擦音、鼻化闪音等也在少数语言中有出现。
+最常见的鼻音是鼻塞音（nasal occlusive），也就是鼻化的塞音，通常说“鼻音”默认就是指鼻塞音。例如，前面提到的普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”，就叫做*龈鼻音*；“<ruby><rb>糖</rb><rp>（</rp><rt>táng</rt><rp>）</rp></ruby>”中的“ng”，就叫做*软腭鼻音*。但其它音也能成为鼻音，只是不那么常见，例如<audio class="audio-clip" controls src="pronunciation_fr_blanc.mp3"></audio>法语“blanc（白）”中的“an”就是一个鼻化元音（nasal vowel）；鼻化擦音、鼻化闪音等也在少数语言中有出现。
 
 *边音*（lateral）的产生方式是在舌的中部阻塞气流，让气流从舌的两侧通过。因为边音已经阻塞了一部分气流，所以边音都是辅音。除边音以外的辅音可以称为中央辅音（central consonant）。
 
-最常见的边音是边近音（lateral approximant），如普通话“<ruby><rb>蓝</rb><rp>（</rp><rt>lán</rt><rp>）</rp></ruby>”中的“l”，就叫做*齿龈边近音*；前面提到的英语“able”中的“l”，就是*软颚化齿龈边近音*；还有更少见的，如<audio class="audio-clip" controls src="El-ήλιος.oga"></audio>现代希腊语“<span lang="el">ήλιος</span>（太阳）”中的“<span lang="el">λ</span>”，就叫做*龈后边近音*。除了边近音之外，边擦音、边塞擦音、边闪音也存在，如<audio class="audio-clip" controls src="Lhi.ogg"></audio>苗语[^hmong]“hli（月亮）”中的“hl”，就叫做*齿龈边擦音*；<audio class="audio-clip" controls src="Nawatl.ogg"></audio>纳瓦特语[^nahuatl]“Nahuatl（纳瓦特语）”中的“tl”，就叫做*齿龈边塞擦音*；<audio class="audio-clip" controls src="pronunciation_ja_心.mp3"></audio>日语“<ruby lang="ja"><rb>心</rb><rp>（</rp><rt>こころ</rt><rp>）</rp></ruby>”中“<ruby><rb>ろ</rb><rp>（</rp><rt>ro</rt><rp>）</rp></ruby>”中的“r”的一种读法就是*齿龈边闪音*（日语的这个音也可以读成齿龈闪音）。
+最常见的边音是边近音（lateral approximant），如普通话“<ruby><rb>蓝</rb><rp>（</rp><rt>lán</rt><rp>）</rp></ruby>”中的“l”，就叫做*龈边近音*；前面提到的英语“able”中的“l”，就是*软颚化龈边近音*；还有更少见的，如<audio class="audio-clip" controls src="El-ήλιος.oga"></audio>现代希腊语“<span lang="el">ήλιος</span>（太阳）”中的“<span lang="el">λ</span>”，就叫做*龈后边近音*。除了边近音之外，边擦音、边塞擦音、边闪音也存在，如<audio class="audio-clip" controls src="Lhi.ogg"></audio>苗语[^hmong]“hli（月亮）”中的“hl”，就叫做*龈边擦音*；<audio class="audio-clip" controls src="Nawatl.ogg"></audio>纳瓦特语[^nahuatl]“Nahuatl（纳瓦特语）”中的“tl”，就叫做*龈边塞擦音*；<audio class="audio-clip" controls src="pronunciation_ja_心.mp3"></audio>日语“<ruby lang="ja"><rb>心</rb><rp>（</rp><rt>こころ</rt><rp>）</rp></ruby>”中“<ruby><rb>ろ</rb><rp>（</rp><rt>ro</rt><rp>）</rp></ruby>”中的“r”的一种读法就是*龈边闪音*（日语的这个音也可以读成龈闪音）。
 
 [^hmong]: 苗族的民族语言。
 [^nahuatl]: 一种美洲原住民语言。
@@ -186,7 +188,7 @@ weight: 99
 
 上面这些元音基本上是在舌位图的边缘绕了一圈，那么，中间的元音又是什么呢？实际上，梯形内的任意一点都是一个元音，只要相应地调整舌头的位置，就能发出来。这里就不再一一列举位于梯形内部的元音，只介绍一个位于梯形正中间的元音——*中央元音*（mid central vowel，schwa）。中央元音的舌位不开不闭，不前不后，通常不圆唇，是发音器官处于最放松的状态下发出的元音。这个音几乎出现在全世界的所有语言中，充当非重读元音的角色，例如普通话中轻声的“<ruby><rb>了</rb><rp>（</rp><rt>le</rt><rp>）</rp></ruby>”中的“e”、<audio class="audio-clip" controls src="pronunciation_en_tina.mp3"></audio>英语人名“Tina”中的“a”。
 
-最后，元音也可以发生协同调音。这种情况下，除了“前后”确定的舌头最高点之外，还有其它主动调音部位与被动调音部位接近的位置。例如，一些语言中存在*咽化元音*，也就是在发元音的同时舌根接近咽部。与卷舌音协同调音的元音称作*日化元音*（rhotic vowel），例如北京话“<ruby><rb>哪儿</rb><rp>（</rp><rt>nǎr</rt><rp>）</rp></ruby>”中的“ar”和美式英语“north”中的“or”。
+最后，元音也可以发生协同调音。这种情况下，除了“前后”确定的舌头最高点之外，还有其它主动调音部位与被动调音部位接近的位置。例如，一些语言中存在*咽化元音*，也就是在发元音的同时舌根接近咽部。与卷舌音协同调音的元音称作*卷舌化元音*（rhotic vowel），例如北京话“<ruby><rb>哪儿</rb><rp>（</rp><rt>nǎr</rt><rp>）</rp></ruby>”中的“ar”和美式英语“north”中的“or”。
 
 > #### 练习
 >
@@ -233,7 +235,7 @@ weight: 99
 
 ## 清浊音
 
-对语音学有所了解的读者，或许已经注意到，前文对辅音的命名都漏了一部分——清浊。在语音学上，清浊指的就是声带是否振动，声带振动的音就叫**浊音**（voiced），不振动的音就叫**清音**（unvoiced）。
+对语音学有所了解的读者，或许已经注意到，前文对辅音的命名都漏了一部分——清浊。在语音学上，清浊指的就是声带是否振动，声带振动的音就叫**浊音**（voiced），不振动的音就叫**清音**（voiceless）。
 
 音的清浊与调音方式有关。通常来说，响音都是浊音，发音时声带全程都保持振动，我们在命名响音时往往省略清浊，默认为浊音。当然，语言学中凡事都有例外，要发出清的响音，只要在发音时只呼出气流而不振动声带即可，例如<audio class="audio-clip" controls src="pronunciation_cy_fy_mhen.mp3"></audio>威尔士语“fy mhen（我的头）”中的“mh”就是*清双唇鼻音*。而阻音则是清浊均有，命名时通常都要明确清浊。擦音的清浊比较容易理解，而塞音和塞擦音的清浊则有必要详细讲一讲。
 
@@ -257,6 +259,8 @@ weight: 99
 > #### 练习
 >
 > 尝试分辨前文提到过的所有音的清浊。
+
+既然提到了除阻，有必要一提的是，除阻的方式并不只有把阻塞处打开这一种。只要是能让阻塞处积累的压力消失的方式，都可以叫除阻。例如，在持阻时打开软腭，让口腔通过鼻腔与大气连通，让气流从鼻腔流出，阻塞处的压力也会消失，这种除阻方式称为*鼻音除阻*（nasal release），或者叫*后鼻化*（postnasalisation）——因为这种除阻方式相当于塞音在中途转化成了鼻音。与之类似，也可以在除阻时只松开舌的两侧，而让舌的中部与被动调音部位保持接触，这种除阻方式称为*边音除阻*（lateral release），相当于塞音在中途转化为了边音。之后我们还会遇到更复杂的除阻方式。最后，阻塞打开时由于某种原因（比如可能是被其它效果掩盖了）没有明显声音的除阻称为*无闻除阻*（no audible release）。
 
 ### 发声态
 
@@ -284,7 +288,7 @@ weight: 99
 - 图 D 中，声带之间的距离比常态浊声时大，肺部需要呼出更强的气流来让声带振动，两瓣声带振动时无法接触，部分气流可以直接从声带间通过，这种状态称为*气声*（breathy voice）。
 - 还有一种情况下，声带和杓状软骨都被挤压到一起，声带只有前端（图中的上端）振动，这种状态称为*嘎裂声*（creaky voice）。
 
-同一门语言通常不会像区分清浊那样明确区分这些发声态（当然有例外），但这些发声态的确可以在人类语言的各种角落发现，如普通话中声调的第三声常被发成嘎裂声，而<audio class="audio-clip" controls src="Hi-dhār.ogg"></audio>印地语“<ruby lang="hi"><rb>धार</rb><rp>（</rp><rt>dhār</rt><rp>）</rp></ruby>（刀）”中被称为“浊送气齿龈塞音”的“dh”实际上是发声态为气声的齿龈塞音。
+同一门语言通常不会像区分清浊那样明确区分这些发声态（当然有例外），但这些发声态的确可以在人类语言的各种角落发现，如普通话中声调的第三声常被发成嘎裂声，而<audio class="audio-clip" controls src="Hi-dhār.ogg"></audio>印地语“<ruby lang="hi"><rb>धार</rb><rp>（</rp><rt>dhār</rt><rp>）</rp></ruby>（刀）”中被称为“浊送气龈塞音”的“dh”实际上是发声态为气声的龈塞音。
 
 另外，在“调音部位”一节提到，声门辅音只有声门一个调音部位，但声门同时又是决定发声态的部位。实际上，声门辅音只有三种——清声门擦音、浊声门擦音和声门塞音，而这三种的区别正是发声态。清声门擦音的发声态是喉开态，浊声门擦音的发声态是气声，而声门塞音则是在声门从喉闭态变为其它发声态时发出的。浊的声门塞音是不存在的——因为声门处于喉闭态时不可能振动。
 
@@ -319,26 +323,28 @@ weight: 99
 
 除肺外呼气流以外，其它五种气流机制中，肺内吸气流和舌外呼气流没有出现在任何人类语言的词汇中，只用于表示惊叹等场合，这两种气流机制实际上也很难产生清晰可闻的声音。余下的三种气流机制，虽然比肺外呼气流要少见，但都或多或少出现在了人类语言中。
 
-*声门外呼气流*的产生方式是闭合并提高声门，压缩口腔内的空气，从而产生向外的气流。因为声门是闭合的（处于喉闭态），所以这样产生的音都是清音。由于这样产生的气流量比较少，不足以维持响音的发音，所以这样的音通常也都是阻音。这类音称为*挤喉音*，又称*喷音*（ejective）。其中，最常见的是挤喉塞音，如<audio class="audio-clip" controls src="pronunciation_ka_კაბა.mp3"></audio>格鲁吉亚语“<ruby lang="ka"><rb>კაბა</rb><rp>（</rp><rt>k'aba</rt><rp>）</rp></ruby>（裙子）”中的“<ruby lang="ka"><rb>კ</rb><rp>（</rp><rt>k'</rt><rp>）</rp></ruby>”就是*软腭挤喉塞音*。还有其它挤喉音的例子，如<audio class="audio-clip" controls src="Sʼeek.ogg"></audio>Lingít[^tlingit]“sʼeek（熊）”中的“sʼ&nbsp;”是*齿龈挤喉擦音*，<audio class="audio-clip" controls src="Nv-tłʼóoʼdi.ogg"></audio>纳瓦霍语[^navajo]“tłʼóoʼdi（在外面）”中的“tłʼ&nbsp;”是*齿龈边挤喉塞擦音*。
+*声门外呼气流*的产生方式是闭合并提高声门，压缩口腔内的空气，从而产生向外的气流。这类音称为*喷音*（ejective）。因为声门是闭合的（处于喉闭态），所以喷音都是清音。由于只有封闭腔体内的空气才能被压缩，喷音一般都是塞音或塞擦音，如<audio class="audio-clip" controls src="pronunciation_ka_კაბა.mp3"></audio>格鲁吉亚语“<ruby lang="ka"><rb>კაბა</rb><rp>（</rp><rt>k'aba</rt><rp>）</rp></ruby>（裙子）”中的“<ruby lang="ka"><rb>კ</rb><rp>（</rp><rt>k'</rt><rp>）</rp></ruby>”是*软腭喷塞音*，<audio class="audio-clip" controls src="Nv-tłʼóoʼdi.ogg"></audio>纳瓦霍语[^navajo]“tłʼóoʼdi（在外面）”中的“tłʼ&nbsp;”是*龈边喷塞擦音*[^complex-name]。还有更少见的喷擦音，如<audio class="audio-clip" controls src="Sʼeek.ogg"></audio>Lingít[^tlingit]“sʼeek（熊）”中的“sʼ&nbsp;”是*龈喷擦音*。
 
-[^tlingit]: 另一种美洲原住民语言。
-[^navajo]: 又一种美洲原住民语言。
+[^navajo]: 另一种美洲原住民语言。
+[^complex-name]: 被复杂的辅音名弄迷糊了？我们来拆解一下：龈·边·喷·塞擦音。你可以现在往回翻一翻这个名字中的知识点都在哪里。
+[^tlingit]: 又一种美洲原住民语言。
 
-*声门内吸气流*的产生方式是在塞音成阻后降低声门，使口腔内空气气压降低，从而在塞音除阻时产生向内的气流。这个过程中声门通常并非完全闭合，因此同时也会存在一股肺外呼气流穿过声门，使声带振动，所以这样产生的音通常都是浊的。这类塞音称为*内爆音*（implosive）。例子如：<audio class="audio-clip" controls src="pronunciation_vi_bạn.mp3"></audio>越南语“bạn（你）”中的“b”是*浊双唇内爆音*，<audio class="audio-clip" controls src="Sd-ڄڀ.oga"></audio>信德语[^sindhi]“<ruby lang="sd"><rb>ڄِڀَ</rb><rp>（</rp><rt>jjibha</rt><rp>）</rp></ruby>（舌头）”中的“jj”是*浊硬腭内爆音*。清内爆音也存在，但是极其稀少。
+*声门内吸气流*的产生方式是在塞音成阻后降低声门，使口腔内空气气压降低，从而在塞音除阻时产生向内的气流。这类塞音称为*内爆音*（implosive）。这个过程中声门通常并非完全闭合，因此同时也会存在一股肺外呼气流穿过声门，使声带振动，所以内爆音通常都是浊的，例子如：<audio class="audio-clip" controls src="pronunciation_vi_bạn.mp3"></audio>越南语“bạn（你）”中的“b”是*浊双唇内爆音*，<audio class="audio-clip" controls src="Sd-ڄڀ.oga"></audio>信德语[^sindhi]“<ruby lang="sd"><rb>ڄِڀَ</rb><rp>（</rp><rt>jjibha</rt><rp>）</rp></ruby>（舌头）”中的“jj”是*浊硬腭内爆音*。清内爆音也存在，但是极其稀少。
 
 [^sindhi]: 信德族的民族语，信德族主要聚居在巴基斯坦。
 
-*舌内吸气流*的产生方式是，在塞音成阻的同时用舌根抵住软腭（实际上就是与软腭塞音协同调音），这时两个阻塞点之间就形成了一个封闭的气囊。之后降低舌面，使气囊扩大，内部气压降低。然后塞音再除阻，就会产生向内的气流。塞音除阻后，软腭处就是正常的软腭塞音除阻，可以是任何发声态。这样发音的塞音称为*搭嘴音*，又称<em><ruby><rb>喌</rb><rp>（</rp><rt>zhōu</rt><rp>）</rp></ruby>音</em>（click）。由于搭嘴音持阻期间，口腔与咽腔、鼻腔始终是被舌根隔绝的，所以发音时也可以有气流从咽腔直接流入鼻腔，形成鼻化搭嘴音。自然语言中，这类音几乎只出现在非洲语言中，例如<audio class="audio-clip" controls src="pronunciation_zu_nqoba.mp3"></audio>祖鲁语[^zulu]“nqoba（战胜）”中的“nq”是*清不送气鼻化齿龈搭嘴音*[^long-name]，<audio class="audio-clip" controls src="pronunciation_af_xhosa.mp3"></audio>科萨语[^xhosa]“Xhosa（科萨人）”中的“xh”是*清送气齿龈边搭嘴音*。除此之外，许多人表示厌恶或同情时咋舌的“啧啧”声也是搭嘴音，称为*清不送气齿搭嘴音*。
+*舌内吸气流*的产生方式是，在塞音成阻的同时用舌根抵住软腭（实际上就是与软腭塞音协同调音），这时两个阻塞点之间就形成了一个封闭的气囊。之后降低舌面，使气囊扩大，内部气压降低。然后塞音再除阻，就会产生向内的气流。塞音除阻后，软腭处就是正常的软腭塞音除阻，可以是任何发声态。这样发音的塞音称为*啧音*（click）。由于啧音持阻期间，口腔与咽腔、鼻腔始终是被舌根隔绝的，所以发音时也可以有气流从咽腔直接流入鼻腔，形成鼻化啧音。自然语言中，这类音几乎只出现在非洲语言中，例如<audio class="audio-clip" controls src="pronunciation_zu_nqoba.mp3"></audio>祖鲁语[^zulu]“nqoba（战胜）”中的“nq”是*清不送气鼻化龈啧音*，<audio class="audio-clip" controls src="pronunciation_af_xhosa.mp3"></audio>科萨语[^xhosa]“Xhosa（科萨人）”中的“xh”是*清送气龈边啧音*。除此之外，许多人表示厌恶或同情时咋舌的“啧啧”声也是啧音，称为*清不送气齿啧音*。
 
 [^zulu]: 祖鲁族的民族语，祖鲁族主要聚居在南非。
-[^long-name]: 被超长的辅音名弄迷糊了？我们来拆解一下：清·不送气·鼻化·齿龈·搭嘴音。你可以现在往回翻一翻这个名字中的知识点都在哪里。
 [^xhosa]: 科萨族的民族语，科萨族也主要聚居在南非。
 
-挤喉音、内爆音、搭嘴音三类辅音合称*非肺部气流辅音*（non-pulmonic consonants）。到此为止，发音的三要素就都讲完了，读者可以回顾一下我们都讲了些什么。
+以肺外呼气流发出的辅音称为*肺部气流辅音*（pulmonic consonants），喷音、内爆音、啧音三类辅音合称*非肺部气流辅音*（non-pulmonic consonants）。到此为止，发音的三要素就都讲完了，读者可以回顾一下这三要素的内容。
 
 > #### 练习
 >
 > 尝试用到这里为止讲过的所有材料，组合出几个你没有听到过的音，并为之命名。
+
+## 语音单位
 
 ## 国际音标
 
@@ -353,9 +359,7 @@ weight: 99
 
 如何使用：如何写出自己发的某个音的音标（确定调音部位、调音方式、气流机制、发声态）
 
-## 离散性与连续性
 
-舌尖元音（成音节齿龈近音）
 
 > #### 发挥想象
 
