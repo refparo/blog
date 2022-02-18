@@ -64,8 +64,7 @@ weight: 99
 - 3 齿（dental）；
 - 4 龈（alveolar）；
 - 5 龈的后部，简称龈后（post-alveolar）；
-- 6 龈和龈腭的交接点，简称龈腭（alveolo-palatal）；
-- 7 硬腭（palatal）；
+- 6-7 硬腭，常简称腭（palatal）；
 - 8 软腭（velar）；
 - 9 小舌，学名悬雍垂（uvular)，即软腭后端下垂的末端；
 - 10 咽（pharyngeal）；
@@ -79,7 +78,6 @@ weight: 99
 - 舌尖接触齿，就是*齿辅音*（dental consonant），例如英语“this”中的“th”；
 - 舌尖接触龈，得到*龈辅音*（alveolar consonant），例如普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”；
 - 舌叶接触龈后，得到*龈后辅音*（post-alveolar consonant），例如英语“share”中的“sh”；
-- 舌面接触龈腭，得到*龈腭辅音*（alveolo-palatal consonant），例如普通话“<ruby><rb>家</rb><rp>（</rp><rt>jiā</rt><rp>）</rp></ruby>”中的“j”；
 - 舌面接触硬腭，得到*硬腭辅音*（palatal consonant），例如<audio class="audio-clip" controls src="pronunciation_ja_ひと.mp3"></audio>日语“<ruby lang="ja"><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>”中“<ruby><rb>ひ</rb><rp>（</rp><rt>hi</rt><rp>）</rp></ruby>”中的“h”；
 - 舌根接触软腭，得到*软腭辅音*（velar consonant），例如普通话“<ruby><rb>卡</rb><rp>（</rp><rt>kǎ</rt><rp>）</rp></ruby>”中的“k”；
 - 舌根接触小舌，得到*小舌辅音*（uvular consonant），例如<audio class="audio-clip" controls src="pronunciation_de_rad.mp3"></audio>德语“Rad（车轮）”中的“r”；
@@ -97,6 +95,7 @@ weight: 99
 除此之外，还可能有两组，甚至更多组主动和被动调音部位同时参与调音，这种情况叫做**协同调音**（coarticulation）。协同调音中的两组调音部位可以是并列的，但更多情况下，其中一组调音部位会占主导地位，称为*主要调音*（primary articulation），另一组则称为*次要调音*（secondary articulation）。理论上，任何两组可以独立活动的调音部位都可以构成协同调音，最常见的有：
 
 - 唇软腭辅音（labio-velar consonant），如普通话“<ruby><rb>玩</rb><rp>（</rp><rt>wán</rt><rp>）</rp></ruby>”中的“w”；
+- 龈腭辅音（alveolo-palatal consonant），如普通话“<ruby><rb>家</rb><rp>（</rp><rt>jiā</rt><rp>）</rp></ruby>”中的“j”；
 - 软腭化龈辅音（velarized alveolar consonant），其中主要调音部位是龈，次要调音部位是软腭，如英语“able”中的“l”（这个音在英语中被叫做 dark L）。
 
 > #### 练习
