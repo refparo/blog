@@ -246,6 +246,15 @@ div.chroma {
 
 /*** Main: Footnotes */
 
+.footnote-ref::before {
+  content: "[";
+  user-select: text;
+}
+.footnote-ref::after {
+  content: "]";
+  user-select: text;
+}
+
 .footnotes {
   font-size: smaller;
 }

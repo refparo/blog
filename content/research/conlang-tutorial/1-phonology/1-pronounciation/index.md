@@ -374,9 +374,10 @@ weight: 99
   </figcaption>
 </figure>
 
-这就是完整的国际音标表。全表分为 6 个部分：肺部气流辅音、非肺部气流辅音、元音、其它符号、变音符号和超音段成分。除了超音段成分要到本章第 3 节才讲到以外，其他部分的内容在前文中已经全都覆盖到了，因此理解这张表应该不难。如果你对表中音标的读音还有疑问，可以听一听这张[交互式国际音标表][i-chart]中的语音。下面，我们就用几个例子来演示如何使用这张表。
+这就是完整的国际音标表。全表分为 6 个部分：肺部气流辅音、非肺部气流辅音、元音、其它符号、变音符号和超音段成分。除了超音段成分要到本章第 3 节才讲到以外，其他部分的内容在前文中已经全都覆盖到了，因此理解这张表应该不难。如果你对表中音标的读音还有疑问，可以听一听这张[交互式国际音标表][i-chart][^i-chart]中的语音。下面，我们就用几个例子来演示如何使用这张表。
 
 [i-chart]: https://www.internationalphoneticassociation.org/IPAcharts/inter_chart_2018/IPA_2018.html
+[^i-chart]: 这张表还能用于输入 IPA。
 
 > #### 例 1：清龈后擦音
 >
@@ -473,18 +474,61 @@ weight: 99
 
 在这一节中，我们使用的 IPA 都是用中括号 <span lang="ipa">[ ]</span> 包裹的，这表示其中所写的是*语音学记音*，无论是精确的*严式记音*还是较粗略的*宽式记音*，记录的都是和语言无关的*音值*。下一节开始，我们还会遇到用不同的括号包裹的 IPA，那些 IPA 所表达的含义会非常不同。
 
-> #### 发挥想象
+## 发挥想象
+
+以上介绍的，都是基于人类发声器官、在已知的人类口语范围内研究的语音学。如果是为了学术研究，做到这样当然已经足够了（当然即使是人类口语范围内也还有许多尚待深入研究的语音现象）。但作为艺术语创造者，我们或许还需要考虑更多的情况……
+
+### 人类之外的语音
+
+有时，我们创造的语言的使用者不是人类，或者不是发音器官健全的人类。这时，一种情况是，我们不能使用某些人类语言中存在的音。例如，马太创作的[阿拉坦语](https://tieba.baidu.com/p/7691090401)的使用者是一族声带闭合不全的白狼兽人，他们的声带无法振动，因此这门语言没有任何浊音（更精确地说，是没有任何带声的音）。一类音的缺失可能会给语言的设计带来很大限制，但如果处理得当，就能成为语言的一大特色。
+
+还有一种情况是，这门语言的使用者具有超出人类的发音器官的发音能力，那么他们自然能发出人类所无法发出的音。这个方向上可想象的空间非常广。例如，西古萨创作的流云语的使用者光灵，拥有“只身一人发出带有多个旋律线的音节的能力”，这门语言允许一个音节同时具有多个声调（以流云语的术语称作“音律”），以此表达复杂的含义。当然，这样的设计必然导致人类无法说出这门语言，设计者可以为人类另外设计一种备用的读法。
+
+当然，发音器官的变化也不必总是如此极端。我们设定的生物的独特发音结构，或许只是让他很容易发出一些人类很难发的音，从而导致人类语言中罕见的音在他们的语言中变得很常用。
+
+无论是在人类的发音器官上做改动，还是设计全新的发音器官，前面介绍的语音学分析方式依然适用：把语音一层层拆分为音节、音段、发声态势，并分析发音器官的变化减少和引入了哪些新的音节、音段、发声态势。
+
+### 语音之外的沟通
+
+<figure class="float">
+  <img style="max-height: 15.5em;" src="rikchik.png">
+  <figcaption>
+
+  **图**：Rikchik 人
+
+  </figcaption>
+</figure>
+
+再进一步，沟通的渠道又何必是语音？我们设定的生物有可能使用手势交流，有可能使用电磁波交流，甚至是别的什么人类无法理解的方式……这里的想象空间就更大了。即使是为人类设计的、基于语音的语言，手势、面部表情等非语音交流也是值得考虑的细节。非语音的语言中的优秀例子有 Denis Moskowitz 创作的 [Rikchik](https://suberic.net/~dmm/rikchik/language/language.html)。这门语言的使用者是长有 49 条触手的外星人，其中身体前方的 7 条较短的触手被用于做手势沟通。这门语言获得了 2012 年的[微笑奖（The Smiley Award）](https://dedalvs.com/smileys/)。
+
+但是，无论是什么沟通渠道，我们总能应用类似语音学中的方法。例如，对于人类的手语，我们的“语音”单位是手势，而一个手势又可以分解为手形、手的朝向、手的移动，以及同时的脸部动作。而对于平面上的文字沟通，我们将会在之后专门用一章来讨论。
 
 ## 深入阅读
+
+中文资料：
+
+- 林焘, 王理嘉. 语音学教程（增订版）[M]. 北京: 北京大学出版社, 2013.
+- （美）彼得·赖福吉著, 张维佳译. 语音学教程（第七版）[M]. 北京: 北京大学出版社, 2018.
+- 国际语音学会编著, 江荻, 孟雯译校. 国际语音学会手册：国际音标使用指南[M]. 上海: 上海教育出版社, 2020.
+- （美）彼得·赖福吉,（美）伊恩·麦迪森著. 国外语言学译丛·经典著作：世界语音[M]. 北京: 商务印书馆, 2015.
+
+英文资料（包括上面列出的一些翻译资料的英文原版）：
+
+- [Phonetics](https://en.wikipedia.org/wiki/Phonetics). In *Wikipedia*.
+- Ladefoged, P., & Johnson, K. (2014). *A course in phonetics, Seventh Edition*. Cengage Learning.
+- The International Phonetic Association (1999). *Handbook of the International Phonetic Association: A Guide to the Use of the International Phonetic Alphabet*. Cambridge University Press.
+- Ladefoged, P., & Maddieson, I. (1996). *The Sounds of the World's Languages*. Blackwell Publishing.
+{lang=en}
 
 ## 引用
 
 本节内容引用了以下图片：
 
 - 引用自 Wikimedia Commons 的[人体中的调音部位](https://commons.wikimedia.org/wiki/File:Places_of_articulation.svg)、[咽喉的后视图](https://commons.wikimedia.org/wiki/File:Gray955_zh.png)、[调音方式的分类](https://commons.wikimedia.org/wiki/File:IPA-euler-manners-features.svg)、[嘬唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-protruded-1.png)与[敛唇](https://commons.wikimedia.org/wiki/File:Vowel-narrow-compressed-1.png)、[声门的各种状态](https://commons.wikimedia.org/wiki/File:Glottis_positions.png)，
-- 引用自国际语音学协会的[国际音标（2020 修订）](https://www.internationalphoneticassociation.org/IPAcharts/IPA_chart_orig/IPA_charts_E_img.html#images/IPA_Doulos_2020_full.svg)。
+- 引用自国际语音学协会的[国际音标（2020 修订）](https://www.internationalphoneticassociation.org/IPAcharts/IPA_chart_orig/IPA_charts_E_img.html#images/IPA_Doulos_2020_full.svg)，
+- 引自 The 2012 Smiley Award Winner 页面的 [Rikchik 人](https://dedalvs.com/smileys/2012.html)。
 
 本节内容引用了以下音频：
 
 - 引用自 Wikimedia Commons 的 [perro](https://commons.wikimedia.org/wiki/File:Perro_Voiced_alveolar_trill.wav)、[caro](https://commons.wikimedia.org/wiki/File:Caro_Voiced_alveolar_flap_Latino_Spanish.wav)、[<span lang="el">ήλιος</span>](https://commons.wikimedia.org/wiki/File:El-%CE%AE%CE%BB%CE%B9%CE%BF%CF%82.oga)、[hli](https://commons.wikimedia.org/wiki/File:Lhi.ogg)、[Nahuatl](https://commons.wikimedia.org/wiki/File:Nawatl.ogg)、[cat](https://commons.wikimedia.org/wiki/File:En-us-cat.ogg)、[bed](https://commons.wikimedia.org/wiki/File:En-us-bed.ogg)、[<span lang="ja">笑み</span>](https://commons.wikimedia.org/wiki/File:Ja-emi.ogg)、[not](https://commons.wikimedia.org/wiki/File:En-uk-not.ogg)、[schön](https://commons.wikimedia.org/wiki/File:De-sch%C3%B6n.ogg)、[<span lang="ja">空気</span>](https://commons.wikimedia.org/wiki/File:Ja-kuuki.ogg)、[öra](https://commons.wikimedia.org/wiki/File:Sv-%C3%B6ra.ogg)、[<span lang="hi">धार</span>](https://commons.wikimedia.org/wiki/File:Hi-%E0%A4%A4%E0%A4%BE%E0%A4%B2_%E0%A4%A5%E0%A4%BE%E0%A4%B2_%E0%A4%A6%E0%A4%BE%E0%A4%B2_%E0%A4%A7%E0%A4%BE%E0%A4%B0.ogg)、[sʼeek](https://commons.wikimedia.org/wiki/File:S%CA%BCeek.ogg)、[tłʼóoʼdi](https://commons.wikimedia.org/wiki/File:Nv-t%C5%82%CA%BC%C3%B3o%CA%BCdi.ogg)、[<span lang="sd">ڄِڀَ</span>](https://commons.wikimedia.org/wiki/File:Sd-%DA%84%DA%80.oga)；
-- 其余语音均引用自 [Forvo](https://forvo.com/)，版权属于音频提供者。
+- 其余语音均引用自 [Forvo](https://forvo.com/)。
