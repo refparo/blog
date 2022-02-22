@@ -75,9 +75,9 @@ weight: 99
 
 - 下唇接触上唇，就是*双唇辅音*（bilabial consonant），例如普通话“<ruby><rb>八</rb><rp>（</rp><rt>bā</rt><rp>）</rp></ruby>”中的“b”；
 - 下唇接触齿，就是*唇齿辅音*（labiodental consonant），例如普通话“<ruby><rb>发</rb><rp>（</rp><rt>fā</rt><rp>）</rp></ruby>”中的“f”；
-- 舌尖接触上唇，就是*舌唇辅音*（linguolabial consonant），如 Tangoa[^tangoa]“p̈ep̈e”中的“p̈”，这类音非常少见；
+- 舌尖接触上唇，就是*舌唇辅音*（linguolabial consonant），如 Tangoa[^tangoa]“<span lang="ipa">p̈ep̈e</span>”中的“<span lang="ipa">p̈</span>”，这类音非常少见；
 - 舌尖接触齿，就是*齿辅音*（dental consonant），例如英语“this”中的“th”；
-- 舌尖接触龈，得到*龈辅音*（alveolar consonant），例如普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”；
+- 舌尖或舌叶接触龈，得到*龈辅音*（alveolar consonant），例如普通话“<ruby><rb>那</rb><rp>（</rp><rt>nà</rt><rp>）</rp></ruby>”中的“n”；
 - 舌叶接触龈后，得到*龈后辅音*（post-alveolar consonant），例如英语“share”中的“sh”；
 - 舌面接触硬腭，得到*硬腭辅音*（palatal consonant），例如<audio class="audio-clip" controls src="pronunciation_ja_ひと.mp3"></audio>日语“<ruby lang="ja"><rb>人</rb><rp>（</rp><rt>ひと</rt><rp>）</rp></ruby>”中“<ruby><rb>ひ</rb><rp>（</rp><rt>hi</rt><rp>）</rp></ruby>”中的“h”；
 - 舌根接触软腭，得到*软腭辅音*（velar consonant），例如普通话“<ruby><rb>卡</rb><rp>（</rp><rt>kǎ</rt><rp>）</rp></ruby>”中的“k”；
