@@ -1,6 +1,7 @@
 ---
 title: 发音原理
 date: 2022-02-10
+lastmod: 2022-02-22
 audioClips: true
 weight: 99
 ---
@@ -400,11 +401,22 @@ weight: 99
 > - 首先，这个音是*喷音*，属于非肺部气流辅音，所以看 Consonants (Non-Pulmonic) 表中的 Ejectives 一列；
 > - 这一列中的文字告诉我们，喷音只需要在对应的肺部气流音上加上符号 <span lang="ipa">[◌ʼ]</span> 即可，所以再看 Consonants (Pulmonic) 表；
 > - 这个音的调音部位是*龈*，所以看 alveolar 这一列；
-> - 这个音的调音方式是*边塞擦音*，Other Symbols 表中写到表示塞擦音只需要把对应的塞音和擦音连起来即可（有必要的话可以加上 tie bar <span lang="ipa">[◌͡◌]</span>，但多数情况下都没有必要），所以看 plosive 和 lateral fricative 两行；
+> - 这个音的调音方式是*边塞擦音*，Other Symbols 表中写到表示塞擦音只需要把对应的塞音和擦音连起来即可（有必要的话可以加上连音符（tie bar）<span lang="ipa">[◌͡◌]</span>，但多数情况下都没有必要），所以看 plosive 和 lateral fricative 两行；
 > - 因为喷音都是*清音*，所以分别选择左侧的字母 <span lang="ipa">[t]</span> 和 <span lang="ipa">[ɬ]</span>；
 > - 最终组合得到我们需要的符号：<span lang="ipa">[tɬʼ]</span>。
 
-> #### 例 4：鼻化嘎裂声中后不圆唇元音
+> #### 例 4：清不送气鼻化龈啧音
+>
+> 啧音的情况比较特殊，它有两个成阻部位，在书写 IPA 时通常写成协同调音。
+>
+> - 首先，这个音是*啧音*，属于非肺部气流辅音，所以看 Consonants (Non-Pulmonic) 表中的 Clicks 一列；
+> - 这个音的调音部位是*龈*，所以选择 (Post)alveolar 对应的符号 <span lang="ipa">[ǃ]</span>；
+> - 这个音的另一个调音部位是*软腭*，并且这个音是*鼻化*辅音，所以与它协同调音的辅音是软腭鼻音，在肺部气流辅音表内找到表示软腭鼻音的符号 <span lang="ipa">[ŋ]</span>；
+> - 这个音是*清音*，在软腭鼻音上加上清音符号 <span lang="ipa">[◌̥]</span>；
+> - *不送气*不需要特别标记；
+> - 最后把协同调音的两个音用连音符连接，就得到了我们需要的符号：<span lang="ipa">[ŋ̥͡ǃ]</span>。
+
+> #### 例 5：鼻化嘎裂声中后不圆唇元音
 >
 > - 首先，这个音是*元音*，所以看 Vowels 表；
 > - 舌位是*中后*，所以看舌位图中的 back 一列，但舌位图中没有中元音行，所以我们先看半闭（close-mid）一行（为什么看半闭而不是半开，下文会讲到）；
@@ -416,7 +428,7 @@ weight: 99
 >
 > 某种口音的普通话“很”的韵母的前半部分就是这个音。
 
-> #### 例 5：<span lang="ipa">[tɕʰ]</span>
+> #### 例 6：<span lang="ipa">[tɕʰ]</span>
 >
 > - 根据 Consonants (Pulmonic) 表，<span lang="ipa">[t]</span> 表示*清龈塞音*；
 > - 根据 Other Symbols 表，<span lang="ipa">[ɕ]</span> 表示*清龈腭擦音*；
@@ -426,7 +438,7 @@ weight: 99
 >
 > 普通话“气”的声母就是这个音。
 
-> #### 例 6：<span lang="ipa">[ä˞]</span>
+> #### 例 7：<span lang="ipa">[ä˞]</span>
 >
 > - 根据 Vowels 表，<span lang="ipa">[a]</span> 表示*开前不圆唇元音*；
 > - 根据 Diacritics 表，<span lang="ipa">[◌̈]</span> 表示*央化*（centralized），所以这个音变为开*央*不圆唇元音；
@@ -437,11 +449,11 @@ weight: 99
 
 虽然这些例子中我把书写和阅读一个 IPA 符号的步骤拆解得很复杂，但这是出于演示需要。熟练之后，用 IPA 记录发音是可以非常快的。
 
-> #### 例 7：普通话“窗”
+> #### 例 8：普通话“窗”
 >
 > - 首先把“<ruby><rb>窗</rb><rp>（</rp><rt>chuāng</rt><rp>）</rp></ruby>”分割为音段：“ch”“u”“a”“ng”（不考虑声调等超音段成分）；
 > - “ch”是*清送气卷舌塞擦音*，IPA 写作 <span lang="ipa">[ʈʂʰ]</span>；
-> - “u” 是*闭后圆唇元音*，IPA 写作 <span lang="ipa">[u]</span>，因为这个元音不是韵核，是*不成音节元音*，再加上不成音节（non-syllabic）符号 <span lang="ipa">[◌̯]</span>；
+> - “u” 是*闭后圆唇元音*，IPA 写作 <span lang="ipa">[u]</span>，因为这个元音不是音节核，是*不成音节元音*，再加上不成音节（non-syllabic）符号 <span lang="ipa">[◌̯]</span>；
 > - “a” 是*开后不圆唇元音*，IPA 写作 <span lang="ipa">[ɑ]</span>；
 > - “ng” 是*软腭鼻音*，IPA 写作 <span lang="ipa">[ŋ]</span>；
 > - 连起来，就是 <span lang="ipa">[ʈʂʰu̯ɑŋ]</span>。
@@ -459,7 +471,7 @@ weight: 99
 > - 解释以下 IPA 表示的音：
 >
 >   1. <span lang="ipa">[ɻ̩]</span>、
->   2. <span lang="ipa">[ǂ̬]</span>、
+>   2. <span lang="ipa">[ɡ͡ǂ]</span>、
 >   3. <span lang="ipa">[t̼ʲ]</span>。
 >
 > - <span lang="ipa">[ˈdɒk̚tɚ]</span> 是一个英语词的美式读法，请读出并写出这个词。
