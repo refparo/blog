@@ -1,0 +1,37 @@
+{{- $pages := slice -}}
+{{- if .IsHome -}}
+  {{- range .Sections -}}
+    {{- $pages = $pages | append (where .Pages "Params.hidden" "ne" "true") -}}
+  {{- end -}}
+  {{- $pages = $pages.ByWeight -}}
+{{- else if eq .Layout "series" -}}
+  {{- partial "series-pages.html" . -}}
+  {{- $pages = .Scratch.Get "pages" -}}
+{{- else -}}
+  {{- $pages = where .Pages "Params.hidden" "ne" "true" -}}
+{{- end -}}
+{{ `<?xml version="1.0" encoding="utf-8" standalone="yes"?>` | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{- partial "title.html" . -}}</title>
+    <link>{{ .Permalink }}</link>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>{{ .Site.LanguageCode }}</language>
+    <copyright>{{ `<![CDATA[` | safeHTML }}{{- partial "license.html" . -}}]]></copyright>
+    {{- if not .Date.IsZero -}}
+    <lastBuildDate>{{ now.Format "2006-01-02 15:04:05" }}</lastBuildDate>
+    {{- end -}}
+    {{- with .OutputFormats.Get "RSS" -}}
+      <atom:link href="{{ .Permalink }}" rel="self" type="{{ .MediaType }}" />
+    {{- end -}}
+    {{- range $pages -}}
+      <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <pubDate>{{ .Lastmod.Format "2006-01-02" }}</pubDate>
+        <guid>{{ .Permalink }}</guid>
+        <description>{{ `<![CDATA[` | safeHTML }}{{- partial "summary.html" . -}}]]></description>
+      </item>
+    {{- end -}}
+  </channel>
+</rss>

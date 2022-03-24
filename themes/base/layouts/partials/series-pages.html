@@ -1,0 +1,6 @@
+{{- if not (.Scratch.Get "pages") -}}
+  {{- range .Pages -}}
+    {{- $.Scratch.Add "pages" .Pages -}}
+    {{- $.Scratch.Add "pages" . -}}
+  {{- end -}}
+{{- end -}}

@@ -1,8 +1,8 @@
 {{- define "main" -}}
   <article>
-    {{- partial "main/meta.html" . -}}
+    {{- partial "meta.html" . -}}
     <div class="content">
-      {{- .Content | partial "main/content-filter.html" -}}
+      {{- .Content | partial "content-filter.html" -}}
     </div>
     <div id="toc-page">
       <h2>目录</h2>
@@ -10,13 +10,13 @@
         {{- range .Pages.Reverse -}}
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{- partial "main/meta.html" . -}}
+            {{- partial "meta.html" . -}}
             {{- if .IsSection -}}
               <ol>
                 {{- range .Pages.Reverse -}}
                   <li>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    {{- partial "main/meta.html" . -}}
+                    {{- partial "meta.html" . -}}
                   </li>
                 {{- end -}}
               </ol>
