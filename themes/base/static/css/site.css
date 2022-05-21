@@ -16,7 +16,7 @@ body {
 #inner {
   margin: 0 auto;
   padding: 6px 0;
-  max-width: 840px;
+  max-width: 50em;
 }
 
 /*** Header */
