@@ -18,6 +18,7 @@ markup:
       unsafe: true
   highlight:
     lineNos: true
+    lineNumbersInTable: false
     noClasses: false
     style: solorized-dark
     tabWidth: 2

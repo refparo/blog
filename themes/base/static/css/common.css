@@ -168,11 +168,17 @@ code, kbd, pre, samp {
   font-family: var(--monospace);
   white-space: pre-wrap;
 }
-
 kbd {
   border-color: var(--color-fig);
   border-width: 1px;
   border-style: solid;
   padding: 0 2px;
   background-color: transparent;
+}
+pre {
+  padding: 0.4em 1em;
+}
+pre, pre code {
+  color: #93a1a1;
+  background-color: #002b36;
 }

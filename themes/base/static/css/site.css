@@ -143,51 +143,20 @@ main {
 
 /*** Main: Content: Highlighting */
 
-div.chroma {
-  overflow-x: auto;
-  border-radius: 0.4em;
+.chroma .line {
+  display: flex;
 }
-.chroma {
-  color: #93a1a1;
-  background-color: #002b36;
+.chroma .ln, .chroma .cl {
+  display: block;
 }
-.chroma code {
-  background-color: unset;
+.chroma .ln {
+  margin-right: 1em;
+  color: #495050;
+  user-select: none;
   white-space: pre;
 }
-.chroma .lntable {
-  border-spacing: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  width: auto;
-  display: block;
-}
-.chroma .lntable tr {
-  border-bottom: none;
-}
-.chroma .lntd {
-  vertical-align: top;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-.chroma .lntd:last-child {
-  width: 100%;
-}
-.chroma .lntd:last-child code {
-  min-width: 100%;
-}
-.chroma .hl {
-  display: inline-block;
-  width: 100%;
-  background-color: #003642;
-}
-.chroma .lnt, .chroma .ln {
-  display: block;
-  margin: 0 0.4em 0 1em;
-  padding: 0 0.4em 0 0.4em;
-  color: #495050;
+.chroma .cl {
+  white-space: pre-wrap;
 }
 
 .chroma .x { color: #cb4b16 }
