@@ -26,9 +26,9 @@
 :root {
   --symbols: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2';
 
-  --sc: 'Bitter CJK', 'Noto Serif SC', var(--symbols), serif;
-  --jp: 'Bitter CJK', 'Noto Serif JP', var(--symbols), serif;
-  --kr: 'Bitter CJK', 'Noto Serif KR', var(--symbols), serif;
+  --sc: 'Bitter CJK', 'Noto Serif SC', 'Noto Serif JP', var(--symbols), serif;
+  --jp: 'Bitter CJK', 'Noto Serif JP', 'Noto Serif SC', var(--symbols), serif;
+  --kr: 'Bitter CJK', 'Noto Serif KR', 'Noto Serif SC', var(--symbols), serif;
 
   --arabic:     'Bitter', 'Noto Naskh Arabic',     var(--symbols), serif;
   --devanagari: 'Bitter', 'Noto Serif Devanagari', var(--symbols), serif;
@@ -37,7 +37,7 @@
   --latin:      'Bitter',                          var(--symbols), serif;
 
   --ipa: 'Charis SIL Phon', serif;
-  --monospace: 'Fira Code VF', 'Noto Serif SC', var(--symbols), monospace;
+  --monospace: 'Fira Code VF', 'Noto Serif SC', 'Noto Serif JP', var(--symbols), monospace;
 }
 
 /*** Language Fonts */
