@@ -44,7 +44,7 @@ type $<F, T> = unknown
 type Test0 = $<F, A> // => { value: A }
 ```
 
-但直接用 `F` 作类型参数显然是不可能的。因此我们需要用某种类型来代替 F 作为 `$` 的类型参数：
+但直接用 `F` 作类型参数显然是不可能的。因此我们需要用某种类型来代替 `F` 作为 `$` 的类型参数：
 
 ```typescript
 interface Repr {
@@ -170,8 +170,8 @@ interface Repr {
   typeArgs: unknown
 }
 type $<R, T> = R extends Repr
-            ? AppliedRepr<R, T>["type"]
-            : HasGeneric<R, T>
+             ? AppliedRepr<R, T>["type"]
+             : HasGeneric<R, T>
 
 namespace Generic {
   export declare const repr: unique symbol

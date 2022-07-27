@@ -16,7 +16,21 @@ body {
 #inner {
   margin: 0 auto;
   padding: 6px 0;
-  max-width: 50em;
+  max-width: 42rem;
+}
+
+#inner.debug {
+  background-image:
+    repeating-linear-gradient(
+      transparent 0 calc(var(--lh) * 0.5rem - 1px),
+      #333333 calc(var(--lh) * 0.5rem - 1px) calc(var(--lh) * 0.5rem),
+      transparent calc(var(--lh) * 0.5rem) calc(var(--lh) * 1rem - 1px),
+      #222222 calc(var(--lh) * 1rem - 1px) calc(var(--lh) * 1rem)),
+    repeating-linear-gradient(to right,
+      transparent 0 calc(0.5rem - 1px),
+      #101010 calc(0.5rem - 1px) 0.5rem,
+      transparent 0.5rem calc(1rem - 1px),
+      #151515 calc(1rem - 1px) 1rem);
 }
 
 /*** Header */
@@ -37,7 +51,7 @@ header nav a:not(:hover) {
 }
 
 header nav #breadcrumb {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 header nav #site-nav {
@@ -45,7 +59,7 @@ header nav #site-nav {
 }
 
 header nav #site-nav a:not(:last-child) {
-  margin-right: 0.2em;
+  margin-right: 0.25rem;
 }
 
 /*** Footer */
@@ -58,21 +72,34 @@ footer {
 /*** Main */
 
 main {
-  margin: 1em 0 2em 0;
+  margin: calc(var(--lh) * 1rem) 0 calc(var(--lh) * 2rem) 0;
 }
 
 /*** Main: TOC */
 
 #toc {
-  margin: 0;
+  margin: calc(var(--lh) * -1rem) 0 calc(var(--lh) * 0.5rem) 1rem;
+  float: right;
+}
+@media screen and (max-width: 480px) {
+  #toc {
+    margin: 0;
+    float: none;
+  }
+}
+
+#toc {
   padding-left: 1rem;
   font-size: smaller;
 }
 
 #toc h2 {
   margin-bottom: 0;
-  font-weight: bold;
-  font-size: 1.17rem;
+}
+@media screen and not (max-width: 480px) {
+  #toc h2 {
+    margin-top: 0;
+  }
 }
 
 #toc p {
@@ -95,26 +122,19 @@ main {
 
 /*** Main: Meta */
 
-.meta * {
-  display: inline;
+.meta {
+  display: flex;
+}
+
+.meta > * {
   color: var(--color-link);
   font-size: smaller;
 }
 
 .meta > :not(:last-child) {
-  padding-right: 0.2em;
+  padding-right: calc(0.25em - 1px);
   border-right: 2px solid var(--color-fig);
-  margin-right: 0.2em;
-}
-
-/*** Main: Content */
-
-.content > *:not([class]) {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.content > h2 {
-  margin-top: 2.5rem;
+  margin-right: calc(0.25em - 1px);
 }
 
 /*** Main: Content: Title Anchors */
@@ -238,28 +258,25 @@ main {
   font-size: revert;
 }
 
-#toc-page h2 {
-  margin: 0.67em 0;
-  font-weight: bold;
-  font-size: revert;
-}
-
 #toc-page ol {
-  list-style-type: "• ";
+  list-style: disc;
+}
+#toc-page ol ol {
+  list-style: circle;
 }
 
 #toc-page .meta {
   display: inline-block;
-  margin-left: 0.2rem;
+  margin-left: calc(0.25rem - 1px);
   border-left: 2px solid var(--color-fig);
-  padding-left: 0.2em;
+  padding-left: calc(0.25rem - 1px);
   font-size: smaller;
 }
 
 /*** Main: List Page */
 
-article:not(:last-child) {
-  margin-bottom: 5vw;
+article {
+  margin-bottom: calc(var(--lh) * 2rem);
 }
 
 ul.pagination {
@@ -283,6 +300,36 @@ ul.pagination li {
   color: var(--color-foc);
   text-decoration: underline;
   cursor: default;
+}
+
+/*** Main: Heti Addon */
+
+heti-spacing {
+  display: inline;
+}
+
+heti-spacing + sup, heti-spacing + sub {
+  margin-inline-start: 0;
+}
+
+.heti-spacing-start {
+  margin-inline-end: 0.25em;
+}
+
+.heti-spacing-end {
+  margin-inline-start: 0.25em;
+}
+
+heti-adjacent {
+  display: inline;
+}
+
+.heti-adjacent-half {
+  margin-inline-end: -0.5em;
+}
+
+.heti-adjacent-quarter {
+  margin-inline-end: -0.25em;
 }
 
 /*** Page Turner */
@@ -322,9 +369,12 @@ ul.pagination li {
 /*** Print */
 
 @media print {
+  :root {
+    font-size: 10.5pt;
+  }
+
   body {
     background: none;
-    font-size: 10.5pt;
   }
 
   #outer {
