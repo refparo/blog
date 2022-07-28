@@ -177,6 +177,7 @@ main {
 }
 .chroma .cl {
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .chroma .x { color: #cb4b16 }
