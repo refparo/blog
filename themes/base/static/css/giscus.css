@@ -93,8 +93,8 @@ main {
   color-scheme: light;
 }
 
-.gsc-header h4 {
-  margin: unset;
+.gsc-main h4 {
+  margin: 0;
 }
 
 .gsc-header em {

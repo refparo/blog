@@ -7,13 +7,13 @@
     <div id="toc-page">
       <h2>目录</h2>
       <ol>
-        {{- range .Pages.Reverse -}}
+        {{- range (where .Pages.Reverse "Params.hidden" "ne" "true") -}}
           <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             {{- partial "meta.html" . -}}
             {{- if .IsSection -}}
               <ol>
-                {{- range .Pages.Reverse -}}
+                {{- range (where .Pages.Reverse "Params.hidden" "ne" "true") -}}
                   <li>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     {{- partial "meta.html" . -}}

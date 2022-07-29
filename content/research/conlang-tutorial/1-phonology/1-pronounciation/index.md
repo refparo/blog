@@ -3,6 +3,7 @@ title: 发音原理
 date: 2022-02-10
 lastmod: 2022-02-22
 audioClips: true
+hidden: true
 weight: 99
 ---
 
@@ -123,7 +124,7 @@ weight: 99
 在响音中：
 
 - 当主动调音部位放在恰到好处的位置，让气流使调音部位之一颤动起来，反复地阻塞、释放气流，这样产生的音叫做*颤音*（trill），例如<audio class="audio-clip" controls src="Perro_Voiced_alveolar_trill.wav"></audio>西班牙语“perro（狗）”中的“rr”，以及前面提到的<audio class="audio-clip" controls src="pronunciation_de_rad.mp3"></audio>德语“Rad（车轮）”中的“r”。
-- 主动调音部位短暂地触碰被动调音部位又弹开，产生的音叫做*闪音*（tap 或 flap），例如<audio class="audio-clip" controls src="pronunciation_ko_여름.mp3"></audio>朝鲜语“<ruby lang="ko"><rb>여</rb><rp>（</rp><rt>yeo</rt><rp>）</rp><rb>름</rb><rp>（</rp><rt>reum</rt><rp>）</rp></ruby>”中的“r”和<audio class="audio-clip" controls src="Caro_Voiced_alveolar_flap_Latino_Spanish.wav"></audio>西班牙语“caro（贵）”中的“r”。
+- 主动调音部位短暂地触碰被动调音部位又弹开，产生的音叫做*闪音*（tap 或 flap），例如<audio class="audio-clip" controls src="pronunciation_ko_여름.mp3"></audio>朝鲜语“<ruby lang="ko"><rb>여</rb><rp>（</rp><rt>yeo</rt><rp>）</rp></ruby><ruby lang="ko"><rb>름</rb><rp>（</rp><rt>reum</rt><rp>）</rp></ruby>”中的“r”和<audio class="audio-clip" controls src="Caro_Voiced_alveolar_flap_Latino_Spanish.wav"></audio>西班牙语“caro（贵）”中的“r”。
 - 气流的流动不受到任何特别的阻碍，产生的音叫做*元音*（vowel），例如普通话“<ruby><rb>寻</rb><rp>（</rp><rt>xún</rt><rp>）</rp></ruby>”中的“ü”和英语“beat”中的“ea”。
 - 主动调音部位接近被动调音部位，对气流的流动产生轻微的阻碍，但阻碍程度不足以产生湍流，这样产生的音叫做*近音*（approximant），例如英语“rare”中的第一个“r”，以及前面提到的普通话“<ruby><rb>染</rb><rp>（</rp><rt>rǎn</rt><rp>）</rp></ruby>”中的“r”。
   - 在近音中，与元音部位相同，仅仅是比元音对气流的阻碍更大的音，叫做*半元音*（semivowel），例如普通话“<ruby><rb>牙</rb><rp>（</rp><rt>yá</rt><rp>）</rp></ruby>”中的“y”和“<ruby><rb>圆</rb><rp>（</rp><rt>yuán</rt><rp>）</rp></ruby>”中的“y”（这两个音是不同的）。
