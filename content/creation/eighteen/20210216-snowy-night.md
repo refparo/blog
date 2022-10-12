@@ -68,3 +68,7 @@ date: 2021-02-16
 还有好多没做完啊……尽量多做一点吧。
 
 灰狼又埋下头，用僵硬的右手继续奋笔疾书。
+
+![image 1](/creation/eighteen/snowy-night-1.jpg)
+
+![image 2](/creation/eighteen/snowy-night-2.jpg)
