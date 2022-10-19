@@ -110,8 +110,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: calc(var(--lh) * 1rem) 0 calc(var(--lh) * 0.5rem) 0;
 }
 
-p, blockquote, :is(ul, ol):not(li > *), pre, img, video, figure {
+p, blockquote, :is(ul, ol):not(li > *) {
   margin: calc(var(--lh) * 0.5rem) 0 calc(var(--lh) * 1rem) 0;
+}
+
+pre, img, video, figure {
+  margin: calc(var(--lh) * 0.5rem) 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, li {
