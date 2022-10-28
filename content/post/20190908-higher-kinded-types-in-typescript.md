@@ -1,6 +1,5 @@
 ---
 title: 在 Typescript 中模拟高阶类型
-aliases: [/tech/20190908-higher-kinded-types-in-typescript/]
 date: 2019-09-08
 toc: true
 ---

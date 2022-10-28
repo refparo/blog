@@ -1,4 +1,4 @@
 ---
-title: 研究
+title: 列表
 weight: 1
 ---

@@ -1,6 +1,5 @@
 ---
 title: 在 WSL 上的 Arch Linux 里运行 VSCode
-aliases: [/tech/20180725-run-vscode-on-archlinux-on-wsl/]
 date: 2018-07-25
 ---
 

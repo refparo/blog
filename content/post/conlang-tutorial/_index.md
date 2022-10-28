@@ -1,6 +1,7 @@
 ---
 title: 人造语言综合教程
 layout: series
+alias: [/creation/conlang-tutorial/]
 cascade:
   license:
     name: CC BY-SA 4.0
