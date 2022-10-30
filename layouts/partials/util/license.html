@@ -1,0 +1,4 @@
+©{{ " " }}{{- .Site.Author.name -}}{{ " " }}{{- now.Format "2006" -}}
+{{- with .Params.license -}}
+  , licensed under <a target="_blank" href="{{ .url }}">{{ .name }}</a>
+{{- end -}}{{- "." -}}

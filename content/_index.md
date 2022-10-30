@@ -1,5 +1,5 @@
 ---
-title: Paro 的博客
+title: 浸月之海
 hideDate: true
 layout: single
 ---
@@ -9,6 +9,8 @@ layout: single
 你好！这里是帕勒。很高兴认识你，请多指教！
 
 是大学生，在北京某高校上学，同城可以面基！
+
+这个网站是我的博客，存放了我的[所有文章](/list/)。
 
 是会一点编程的蒟蒻，会在这个博客的[研究](/research/)栏目里发一点技术文章。目前的主要兴趣方向是 [PLT](https://en.wikipedia.org/wiki/Programming_language_theory)。我的 GitHub：[@refparo](https://github.com/refparo)。
 
@@ -37,20 +39,20 @@ layout: single
 
 | 时间 | 事件 |
 |-|-|
-| 2022 年 7 月 27 日 | 大规模调整网站排版，采用[赫蹏](https://github.com/sivan/heti)的排版工具 |
-| 2021 年 6 月 17 日 | 启用新域名：`paro.one` |
-| 2021 年 2 月 8 日 | 网站模板和样式重构 |
-| 2020 年 5 月 31 日 | 博客改用 Hugo 生成器，结构和样式改动以适应新的需求 |
-| 2019 年 7 月 20 日 | 博客样式调整 |
-| 2019 年 4 月 6 日 | 博客改用 Gatsby 框架 |
-| 2018 年 2 月 14 日 | 更换全新的自制主题 [Mono](https://github.com/refparo/hexo-theme-mono) |
+| 2022 年 &numsp;7 月 27 日 | 大规模调整网站排版，采用[赫蹏](https://github.com/sivan/heti)的排版工具 |
+| 2021 年 &numsp;6 月 17 日 | 启用新域名：`paro.one` |
+| 2021 年 &numsp;2 月 &numsp;8 日 | 网站模板和样式重构 |
+| 2020 年 &numsp;5 月 31 日 | 博客改用 Hugo 生成器，结构和样式改动以适应新的需求 |
+| 2019 年 &numsp;7 月 20 日 | 博客样式调整 |
+| 2019 年 &numsp;4 月 &numsp;6 日 | 博客改用 Gatsby 框架 |
+| 2018 年 &numsp;2 月 14 日 | 更换全新的自制主题 [Mono](https://github.com/refparo/hexo-theme-mono) |
 | 2016 年 12 月 11 日 | 博客移回根目录 |
 | 2016 年 10 月 15 日 | 博客移动到 `/blog/`，站点根目录另作他用 |
-| 2016 年 7 月 11 日 | 博客改用 Hexo 生成静态页面，使用 Icarus 主题，发布于 GitHub Pages |
-| 2016 年 1 月 21 日 | 建立新的 Ghost 博客站 |
+| 2016 年 &numsp;7 月 11 日 | 博客改用 Hexo 生成静态页面，使用 Icarus 主题，发布于 GitHub Pages |
+| 2016 年 &numsp;1 月 21 日 | 建立新的 Ghost 博客站 |
 | 2016 年初 | 删除原 WordPress 站 |
-| 2015 年 5 月 31 日 | 发布第一篇文章《Hello WordPress！》 |
-| 2015 年 5 月 | 网站建立 |
+| 2015 年 &numsp;5 月 31 日 | 发布第一篇文章《Hello WordPress！》 |
+| 2015 年 &numsp;5 月 | 网站建立 |
 
 ## 友情链接
 

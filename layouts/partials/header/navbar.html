@@ -1,0 +1,5 @@
+<span id="navbar">
+  {{- range slice (.GetPage "/list/") -}}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- end -}}
+</span>

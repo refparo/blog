@@ -1,11 +1,22 @@
 {{- define "main" -}}
-  {{- $paginator := .Paginate (where .Pages "Params.hidden" "ne" "true") -}}
+  {{- $paginator := false -}}
+  {{- if eq .Kind "section" -}}
+    <h1 id="main-title">{{- .Title -}}</h1>
+    {{- $paginator = .Paginate (
+      where .Site.Home.Pages "Params.hidden" "ne" "true"
+    ) -}}
+  {{- else if eq .Kind "term" -}}
+    <h1 id="main-title">#{{- .Title -}}</h1>
+    {{- $paginator = .Paginate (
+      where .Pages "Params.hidden" "ne" "true"
+    ) -}}
+  {{- end -}}
   {{- range $paginator.Pages -}}
     <article>
       <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-      {{- partial "meta.html" . -}}
+      {{- partial "util/meta.html" . -}}
       <div class="content">
-        {{- partial "summary.html" . -}}
+        {{- partial "util/summary.html" . -}}
       </div>
       {{- if (in .Content "<!-- more -->") -}}
         <a href="{{ .RelPermalink }}">继续阅读»</a>

@@ -1,0 +1,91 @@
+$line-height: 1.5;
+
+// *** Fonts
+
+$font-symbols: 'Noto Sans Math', 'Noto Sans Symbols', 'Noto Sans Symbols 2';
+
+$font-sc: 'Source Serif 4 CJK', 'Noto Serif SC', 'Noto Serif JP', $font-symbols, serif;
+$font-ja: 'Source Serif 4 CJK', 'Noto Serif JP', 'Noto Serif JP', $font-symbols, serif;
+$font-ko: 'Source Serif 4 CJK', 'Noto Serif KR', 'Noto Serif JP', $font-symbols, serif;
+
+$font-sc-em: 'Source Serif 4 CJK', 'LXGW WenKai', $font-symbols, serif;
+
+$font-arabic:     'Source Serif 4', 'Noto Naskh Arabic',     $font-symbols, serif;
+$font-devanagari: 'Source Serif 4', 'Noto Serif Devanagari', $font-symbols, serif;
+$font-georgian:   'Source Serif 4', 'Noto Serif Georgian',   $font-symbols, serif;
+$font-latin:      'Source Serif 4',                          $font-symbols, serif;
+
+$font-ipa: 'Charis SIL', serif;
+
+$font-mono: 'Fira Code VF', 'Noto Serif SC', 'Noto Serif JP', $font-symbols, monospace;
+
+$font-body: $font-sc;
+
+code, kbd, samp, pre {
+  :where(:not(&, & *)) {
+    &:lang(zh-CN) { font-family: $font-sc; }
+    &:lang(ja) { font-family: $font-ja; }
+    &:lang(ko) { font-family: $font-ko; }
+    
+    &:lang(ar), &:lang(sd) { font-family: $font-arabic; }
+    &:lang(hi) { font-family: $font-devanagari; }
+    &:lang(ka) { font-family: $font-georgian; }
+    
+    &:lang(ipa) { font-family: $font-ipa; }
+    
+    &:not(:lang(zh), :lang(ja), :lang(ko), :lang(ipa),
+      :lang(ar), :lang(sd), :lang(hi), :lang(ka)) {
+      font-family: $font-latin;
+    }
+  }
+}
+
+// *** Colors
+
+:root {
+  --fg-text: hsl(45deg, 4%, 10%);
+  --fg-interactive: hsl(45deg, 4%, 40%);
+  --fg-noninteractive: hsl(45deg, 4%, 80%);
+  --bg-highlight: hsla(45deg, 30%, 70%, 50%);
+  --bg-normal: hsl(45deg, 4%, 98%);
+  color-scheme: light;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --fg-text: hsl(45deg, 4%, 80%);
+    --fg-interactive: hsl(45deg, 4%, 60%);
+    --fg-noninteractive: hsl(45deg, 4%, 20%);
+    --bg-highlight: hsla(45deg, 30%, 20%, 50%);
+    --bg-normal: hsl(45deg, 4%, 4%);
+    color-scheme: dark;
+  }
+}
+
+$fg-text: var(--fg-text);
+$fg-interactive: var(--fg-interactive);
+$fg-noninteractive: var(--fg-noninteractive);
+$bg-highlight: var(--bg-highlight);
+$bg-normal: var(--bg-normal);
+$color-text: var(--color-text);
+$color-foc: var(--color-foc);
+$color-link: var(--color-link);
+$color-fig: var(--color-fig);
+$color-hl: var(--color-hl);
+$color-bg: var(--color-bg);
+
+// *** Debug
+
+.debug {
+  background-image:
+    repeating-linear-gradient(
+      transparent 0 calc($line-height * 0.5rem - 1px),
+      #222222 calc($line-height * 0.5rem - 1px) calc($line-height * 0.5rem),
+      transparent calc($line-height * 0.5rem) calc($line-height * 1rem - 1px),
+      #333333 calc($line-height * 1rem - 1px) calc($line-height * 1rem)),
+    repeating-linear-gradient(to right,
+      transparent 0 calc(0.5rem - 1px),
+      #101010 calc(0.5rem - 1px) 0.5rem,
+      transparent 0.5rem calc(1rem - 1px),
+      #151515 calc(1rem - 1px) 1rem);;
+}

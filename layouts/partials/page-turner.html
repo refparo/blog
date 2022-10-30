@@ -1,19 +1,7 @@
-{{- $series := false -}}
-{{- with .Parent -}}
-  {{- if eq .Layout "series" -}}
-    {{- $series = . -}}
-  {{- else -}}
-    {{- with .Parent -}}
-      {{- if eq .Layout "series" -}}
-        {{- $series = . -}}
-      {{- end -}}
-      {{/* A series can't have more than two layers of nested children */}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
-
+{{- /* defined in header/breadcrumb.html */ -}}
+{{- $series := .Scratch.Get "series" -}}
 {{- if $series -}}
-  {{- partial "series-pages.html" $series -}}
+  {{- partial "util/collect-series-pages.html" $series -}}
   {{- with ($series.Scratch.Get "pages").Prev . -}}
     <a title="上一章节" class="page-turner" id="prev-chapter" href="{{ .Permalink }}">‹</a>
   {{- end -}}

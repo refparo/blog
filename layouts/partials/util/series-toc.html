@@ -1,0 +1,11 @@
+<ol>
+  {{- range (where .Pages.Reverse "Params.hidden" "ne" "true") -}}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- partial "util/meta.html" . -}}
+      {{- if .IsSection -}}
+        {{- partial "util/series-toc.html" . -}}
+      {{- end -}}
+    </li>
+  {{- end -}}
+</ol>

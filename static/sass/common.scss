@@ -1,0 +1,187 @@
+@use 'util' as *;
+
+body {
+  color: $fg-text;
+  background-color: $bg-normal;
+  line-height: $line-height * 1rem;
+}
+
+* {
+  text-decoration-color: currentColor;
+  text-decoration-thickness: from-font;
+}
+
+::selection, :target {
+  background-color: $bg-highlight;
+}
+
+// *** Paragraph elements
+
+h1 {
+  line-height: $line-height * 2rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+h2 {
+  line-height: $line-height * 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: ($line-height * 1rem) 0 ($line-height * 0.5rem) 0;
+}
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: $line-height * 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  text-align: justify;
+  hyphens: auto;
+}
+
+p, :is(ul, ol):not(li > *) {
+  margin: ($line-height * 0.5rem) 0 ($line-height * 1rem) 0;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+:is(ul, ol) ::marker {
+  line-height: 0;
+}
+
+// *** Container Elements
+
+blockquote {
+  margin: 0 0 0 1rem;
+  border-left: 3px solid $fg-noninteractive;
+  padding-left: calc(1rem - 3px);
+
+  @media screen and (max-width: 480px) {
+    margin-left: 0;
+  }
+}
+
+// *** Figure Elements
+
+pre, img, video, figure, table {
+  margin: ($line-height * 0.5rem) 0;
+}
+
+hr {
+  margin: calc($line-height * 1rem - 0.5px) auto;
+  width: 38%;
+  border: none;
+  border-top: 1px solid $fg-noninteractive;
+}
+
+table {
+  border-collapse: collapse;
+
+  thead {
+    border-bottom: 3px solid $fg-noninteractive;
+  }
+
+  tr {
+    border-bottom: 1px solid $fg-noninteractive;
+  
+    th {
+      padding: calc($line-height * 0.25rem - 1.5px) ($line-height * 0.25rem);
+      text-align: left;
+    }
+    td {
+      padding: calc($line-height * 0.25rem - 0.5px) ($line-height * 0.25rem);
+    }
+  }
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: smaller;
+
+  p {
+    text-align: center;
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// *** Inline Elements
+
+i:lang(zh), em:lang(zh) {
+  font-style: normal;
+  text-decoration: none;
+
+  &, & *:lang(zh) {
+    font-family: $font-sc-em;
+  }
+}
+
+a {
+  color: $fg-interactive;
+
+  &:hover {
+    color: $fg-text;
+    background-color: $bg-highlight;
+    text-decoration: none;
+  }
+}
+
+@supports selector(:has(ruby)) {
+  :is(p, ul, ol):has(ruby) {
+    line-height: $line-height * 1.5rem;
+  }
+  ruby rt {
+    font-size: $line-height * 0.5em;
+  }
+}
+@supports not selector(:has(ruby)) {
+  ruby {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    height: $line-height * 1.5rem;
+
+    rt {
+      font-size: $line-height * 0.5em;
+      line-height: 0.75;
+    }
+  }
+}
+
+// *** Code elements
+
+code, kbd, pre, samp {
+  border-radius: 0.4rem;
+  line-height: calc($line-height * 1rem - 1px);
+  font-weight: 300;
+  background-color: $bg-highlight;
+  white-space: pre-wrap;
+}
+kbd {
+  border-color: $fg-noninteractive;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0 2px;
+  background-color: transparent;
+}
+
+pre {
+  padding: ($line-height * 0.5rem) 1em;
+
+  &, & code {
+    line-height: inherit;
+    color: #93a1a1;
+    background-color: #002b36;
+  }
+}

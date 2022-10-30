@@ -1,0 +1,5 @@
+{{- if not .IsHome -}}
+  {{- if eq .Kind "term" -}}#{{- end -}}
+  {{- .Title -}}{{- " | " -}}
+{{- end -}}
+{{- .Site.Title -}}

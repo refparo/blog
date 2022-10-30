@@ -1,11 +1,18 @@
-title: Paro 的博客
+title: 浸月之海
 author: { name: Paro }
+baseURL: https://paro.one/
 defaultContentLanguage: zh-cn
 hasCJKLanguage: true
 disableHugoGeneratorInject: true
-baseURL: https://paro.one/
-disableKinds: [taxonomy, term]
+
+taxonomies:
+  tag: tag
+disableKinds: [taxonomy]
+ignoreErrors: ["error-disable-taxonomy"]
+
 paginate: 10
+paginatePath: ''
+
 markup:
   goldmark:
     extensions:
@@ -25,6 +32,7 @@ markup:
     ordered: true
     startLevel: 2
     endLevel: 3
+
 server:
   headers:
   - for: /**

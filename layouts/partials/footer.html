@@ -1,9 +1,0 @@
-<footer>
-  {{- partial "license.html" . -}}
-  Built with <a target="_blank" href="https://gohugo.io">Hugo</a>.
-  {{ if or .IsHome .Parent.IsHome (eq .Layout "series") -}}
-    {{- with .OutputFormats.Get "rss" -}}
-      <a target="_blank" href="{{ .Permalink }}">RSS feed</a> is available.
-    {{- end -}}
-  {{- end -}}
-</footer>

@@ -2,11 +2,15 @@
 <html lang="zh-CN">
 {{- partial "head.html" . -}}
 <body>
-  <div id="outer"><div id="inner">
-    {{- partial "header.html" . -}}
-    <main>{{- block "main" . -}}{{- end -}}</main>
-    {{- partial "footer.html" . -}}
-  </div></div>
+  <header>
+    {{- partial "header/breadcrumb.html" . -}}
+    {{- partial "header/navbar.html" . -}}
+  </header>
+  {{- block "main" . -}}{{- end -}}
+  <footer>
+    {{- partial "footer/comment.html" . -}}
+    {{- partial "footer/copyright.html" . -}}
+  </footer>
   {{- partial "foot.html" . -}}
 </body>
 </html>

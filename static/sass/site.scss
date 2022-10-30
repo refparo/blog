@@ -1,0 +1,364 @@
+@use 'util' as *;
+@use 'normalize';
+@use 'common';
+@use 'special';
+
+:root {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+// *** Layout
+
+html {
+  margin: 6px auto;
+  max-width: min(42rem, 92vw);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem;
+  text-align: justify;
+  color: $fg-interactive;
+
+  a {
+    text-decoration: none;
+  }
+
+  #navbar {
+    display: inline-flex;
+    margin-left: auto;
+    gap: 0.25rem;
+  }
+}
+
+#main-title {
+  margin: 0 0 ($line-height * 1rem) 0;
+}
+
+article {
+  margin-bottom: $line-height * 2rem;
+}
+
+.meta {
+  color: $fg-interactive;
+  font-size: smaller;
+
+  .tags {
+    display: inline-flex;
+    gap: 0.25em;
+  }
+
+  > :not(:last-child) {
+    padding-right: 0.25em;
+    border-right: 2px solid $fg-noninteractive;
+    margin-right: 0.25em;
+  }
+}
+
+#toc {
+  float: right;
+  margin: ($line-height * -1rem) 0 ($line-height * 0.5rem) 1rem;
+
+  @media screen and (max-width: 480px) {
+    float: none;
+    margin: 0;
+  }
+
+  padding-left: 1rem;
+  font-size: smaller;
+
+  h2 {
+    margin-bottom: 0;
+
+    @media screen and not (max-width: 480px) {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: decimal;
+
+    ol {
+      padding-left: 2em;
+    }
+  }
+
+  ::marker {
+    content: counters(list-item, '.') '.\A0';
+  }
+}
+
+.anchor {
+  position: absolute;
+  text-decoration: none;
+  transform: translateX(-100%);
+  padding-right: 5px;
+  user-select: none;
+
+  .anchor-inner {
+    visibility: hidden;
+  }
+
+  :is(&, h1, h2, h3, h4, h5, h6):hover .anchor-inner {
+    visibility: visible;
+  }
+}
+
+.chroma {
+  .line {
+    display: flex;
+  }
+
+  .ln, .cl {
+    display: block;
+  }
+  .ln {
+    margin-right: 1em;
+    color: #495050;
+    user-select: none;
+    white-space: pre;
+  }
+  .cl {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  
+  .x { color: #cb4b16 }
+  .k { color: #719e07 }
+  .kc { color: #cb4b16 }
+  .kd { color: #268bd2 }
+  .kn { color: #719e07 }
+  .kp { color: #719e07 }
+  .kr { color: #268bd2 }
+  .kt { color: #dc322f }
+  .nb { color: #b58900 }
+  .bp { color: #268bd2 }
+  .nc { color: #268bd2 }
+  .no { color: #cb4b16 }
+  .nd { color: #268bd2 }
+  .ni { color: #cb4b16 }
+  .ne { color: #cb4b16 }
+  .nf { color: #268bd2 }
+  .nt { color: #268bd2 }
+  .nv { color: #268bd2 }
+  .s { color: #2aa198 }
+  .sa { color: #2aa198 }
+  .sb { color: #586e75 }
+  .sc { color: #2aa198 }
+  .dl { color: #2aa198 }
+  .s2 { color: #2aa198 }
+  .se { color: #cb4b16 }
+  .si { color: #2aa198 }
+  .sx { color: #2aa198 }
+  .sr { color: #dc322f }
+  .s1 { color: #2aa198 }
+  .ss { color: #2aa198 }
+  .m { color: #2aa198 }
+  .mb { color: #2aa198 }
+  .mf { color: #2aa198 }
+  .mh { color: #2aa198 }
+  .mi { color: #2aa198 }
+  .il { color: #2aa198 }
+  .mo { color: #2aa198 }
+  .o { color: #719e07 }
+  .ow { color: #719e07 }
+  .c { color: #586e75 }
+  .ch { color: #586e75 }
+  .cm { color: #586e75 }
+  .c1 { color: #586e75 }
+  .cs { color: #719e07 }
+  .cp { color: #719e07 }
+  .cpf { color: #719e07 }
+  .gd { color: #dc322f }
+  .ge { font-style: italic }
+  .gr { color: #dc322f; font-weight: bold }
+  .gh { color: #cb4b16 }
+  .gi { color: #719e07 }
+  .gs { font-weight: bold }
+  .gu { color: #268bd2 }
+}
+
+.footnote-ref {
+  &::before {
+    content: "[";
+    user-select: text;
+  }
+
+  &::after {
+    content: "]";
+    user-select: text;
+  }
+}
+
+.footnotes {
+  font-size: smaller;
+
+  li p {
+    margin: 0;
+  }
+}
+
+#series-toc {
+  font-size: revert;
+
+  ol {
+    list-style: disc;
+
+    ol {
+      list-style: circle;
+    }
+  }
+
+  .meta {
+    display: inline;
+    margin-left: 0.25rem;
+    border-left: 2px solid $fg-noninteractive;
+    padding-left: 0.25rem;
+    font-size: smaller;
+  }
+}
+
+ul.pagination {
+  margin: ($line-height * 2rem) 0 0 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+
+  li {
+    display: inline;
+  }
+
+  .page-item.disabled a, .page-item.disabled a:hover {
+    color: $fg-noninteractive;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: default;
+  }
+  
+  .page-item.active a, .page-item.active a:hover {
+    color: $fg-interactive;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+footer {
+  > * {
+    margin-top: $line-height * 2rem;
+  }
+
+  #copyright {
+    color: $fg-interactive;
+    font-size: smaller;
+  }
+}
+
+// *** Page Turner
+
+.page-turner {
+  position: fixed;
+  display: block;
+  width: 4vw;
+  height: 100vh;
+  line-height: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 8vw;
+  color: $fg-noninteractive;
+  user-select: none;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    padding-bottom: 50vh;
+  }
+
+  &#prev-chapter {
+    top: 0;
+    left: 0;
+  }
+  &#next-chapter {
+    top: 0;
+    right: 0;
+  }
+}
+
+// *** Custom content classes
+
+.float {
+  margin: 0 0 0 1rem;
+  float: right;
+
+  @media screen and (max-width: 480px) {
+    margin: inherit;
+    float: none;
+  }
+}
+
+.gallery {
+  margin: ($line-height * 0.5rem) 0;
+  display: flex;
+  gap: $line-height * 0.5rem;
+
+  figure {
+    margin: 0;
+  }
+}
+
+// *** Paged media 
+
+@media print {
+  :root {
+    font-size: 10.5pt;
+  }
+
+  html {
+    margin: 0;
+    max-width: none;
+  }
+
+  body {
+    background: none;
+  }
+
+  .content a:not(.anchor, .footnote-ref, .footnote-backref)::after {
+    display: inline-block;
+    content: "<" attr(href) ">";
+    text-decoration: none;
+    font-size: smaller;
+    // Without this line, Chromium will have a ridiculous bug when a very lone URL occurs.
+    overflow-wrap: anywhere;
+  }
+
+  #comment, .page-turner {
+    display: none;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 2.54cm 3.18cm;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}
+
+img, video, figure {
+  page-break-inside: avoid;
+}
+
+p, blockquote, ul, ol, li {
+  orphans: 2;
+  widows: 2;
+}

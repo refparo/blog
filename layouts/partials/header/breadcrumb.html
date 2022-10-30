@@ -1,3 +1,20 @@
-<div id="breadcrumb">
-  /{{- partial "header/breadcrumb-rec.html" . -}}
-</div>
+{{- $breadcrumb := first 0 .Pages -}}
+{{- if not .IsHome -}}
+  {{- $breadcrumb = $breadcrumb | append .Parent -}}
+  {{- range $breadcrumb -}}
+    {{- if .Params.series -}}
+      {{- $.Scratch.Set "series" . -}}
+    {{- end -}}
+    {{- if .Parent -}}
+      {{- $breadcrumb = $breadcrumb | append .Parent -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<span id="breadcrumb">
+  /{{- range $breadcrumb.Reverse -}}
+    {{- if ne .Kind "taxonomy" -}}
+      <a href="{{ .RelPermalink }}">{{ .Title }}/</a>
+    {{- end -}}
+  {{- end -}}
+</span>

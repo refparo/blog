@@ -2,18 +2,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{- if .IsHome -}}{{- hugo.Generator -}}{{- end -}}
-  <title>{{- partial "title.html" . -}}</title>
+  <title>{{- partial "util/title.html" . -}}</title>
   {{- range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
   {{- end -}}
   <link rel="shortcut icon" href="{{ .Site.Home.RelPermalink }}favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://fonts.paro.one">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.min.css">
-  <link rel="stylesheet" href="https://fonts.paro.one/api?family=Bitter:ital,wght@0,400;0,700;1,400;1,700:rename@Bitter+CJK:exclude@U%2BB7,U%2B2002,U%2B2013-2014,U%2B2018-2019,U%2B201C-201D,U%2B2026&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Symbols&family=Noto+Sans+Symbols+2&family=Noto+Serif+Devanagari:wght@400;700&family=Noto+Serif+Georgian:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.paro.one/api?family=Source+Serif+4:ital,opsz,wght@0,8..60,350;0,8..60,600;1,8..60,350;1,8..60,600:rename@Source+Serif+4+CJK:exclude@U%2BB7,U%2B2002,U%2B2013-2014,U%2B2018-2019,U%2B201C-201D,U%2B2026&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Symbols&family=Noto+Sans+Symbols+2&family=Noto+Serif+Devanagari:wght@400;700&family=Noto+Serif+Georgian:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/lxgwwenkai-light.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/lxgwwenkai-bold.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css">
-  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}fonts/charis-sil-phon/charis-sil-phon.css">
-  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}css/common.css">
-  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}css/site.css">
+  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}fonts/charis-sil/charis-sil.css">
+  <link rel="stylesheet" href="{{ .Site.Home.RelPermalink }}style/site.css">
 </head>

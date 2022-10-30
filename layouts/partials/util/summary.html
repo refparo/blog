@@ -1,0 +1,9 @@
+{{- $summary := .Scratch.Get "summary" -}}
+{{- if not $summary -}}
+  {{- $summary = .Content | replaceRE "<!-- more -->[^\x00]*" "" -}}
+  {{- $summary = $summary | replaceRE "[^\x00]*<!-- :more -->" "" -}}
+  {{- $summary = $summary | replaceRE "<sup.*class=\"footnote-ref\".*</a></sup>" "" -}}
+  {{- $summary = $summary | partial "util/content-filter.html" -}}
+  {{- .Scratch.Set "summary" $summary -}}
+{{- end -}}
+{{- $summary -}}

@@ -1,6 +1,7 @@
 {{- define "main" -}}
-  <article>
-    {{- partial "meta.html" . -}}
+  <main>
+    <h1 id="main-title">{{- .Title -}}</h1>
+    {{- partial "util/meta.html" . -}}
     {{- if .Params.toc -}}
       <div id="toc">
         <h2>目录</h2>
@@ -8,8 +9,13 @@
       </div>
     {{- end -}}
     <div class="content">
-      {{- .Content | partial "content-filter.html" -}}
+      {{- .Content | partial "util/content-filter.html" -}}
     </div>
-  </article>
-  {{- partial "main/comment.html" . -}}
+    {{- if .Params.series -}}
+      <div id="series-toc">
+        <h2>目录</h2>
+        {{- partial "util/series-toc.html" . -}}
+      </div>
+    {{- end -}}
+  </main>
 {{- end -}}

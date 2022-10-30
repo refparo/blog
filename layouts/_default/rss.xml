@@ -1,23 +1,21 @@
 {{- $pages := slice -}}
-{{- if .IsHome -}}
-  {{- range .Sections -}}
-    {{- $pages = $pages | append (where .Pages "Params.hidden" "ne" "true") -}}
-  {{- end -}}
-  {{- $pages = $pages.ByWeight -}}
-{{- else if eq .Layout "series" -}}
-  {{- partial "series-pages.html" . -}}
+{{- if .Params.series -}}
+  {{- partial "util/collect-series-pages.html" . -}}
   {{- $pages = .Scratch.Get "pages" -}}
-{{- else -}}
+{{- else if eq .Kind "term" -}}
   {{- $pages = where .Pages "Params.hidden" "ne" "true" -}}
+{{- else -}}
+  {{- $pages = where .Site.Home.Pages "Params.hidden" "ne" "true" -}}
 {{- end -}}
-{{ `<?xml version="1.0" encoding="utf-8" standalone="yes"?>` | safeHTML }}
+
+{{- `<?xml version="1.0" encoding="utf-8" standalone="yes"?>` | safeHTML -}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{- partial "title.html" . -}}</title>
+    <title>{{- partial "util/title.html" . -}}</title>
     <link>{{ .Permalink }}</link>
     <generator>Hugo -- gohugo.io</generator>
     <language>{{ .Site.LanguageCode }}</language>
-    <copyright>{{ `<![CDATA[` | safeHTML }}{{- partial "license.html" . -}}]]></copyright>
+    <copyright>{{ `<![CDATA[` | safeHTML }}{{- partial "util/license.html" . -}}]]></copyright>
     {{- if not .Date.IsZero -}}
     <lastBuildDate>{{ now.Format "2006-01-02 15:04:05" }}</lastBuildDate>
     {{- end -}}
@@ -30,7 +28,7 @@
         <link>{{ .Permalink }}</link>
         <pubDate>{{ .Lastmod.Format "2006-01-02" }}</pubDate>
         <guid>{{ .Permalink }}</guid>
-        <description>{{ `<![CDATA[` | safeHTML }}{{- partial "summary.html" . -}}]]></description>
+        <description>{{ `<![CDATA[` | safeHTML }}{{- partial "util/summary.html" . -}}]]></description>
       </item>
     {{- end -}}
   </channel>
