@@ -99,6 +99,10 @@ main {
   margin: 0;
 }
 
+.gsc-is-fixed-width {
+  font-family: $font-mono;
+}
+
 /*! Dark mode */
 @media (prefers-color-scheme: dark) {
   /*! MIT License
