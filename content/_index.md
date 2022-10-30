@@ -4,41 +4,42 @@ hideDate: true
 layout: single
 ---
 
+*……睁开双眼，你发现自己站在一片看不到边际的水面上。水深不过脚踝，水底的不明材质传来奇异的柔软触感。深邃的夜空中一轮圆月高悬，苍白的月光普照着水面。前方不远处，一个狼头人身的生物静静盘坐在水中，听见你的到来而起身向你问候……*
+
+欢迎！你可以叫我帕勒。
+
+*他将这个名字读得特别清晰，试图教会你它的正确读音：<ipa>[pʰä˦ɾo̞ᵝ˩]</ipa>。*
+
+这片空间存放了我写的一些东西，如果你是为此而来，可以点击[右上角](#navbar)进入文章列表。不过，既然来了，不如听我介绍一下自己？
+
 ## 关于我
 
-你好！这里是帕勒。很高兴认识你，请多指教！
+*看到你同意的眼神，他继续说道……*
 
-是大学生，在北京某高校上学，同城可以面基！
+如你所见，我是一只灰狼兽人。而在现实中，我是在北京上学的一个大学生。
 
-这个网站是我的博客，存放了我的[所有文章](/list/)。
+我大概是那种典型的样样通、样样不精的人。我的专业是 CS，本身也是我的一个爱好。其中我最感兴趣的领域是 PLT，[编程语言理论](https://en.wikipedia.org/wiki/Programming_language_theory)。但我最近的注意力并不在这上面。这段时间我投入最多的爱好是跑团，或者叫 TRPG，[桌面角色扮演游戏](https://en.wikipedia.org/wiki/Tabletop_role-playing_game)，也就是一群人扮演虚拟角色，在主持人描述的世界里探索和冒险的游戏。
 
-是会一点编程的蒟蒻，会在这个博客的[研究](/research/)栏目里发一点技术文章。目前的主要兴趣方向是 [PLT](https://en.wikipedia.org/wiki/Programming_language_theory)。我的 GitHub：[@refparo](https://github.com/refparo)。
+除此之外，我感兴趣的还有文学、音乐、语言学、哲学，等等。所以你可以在文章列表里看到各种各样不同主题的内容，比如[小说](tag/小说/)、[人造语言教程](conlang-tutorial/)，当然还有一些[技术类文章](/tag/技术/)。如果你也对这些中的某个感兴趣，我们都可以交个朋友。
 
-对文学感兴趣，会写一点短文、小说，发在[创作](/creation/)栏目里，虽然构思和文笔都很入门。
+大概就是这样。你可以在这些地方找到我：
 
-是一只灰狼兽人。[毛绒绒](https://en.wikipedia.org/wiki/Furry_fandom)[最棒了](https://www.bilibili.com/video/BV1H34y1U7Hb/)！GitHub 头像就是我的兽设图。前面提到的小说很多都与 Furry 有关。
-
-喜欢听独立音乐、实验音乐，喜欢给音乐[分类](https://rateyourmusic.com/list/TheScientist/rym-ultimate-box-set/)，也想尝试制作音乐。爱玩的游戏主要是 osu!、Minecraft 和一些单机游戏，但也想和人一起玩！这是我的 osu!：[Problem233](https://osu.ppy.sh/users/5931775)，还有我的 Steam：[Paro](https://steamcommunity.com/id/refparo)。
-
-了解一点语言学，会[人造语言](https://en.wikipedia.org/wiki/Constructed_language)。我的名字 Paro 就是按我在造的一门语言拼读的，IPA 是 <ipa>[pʰä˦ɾo̞ᵝ˩]</ipa>，英语音标近似 <ipa>/ˈpalo/</ipa>。
-
-最近还在了解哲学，已经读了西方哲学史，现在在读存在主义。还了解一点语言哲学和科学哲学。实际上，几乎所有的学科知识我都感兴趣，如果写了这些杂学的文章也会发在研究栏目里。所以，欢迎讨论任何话题！
-
-最后，还可以在这些地方找到我：
-
+- E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
+- GitHub：[@refparo](https://github.com/refparo)
 - QQ：[Paro](https://qm.qq.com/cgi-bin/qm/qr?k=hFVmcaXe8aYvA1rkKg_D0JQode5z-D_C&noverify=0)
+- Steam：[Paro](https://steamcommunity.com/id/refparo)
 - Telegram: [Paro](https://t.me/refparo)
-- 知乎：[@Paro](https://zhihu.com/people/paro_ci)
 - Twitter：[@refparo](https://twitter.com/refparo)
 - 微博：[@ref_Paro](https://weibo.com/refparo)
-- E-mail：[ref.paro@outlook.com](mailto:ref.paro@outlook.com)
+- 知乎：[@Paro](https://zhihu.com/people/paro_ci)
 
 ## 站史
 
-这是这个小站的历史：
+*你问起这个地方的历史，于是面前的灰狼向你一一道来。*
 
 | 时间 | 事件 |
 |-|-|
+| 2022 年 10 月 30 日 | 网站结构重构 |
 | 2022 年 &numsp;7 月 27 日 | 大规模调整网站排版，采用[赫蹏](https://github.com/sivan/heti)的排版工具 |
 | 2021 年 &numsp;6 月 17 日 | 启用新域名：`paro.one` |
 | 2021 年 &numsp;2 月 &numsp;8 日 | 网站模板和样式重构 |
@@ -56,6 +57,8 @@ layout: single
 
 ## 友情链接
 
-欢迎交换友链！
+*灰狼将你带到了几束淡淡的光柱中间。*
+
+我的朋友不多，有像这样的空间的就更少了。这里有一些传送门可以通往他们的空间。如果你也想设立一个的话，可以给我留言。
 
 - [swwind](https://swwind.me/)
