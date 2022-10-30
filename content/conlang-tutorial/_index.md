@@ -3,7 +3,7 @@ title: 人造语言综合教程
 tag: [人造语言]
 layout: single
 series: true
-alias: [/creation/conlang-tutorial/]
+aliases: [/research/conlang-tutorial/]
 cascade:
   license:
     name: CC BY-SA 4.0
