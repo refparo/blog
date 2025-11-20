@@ -3,9 +3,8 @@ use std::path::Path;
 use std::sync::Arc;
 
 use blog::BlogWorld;
-use typst::layout::PagedDocument;
 use typst::syntax::{FileId, VirtualPath};
-use typst_pdf::PdfOptions;
+use typst_html::HtmlDocument;
 
 fn main() {
   let world = BlogWorld::new();
@@ -13,9 +12,10 @@ fn main() {
     None,
     VirtualPath::new(Path::new("test.typ").canonicalize().unwrap()),
   ));
-  let document = typst::compile::<PagedDocument>(&world_with_main)
+  let document = typst::compile::<HtmlDocument>(&world_with_main)
     .output
     .unwrap();
-  let buf = typst_pdf::pdf(&document, &PdfOptions::default()).unwrap();
-  write(Path::new("out.pdf"), buf).unwrap();
+  // instead of stripping the html, we should template the html inside Typst.
+  let buf = typst_html::html(&document).unwrap();
+  write(Path::new("out.html"), buf).unwrap();
 }

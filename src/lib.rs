@@ -8,7 +8,7 @@ use typst::foundations::{Bytes, Datetime};
 use typst::syntax::{FileId, Source};
 use typst::text::{Font, FontBook};
 use typst::utils::LazyHash;
-use typst::{Library, LibraryExt, World};
+use typst::{Feature, Library, LibraryExt, World};
 use typst_kit::fonts::{FontSearcher, FontSlot, Fonts};
 
 pub struct BlogWorld {
@@ -21,7 +21,9 @@ pub struct BlogWorld {
 
 impl BlogWorld {
   pub fn new() -> BlogWorld {
-    let library = Library::default();
+    let library = Library::builder()
+      .with_features([Feature::Html].into_iter().collect())
+      .build();
     let Fonts { book, fonts } = FontSearcher::new().search();
     BlogWorld {
       library: LazyHash::new(library),
