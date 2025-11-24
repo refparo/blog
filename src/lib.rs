@@ -192,9 +192,8 @@ impl FileSlot {
     self.accessed = true;
     if self.stale {
       let id = self.id();
-      let result = <T as Cacheable>::read(id)?;
+      let result = <T as Cacheable>::update_cache(&mut self.cache, id)?;
       self.stale = false;
-      self.cache = result.clone().to_cache(id);
       Ok(result)
     } else {
       Cacheable::from_cache(&mut self.cache)
@@ -215,6 +214,7 @@ trait Cacheable: Clone + Sized {
   fn read(id: FileId) -> FileResult<Self>;
   fn to_cache(self, id: FileId) -> FileSlotCache;
   fn from_cache(cache: &mut FileSlotCache) -> FileResult<Self>;
+  fn update_cache(cache: &mut FileSlotCache, id: FileId) -> FileResult<Self>;
 }
 
 impl Cacheable for Source {
@@ -249,6 +249,32 @@ impl Cacheable for Source {
       }
     }
   }
+
+  fn update_cache(cache: &mut FileSlotCache, id: FileId) -> FileResult<Self> {
+    match cache {
+      FileSlotCache::Source(source) => {
+        let path = id.vpath().as_rooted_path();
+        let buf =
+          read_to_string(path).map_err(|err| FileError::from_io(err, path))?;
+        source.replace(&buf);
+        Ok(source.clone())
+      }
+      FileSlotCache::Both(source, _) => {
+        let mut source = source.clone();
+        let path = id.vpath().as_rooted_path();
+        let buf =
+          read_to_string(path).map_err(|err| FileError::from_io(err, path))?;
+        source.replace(&buf);
+        *cache = FileSlotCache::Source(source.clone());
+        Ok(source)
+      }
+      FileSlotCache::Bytes(_, _) => {
+        let result = Self::read(id)?;
+        *cache = Self::to_cache(result.clone(), id);
+        Ok(result)
+      }
+    }
+  }
 }
 
 impl Cacheable for Bytes {
@@ -273,5 +299,11 @@ impl Cacheable for Bytes {
         Ok(bytes)
       }
     }
+  }
+
+  fn update_cache(cache: &mut FileSlotCache, id: FileId) -> FileResult<Self> {
+    let result = Self::read(id)?;
+    *cache = Self::to_cache(result.clone(), id);
+    Ok(result)
   }
 }
