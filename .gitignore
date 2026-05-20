@@ -1,1 +1,4 @@
+# Rust compilation output
 /target
+# generated blog output
+/dist

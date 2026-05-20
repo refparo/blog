@@ -1,44 +1,52 @@
-use std::fs::write;
-use std::io::BufRead;
+use std::fs::{create_dir_all, write};
 use std::path::Path;
-use std::sync::Arc;
 
-use blog::{BlogMain, BlogWorld};
-use typst::World;
+use blog::BlogWorld;
+use typst::Document;
+use typst::foundations::{Dict, Label, NativeElement, Repr, Selector};
+use typst::introspection::MetadataElem;
 use typst::syntax::{FileId, VirtualPath};
 use typst_html::HtmlDocument;
 
 fn main() {
-  let world = Arc::new(BlogWorld::new());
-  let main_ids = ["entry0.typ", "entry1.typ"].map(|filename| {
-    FileId::new(
-      None,
-      VirtualPath::new(Path::new(filename).canonicalize().unwrap()),
-    )
-  });
-  let mut mains = main_ids.map(|id| BlogMain::new(world.clone(), id));
-  let stdin = std::io::stdin();
-  loop {
-    for main in mains.iter() {
-      let document = typst::compile::<HtmlDocument>(&main).output.unwrap();
-      let buf = typst_html::html(&document).unwrap();
-      write(
-        main
-          .main()
-          .vpath()
-          .as_rooted_path()
-          .with_added_extension("html"),
-        buf,
-      )
+  let content_path = Path::new("content");
+  let dist_path = Path::new("dist");
+  let metadata_label =
+    Selector::Label(Label::construct("metadata".into()).unwrap());
+
+  let world = BlogWorld::new();
+  let main_ids = ["content/posts/test1.typ", "content/posts/test2/index.typ"]
+    .map(|filename| FileId::new(None, VirtualPath::new(filename)));
+  for main in main_ids {
+    let input_path = main.vpath().as_rootless_path();
+    let document = world
+      .compile::<HtmlDocument>(main, Dict::new())
+      .output
       .unwrap();
+    let metadata = document.introspector().query_unique(&metadata_label);
+    if let Ok(metadata) = metadata {
+      if metadata.func() == MetadataElem::ELEM {
+        let metadata = metadata.field(MetadataElem::value.index()).unwrap();
+        println!(
+          "Found metadata in {}: {}",
+          input_path.display(),
+          metadata.repr()
+        )
+      } else {
+        println!(
+          "Found invalid metadata in {}: {}",
+          input_path.display(),
+          metadata.repr()
+        )
+      }
+    } else {
+      println!("Didn't find any metadata in {}", input_path.display())
     }
-    let mut buf = String::new();
-    if let Ok(0) | Err(_) = stdin.lock().read_line(&mut buf) {
-      break;
-    }
-    world.mark_sweep_reset(main_ids);
-    for main in mains.iter_mut() {
-      main.reset();
-    }
+    let buf = typst_html::html(&document).unwrap();
+    let output_file = dist_path
+      .join(input_path.strip_prefix(content_path).unwrap())
+      .with_extension("html");
+    create_dir_all(output_file.parent().unwrap()).unwrap();
+    write(output_file, buf).unwrap();
   }
 }
