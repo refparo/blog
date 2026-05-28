@@ -133,6 +133,7 @@ dependencies = [
  "typst",
  "typst-html",
  "typst-kit",
+ "walkdir",
 ]
 
 [[package]]

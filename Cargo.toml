@@ -9,6 +9,7 @@ time = { version = "0.3.47", features = ["local-offset"] }
 typst = "0.14.2"
 typst-html = "0.14.2"
 typst-kit = "0.14.2"
+walkdir = "2.5.0"
 
 [profile.release]
 lto = "fat"

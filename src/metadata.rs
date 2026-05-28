@@ -1,15 +1,17 @@
 use std::sync::LazyLock;
 
-use anyhow::{Result, anyhow};
+use anyhow::anyhow;
 use typst::Document;
 use typst::foundations::{Dict, Label, Selector, Value};
 use typst::introspection::MetadataElem;
 
+use crate::config::METADATA_LABEL_NAME;
+
 static METADATA_SELECTOR: LazyLock<Selector> = LazyLock::new(|| {
-  Selector::Label(Label::construct("metadata".into()).unwrap())
+  Selector::Label(Label::construct(METADATA_LABEL_NAME.into()).unwrap())
 });
 
-pub fn extract_metadata<D: Document>(document: &D) -> Result<Dict> {
+pub fn extract_metadata<D: Document>(document: &D) -> anyhow::Result<Dict> {
   let elements = document.introspector().query(&METADATA_SELECTOR);
   if elements.len() > 1 {
     return Err(anyhow!("Found multiple elements with label <metadata>"));
