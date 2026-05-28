@@ -10,19 +10,19 @@ use typst::utils::LazyHash;
 use typst::{Library, World};
 use typst_html::HtmlDocument;
 
-use crate::cache::Cacheable;
-use crate::compiler::{BlogCompilation, BlogCompiler, BlogWorld};
+use crate::cache::FileCache;
+use crate::compilation::BlogCompilation;
 use crate::metadata::extract_metadata;
 
 pub struct BlogDevServer {
-  inner: BlogCompiler,
+  cache: FileCache,
   // outputs: Mutex<HashMap<FileId, DevCompileOutput>>,
 }
 
 impl BlogDevServer {
   pub fn new() -> Self {
     Self {
-      inner: BlogCompiler::new(),
+      cache: FileCache::new(),
       // outputs: Mutex::new(HashMap::new()),
     }
   }
@@ -39,12 +39,6 @@ impl BlogDevServer {
   }
 }
 
-impl BlogWorld for BlogDevServer {
-  fn access<T: Cacheable>(&self, id: FileId) -> FileResult<T> {
-    self.inner.access(id)
-  }
-}
-
 pub struct DevCompileOutput {
   pub content: String,
   pub metadata: Option<Dict>,
@@ -52,15 +46,15 @@ pub struct DevCompileOutput {
 }
 
 struct BlogDevCompilation<'a> {
-  inner: BlogCompilation<'a, BlogDevServer>,
+  inner: BlogCompilation<'a>,
   dependencies: Mutex<HashSet<FileId>>,
 }
 
 impl<'a> BlogDevCompilation<'a> {
-  fn new(world: &'a BlogDevServer, main: FileId, inputs: Dict) -> Self {
+  fn new(server: &'a BlogDevServer, main: FileId, inputs: Dict) -> Self {
     Self {
       inner: BlogCompilation::new(
-        world,
+        &server.cache,
         main,
         inputs,
         OffsetDateTime::now_local().unwrap(),
