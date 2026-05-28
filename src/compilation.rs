@@ -1,13 +1,13 @@
 use time::{OffsetDateTime, UtcOffset};
 use typst::diag::FileResult;
-use typst::foundations::{Bytes, Datetime, Dict};
+use typst::foundations::{Bytes, Datetime, Dict, Duration};
 use typst::syntax::{FileId, Source};
 use typst::text::{Font, FontBook};
 use typst::utils::LazyHash;
 use typst::{Feature, Library, LibraryExt, World};
 
 use crate::cache::{FileCache, FileCacheSlot};
-use crate::fonts;
+use crate::fonts::FONTS;
 
 pub struct BlogCompilation<'a, S = FileCacheSlot> {
   cache: &'a FileCache<S>,
@@ -46,7 +46,7 @@ where
   }
 
   fn book(&self) -> &LazyHash<FontBook> {
-    fonts::book()
+    FONTS.book()
   }
 
   fn main(&self) -> FileId {
@@ -62,14 +62,14 @@ where
   }
 
   fn font(&self, index: usize) -> Option<Font> {
-    fonts::font(index)
+    FONTS.font(index)
   }
 
-  fn today(&self, offset: Option<i64>) -> Option<Datetime> {
+  fn today(&self, offset: Option<Duration>) -> Option<Datetime> {
     let date = if let Some(offset) = offset {
       self
         .now
-        .to_offset(UtcOffset::from_hms(offset as i8, 0, 0).ok()?)
+        .to_offset(UtcOffset::from_whole_seconds(offset.seconds() as i32).ok()?)
         .date()
     } else {
       self.now.date()

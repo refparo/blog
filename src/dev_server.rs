@@ -3,7 +3,7 @@ use std::sync::Mutex;
 
 use time::OffsetDateTime;
 use typst::diag::FileResult;
-use typst::foundations::{Bytes, Datetime, Dict};
+use typst::foundations::{Bytes, Datetime, Dict, Duration};
 use typst::syntax::{FileId, Source};
 use typst::text::{Font, FontBook};
 use typst::utils::LazyHash;
@@ -91,7 +91,7 @@ impl<'a> World for BlogDevCompilation<'a> {
     self.inner.font(index)
   }
 
-  fn today(&self, offset: Option<i64>) -> Option<Datetime> {
+  fn today(&self, offset: Option<Duration>) -> Option<Datetime> {
     self.inner.today(offset)
   }
 }

@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 use std::fs::{read, read_to_string};
+use std::path::Path;
 use std::sync::Mutex;
 
 use typst::diag::{FileError, FileResult};
@@ -66,7 +67,7 @@ pub trait Cacheable: Clone + Sized {
 
 impl Cacheable for Source {
   fn read(id: FileId) -> FileResult<Self> {
-    let path = id.vpath().as_rootless_path();
+    let path = Path::new(id.vpath().get_without_slash());
     let buf =
       read_to_string(path).map_err(|err| FileError::from_io(err, path))?;
     Ok(Source::new(id, buf))
@@ -98,7 +99,7 @@ impl Cacheable for Source {
 
 impl Cacheable for Bytes {
   fn read(id: FileId) -> FileResult<Self> {
-    let path = id.vpath().as_rooted_path();
+    let path = Path::new(id.vpath().get_without_slash());
     let buf = read(path).map_err(|err| FileError::from_io(err, path))?;
     Ok(Bytes::new(buf))
   }

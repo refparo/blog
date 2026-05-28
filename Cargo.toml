@@ -6,9 +6,9 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.102"
 time = { version = "0.3.47", features = ["local-offset"] }
-typst = "0.14.2"
-typst-html = "0.14.2"
-typst-kit = "0.14.2"
+typst = { git = "https://github.com/typst/typst.git" }
+typst-html = { git = "https://github.com/typst/typst.git" }
+typst-kit = { git = "https://github.com/typst/typst.git", features = ["emit-diagnostics", "scan-fonts"] }
 walkdir = "2.5.0"
 
 [profile.release]
