@@ -1,0 +1,16 @@
+.audio-clip + button {
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 0.25em;
+  border-radius: 1em;
+  border: 1px solid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: smaller;
+  font-family: var(--font-symbols);
+
+  user-select: none;
+}

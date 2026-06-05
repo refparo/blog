@@ -1,0 +1,10 @@
+{
+  "lsp": {
+    "tinymist": {
+      "settings": {
+        "typstExtraArgs": ["--features=html,bundle", "--font-path=fonts"],
+        "exportTarget": "bundle"
+      }
+    }
+  }
+}

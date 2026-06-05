@@ -1,0 +1,6 @@
+[package]
+name = "blog"
+version = "0.0.0"
+entrypoint = "bundle.typ"
+authors = ["Paro"]
+description = "Paro's blog"

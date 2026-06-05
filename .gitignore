@@ -1,0 +1,9 @@
+# tooling
+/.bwraprc
+/node_modules
+
+# downloaded assets
+/fonts
+
+# generated blog output
+/dist

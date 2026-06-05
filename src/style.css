@@ -1,0 +1,680 @@
+@layer reset {
+  /* CSS Reset */
+  /* See https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  *:not(dialog) {
+    margin: 0;
+  }
+
+  :root {
+    line-height: 1.5;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+}
+
+@layer general {
+  /* Generally applicable styles */
+
+  /* Color scheme */
+
+  :root {
+    color-scheme: dark;
+    --fg-text: oklch(0.85 0.01 210);
+    --fg-text-low: oklch(0.7 0.02 210);
+    --fg-link: oklch(0.7 0.08 210);
+    --fg-link-hover: oklch(0.55 0.2 210);
+    --fg-border: oklch(0.3 0.01 210);
+    --bg-fill: oklch(0.21 0.04 210);
+    --bg-fill-low: oklch(0.19 0.04 210);
+    --bg-highlight: oklch(0.35 0.04 210 / 50%);
+    --bg-select: oklch(0.5 0.1 210 / 50%);
+    --bg-code: #002b36;
+    --bg-normal: oklch(0.17 0.05 210);
+  }
+
+  body {
+    background: var(--bg-normal);
+    color: var(--fg-text);
+  }
+
+  ::selection {
+    background: var(--bg-select);
+    color: var(--fg-text);
+  }
+
+  :target {
+    background-color: var(--bg-highlight);
+  }
+
+  /* Typography */
+
+  :root {
+    --font-symbols:
+      "Twemoji", "Twemoji Mozilla", "Apple Color Emoji", "Segoe UI Emoji",
+      "Noto Color Emoji", "Noto Sans Math", "Noto Sans Symbols",
+      "Noto Sans Symbols 2";
+    --font-cjk: "Source Han Serif VF", var(--font-symbols), serif;
+    --font-cjk-sans: "Source Han Sans VF", var(--font-symbols), serif;
+
+    --font-latn: "Source Serif VF", var(--font-symbols), serif;
+
+    --font-arab:
+      "Source Serif VF", "Noto Naskh Arabic", var(--font-symbols), serif;
+    --font-deva:
+      "Source Serif VF", "Noto Serif Devanagari", var(--font-symbols), serif;
+    --font-geor:
+      "Source Serif VF", "Noto Serif Georgian", var(--font-symbols), serif;
+
+    --font-ipa: Charis, serif;
+
+    --font-code:
+      "Fira Code VF", "Source Han Sans VF", var(--font-symbols), monospace;
+  }
+
+  body {
+    font-synthesis-style: none;
+    text-autospace: ideograph-alpha ideograph-numeric punctuation replace;
+    text-spacing-trim: trim-start;
+    text-spacing-trim: trim-both;
+    text-underline-offset: 0.2em;
+  }
+
+  @supports not (text-spacing-trim: trim-start) {
+    body {
+      font-feature-settings: "chws";
+    }
+  }
+
+  [lang|="zh"] {
+    font-family: var(--font-cjk);
+
+    & strong,
+    strong:is(&) {
+      font-family: var(--font-cjk-sans);
+    }
+  }
+
+  [lang|="ja"] {
+    font-family: var(--font-cjk);
+  }
+
+  [lang|="ko"] {
+    font-family: var(--font-cjk);
+  }
+
+  [lang|="en"],
+  [lang|="ami"],
+  [lang|="el"],
+  [lang|="nv"],
+  [lang|="tli"] {
+    font-family: var(--font-latn);
+  }
+
+  [lang|="ar"],
+  [lang|="sd"] {
+    font-family: var(--font-arab);
+  }
+
+  [lang|="hi"] {
+    font-family: var(--font-deva);
+  }
+
+  [lang|="ka"] {
+    font-family: var(--font-geor);
+  }
+
+  [lang$="-fonipa"],
+  [lang*="-fonipa-"] {
+    font-family: var(--font-ipa);
+    font-style: normal;
+  }
+
+  code,
+  kbd {
+    font-family: var(--font-code);
+    text-autospace: no-autospace;
+    text-spacing-trim: normal;
+  }
+
+  /* Inline elements */
+
+  a {
+    color: var(--fg-link);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--fg-link-hover);
+      text-decoration: underline;
+    }
+  }
+
+  code,
+  kbd {
+    border-radius: 0.4em;
+    padding: 0 0.125em;
+    background-color: var(--bg-code);
+    white-space: pre-wrap;
+  }
+
+  em {
+    font-family: var(--font-latn);
+  }
+
+  rt {
+    font-size: 66.67%;
+  }
+
+  time,
+  .term {
+    font-style: normal;
+    text-decoration: underline dotted;
+
+    .meta &,
+    #meta & {
+      text-decoration: none;
+    }
+
+    &[title] {
+      cursor: help;
+    }
+  }
+
+  u {
+    text-decoration: underline wavy;
+  }
+
+  .fn-ref {
+    font-size: calc(5 / 6 * 100%);
+    vertical-align: super;
+  }
+
+  /* Block elements */
+
+  aside,
+  blockquote,
+  div[role="note"],
+  figure:not([data-kind="image"], [data-kind="table"], [data-kind="raw"]) {
+    margin-left: 1em;
+    border-left: 3px solid var(--fg-border);
+    padding-left: calc(1em - 3px);
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  :where(
+      aside,
+      blockquote,
+      div[role="note"],
+      figure:not([data-kind="image"], [data-kind="table"], [data-kind="raw"]),
+      li
+    )
+    > :is(
+      p,
+      ol,
+      ul,
+      pre,
+      img[style*="display: block"],
+      table,
+      figure,
+      figcaption
+    ):not(:last-child) {
+    margin-bottom: 1rlh;
+  }
+
+  li,
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  figcaption {
+    font-family: var(--font-cjk-sans);
+    font-weight: 500;
+
+    figure:is([data-kind="image"], [data-kind="table"], [data-kind="raw"]) > & {
+      font-size: smaller;
+    }
+
+    figure[data-kind="table"] > & {
+      margin-bottom: 0.25rlh;
+      text-align: center;
+    }
+  }
+
+  hr {
+    border: none;
+    text-align: center;
+
+    &::after {
+      display: inline-block;
+      content: "* * *";
+      word-spacing: 0.5em;
+      transform: translateY(0.15em);
+    }
+  }
+
+  img[style*="display: block"] {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5em;
+  }
+
+  pre {
+    border-radius: 0.4em;
+    padding: 0.5lh 1em;
+    background-color: var(--bg-code);
+    color: #93a1a1;
+    overflow-wrap: anywhere;
+
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 1em;
+
+    > code {
+      display: contents;
+
+      > .ln {
+        text-align: right;
+        user-select: none;
+        color: #495050;
+      }
+    }
+
+    em {
+      font-family: var(--font-code);
+    }
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+    border-collapse: collapse;
+
+    thead > tr {
+      border-bottom: 3px solid var(--fg-border);
+    }
+
+    tr {
+      border-bottom: 1px solid var(--fg-border);
+
+      th {
+        padding: calc(0.25lh - 1.5px) 0.25lh;
+        text-align: left;
+      }
+
+      td {
+        padding: calc(0.25lh - 0.5px) 0.25lh;
+      }
+    }
+  }
+}
+
+@layer layout {
+  /* Layout styles */
+  /* See https://www.joshwcomeau.com/css/full-bleed/ */
+
+  :root {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+  }
+
+  body {
+    margin: 0.25lh 0;
+
+    display: grid;
+    --widescreen: true;
+    --width-progress: calc(
+      0.6 - progress(100vw, calc(30em / 0.6 + 3em), calc(42em / 0.5 + 3em)) *
+        0.1
+    );
+    --content-width: min(
+      42em,
+      round(down, calc((100vw - 3em) * var(--width-progress)), 1em)
+    );
+    grid-template:
+      ". breadcrumb . . ."
+      ". header header header ."
+      [content-row] ". . . outline ."
+      ". footer . . ."
+      / 1fr
+      [content-col]
+      var(--content-width)
+      1em
+      min(
+        21em,
+        round(down, calc((100vw - var(--content-width) - 3em) / 2), 1em)
+      )
+      1fr;
+    column-gap: 0.5em;
+
+    @media (max-width: calc(30em / 0.6 + 3em)) {
+      --widescreen: false;
+      --width-progress: calc(
+        1 - progress(100vw, calc(21em / 0.9 + 2em), calc(30em / 0.6 + 3em)) *
+          0.2
+      );
+      grid-template:
+        ". breadcrumb ."
+        ". header ."
+        "outline outline outline"
+        [content-row] ". . ."
+        ". footer ."
+        / 1fr
+        [content-col]
+        round(down, calc((100vw - 3em) * var(--width-progress) + 2em), 1em)
+        1fr;
+    }
+  }
+
+  /* Breadcrumb */
+  #breadcrumb {
+    grid-area: breadcrumb;
+
+    > * {
+      display: inline-block;
+    }
+
+    > * + * {
+      margin-left: 0.5em;
+    }
+
+    #moon {
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      background: radial-gradient(
+        circle at 34% 32%,
+        #f4f8fb 0%,
+        #e0eaf1 56%,
+        #b4c6d4 100%
+      );
+      box-shadow:
+        0 0 9px 2px rgba(210, 230, 245, 0.3),
+        0 0 27px 9px rgba(145, 182, 210, 0.12);
+      vertical-align: -8%;
+    }
+  }
+
+  /* Main */
+  main {
+    display: contents;
+  }
+
+  /* Header */
+  header {
+    grid-area: header;
+    margin: 3rlh 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+
+  #meta {
+    color: var(--fg-text-low);
+    font-size: smaller;
+  }
+
+  /* Outline */
+  #outline {
+    grid-area: outline;
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+    border-block: 2px solid var(--fg-border);
+    background: oklch(from var(--bg-normal) l c h / 80%);
+    backdrop-filter: blur(0.5em);
+
+    details {
+      max-height: calc(100vh - 4rem - 4px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    summary {
+      display: block;
+    }
+
+    h2 {
+      padding: 0.25rlh 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: large;
+      font-family: var(--font-cjk-sans);
+    }
+
+    h2::after {
+      font-size: medium;
+      content: "◀";
+    }
+
+    details[open] h2::after {
+      content: "▼";
+    }
+
+    details[open]::details-content {
+      overflow-y: auto;
+      padding: 0 0.5em 0.25rlh;
+    }
+
+    @media (max-width: calc(30em / 0.6 + 3em)) {
+      top: -2px;
+      margin-bottom: 1rlh;
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-auto-flow: column;
+
+      details {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: subgrid;
+
+        &::details-content {
+          grid-column: content-col;
+        }
+      }
+
+      summary {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: subgrid;
+
+        h2 {
+          grid-column: 2;
+        }
+      }
+    }
+
+    ol {
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding-left: calc(attr(data-level em) - 1em);
+      }
+    }
+  }
+
+  :target {
+    scroll-margin: 2rem;
+
+    @media (max-width: calc(30em / 0.6 + 3em)) {
+      scroll-margin: 3.5rem;
+    }
+  }
+
+  /* Prose */
+  .prose {
+    grid-row: content-row;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+
+    > * {
+      grid-column: content-col;
+    }
+    > *:not(:last-child) {
+      margin-bottom: 1rlh;
+    }
+    > :is(h2, h3, h4, h5, h6):not(:last-child) {
+      margin-bottom: 0.5rlh;
+    }
+  }
+
+  /* Listing */
+  #filter-container {
+    margin-bottom: 0.5rlh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #filter {
+    border-radius: 0.4em;
+    padding-left: 0.3em;
+    font-weight: normal;
+    font-size: small;
+
+    a {
+      border-radius: 0 0.4em 0.4em 0;
+      padding: 0 0.125em;
+
+      &:hover {
+        background-color: var(--bg-highlight);
+      }
+
+      svg {
+        vertical-align: center;
+      }
+    }
+  }
+
+  .listing {
+    padding: 0;
+
+    > li {
+      padding: 0.25lh 0.5em;
+      display: grid;
+      grid: auto-flow / auto auto;
+      align-items: center;
+      gap: 0.125lh 1em;
+
+      &:nth-child(odd) {
+        background: var(--bg-fill);
+      }
+
+      &:nth-child(even) {
+        background: var(--bg-fill-low);
+      }
+
+      > .title {
+        justify-self: start;
+        font-family: var(--font-cjk-sans);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      > .meta {
+        justify-self: end;
+        display: flex;
+        gap: 0.5em;
+        color: var(--fg-text-low);
+        font-size: smaller;
+      }
+
+      > .description {
+        grid-column: 1 / -1;
+        font-size: smaller;
+      }
+
+      &:has(> details) {
+        display: block;
+        padding: 0;
+      }
+
+      > details > summary {
+        padding: 0.25rlh 0.5rem;
+        font-family: var(--font-cjk-sans);
+        font-size: smaller;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--fg-text);
+          background-color: var(--bg-highlight);
+        }
+      }
+    }
+  }
+
+  /* Footnotes */
+  #footnotes {
+    font-size: smaller;
+
+    > li > a:last-child {
+      margin-left: 0.5em;
+    }
+  }
+
+  /* Footer */
+  footer {
+    grid-area: footer;
+    margin: 2rlh 0 0;
+    font-size: smaller;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  #copyright {
+    color: var(--fg-text-low);
+  }
+}

@@ -1,0 +1,122 @@
+body {
+  margin-top: 0;
+}
+
+header {
+  margin: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  --scale: calc(
+    min(8rlh + 5rem + 15rlh, 100vh - 10rlh) / (8rlh + 5rem + 15rlh)
+  );
+  width: 100vw;
+  height: calc((8rlh + 5rem + 15rlh) * var(--scale));
+  overflow: hidden;
+}
+
+#sky {
+  grid-column: header;
+  position: relative;
+  left: calc(2.5rem * var(--scale) - 100vw);
+  width: 200vw;
+
+  @media (max-width: calc(30em / 0.6 + 3em)) {
+    grid-column: 1 / -1;
+    inset: 0;
+    margin: 0 -50vw;
+  }
+
+  background:
+    radial-gradient(
+      240px 240px at 50% 30.8%,
+      rgba(175, 206, 230, 0.15) 0%,
+      rgba(120, 158, 190, 0.06) 38%,
+      rgba(65, 100, 130, 0.02) 70%,
+      transparent 100%
+    ),
+    radial-gradient(
+      56% 72% at 50% 32%,
+      rgba(90, 128, 158, 0.11) 0%,
+      rgba(42, 70, 94, 0.04) 52%,
+      transparent 100%
+    ),
+    radial-gradient(125% 102% at 50% 96%, #0b1926 0%, #050c14 54%, #010307 100%);
+}
+
+#moon {
+  position: relative;
+  top: calc(8rlh * var(--scale));
+  margin: auto;
+  width: calc(5rem * var(--scale));
+  height: calc(5rem * var(--scale));
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 64% 36%,
+      rgba(125, 148, 166, 0.32) 0%,
+      rgba(125, 148, 166, 0.14) 24%,
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 36% 62%,
+      rgba(130, 152, 168, 0.25) 0%,
+      rgba(130, 152, 168, 0.1) 22%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 46% 26%,
+      rgba(138, 158, 174, 0.2) 0%,
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 72% 66%,
+      rgba(135, 155, 170, 0.18) 0%,
+      transparent 26%
+    ),
+    radial-gradient(circle at 34% 32%, #f4f8fb 0%, #e0eaf1 56%, #b4c6d4 100%);
+  box-shadow:
+    0 0 18px 4px rgba(210, 230, 245, 0.3),
+    0 0 54px 18px rgba(145, 182, 210, 0.12);
+}
+
+#horizon {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 8%,
+    rgba(110, 155, 185, 0.12) 34%,
+    rgba(180, 218, 238, 0.26) 50%,
+    rgba(110, 155, 185, 0.12) 66%,
+    transparent 92%
+  );
+}
+
+.prose {
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: relative;
+    grid-column: header;
+    z-index: -1;
+    left: calc(2.5rem - 100vw);
+    width: 200vw;
+    height: 6rlh;
+    margin-bottom: -3rlh;
+
+    @media (max-width: calc(30em / 0.6 + 3em)) {
+      grid-column: 1 / -1;
+      inset: 0;
+      margin-inline: -50vw;
+    }
+
+    background: radial-gradient(
+      75% 100% at 50% 0%,
+      rgba(18, 44, 56, 0.36) 0%,
+      transparent 100%
+    );
+  }
+}

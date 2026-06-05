@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Blog: Build",
+    "command": "./blog build"
+  },
+  {
+    "label": "Blog: Clean",
+    "command": "./blog clean"
+  },
+  {
+    "label": "Blog: Watch",
+    "command": "./blog"
+  }
+]

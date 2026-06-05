@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": ["assets/sublime-*"],
+  "jsdoc": true,
+  "printWidth": 80,
+  "quoteProps": "consistent",
+  "sortImports": {
+    "ignoreCase": false
+  }
+}

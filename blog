@@ -1,0 +1,121 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export TYPST_FONT_PATHS="${TYPST_FONT_PATHS:-fonts}"
+export TYPST_IGNORE_SYSTEM_FONTS="${TYPST_IGNORE_SYSTEM_FONTS:-true}"
+export TYPST_FEATURES="${TYPST_FEATURES:-html,bundle}"
+
+format() {
+  npx oxfmt
+  typstyle -i .
+}
+
+prepare-fonts() {
+  local tempdir="$(mktemp -d)"
+  trap "rm -rf '$tempdir'" EXIT
+  typst compile --format=bundle \
+    --input commit=$(git rev-parse HEAD) \
+    --input skip-fonts=true \
+    bundle.typ "$tempdir"
+  find "$tempdir" -type f -exec grep -Iq . {} \; -print0 | xargs -0 cat >| "$tempdir/full-text.txt"
+
+  mkdir -p fonts
+  cd fonts
+  local urls=(
+    -O https://raw.githubusercontent.com/adobe-fonts/source-han-serif/2.003R/Variable/OTC/SourceHanSerif-VF.ttf.ttc
+    -O https://raw.githubusercontent.com/adobe-fonts/source-han-sans/2.005R/Variable/OTC/SourceHanSans-VF.ttf.ttc
+    -O https://raw.githubusercontent.com/adobe-fonts/source-serif/4.005R/VAR/SourceSerif4Variable-Roman.ttf
+    -O https://raw.githubusercontent.com/adobe-fonts/source-serif/4.005R/VAR/SourceSerif4Variable-Italic.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSerifDevanagari/NotoSerifDevanagari-Regular.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSerifGeorgian/NotoSerifGeorgian-Regular.ttf
+    -O https://software.sil.org/downloads/r/charis/Charis-7.000.zip
+    -O https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
+    -O https://github.com/breadgrocery/twemoji-colr/releases/download/v17.0.3/Twemoji.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSansMath/NotoSansMath-Regular.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSansSymbols/NotoSansSymbols-Regular.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSansSymbols/NotoSansSymbols-Medium.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSansSymbols/NotoSansSymbols-Bold.ttf
+    -O https://raw.githubusercontent.com/notofonts/noto-fonts/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf
+  )
+  curl -L -Z -C - "${urls[@]}"
+  unzip -oj Charis-7.000.zip Charis-7.000/Charis-Regular.ttf
+  unzip -oj Fira_Code_v6.2.zip variable_ttf/FiraCode-VF.ttf
+
+  [[ ! -e build/SourceHanSerif-VF.ttf.ttc || ! -e build/SourceHanSans-VF.ttf.ttc ]] \
+  && uvx --from chws-tool add-chws SourceHanSerif-VF.ttf.ttc SourceHanSans-VF.ttf.ttc
+
+  mkdir -p subsets
+  local files=(
+    SourceSerif4Variable-Roman.ttf
+    SourceSerif4Variable-Italic.ttf
+    NotoNaskhArabic-Regular.ttf
+    NotoSerifDevanagari-Regular.ttf
+    NotoSerifGeorgian-Regular.ttf
+    Charis-Regular.ttf
+    FiraCode-VF.ttf
+    Twemoji.ttf
+    NotoSansMath-Regular.ttf
+    NotoSansSymbols-Regular.ttf
+    NotoSansSymbols-Medium.ttf
+    NotoSansSymbols-Bold.ttf
+    NotoSansSymbols2-Regular.ttf
+  )
+  for f in "${files[@]}"; do
+    [[ -e subsets/$f ]] && continue
+    hb-subset $f --text-file "$tempdir/full-text.txt" --output-file subsets/$f
+    woff2_compress subsets/$f
+  done
+
+  local files=(
+    build/SourceHanSerif-VF.ttf.ttc
+    build/SourceHanSans-VF.ttf.ttc
+  )
+  for f in "${files[@]}"; do
+    [[ -e subsets/$(basename -s .ttc $f) ]] && continue
+    hb-subset $f --face-index 2 --text-file "$tempdir/full-text.txt" --output-file subsets/$(basename -s .ttc $f)
+    woff2_compress subsets/$(basename -s .ttc $f)
+  done
+}
+
+build() {
+  clean
+  typst compile --format=bundle \
+    --input commit=$(git rev-parse HEAD) \
+    bundle.typ dist
+}
+
+watch() {
+  local tempdir="$(mktemp -d)"
+  trap "rm -rf '$tempdir'" EXIT
+  typst watch --format=bundle \
+    --input commit=$(git rev-parse HEAD) \
+    bundle.typ "$tempdir"
+}
+
+clean() {
+  rm -rf dist
+}
+
+case "${1:-watch}" in
+  format)
+    format
+    ;;
+  prepare-fonts)
+    prepare-fonts
+    ;;
+  build)
+    build
+    ;;
+  watch)
+    watch
+    ;;
+  clean)
+    clean
+    ;;
+  *)
+    echo "Usage: $0 {format|prepare-fonts|build|watch|clean}" >&2
+    exit 1
+    ;;
+esac

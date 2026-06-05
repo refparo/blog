@@ -1,0 +1,6 @@
+[submodule "assets/sublime-syntax-idris2"]
+	path = assets/sublime-syntax-idris2
+	url = https://github.com/buzden/sublime-syntax-idris2.git
+[submodule "assets/sublime-legacy-color-schemes"]
+	path = assets/sublime-legacy-color-schemes
+	url = https://github.com/SublimeText/LegacyColorSchemes.git
