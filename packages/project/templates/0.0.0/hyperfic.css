@@ -1,0 +1,16 @@
+.hyperfic-page:target {
+  background: none;
+}
+.hyperfic-page > ul:last-child > li {
+  list-style: "▸  ";
+}
+
+main:not(:has(:target)) > :nth-child(1 of .hyperfic-page) ~ *,
+main:has(:target.hyperfic-page:not(.hyperfic-ending)) > :not(h1, :target),
+main:has(:target.hyperfic-ending)
+  > :not(h1, :target, :nth-last-child(1 of .hyperfic-page) ~ *),
+main:has(:target:not(.hyperfic-page))
+  > :not(h1, :nth-last-child(1 of .hyperfic-page), :nth-last-child(1 of .hyperfic-page)
+    ~ *) {
+  display: none;
+}

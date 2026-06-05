@@ -1,0 +1,26 @@
+.audio-clip-btn {
+  width: 1em;
+  display: inline-block;
+  border-radius: 0.4em;
+  border-style: dashed;
+  border-width: 1px;
+
+  text-align: center;
+  line-height: 1;
+  font-family: var(--font-symbols);
+  color: var(--fg-interactive);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.audio-clip-btn:hover {
+  border-style: solid;
+  color: var(--fg-text);
+}
+
+@media print {
+  .audio-clip-btn {
+    display: none;
+  }
+}

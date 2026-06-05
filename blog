@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+export TYPST_FONT_PATHS="${TYPST_FONT_PATHS:-fonts}"
+export TYPST_PACKAGE_PATH="${TYPST_PACKAGE_PATH:-packages}"
+export TYPST_IGNORE_SYSTEM_FONTS="${TYPST_IGNORE_SYSTEM_FONTS:-true}"
+export TYPST_FEATURES="${TYPST_FEATURES:-html,bundle}"
+
+build() {
+  clean
+  typst compile --format=bundle bundle.typ dist
+}
+
+watch() {
+  local tempdir="$(mktemp -d)"
+  trap 'rm -rf "$tempdir"' EXIT
+  typst watch --format=bundle bundle.typ "$tempdir"
+}
+
+clean() {
+  rm -rf dist
+}
+
+case "${1:-build}" in
+  build)
+    build
+    ;;
+  watch)
+    watch
+    ;;
+  clean)
+    clean
+    ;;
+  *)
+    echo "Usage: $0 {build|watch|clean}" >&2
+    exit 1
+    ;;
+esac

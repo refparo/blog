@@ -1,0 +1,621 @@
+@layer reset {
+  /* CSS Reset */
+  /* See https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  *:not(dialog) {
+    margin: 0;
+  }
+
+  :root {
+    line-height: 1.5;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+}
+
+@layer general {
+  /* Generally applicable styles */
+
+  /* Color scheme */
+
+  :root {
+    color-scheme: light;
+    --fg-text: oklch(0.2 0.001 90);
+    --fg-lowtext: oklch(0.4 0.01 90);
+    --fg-interactive: oklch(0.5 0.1 90);
+    --fg-lowinteractive: oklch(0.66 0.05 90);
+    --fg-noninteractive: oklch(0.8 0.01 90);
+    --bg-highlight: oklch(0.85 0.04 90 / 50%);
+    --bg-select: oklch(0.973 0.1488 110);
+    --bg-normal: oklch(1 0.01 90);
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --fg-text: oklch(0.85 0.01 90);
+      --fg-lowtext: oklch(0.7 0.02 90);
+      --fg-interactive: oklch(0.7 0.07 90);
+      --fg-lowinteractive: oklch(0.5 0.02 90);
+      --fg-noninteractive: oklch(0.3 0.01 90);
+      --bg-highlight: oklch(0.35 0.04 90 / 50%);
+      --bg-select: oklch(0.5 0.2 30);
+      --bg-normal: oklch(0.142 0.001 90);
+    }
+  }
+
+  body {
+    background: var(--bg-normal);
+    color: var(--fg-text);
+  }
+
+  ::selection {
+    background: var(--bg-select);
+    color: var(--fg-text);
+  }
+
+  /* Typography */
+
+  @font-face {
+    font-family: "Source Han Serif Punctuations";
+    src: local("Source Han Serif");
+    unicode-range:
+      U+B7,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D,
+      U+2026,
+      U+3001-3002,
+      U+3008-3011,
+      U+3014-301C,
+      U+FF01,
+      U+FF08-FF09,
+      U+FF0C,
+      U+FF0E,
+      U+FF1A-FF1B,
+      U+FF1F;
+  }
+
+  @font-face {
+    font-family: "Source Han Sans Punctuations";
+    font-weight: 500;
+    src: local("Source Han Sans Medium");
+    unicode-range:
+      U+B7,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D,
+      U+2026,
+      U+3001-3002,
+      U+3008-3011,
+      U+3014-301C,
+      U+FF01,
+      U+FF08-FF09,
+      U+FF0C,
+      U+FF0E,
+      U+FF1A-FF1B,
+      U+FF1F;
+  }
+
+  @font-face {
+    font-family: "Source Han Sans Punctuations";
+    font-weight: 700;
+    src: local("Source Han Sans Bold");
+    unicode-range:
+      U+B7,
+      U+2014,
+      U+2018-2019,
+      U+201C-201D,
+      U+2026,
+      U+3001-3002,
+      U+3008-3011,
+      U+3014-301C,
+      U+FF01,
+      U+FF08-FF09,
+      U+FF0C,
+      U+FF0E,
+      U+FF1A-FF1B,
+      U+FF1F;
+  }
+
+  @font-face {
+    font-family: "Source Serif";
+    src:
+      local("Source Serif 4 Variable"),
+      local("Source Serif 4");
+    size-adjust: 105%;
+  }
+
+  @font-face {
+    font-family: "Source Serif";
+    font-style: italic;
+    src:
+      local("Source Serif 4 Variable Italic"),
+      local("Source Serif 4 Italic");
+    size-adjust: 105%;
+  }
+
+  @font-face {
+    font-family: "LXGW Wenkai";
+    src:
+      local("LXGW Wenkai"),
+      local("LXGWWenkai-Regular");
+  }
+
+  @font-face {
+    font-family: "Fira Code";
+    src: local("Fira Code Regular");
+    ascent-override: 115%;
+    descent-override: 35%;
+    size-adjust: 90%;
+  }
+
+  @font-face {
+    font-family: "Fira Code";
+    font-weight: 700;
+    src: local("Fira Code Bold");
+    ascent-override: 115%;
+    descent-override: 35%;
+    size-adjust: 90%;
+  }
+
+  :root {
+    --font-symbols:
+      "Noto Sans Math",
+      "Noto Sans Symbols",
+      "Noto Sans Symbols 2";
+    --font-hans:
+      "Source Han Serif Punctuations",
+      "Source Serif",
+      "Source Han Serif",
+      var(--font-symbols),
+      serif;
+    --font-ja:
+      "Source Han Serif Punctuations",
+      "Source Serif",
+      "Source Han Serif",
+      var(--font-symbols),
+      serif;
+    --font-ko:
+      "Source Han Serif Punctuations",
+      "Source Serif",
+      "Source Han Serif",
+      var(--font-symbols),
+      serif;
+
+    --font-hans-emph:
+      "Source Han Serif Punctuations",
+      "Source Serif",
+      "LXGW Wenkai",
+      var(--font-symbols),
+      serif;
+    --font-hans-strong:
+      "Source Han Sans Punctuations",
+      "Source Sans",
+      "Source Han Sans",
+      var(--font-symbols),
+      serif;
+
+    --font-latn: "Source Serif", var(--font-symbols), serif;
+
+    --font-arab:
+      "Source Serif",
+      "Noto Naskh Arabic",
+      var(--font-symbols),
+      serif;
+    --font-deva: "Source Serif", "Noto Serif Devanagari", var(--font-symbols);
+    --font-geor:
+      "Source Serif",
+      "Noto Serif Georgian",
+      var(--font-symbols),
+      serif;
+
+    --font-ipa: "Charis SIL", serif;
+
+    --font-code: "Fira Code", "Source Han Sans", var(--font-symbols), monospace;
+  }
+
+  body {
+    font-synthesis-style: none;
+    text-autospace: ideograph-alpha ideograph-numeric punctuation replace;
+    text-spacing-trim: trim-start;
+    text-spacing-trim: trim-all;
+  }
+
+  [lang|="zh"] {
+    font-family: var(--font-hans);
+    & em, em:is(&) {
+      font-family: var(--font-hans-emph);
+    }
+    & strong, strong:is(&) {
+      font-family: var(--font-hans-strong);
+    }
+  }
+
+  [lang|="ja"] {
+    font-family: var(--font-ja);
+  }
+  [lang|="ko"] {
+    font-family: var(--font-ko);
+  }
+
+  [lang|="en"] {
+    font-family: var(--font-latn);
+  }
+
+  [lang|="ar"], [lang|="sd"] {
+    font-family: var(--font-arab);
+  }
+  [lang|="hi"] {
+    font-family: var(--font-deva);
+  }
+  [lang|="ka"] {
+    font-family: var(--font-geor);
+  }
+
+  [lang$="-fonipa"], [lang*="-fonipa-"] {
+    font-family: var(--font-ipa);
+    font-style: normal;
+  }
+
+  code, kbd, samp {
+    font-family: var(--font-code);
+    text-autospace: no-autospace;
+    text-spacing-trim: normal;
+  }
+
+  /* Inline elements */
+
+  a {
+    color: var(--fg-interactive);
+    &:visited {
+      color: var(--fg-lowinteractive);
+    }
+    &:hover {
+      color: var(--fg-text);
+      background-color: var(--bg-highlight);
+      text-decoration: none;
+    }
+  }
+
+  code, kbd, samp {
+    border-radius: 0.4em;
+    padding: 0 0.125em;
+    background-color: var(--bg-highlight);
+    white-space: pre-wrap;
+  }
+
+  rt {
+    font-size: 66.67%;
+  }
+
+  .fn-ref {
+    font-size: calc(5 / 6 * 100%);
+    vertical-align: super;
+  }
+
+  /* Block elements */
+
+  blockquote {
+    margin-left: 1em;
+    border-left: 3px solid var(--fg-noninteractive);
+    padding-left: calc(1em - 3px);
+
+    &:has(p, ol, ul) {
+      display: flex;
+      flex-direction: column;
+      gap: 1lh;
+    }
+  }
+
+  blockquote, li, p {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  figcaption {
+    font-family: var(--font-hans-strong);
+    font-weight: 500;
+    font-size: smaller;
+    &:has(+ table) {
+      margin-bottom: 0.25rlh;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    font-size: xx-large;
+    font-weight: normal;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin: 0 0 -0.5rlh;
+  }
+
+  hr {
+    margin: -0.5px auto;
+    width: 38%;
+    border: none;
+    border-top: 1px solid var(--fg-noninteractive);
+  }
+
+  img[style*="display: block"] {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  ol, ul {
+    padding-left: 1.5em;
+  }
+
+  p:has(ruby) {
+    margin: -0.375em 0;
+    line-height: 2.25;
+  }
+
+  pre {
+    border-radius: 0.4em;
+    padding: 0.5lh 1em;
+    background-color: #002b36;
+    color: #93a1a1;
+    overflow-wrap: anywhere;
+
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 1em;
+
+    > code {
+      display: contents;
+
+      > .ln {
+        text-align: right;
+        user-select: none;
+        color: #495050;
+      }
+    }
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+    border-collapse: collapse;
+
+    thead > tr {
+      border-bottom: 3px solid var(--fg-noninteractive);
+    }
+
+    tr {
+      border-bottom: 1px solid var(--fg-noninteractive);
+
+      th {
+        padding: calc(0.25lh - 1.5px) 0.25lh;
+        text-align: left;
+      }
+      td {
+        padding: calc(0.25lh - 0.5px) 0.25lh;
+      }
+    }
+  }
+
+  /* Other Misc Styles */
+
+  :target {
+    background-color: var(--bg-highlight);
+    scroll-margin: 35vh;
+  }
+}
+
+@layer layout {
+  /* Layout styles */
+  /* See https://www.joshwcomeau.com/css/full-bleed/ */
+
+  :root {
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+  }
+
+  body {
+    margin: 0.25lh 0;
+
+    display: grid;
+    grid-template-columns:
+      1fr
+      min(42em, calc(100vw - 1em))
+      1fr;
+    column-gap: 0.5em;
+  }
+
+  body > *, main > *, .subgrid > * {
+    grid-column: 2;
+    &:is(img, figure, .full-bleed) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+  }
+
+  main, .subgrid {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    row-gap: 1lh;
+  }
+
+  /* Header */
+
+  #breadcrumb > a {
+    text-decoration: none;
+    &:visited {
+      color: var(--fg-interactive);
+    }
+    &:hover {
+      color: revert-layer;
+    }
+  }
+
+  /* Post Meta */
+  #meta {
+    margin: 0 0 -0.5rlh;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    color: var(--fg-lowtext);
+    font-size: smaller;
+
+    > .divider {
+      border-right: 2px solid var(--fg-noninteractive);
+      height: 1.25em;
+    }
+  }
+
+  /* Listing */
+
+  #filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > #filter {
+      border-radius: 0.4em;
+      padding: 0 0 0 0.25em;
+      background: var(--bg-highlight);
+
+      color: var(--fg-lowtext);
+      font-weight: normal;
+      font-size: small;
+
+      > a {
+        border-radius: 0 0.4em 0.4em 0;
+        padding: 0 0.125em;
+
+        &:visited {
+          color: var(--fg-interactive);
+        }
+        &:hover {
+          color: revert-layer;
+        }
+        > svg {
+          vertical-align: center;
+        }
+      }
+    }
+  }
+
+  .listing {
+    padding: 0;
+
+    > li {
+      padding: 0.25lh 0.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.125lh;
+
+      &[hidden] {
+        display: none;
+      }
+
+      &:nth-child(odd of li:not([hidden])) {
+        background: color-mix(
+          in oklab,
+          var(--bg-normal),
+          var(--bg-highlight) 40%
+        );
+      }
+
+      &:nth-child(even of li:not([hidden])) {
+        background: color-mix(
+          in oklab,
+          var(--bg-normal),
+          var(--bg-highlight) 10%
+        );
+      }
+
+      > .title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        > a {
+          text-decoration: none;
+          color: var(--fg-text);
+          font-family: var(--font-hans-strong);
+        }
+
+        > .meta {
+          display: flex;
+          gap: 0.5em;
+          color: var(--fg-lowtext);
+          font-size: smaller;
+        }
+      }
+
+      > .excerpt {
+        font-size: smaller;
+      }
+
+      &:has(> details) {
+        padding: 0;
+      }
+
+      > details > summary {
+        padding: 0.25rlh 0.5rem;
+        font-family: var(--font-hans-strong);
+        font-size: smaller;
+        cursor: pointer;
+
+        :not([open]) > & {
+          color: var(--fg-interactive);
+        }
+        [open] > & {
+          color: var(--fg-lowinteractive);
+        }
+
+        &:hover {
+          color: var(--fg-text);
+          background-color: var(--bg-highlight);
+        }
+      }
+    }
+  }
+
+  /* Footnotes */
+
+  #footnotes {
+    font-size: smaller;
+  }
+
+  /* Footer */
+
+  #comment {
+    margin: 2lh 0 0;
+    font-family: var(--font-hans-emph);
+    font-style: italic;
+  }
+
+  #copyright {
+    margin: 2rlh 0 0;
+    color: var(--fg-lowtext);
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,11 @@
+#import "@project/templates:0.0.0": collection, date
+#show: collection(
+  "/eighteen/",
+  title: "十八",
+  published: date("2020-11-01"),
+  excerpt: [高三一年，恍如隔世。],
+)
+
+这大概算是我高三一年的潦草记录吧。里面有一些小说，可以看作是自传体；还有一些短诗、几篇日记。
+
+主要是留给我自己看的。我就不妄想有谁能看得懂，甚至喜欢这些文字了。

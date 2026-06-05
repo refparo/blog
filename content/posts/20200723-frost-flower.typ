@@ -1,0 +1,13 @@
+#import "@project/templates:0.0.0": date, post
+#show: post(
+  "/20200723-frost-flower/",
+  title: "霜花",
+  tags: "诗作",
+  published: date("2020-07-23"),
+)
+
+寒冬、朗星、寂夜\
+北风凛冽，寒鸦悲鸣\
+如镜的窗上，霜花默默蜷缩着——\
+生于严寒，多么渴望光芒的照耀\
+却又恐惧着，那太阳的热烈
